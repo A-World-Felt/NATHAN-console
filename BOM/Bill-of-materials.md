@@ -3,6 +3,8 @@
 This page lists all the components required to build the NATHAN Console.  
 Links are provided for easy sourcing. Quantities and references can be updated as needed.
 
+> 🎨 This BOM is for the default version of the console, but don’t hesitate to get creative and customize your controller—make it truly yours!
+
 ---
 
 | Reference | Description                                 | Quantity | Link                                                                                                         |
