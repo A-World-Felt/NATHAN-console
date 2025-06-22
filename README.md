@@ -1,6 +1,6 @@
 # NATHAN Console
 
-![NATHAN Logo](./assets/nathan_logo.png)
+![NATHAN Logo](./.assets/nathan_logo.png)
 
 ## How it began
 
