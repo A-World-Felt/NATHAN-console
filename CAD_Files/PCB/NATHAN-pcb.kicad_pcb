@@ -1917,7 +1917,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "4ca75725-9401-4a37-a26e-cfffe327cea9")
+			(uuid "9948504a-98e2-4b84-af77-84187ab23962")
 		)
 	)
 	(footprint ""
