@@ -12,7 +12,7 @@ After high school, life took us in different directions. But I kept following Na
 
 One morning in year 2022, Nathan made a post looking for help with 3D printing and soldering. At that time, I was just diving into the world of programming, microcontrollers, and digital fabrication. I was eager to learn and build something real. The moment I saw his message, I knew: **this was the project I had been waiting for**.
 
-Working with Nathan—someone I had admired for years—gave me the perfect opportunity to grow my skills while collaborating with someone truly inspiring. He would be part of the process: designing the sounds, shaping the ideas, and even learning to code. From the start, the goal was clear: **build something together that he could one day fully own**.
+Working with Nathan, someone I had admired for years, gave me the perfect opportunity to grow my skills while collaborating with someone truly inspiring. He would be part of the process: designing the sounds, shaping the ideas, and even learning to code. From the start, the goal was clear: **build something together that he could one day fully own**.
 
 Since 2022, this journey has become a shared adventure. Today, I’m proud to present the first version of the console:
 **NATHAN — Narrative Audio Terminal for Humans with Alternative Navigation**.
@@ -72,7 +72,7 @@ Whether you want to:
 
 > **NATHAN** = *Narrative Audio Terminal for Humans with Alternative Navigation*
 
-A console built around sound, for a hero—and a community—that navigates the world differently.
+A console built around sound, for a hero—and a community, that navigates the world differently.
 
 ---
 
