@@ -48,7 +48,7 @@ Inspired by the form of an Xbox controller, the device includes:
 
 Each game on the NATHAN console features a **blind protagonist named Nathan**.
 
-The current flagship game, **NATHAN: Glassbreaker**, puts you in the role of Nathan—a hero who fights and navigates *only* through sound. It's a game where your ears become your eyes, and audio becomes your primary interface with the world.
+The current flagship game, **NATHAN: Glassbreaker**, puts you in the role of Nathan, a hero who fights and navigates *only* through sound. It's a game where your ears become your eyes, and audio becomes your primary interface with the world. A game felt instead of seen.
 
 ---
 
