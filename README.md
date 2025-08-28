@@ -72,7 +72,7 @@ Whether you want to:
 
 > **NATHAN** = *Narrative Audio Terminal for Humans with Alternative Navigation*
 
-A console built around sound, for a hero—and a community, that navigates the world differently.
+A console built around sound, for a hero and a community, that navigates the world differently.
 
 ---
 
