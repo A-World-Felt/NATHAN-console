@@ -4,7 +4,7 @@
 
 ## How it began
 
-The NATHAN console was born from a desire to create something meaningful—for an incredible person: **Nathan Therrien**.
+The NATHAN console was born from a desire to create something meaningful for an incredible person: **Nathan Therrien**.
 
 I met Nathan in high school. He was one of those rare people who naturally brighten the world around them. Always smiling, always the first to say hello, to crack a joke, to make everyone around him feel good. We shared the same class in our final year, and even then, I was amazed by his radiant energy.
 
