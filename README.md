@@ -4,7 +4,7 @@
 
 ## How it began
 
-The NATHAN console was born from a desire to create something meaningful—for an incredible person: **Nathan Therrien**.
+The NATHAN console was born from a desire to create something meaningful for an incredible person: **Nathan Therrien**.
 
 I met Nathan in high school. He was one of those rare people who naturally brighten the world around them. Always smiling, always the first to say hello, to crack a joke, to make everyone around him feel good. We shared the same class in our final year, and even then, I was amazed by his radiant energy.
 
@@ -48,7 +48,7 @@ Inspired by the form of an Xbox controller, the device includes:
 
 Each game on the NATHAN console features a **blind protagonist named Nathan**.
 
-The current flagship game, **NATHAN: Glassbreaker**, puts you in the role of Nathan, a hero who fights and navigates *only* through sound. It's a game where your ears become your eyes, and audio becomes your primary interface with the world.
+The current flagship game, **NATHAN: Glassbreaker**, puts you in the role of Nathan, a hero who fights and navigates *only* through sound. It's a game where your ears become your eyes, and audio becomes your primary interface with the world. A game felt instead of seen.
 
 ---
 
