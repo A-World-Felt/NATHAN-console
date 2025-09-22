@@ -924,6 +924,78 @@
 	)
 	(footprint ""
 		(layer "F.Cu")
+		(uuid "5ee8ec12-2a29-4eb5-8728-abf03ff60979")
+		(at 375.5 152)
+		(property "Reference" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "0a97f57d-fd47-4c5a-bd63-cdee5c181ac1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "e7a2d7e0-f73b-4e0f-a9a5-7f933807d448")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "167e3852-16e1-42a9-9199-85b8bbe5760a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1dc0b2fc-78b6-4d28-b6a1-57787dba4d91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bcac9616-af7a-45f3-93f8-0487487ec301")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "3V3")
+			(uuid "de61dc51-aacc-454f-8eea-09046728280b")
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
 		(uuid "67ca15e1-317f-445c-96da-05d03dbb4669")
 		(at 337 205)
 		(property "Reference" ""
@@ -991,78 +1063,6 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(uuid "d93cff17-633f-44a7-b3cb-1589ca2f5b71")
-		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "6dacd0b2-8864-4194-a8d9-d7b576bbb89a")
-		(at 374 154)
-		(property "Reference" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(uuid "5bce9e2b-d0b9-4778-adfd-1da3d78cd6f4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "18abd203-cfc6-4fe7-9abb-8dc9146e51df")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "38a7b310-9445-4737-aaf9-33ccf32fe058")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c5b4895c-33f7-4da1-a334-e195ee9f1493")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "01b9a124-d36b-499a-92c7-b4a67d213798")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at -18.5 3.75)
-			(size 1.524 1.524)
-			(drill 0.85)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 3 "VCC")
-			(uuid "6a1ad26c-d56a-4f27-b291-a79c2165f89c")
 		)
 	)
 	(footprint ""
@@ -3653,7 +3653,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "3V3")
-			(uuid "de61dc51-aacc-454f-8eea-09046728280b")
+			(uuid "d3a387d2-45ef-4769-9c8e-be4056a0002b")
 		)
 	)
 	(footprint "MCU_RaspberryPi_and_Boards:SOT-23_DIO"
