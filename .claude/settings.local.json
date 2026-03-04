@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "WebSearch",
+      "WebFetch",
+      "Read(C:\\Cantante\\**)",
+      "Read(C:\\Users\\arthu\\OneDrive\\NATHAN\\NATHAN-code\\**)"
+    ]
+  }
+}
