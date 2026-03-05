@@ -1,8 +1,8 @@
 # Cahier des Charges — Projet NATHAN Console (v2.0)
 
 **Projet :** NATHAN — Narrative Audio Terminal for Humans with Alternative Navigation
-**Version du document :** 1.1
-**Date :** 2026-03-02
+**Version du document :** 2.0
+**Date :** 2026-03-05
 **Auteur :** Arthur Olivier Fortin
 **Statut :** Phase de conception majeure
 
@@ -14,15 +14,16 @@
 2. [État actuel du projet (v1.0)](#2-état-actuel-du-projet-v10) — *inclut jeu existant GlassBreaker et IDE Cantante*
 3. [Objectifs du projet majeur (v2.0)](#3-objectifs-du-projet-majeur-v20)
 4. [Public cible](#4-public-cible)
-5. [Spécifications hardware (v2.0)](#5-spécifications-hardware-v20)
-6. [Spécifications firmware et logiciel bas niveau](#6-spécifications-firmware-et-logiciel-bas-niveau)
-7. [Spécifications du game engine](#7-spécifications-du-game-engine)
-8. [Spécifications du premier jeu — La Maison de Nathan](#8-spécifications-du-premier-jeu--la-maison-de-nathan)
-9. [Système de mini-jeux et IDE](#9-système-de-mini-jeux-et-ide)
-10. [Contraintes et risques techniques](#10-contraintes-et-risques-techniques)
-11. [Planification et dépendances](#11-planification-et-dépendances)
-12. [Budget](#12-budget)
-13. [Livrables](#13-livrables)
+5. [Équipes, rôles et stratégie de développement parallèle](#5-équipes-rôles-et-stratégie-de-développement-parallèle)
+6. [Spécifications hardware (v2.0)](#6-spécifications-hardware-v20)
+7. [Spécifications firmware et logiciel bas niveau](#7-spécifications-firmware-et-logiciel-bas-niveau)
+8. [Spécifications du game engine](#8-spécifications-du-game-engine)
+9. [Spécifications du premier jeu — La Maison de Nathan](#9-spécifications-du-premier-jeu--la-maison-de-nathan)
+10. [Système de mini-jeux](#10-système-de-mini-jeux)
+11. [Contraintes et risques techniques](#11-contraintes-et-risques-techniques)
+12. [Planification par workstreams et dépendances](#12-planification-par-workstreams-et-dépendances)
+13. [Budget](#13-budget)
+14. [Livrables](#14-livrables)
 
 ---
 
@@ -143,7 +144,7 @@ class MonMiniJeu:
 
 **Dépôt :** `C:\Cantante`
 
-Cantante est l'application desktop qui servira d'IDE pour programmer les mini-jeux. Elle est en développement actif et sera intégrée dans ce repo.
+Cantante est l'application desktop qui servira d'IDE pour programmer les mini-jeux. Elle est en développement actif et sera intégrée dans ce repo sous `ide/`.
 
 **Stack :** Electron 28 + React 18 + TypeScript 5.3 + Vite 5
 
@@ -175,6 +176,8 @@ Cantante est l'application desktop qui servira d'IDE pour programmer les mini-je
 | Gestionnaire de mini-jeux (liste SD) | Haute | Lecture liste depuis console |
 | Mode d'affichage accessible (grand texte, contraste) | Haute | Accessibilité DV |
 
+> **Cantante est développé séparément.** Son cahier des charges est indépendant de ce document. L'intégration avec la console NATHAN se fera via le protocole USB CDC défini dans la section 7.4. Une fois ce protocole établi, Cantante sera intégré dans ce repo sous `ide/`.
+
 ---
 
 ## 3. Objectifs du projet majeur (v2.0)
@@ -191,7 +194,7 @@ Développer un moteur de jeu en **C/C++** tournant entièrement sur l'ESP32-S3, 
 Développer le jeu de démonstration de la console : un jeu entièrement auditif et haptique mettant en scène Nathan, un aveugle, dans sa maison.
 
 ### Axe 4 — Système de mini-jeux
-Permettre aux utilisateurs de programmer et jouer à des mini-jeux écrits en **MicroPython** via une interface graphique desktop (Electron/React).
+Permettre aux utilisateurs de programmer et jouer à des mini-jeux écrits en **MicroPython** via l'IDE Cantante (développé séparément).
 
 ---
 
@@ -216,9 +219,211 @@ Permettre aux utilisateurs de programmer et jouer à des mini-jeux écrits en **
 
 ---
 
-## 5. Spécifications hardware (v2.0)
+## 5. Équipes, rôles et stratégie de développement parallèle
 
-### 5.1 Microcontrôleur — ESP32-S3
+### 5.1 Composition des équipes
+
+| Équipe | Code | Profil | Responsabilité |
+|--------|------|--------|----------------|
+| **Électrique** | ELEC | Génie électrique | Schéma, PCB, boîtier, soudure, validation matérielle |
+| **Engine** | ENG | Génie informatique | Game engine, scènes, collisions, bâton, MicroPython, HAL |
+| **Audio spatial** | AUD | Génie informatique (spécialisé signal/audio) | Pipeline HRTF, mix binaural, évaluation software vs DSP |
+| **Jeu / Contenu** | JEU | Génie informatique / design | Design des pièces, mécaniques de jeu, banque de sons, narration |
+
+### 5.2 Principe fondamental : zéro temps d'attente entre équipes
+
+Le plan de développement est conçu pour que **aucune équipe ne soit bloquée** par une autre. Cela repose sur trois stratégies :
+
+#### Stratégie A — Manette de substitution (découple ELEC ↔ ENG/JEU)
+
+Dès le **jour 1** du projet, les équipes logicielles utilisent une **manette USB grand public** (type DualShock 4 / Xbox One, ~30$ CAD) pour développer et tester toute la logique de jeu.
+
+Un module **InputMapper** abstrait complètement le matériel :
+
+```
+┌───────────────────────────────────────────────┐
+│                 Game Engine                     │
+│                                                 │
+│    scene.update(input, dt)                      │
+│         │                                       │
+│    ┌────▼─────┐                                 │
+│    │InputMapper│  ← Interface abstraite          │
+│    └────┬─────┘                                 │
+│         │                                       │
+│    ┌────┴──────────────┬──────────────────┐     │
+│    │                   │                  │     │
+│  GamepadMapper    NathanMapper       DebugMapper│
+│  (DualShock/Xbox) (manette réelle)   (clavier)  │
+│  PHASE 1-2        PHASE 3+           DEBUG      │
+└───────────────────────────────────────────────┘
+```
+
+| Implémentation | Utilisée par | Phase | Description |
+|----------------|-------------|-------|-------------|
+| `GamepadMapper` | ENG, JEU, AUD | Phases 1-2 | Manette USB standard. Joystick L/R mappés directement, vibration mono simulée. |
+| `DebugMapper` | ENG | Toutes | Clavier + souris pour tests rapides sans manette |
+| `NathanMapper` | ENG, ELEC | Phase 3+ | Manette NATHAN réelle. Joysticks ADC, 5 moteurs PWM, boutons GPIO. |
+
+**Mapping de substitution (GamepadMapper):**
+
+| Contrôle NATHAN | Substitut DualShock/Xbox |
+|-----------------|--------------------------|
+| Joystick gauche | Joystick gauche (identique) |
+| Joystick droite | Joystick droite (identique) |
+| Boutons A/B/C | ×/○/△ (ou A/B/Y) |
+| Gâchettes L1/R1 | L1/R1 (identique) |
+| 5 moteurs arc | Vibration unique du gamepad (intensité = moteur central) |
+| Start/Select | Start/Select (identique) |
+
+**Pour le haptique**, le gamepad n'a qu'un moteur. Le GamepadMapper simule les 5 moteurs en arc par :
+- Vibration unique pour tout contact de bâton
+- Logs console indiquant quel moteur NATHAN serait activé (pour debug)
+- La validation réelle des 5 moteurs se fait à la Phase 3 (intégration)
+
+#### Stratégie B — Développement audio PC-first (découple AUD ↔ ELEC)
+
+Le développeur audio ne touche **jamais** à l'ESP32-S3 avant la Phase 3. Tout le développement HRTF se fait sur PC :
+
+```
+Phase 1 : Recherche + prototypage PC (C/C++ + miniaudio ou libsoundio)
+Phase 2 : Module audio spatial fonctionnel sur PC, testé au casque
+Phase 3 : Portage vers ESP32-S3, benchmark CPU/latence
+Phase 3b: Décision : software pur OU ajout DSP matériel externe
+```
+
+L'interface entre le game engine et le module audio est un **contrat** défini dès la Phase 0 (voir 5.3). Tant que le contrat est respecté, les implémentations PC et ESP32 sont interchangeables.
+
+#### Stratégie C — Contrats d'interface (découple toutes les équipes)
+
+Avant tout développement, les équipes définissent ensemble les **interfaces contractuelles** entre les modules. Chaque interface a une **implémentation stub** qui permet de tester sans dépendance.
+
+### 5.3 Contrats d'interface (Phase 0 — à définir en priorité)
+
+Les 5 contrats suivants sont les **premiers livrables du projet**. Ils doivent être définis et validés par toutes les équipes avant le début du développement.
+
+#### Contrat 1 — InputMapper (ENG ↔ ELEC)
+
+```c
+// Abstraction des entrées : toute source d'input implémente cette interface
+typedef struct {
+    float left_x, left_y;     // Joystick gauche (-1.0 à 1.0)
+    float right_x, right_y;   // Joystick droite (-1.0 à 1.0)
+    bool buttons[9];           // A, B, C, L1, R1, L2, R2, Start, Select
+    bool left_click;           // Joystick gauche appuyé
+    bool right_click;          // Joystick droite appuyé
+} InputState;
+
+void input_mapper_init(void);
+InputState input_mapper_read(void);
+```
+
+#### Contrat 2 — SpatialAudioEngine (ENG ↔ AUD)
+
+```c
+// Abstraction audio : le game engine place des sons, l'implémentation les rend binauraux
+typedef int SoundHandle;
+
+void spatial_audio_init(int sample_rate, int max_sources);
+void spatial_audio_shutdown(void);
+
+SoundHandle spatial_audio_play(const char* wav_path, float x, float y, float z, bool loop);
+void spatial_audio_stop(SoundHandle h);
+void spatial_audio_set_position(SoundHandle h, float x, float y, float z);
+void spatial_audio_set_volume(SoundHandle h, float vol);
+
+void spatial_audio_update_listener(float px, float py, float orientation_deg);
+void spatial_audio_render(int16_t* stereo_buffer, int frame_count);
+
+// Ambiance (non spatialisé, stéréo direct)
+void spatial_audio_play_ambient(const char* wav_path, float volume);
+void spatial_audio_stop_ambient(void);
+```
+
+**Implémentations prévues :**
+
+| Implémentation | Utilisée par | Phase | Backend |
+|----------------|-------------|-------|---------|
+| `StubAudio` | ENG | Phase 1 | Pas de son, logs console uniquement |
+| `PCAudio` | AUD, JEU | Phase 1-2 | `miniaudio` + HRTF sur PC |
+| `ESP32Audio` | Tous | Phase 3+ | I2S + PCM5102A + HRTF embarqué |
+
+#### Contrat 3 — HapticEngine (ENG ↔ ELEC)
+
+```c
+// Abstraction haptique : 5 moteurs logiques en arc
+// Motor IDs : 0=extrême gauche, 1=gauche, 2=centre, 3=droite, 4=extrême droite
+
+void haptic_init(void);
+void haptic_pulse(int motor_id, float intensity, int duration_ms);
+  // motor_id: 0-4, intensity: 0.0-1.0
+void haptic_sweep(float direction, float intensity);
+  // direction: -1.0 (gauche) → 1.0 (droite)
+void haptic_pattern(const char* pattern_name);
+  // Patterns prédéfinis: "cane_wall", "cane_floor", "cane_sweep", "hit", "strum"
+void haptic_stop_all(void);
+```
+
+**Implémentations prévues :**
+
+| Implémentation | Phase | Comportement |
+|----------------|-------|--------------|
+| `StubHaptic` | Phase 1 | Logs console uniquement |
+| `GamepadHaptic` | Phase 1-2 | Vibration unique du gamepad USB |
+| `NathanHaptic` | Phase 3+ | 5 moteurs PWM réels via GPIO ESP32-S3 |
+
+#### Contrat 4 — StorageProvider (ENG)
+
+```c
+void storage_init(void);
+bool storage_file_exists(const char* path);
+int  storage_read_file(const char* path, uint8_t* buffer, int max_size);
+int  storage_write_file(const char* path, const uint8_t* data, int size);
+char** storage_list_dir(const char* path, int* count);
+```
+
+#### Contrat 5 — MiniGameRunner (ENG)
+
+```c
+typedef struct {
+    char title[64];
+    char author[32];
+    char description[128];
+} MiniGameMeta;
+
+bool minigame_load(const char* dir_path);
+MiniGameMeta minigame_get_meta(void);
+bool minigame_setup(void);
+bool minigame_loop(void);  // retourne false quand le mini-jeu se termine
+void minigame_unload(void);
+```
+
+### 5.4 Matrice de responsabilité (RACI)
+
+| Livrable | ELEC | ENG | AUD | JEU |
+|----------|------|-----|-----|-----|
+| Schéma / PCB ESP32-S3 | **R** | C | — | — |
+| Boîtier v2.0 (SolidWorks) | **R** | C | — | — |
+| Soudure et validation matérielle | **R** | — | — | — |
+| Contrats d'interface (Phase 0) | C | **R** | C | I |
+| InputMapper (toutes implémentations) | C | **R** | — | — |
+| Game engine (scènes, collisions, bâton) | — | **R** | — | I |
+| Pipeline HRTF (recherche + implémentation) | — | I | **R** | — |
+| Portage audio ESP32-S3 | C | I | **R** | — |
+| Intégration MicroPython | — | **R** | — | I |
+| Design des pièces du jeu | — | I | I | **R** |
+| Banque de sons et musiques | — | — | C | **R** |
+| Narration audio (voix Nathan) | — | — | — | **R** |
+| Mécaniques guitare/batterie | — | C | C | **R** |
+| Tests d'intégration finale | C | **R** | C | C |
+| Tests utilisateur (personne DV) | I | C | C | **R** |
+
+> **R** = Responsable, **C** = Consulté, **I** = Informé
+
+---
+
+## 6. Spécifications hardware (v2.0)
+
+### 6.1 Microcontrôleur — ESP32-S3
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -234,9 +439,7 @@ Permettre aux utilisateurs de programmer et jouer à des mini-jeux écrits en **
 
 **Justification du choix :** L'ESP32-S3 est le seul microcontrôleur de la gamme ESP32 offrant simultanément USB OTG natif (pour la connexion à l'IDE), suffisamment de RAM pour le HRTF temps réel, et deux interfaces I2S pour l'audio stéréo de haute qualité.
 
-**Risque :** L'ESP32-S3 standalone pour le rendu HRTF temps réel est exigeant. Voir section 10.
-
-### 5.2 Système audio
+### 6.2 Système audio
 
 #### DAC audio
 
@@ -249,12 +452,12 @@ Permettre aux utilisateurs de programmer et jouer à des mini-jeux écrits en **
 | Sortie | Jack stéréo 3.5mm (casque uniquement) |
 | Amplificateur | Intégré dans PCM5102A (ligne) |
 
-**Note importante :** Le jeu est conçu pour une écoute au **casque stéréo uniquement**. Le son spatial binaural (HRTF) requiert un casque pour l'effet 3D. Un haut-parleur ne peut pas restituer l'effet binaural.
+**Note importante :** Le jeu est conçu pour une écoute au **casque stéréo uniquement**. Le son spatial binaural (HRTF) requiert un casque pour l'effet 3D.
 
 #### Pipeline audio spatial
 
 ```
-Positions 3D des sons (C++)
+Positions 3D des sons (via SpatialAudioEngine)
         ↓
 Calcul azimut/élévation/distance
         ↓
@@ -271,18 +474,16 @@ Buffer DMA → I2S → PCM5102A → Jack 3.5mm
 - Musiques d'ambiance : **WAV 16 bits, 44.1 kHz, stéréo** (non spatiales, lecture directe)
 - Stockage sur carte micro SD
 
-### 5.3 Système haptique — 5 moteurs en arc
+### 6.3 Système haptique — 5 moteurs en arc
 
 #### Topologie
 
-Les 5 moteurs vibrants sont disposés en arc de cercle dans le corps de la manette, avec une gradation de gauche à droite correspondant à une direction dans l'espace :
+Les 5 moteurs vibrants sont disposés en arc de cercle dans le corps de la manette :
 
 ```
-Position physique :  [M1]  [M2]  [M3]  [M4]  [M5]
+Position physique :  [M0]  [M1]  [M2]  [M3]  [M4]
 Direction simulée :  ←←   ←     ↑     →     →→
 ```
-
-Ce mapping permet de simuler la direction dans laquelle le bâton d'aveugle entre en contact avec un obstacle.
 
 #### Spécifications moteurs
 
@@ -294,20 +495,18 @@ Ce mapping permet de simuler la direction dans laquelle le bâton d'aveugle entr
 | Driver | MOSFET N-CH par moteur (ex: 2N7002) OU DRV2605L (recommandé) |
 | Fréquence PWM | 1 kHz minimum |
 
-**Recommandation :** Utiliser le **DRV2605L** (I2C, jusqu'à 8 effets haptics en RAM) pour au moins les moteurs les plus utilisés (bâton), pour la richesse des effets et la réduction du câblage.
-
 #### Cas d'usage
 
 | Interaction | Moteurs activés | Pattern |
 |-------------|-----------------|---------|
-| Bâton touche mur à gauche | M1, M2 | Impulsion courte, forte |
-| Bâton touche sol | M1 à M5 (tous, faible) | Vibration continue faible |
-| Bâton touche obstacle à droite | M4, M5 | Impulsion courte, forte |
-| Coup de bâton en combat | M1 à M5 (séquence) | Sweep directionnel |
-| Guitare — strumming | M3, M4 | Vibration rhythmique |
+| Bâton touche mur à gauche | M0, M1 | Impulsion courte, forte |
+| Bâton touche sol | M0 à M4 (tous, faible) | Vibration continue faible |
+| Bâton touche obstacle à droite | M3, M4 | Impulsion courte, forte |
+| Coup de bâton en combat | M0 à M4 (séquence) | Sweep directionnel |
+| Guitare — strumming | M2, M3 | Vibration rhythmique |
 | Drum — impact | M correspondant à la zone | Impulsion forte courte |
 
-### 5.4 Entrées utilisateur
+### 6.4 Entrées utilisateur
 
 #### Joysticks
 
@@ -328,18 +527,10 @@ Ce mapping permet de simuler la direction dans laquelle le bâton d'aveugle entr
 | C (△) | Arcade 30mm | Action tertiaire / menu |
 | L1 | Micro switch | Gâchette gauche |
 | R1 | Micro switch | Gâchette droite |
-| L2 | À définir | Gâchette analogique gauche (optionnel) |
-| R2 | À définir | Gâchette analogique droite (optionnel) |
 | Start | Bouton tactile | Menu / pause |
 | Select | Bouton tactile | Retour / annuler |
 
-**Note :** Les boutons arcade 30mm doivent être distinguishables au toucher (forme ou position). Envisager différentes textures de capuchon.
-
-#### Potentiomètre (conservé de v1.0)
-
-Réaffecté selon les besoins du jeu (volume ? vitesse ? paramètre contextuel).
-
-### 5.5 Alimentation
+### 6.5 Alimentation
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -348,29 +539,27 @@ Réaffecté selon les besoins du jeu (volume ? vitesse ? paramètre contextuel).
 | Circuit de charge | TP4056 ou MCP73831 |
 | Protection | Surcharge, décharge profonde, court-circuit |
 | Régulateur | LDO 3.3V (ex: AMS1117-3.3) pour ESP32-S3 |
-| Régulateur 5V | Boost converter si nécessaire pour périphériques 5V |
 | Autonomie cible | ≥ 8 heures |
 
-**Note :** Vérifier la consommation totale estimée :
+**Estimation de consommation :**
 - ESP32-S3 actif : ~240 mA max
 - PCM5102A : ~10 mA
-- 5 moteurs (simultané max) : ~5 × 150 mA = 750 mA
+- 5 moteurs (pic simultané max) : ~5 × 150 mA = 750 mA
 - Total pic : ~1A → batterie 2000 mAh ≈ 2h en pic, ~6-8h en usage normal
 
-### 5.6 Connectivité
+### 6.6 Connectivité
 
 | Interface | Usage |
 |-----------|-------|
-| USB-C | Charge + connexion à l'IDE mini-jeux (USB CDC/HID) |
-| Wi-Fi 2.4 GHz | Mise à jour OTA, téléchargement de mini-jeux (optionnel v2.0) |
-| Bluetooth 5.0 | Connexion sans fil à un PC/téléphone (optionnel futur) |
+| USB-C | Charge + connexion à l'IDE Cantante (USB CDC) |
+| Wi-Fi 2.4 GHz | Mise à jour OTA (optionnel v2.0) |
 | Micro SD | Stockage assets audio, jeux, mini-jeux |
 
-### 5.7 Boîtier (refonte ergonomique)
+### 6.7 Boîtier (refonte ergonomique)
 
 #### Contraintes de refonte
 
-- Intégrer 2 joysticks (gauche + droite) — le boîtier v1.0 n'en avait aucun
+- Intégrer 2 joysticks (gauche + droite)
 - Intégrer 5 moteurs en arc dans les poignées
 - Passer à une batterie LiPo + port USB-C
 - Conserver l'inspiration Xbox pour l'ergonomie
@@ -386,9 +575,9 @@ Réaffecté selon les besoins du jeu (volume ? vitesse ? paramètre contextuel).
 
 ---
 
-## 6. Spécifications firmware et logiciel bas niveau
+## 7. Spécifications firmware et logiciel bas niveau
 
-### 6.1 Environnement de développement
+### 7.1 Environnement de développement
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -399,19 +588,23 @@ Réaffecté selon les besoins du jeu (volume ? vitesse ? paramètre contextuel).
 | Débogage | JTAG via USB (ESP32-S3 supporte le JTAG USB natif) |
 | Tests | Unity test framework (embarqué) |
 
-### 6.2 Architecture firmware
+### 7.2 Architecture firmware
 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                      APPLICATION                         │
 │  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
-│  │  Game Engine │  │ MicroPython  │  │   IDE Bridge   │  │
-│  │   (C/C++)   │  │  Sandbox     │  │  (USB CDC)     │  │
+│  │  Game Engine │  │ MicroPython  │  │   USB Bridge   │  │
+│  │   (C/C++)   │  │  Sandbox     │  │   (CDC)        │  │
 │  └──────┬──────┘  └──────┬───────┘  └───────┬────────┘  │
 │         └────────────────┴──────────────────┘            │
 │  ┌─────────────────────────────────────────────────────┐ │
+│  │         Contrats d'interface (section 5.3)          │ │
+│  │  InputMapper | SpatialAudioEngine | HapticEngine    │ │
+│  └─────────────────────────────────────────────────────┘ │
+│  ┌─────────────────────────────────────────────────────┐ │
 │  │              Hardware Abstraction Layer (HAL)        │ │
-│  │  Audio | Haptic | Input | Storage | Power           │ │
+│  │  NathanMapper | ESP32Audio | NathanHaptic | Storage │ │
 │  └─────────────────────────────────────────────────────┘ │
 │  ┌──────────┐ ┌────────┐ ┌────────┐ ┌────────┐          │
 │  │ ESP-IDF  │ │FreeRTOS│ │  I2S   │ │  SPI   │          │
@@ -419,44 +612,36 @@ Réaffecté selon les besoins du jeu (volume ? vitesse ? paramètre contextuel).
 └─────────────────────────────────────────────────────────┘
 ```
 
-### 6.3 Tâches FreeRTOS
+### 7.3 Tâches FreeRTOS
 
 | Tâche | Priorité | Core | Rôle |
 |-------|----------|------|------|
 | `task_audio_render` | Très haute | Core 0 | Rendu HRTF + DMA I2S |
 | `task_game_logic` | Haute | Core 1 | Logique de jeu, état |
-| `task_input_poll` | Haute | Core 1 | Lecture joysticks/boutons à 100 Hz |
-| `task_haptic_ctrl` | Moyenne | Core 1 | Contrôle moteurs vibration |
-| `task_usb_bridge` | Basse | Core 1 | Communication USB avec IDE |
+| `task_input_poll` | Haute | Core 1 | Lecture entrées via InputMapper à 100 Hz |
+| `task_haptic_ctrl` | Moyenne | Core 1 | Contrôle moteurs via HapticEngine |
+| `task_usb_bridge` | Basse | Core 1 | Communication USB avec IDE Cantante |
 | `task_sd_io` | Basse | Core 0 | Lecture assets depuis SD |
 
-### 6.4 HAL — Modules à développer
+### 7.4 Protocole USB CDC (pont avec l'IDE Cantante)
 
-#### Module Audio (`hal_audio`)
-- Initialisation I2S + PCM5102A
-- Buffer circulaire DMA (double buffer)
-- API : `audio_play_sample(id, x, y, z)`, `audio_play_ambient(id)`, `audio_stop(id)`
+Le firmware expose un port série virtuel (USB CDC) avec un protocole simple :
 
-#### Module Haptique (`hal_haptic`)
-- Contrôle PWM des 5 moteurs
-- API : `haptic_pulse(motor_id, intensity, duration_ms)`, `haptic_sweep(direction, intensity)`
-- Patterns prédéfinis : `HAPTIC_CANE_WALL`, `HAPTIC_CANE_FLOOR`, `HAPTIC_CANE_SWEEP`, etc.
+| Commande | Direction | Description |
+|----------|-----------|-------------|
+| `LIST` | IDE → Console | Lister les mini-jeux sur SD |
+| `UPLOAD <path> <size>` | IDE → Console | Envoyer un fichier vers SD |
+| `DELETE <path>` | IDE → Console | Supprimer un fichier sur SD |
+| `LOG` | Console → IDE | Stream des logs/erreurs en temps réel |
+| `META <path>` | IDE → Console | Lire les métadonnées d'un mini-jeu |
 
-#### Module Entrées (`hal_input`)
-- Lecture ADC joysticks (avec anti-rebond et zone morte configurable)
-- Lecture GPIO boutons (avec debounce 10 ms)
-- API : `input_get_joystick(id, &x, &y)`, `input_get_button(id)`, `input_register_callback(event, cb)`
+> C'est l'unique point de contact entre ce projet et Cantante. Tant que ce protocole est respecté, les deux projets évoluent indépendamment.
 
-#### Module Stockage (`hal_storage`)
-- Interface SPI avec module micro SD
-- Système de fichiers FAT32 via ESP-IDF `sdmmc` driver
-- API : `storage_load_sample(path, &buffer)`, `storage_list_minigames()`
-
-### 6.5 Support MicroPython embarqué
+### 7.5 Support MicroPython embarqué
 
 Le firmware intègre un interpréteur **MicroPython** via la bibliothèque `micropython-embed` compilée en tant que composant ESP-IDF.
 
-**Note de continuité :** Le jeu existant GlassBreaker tourne en CircuitPython sur Pico. MicroPython et CircuitPython partagent la même syntaxe Python et des APIs très proches — les utilisateurs familiers de l'un peuvent écrire pour l'autre avec peu d'adaptation. Le passage à MicroPython pour v2.0 est donc transparent pour les mini-jeux.
+**Note de continuité :** Le jeu existant GlassBreaker tourne en CircuitPython sur Pico. MicroPython et CircuitPython partagent la même syntaxe Python et des APIs très proches — le passage à MicroPython pour v2.0 est transparent pour les mini-jeux.
 
 - Les mini-jeux sont des fichiers `.py` sur la carte SD (dossier `/sd/minigames/`)
 - L'interpréteur est lancé dans un contexte sandboxé avec accès limité aux APIs HAL
@@ -465,17 +650,19 @@ Le firmware intègre un interpréteur **MicroPython** via la bibliothèque `micr
   - `nathan.haptic.pulse(motor, intensity)`
   - `nathan.input.read_joystick(id)` → `(x, y)`
   - `nathan.input.read_button(id)` → `bool`
-- Les sons des mini-jeux sont stockés dans `/sd/minigames/<nom_jeu>/sounds/` (même convention que GlassBreaker : `sounds/` sur SD)
+- Les sons des mini-jeux sont stockés dans `/sd/minigames/<nom_jeu>/sounds/`
 
 ---
 
-## 7. Spécifications du game engine
+## 8. Spécifications du game engine
 
-### 7.1 Philosophie du moteur
+### 8.1 Philosophie du moteur
 
 Le moteur est conçu pour un jeu **entièrement auditif**. Il n'y a pas de rendu graphique. Le "monde" est une grille 2D avec une coordonnée de hauteur. Les sons sont les seuls retours d'état du monde.
 
-### 7.2 Représentation du monde
+**Toute interaction avec le hardware passe par les contrats d'interface (section 5.3).** Le game engine n'appelle jamais directement I2S, GPIO, ou ADC.
+
+### 8.2 Représentation du monde
 
 #### Espace de coordonnées
 
@@ -495,7 +682,7 @@ Joueur toujours à Z=0 (sol)
 - Hauteur Z flottante (0.0 à 3.0 m typiquement)
 - Le joueur a une position `(px, py)` et une orientation `θ` (angle en degrés)
 
-#### Calcul HRTF
+#### Calcul HRTF (responsabilité de l'équipe AUD)
 
 Pour chaque source sonore à `(sx, sy, sz)` avec le joueur en `(px, py)` orienté à `θ` :
 
@@ -512,7 +699,9 @@ Application d'une HRTF lookup table (MIT KEMAR dataset, open-source, 187 positio
 - Atténuation par distance : `gain = 1 / (1 + distance * k)`
 - Rendu stéréo par convolution avec les réponses impulsionnelles HRTF gauche/droite
 
-### 7.3 API du game engine
+> **Note équipe AUD :** Le game engine fournit les positions via `spatial_audio_update_listener()` et `spatial_audio_set_position()`. Le calcul HRTF est entièrement encapsulé dans le module audio. L'équipe AUD est libre de choisir l'algorithme, la taille des filtres, et l'implémentation tant que l'API du contrat 2 est respectée.
+
+### 8.3 API du game engine
 
 ```cpp
 // Gestion de scène
@@ -520,7 +709,7 @@ Scene* scene_create(const char* name);
 void scene_load(Scene* s);
 void scene_unload(Scene* s);
 
-// Entités sonores
+// Entités sonores (délègue au SpatialAudioEngine)
 SoundEntity* entity_create(float x, float y, float z, const char* sound_file);
 void entity_set_position(SoundEntity* e, float x, float y, float z);
 void entity_set_looping(SoundEntity* e, bool loop);
@@ -530,21 +719,21 @@ void entity_stop(SoundEntity* e);
 // Joueur
 void player_set_position(float x, float y);
 void player_set_orientation(float angle_deg);
-void player_move(float dx, float dy); // déplacement relatif
+void player_move(float dx, float dy);
 
 // Collisions (murs/obstacles)
 void world_add_wall(float x1, float y1, float x2, float y2);
 bool world_check_collision(float x, float y, float radius);
 
-// Audio ambiant (non spatial)
+// Audio ambiant (non spatial, via SpatialAudioEngine)
 void ambient_play(const char* sound_file, float volume);
 void ambient_stop();
 
-// Haptique depuis le moteur
-void engine_haptic_cane(float contact_x, float contact_y); // déclenche pattern arc
+// Haptique (délègue au HapticEngine)
+void engine_haptic_cane(float contact_x, float contact_y);
 ```
 
-### 7.4 Système de collisions et bâton
+### 8.4 Système de collisions et bâton
 
 Le bâton d'aveugle est simulé comme un **rayon** (raycast) partant du joueur dans la direction du joystick droit.
 
@@ -564,31 +753,31 @@ Joueur (px, py)
 
 ---
 
-## 8. Spécifications du premier jeu — La Maison de Nathan
+## 9. Spécifications du premier jeu — La Maison de Nathan
 
-### 8.1 Concept général
+### 9.1 Concept général
 
-**Titre :** La Maison de Nathan (ou simplement "NATHAN")
+**Titre :** La Maison de Nathan
 **Genre :** Jeu de vie / exploration sensorielle
 **Perspective :** Première personne sonore (FPS audio)
-**Durée :** Jeu ouvert (pas de fin définie — exploration libre + quêtes)
+**Durée :** Jeu ouvert (exploration libre + quêtes)
 
 Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâches quotidiennes, explorer sa maison, jouer de la musique, aller à l'école, et affronter des adversaires imaginaires avec son bâton.
 
-### 8.2 Structure de la maison
+### 9.2 Structure de la maison
 
 ```
 ┌─────────────────────────────────────────────────────┐
 │                                                     │
 │  ┌──────────┐  ┌──────────┐  ┌────────────────┐    │
 │  │  CUISINE │  │  SALON   │  │    CHAMBRE     │    │
-│  │  🍳      │  │  (HUB)   │  │    🛏️          │    │
+│  │          │  │  (HUB)   │  │                │    │
 │  └──────────┘  └────┬─────┘  └────────────────┘    │
 │                     │                               │
 │  ┌──────────┐  ┌────┴─────┐  ┌────────────────┐    │
 │  │ SALLE DE │  │          │  │  SALLE DE      │    │
 │  │ MUSIQUE  │  │ COULOIR  │  │  MINI-JEUX     │    │
-│  │ 🎸 🥁    │  │          │  │  💻            │    │
+│  │          │  │          │  │                │    │
 │  └──────────┘  └────┬─────┘  └────────────────┘    │
 │                     │                               │
 │             ┌───────┴──────┐                        │
@@ -598,7 +787,7 @@ Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâch
 └─────────────────────────────────────────────────────┘
 ```
 
-### 8.3 Pièce 1 — Le Salon (Hub principal)
+### 9.3 Pièce 1 — Le Salon (Hub principal)
 
 **Rôle :** Point de départ et hub de navigation.
 
@@ -614,7 +803,7 @@ Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâch
 - Téléviseur (son — Nathan écoute un programme audio)
 - Fenêtre (sons extérieurs, météo)
 
-### 8.4 Pièce 2 — La Cuisine
+### 9.4 Pièce 2 — La Cuisine
 
 **Audio :** Musique rythmée type jazz. Sons de cuisine (réfrigérateur, eau, vaisselle).
 
@@ -626,23 +815,23 @@ Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâch
 
 **Éléments interactifs :**
 - Réfrigérateur (inventaire d'ingrédients, son caractéristique)
-- Casserole (sons de cuisson évolutifs selon la cuisson)
+- Casserole (sons de cuisson évolutifs)
 - Robinet (son de l'eau)
 
-### 8.5 Pièce 3 — La Chambre
+### 9.5 Pièce 3 — La Chambre
 
 **Audio :** Musique calme / ASMR. Sons de chambre (ventilateur, pluie sur la fenêtre, horloge).
 
 **Mini-jeux :**
 - **Se lever le matin :** réveil, s'habiller (séquence de boutons au son)
-- **Exploration libre :** Fouiller les tiroirs, découvrir des souvenirs audio (voix de proches, musiques du passé)
+- **Exploration libre :** Fouiller les tiroirs, découvrir des souvenirs audio
 
 **Éléments interactifs :**
 - Lit (point de sauvegarde)
 - Radio (change la musique d'ambiance)
 - Bureau (accès aux devoirs — mini-jeu de mémorisation sonore)
 
-### 8.6 Pièce 4 — La Salle de Musique
+### 9.6 Pièce 4 — La Salle de Musique
 
 **Audio :** Selon l'instrument joué. Réverbération de pièce simulée.
 
@@ -659,7 +848,7 @@ Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâch
 | Bouton C | Accord spécial / sustain |
 
 **Sons :** Samples de guitare acoustique réelle (banque de sons, licence libre).
-**Feedback haptique :** Vibration légère des moteurs à chaque strum (simuler la vibration des cordes).
+**Feedback haptique :** Vibration légère des moteurs à chaque strum.
 
 #### Instrument 2 — La Batterie
 
@@ -676,21 +865,21 @@ Le joueur incarne **Nathan**, un adolescent aveugle. Il doit accomplir des tâch
 | Joystick droit appuyé | Ride cymbal |
 
 **Sons :** Samples de batterie acoustique (banque libre).
-**Feedback haptique :** Impact fort et court sur le/les moteurs correspondant à la position du coup.
+**Feedback haptique :** Impact fort et court sur le/les moteurs correspondants.
 
 **Mode enregistrement :** Possibilité d'enregistrer une séquence et de la rejouer (sequencer simple).
 
-### 8.7 Pièce 5 — La Salle de Mini-Jeux
+### 9.7 Pièce 5 — La Salle de Mini-Jeux
 
 **Audio :** Musique arcade 8-bit. Sons d'ordinateur/console.
 
 **Gameplay :**
-- Hub des mini-jeux créés par l'utilisateur via l'IDE
-- Nathan s'assoit à son poste et peut lancer un mini-jeu de la liste disponible sur la carte SD
-- Navigation dans la liste des mini-jeux par audio (lecture du nom du fichier ou métadonnée "titre")
+- Hub des mini-jeux créés par l'utilisateur via l'IDE Cantante
+- Nathan s'assoit à son poste et peut lancer un mini-jeu de la liste sur la carte SD
+- Navigation dans la liste par audio (lecture du titre depuis les métadonnées)
 - Retour au salon après fin d'un mini-jeu
 
-### 8.8 Zone 6 — L'École (extérieur)
+### 9.8 Zone 6 — L'École (extérieur)
 
 **Audio :** Sons de rue, bruits urbains, cour d'école, voix des camarades.
 
@@ -700,7 +889,7 @@ C'est ici que le bâton d'aveugle est le contrôle primaire :
 - **Joystick droit** : contrôle la direction du bâton (360°)
 - Le raycast détecte obstacles, bordures de trottoir, portes
 - Les **5 moteurs** donnent la direction du contact
-- Le **son** de frappe change selon la surface (sol : tap doux / bois ; mur : bruit sourd)
+- Le **son** de frappe change selon la surface
 
 **Sous-zones de l'école :**
 - Trajet aller (navigation en rue — obstacles mobiles : piétons)
@@ -710,10 +899,10 @@ C'est ici que le bâton d'aveugle est le contrôle primaire :
 **Combats imaginaires :**
 - Déclenchés optionnellement dans certaines zones
 - Le bâton devient arme : mêmes contrôles, adversaires signalés par sons directionnels
-- Détection de coup : le raycast touche un ennemi → impact fort + son d'impact
+- Détection de coup : le raycast touche un ennemi → impact fort + son
 - L'ennemi riposte → vibration directionnelle + son d'attaque (le joueur peut parer)
 
-### 8.9 Contrôles de déplacement global
+### 9.9 Contrôles de déplacement global
 
 | Contrôle | Action |
 |----------|--------|
@@ -726,68 +915,34 @@ C'est ici que le bâton d'aveugle est le contrôle primaire :
 | L1 | Mode bâton (activer/désactiver bâton) |
 | R1 | Sprint |
 
-### 8.10 Système de navigation sonore inter-pièces
+### 9.10 Système de navigation sonore inter-pièces
 
-Chaque pièce émet une **signature musicale** différente. Depuis le couloir, les musiques des pièces adjacentes sont audibles en spatialisation. Plus le joueur approche d'une porte, plus la musique de la pièce correspondante est forte et plus son positionnement directionnel est précis. Cela permet une navigation intuitive sans aucun repère visuel.
+Chaque pièce émet une **signature musicale** différente. Depuis le couloir, les musiques des pièces adjacentes sont audibles en spatialisation. Plus le joueur approche d'une porte, plus la musique de la pièce correspondante est forte et plus son positionnement directionnel est précis.
 
 ---
 
-## 9. Système de mini-jeux et IDE
+## 10. Système de mini-jeux
 
-### 9.1 Architecture générale
+### 10.1 Architecture générale
 
 ```
 ┌─────────────────────┐         ┌─────────────────────────┐
 │     PC / Mac        │  USB-C  │      ESP32-S3           │
 │                     │◄───────►│                         │
-│  IDE Electron/React │         │  MicroPython Sandbox    │
-│  ┌───────────────┐  │         │  ┌──────────────────┐   │
-│  │ Éditeur code  │  │         │  │  mini_game.py    │   │
-│  │ Visualisateur │  │         │  │                  │   │
-│  │ de scène 2D   │  │         │  │  nathan.audio    │   │
-│  │ Simulateur    │  │         │  │  nathan.haptic   │   │
-│  │ audio virtuel │  │         │  │  nathan.input    │   │
-│  └───────────────┘  │         │  └──────────────────┘   │
+│  IDE Cantante       │ (CDC)   │  MiniGameRunner         │
+│  (développé         │         │  ┌──────────────────┐   │
+│   séparément)       │         │  │  mini_game.py    │   │
+│                     │         │  │                  │   │
+│                     │         │  │  nathan.audio    │   │
+│                     │         │  │  nathan.haptic   │   │
+│                     │         │  │  nathan.input    │   │
+│                     │         │  └──────────────────┘   │
 └─────────────────────┘         └─────────────────────────┘
 ```
 
-### 9.2 IDE — Cantante : état actuel et fonctionnalités à ajouter
+> L'IDE Cantante est développé dans un dépôt séparé et sera intégré sous `ide/` une fois le protocole USB CDC (section 7.4) stabilisé. Le développement de Cantante n'apparaît pas dans la planification de ce cahier des charges.
 
-L'IDE est **Cantante**, une application **Electron 28 + React 18 + TypeScript** déjà existante (`C:\Cantante`), à intégrer dans ce dépôt sous `ide/`.
-
-**Fondation déjà disponible dans Cantante :**
-- Éditeur de code multi-onglets avec syntaxe highlighting
-- Explorateur de fichiers complet
-- Terminal intégré (exécution shell avec streaming)
-- Accessibilité vocale complète (TTS français par défaut)
-- Maestro backend (C# .NET) pour assistance IA — peut être utilisé pour expliquer les erreurs de code aux utilisateurs DV
-
-#### Fonctionnalités à ajouter dans Cantante pour NATHAN
-
-##### Éditeur MicroPython
-- Remplacer/étendre le tokenizer de syntaxe pour MicroPython (mots-clés `def`, `class`, `import`, types, etc.)
-- Auto-complétion de l'API `nathan.*` (studio Monaco Editor ou solution légère custom)
-- Validation syntaxique Python basique (détection d'erreurs d'indentation)
-
-##### Éditeur de scène 2D
-- Grille 2D interactive (canvas React ou SVG)
-- Drag & drop de sources sonores avec paramètre X, Y, Z
-- Aperçu visuel des murs/obstacles
-- Simulation audio WebAudio API avec HRTF simplifié (aperçu sur PC avant envoi)
-
-##### Communication USB avec la console
-- Détection automatique de la console NATHAN connectée (USB CDC via Web Serial API ou lib `serialport`)
-- Upload d'un mini-jeu (`.py` + dossier `sounds/`) vers carte SD via USB
-- Lecture de la liste des mini-jeux présents sur la carte SD
-- Affichage des logs/erreurs de la console en temps réel
-
-##### Gestionnaire de mini-jeux
-- Liste des `.py` sur la carte SD connectée
-- Upload / suppression / renommage
-- Lecture et affichage des métadonnées `META = { "title", "author", "description" }`
-- Lecture audio du titre et de la description (accessibilité)
-
-### 9.3 API MicroPython exposée aux mini-jeux
+### 10.2 API MicroPython exposée aux mini-jeux
 
 ```python
 import nathan
@@ -807,7 +962,6 @@ nathan.haptic.sweep(direction: float, intensity: float)
 # Entrées
 x, y = nathan.input.joystick(id: int)  # id: 0=gauche, 1=droite
 pressed = nathan.input.button(id: int)  # id: 0=A, 1=B, 2=C, 3=L1, 4=R1
-# Retourne True si appuyé ce frame
 
 # Contrôle du jeu
 nathan.game.score(points: int)
@@ -819,20 +973,18 @@ nathan.sleep_ms(ms: int)  # attente non bloquante
 nathan.time_ms() -> int   # temps depuis démarrage
 ```
 
-### 9.4 Format de mini-jeu
+### 10.3 Format de mini-jeu
 
-Le format est **directement inspiré** de l'architecture GlassBreaker existante (`game/logic.py`, `game/menu.py`). Un mini-jeu est une **classe Python** avec métadonnées et méthodes standardisées.
+Le format est **directement inspiré** de l'architecture GlassBreaker existante (`game/menu.py`). Un mini-jeu est une **classe Python** avec métadonnées et méthodes standardisées.
 
 ```python
 # Structure d'un mini-jeu NATHAN (MicroPython)
-# Inspiré du pattern MenuExtension de GlassBreaker (NATHAN-code/game/menu.py)
-
 import nathan
 
 META = {
     "title": "Mon Mini-Jeu",          # Lu à voix haute dans le hub
     "author": "Arthur",
-    "description": "Un jeu de mémoire sonore"  # Annoncé avant démarrage
+    "description": "Un jeu de mémoire sonore"
 }
 
 class MonMiniJeu:
@@ -847,25 +999,24 @@ class MonMiniJeu:
     def loop(self) -> bool:
         """
         Appelé à chaque frame.
-        Retourne True pour continuer, False pour terminer le mini-jeu.
+        Retourne True pour continuer, False pour terminer.
         """
         x, y = nathan.input.joystick(0)
         if nathan.input.button(0):   # Bouton A
             nathan.audio.play("confirm.wav", 0, 0, 0)
-            nathan.haptic.pulse(2, 0.8, 100)  # moteur central
+            nathan.haptic.pulse(2, 0.8, 100)
             self.score += 1
-        # Fin du jeu si score atteint
         if self.score >= 10:
             nathan.game.end(success=True)
             return False
         return True
 
-# Point d'entrée appelé par le game engine
+# Point d'entrée appelé par le MiniGameRunner
 def create():
     return MonMiniJeu()
 ```
 
-**Structure de fichiers sur la carte SD pour un mini-jeu :**
+**Structure de fichiers sur la carte SD :**
 ```
 /sd/minigames/
 └── mon_mini_jeu/
@@ -876,25 +1027,24 @@ def create():
         └── arcade_ambient.wav
 ```
 
-> **Référence directe :** Cette structure est analogue à GlassBreaker où chaque mode de jeu est une entrée du `MenuSystem` avec ses propres sons dans `/sd/sounds/`. La différence principale est que les mini-jeux v2.0 sont des fichiers externes chargés dynamiquement, au lieu d'être compilés dans le firmware.
-
 ---
 
-## 10. Contraintes et risques techniques
+## 11. Contraintes et risques techniques
 
-### 10.1 Risques majeurs
+### 11.1 Risques majeurs
 
 #### Risque R1 — HRTF temps réel sur ESP32-S3 (CRITIQUE)
 
 | Paramètre | Détail |
 |-----------|--------|
 | Niveau | Critique |
-| Description | Le rendu HRTF temps réel (convolution) est très coûteux en CPU. Avec plusieurs sources sonores simultanées, l'ESP32-S3 pourrait atteindre ses limites. |
+| Description | Le rendu HRTF temps réel (convolution) est très coûteux en CPU. Avec plusieurs sources simultanées, l'ESP32-S3 pourrait atteindre ses limites. |
 | Impact | Latence audio, artifacts, ou limitation du nombre de sons simultanés |
 | Mitigation 1 | Utiliser des HRTF avec réponses impulsionnelles courtes (128 samples au lieu de 512) |
 | Mitigation 2 | Limiter à 4-6 sources sonores spatiales simultanées |
 | Mitigation 3 | Pré-calculer les positions pour les sons statiques (bake offline) |
 | Mitigation 4 | En fallback, audio stéréo simple (panoramique L/R) sans HRTF si charge trop haute |
+| Responsable | Équipe AUD — décision à prendre à la Phase 2 après benchmark PC et ESP32 |
 
 #### Risque R2 — Autonomie batterie (ÉLEVÉ)
 
@@ -903,6 +1053,7 @@ def create():
 | Niveau | Élevé |
 | Description | 5 moteurs + ESP32-S3 actif + DAC = consommation pic ~1A |
 | Mitigation | Gérer l'activation des moteurs (jamais tous 5 en continu), sleep du Wi-Fi quand inutile, 2500 mAh minimum |
+| Responsable | Équipe ELEC |
 
 #### Risque R3 — MicroPython sur ESP32-S3 (MOYEN)
 
@@ -911,6 +1062,7 @@ def create():
 | Niveau | Moyen |
 | Description | L'intégration de MicroPython comme composant ESP-IDF en parallèle du game engine C++ est complexe |
 | Mitigation | Utiliser `micropython-embed`, dédier le Core 0 au game engine et le Core 1 à l'interpréteur MicroPython |
+| Responsable | Équipe ENG |
 
 #### Risque R4 — Ergonomie boîtier avec 2 joysticks (MOYEN)
 
@@ -919,226 +1071,320 @@ def create():
 | Niveau | Moyen |
 | Description | La refonte mécanique est importante. Le boîtier v1.0 ne supporte pas 2 joysticks. |
 | Mitigation | Prototype en impression 3D rapide, validation ergonomique avant fabrication finale |
+| Responsable | Équipe ELEC |
 
-### 10.2 Contraintes techniques reconnues
+#### Risque R5 — Désynchronisation entre équipes (ÉLEVÉ)
+
+| Paramètre | Détail |
+|-----------|--------|
+| Niveau | Élevé |
+| Description | Les 4 équipes travaillent en parallèle. Si les contrats d'interface ne sont pas respectés ou changent en cours de route, l'intégration (Phase 3) devient chaotique. |
+| Impact | Retards majeurs à l'intégration, bugs d'interface, rework |
+| Mitigation 1 | **Phase 0 obligatoire** : valider les contrats d'interface ensemble avant tout code |
+| Mitigation 2 | **Points de synchronisation** fixes (SYNC 1, 2, 3) avec intégration incrémentale |
+| Mitigation 3 | **Tests d'interface** : chaque implémentation est testée contre un stub de l'autre côté |
+| Mitigation 4 | **Gel des interfaces** après Phase 0. Tout changement d'interface requiert l'accord des deux équipes impactées |
+| Responsable | Chef de projet / toutes les équipes |
+
+### 11.2 Contraintes techniques reconnues
 
 - ESP32-S3 : RAM totale 8 MB PSRAM — les HRTF lookup tables MIT KEMAR prennent ~1 MB, laisser ~6 MB pour le moteur et les samples audio en buffer
 - Micro SD : Latence de lecture (~few ms) — les samples audio doivent être pré-chargés en RAM avant lecture
 - MicroPython : Vitesse d'exécution ~10-50x plus lente que C — les mini-jeux sont des jeux simples, pas de physique complexe
-- PCM5102A : Pas de contrôle de volume hardware — le volume doit être géré par software (atténuation dans le buffer audio)
+- PCM5102A : Pas de contrôle de volume hardware — le volume doit être géré par software
 
 ---
 
-## 11. Planification et dépendances
+## 12. Planification par workstreams et dépendances
 
-### 11.1 Vue d'ensemble des phases
+### 12.1 Vue d'ensemble — 4 workstreams parallèles
 
 ```
-Phase 1 : Refonte Hardware          ████████░░░░░░░░░░░░░░░░░░░░░░░░
-Phase 2 : Firmware de base          ░░░░████████░░░░░░░░░░░░░░░░░░░░
-Phase 3 : Game Engine               ░░░░░░░░████████░░░░░░░░░░░░░░░░
-Phase 4 : Premier jeu               ░░░░░░░░░░░░████████████░░░░░░░░
-Phase 5 : Système mini-jeux         ░░░░░░░░░░░░░░░░████████████░░░░
-Phase 6 : IDE Electron/React        ░░░░████████████████░░░░░░░░░░░░
-Phase 7 : Intégration & tests       ░░░░░░░░░░░░░░░░░░░░████████░░░░
+Semaines    1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+            │           │  SYNC 1     │              │  SYNC 2     │              │  SYNC 3
+            │           │  (sem 6)    │              │  (sem 14)   │              │  (sem 22)
+            │           │             │              │             │              │
+Phase 0:    ██          │             │              │             │              │
+(toutes)    │           │             │              │             │              │
+            │           │             │              │             │              │
+ELEC:       ░░ ████████████████ ░░░░░████████████████░░░░░░████████░░░░░░░░░░░░░░│
+            │  Schéma+PCB      Fab   Soudure+Test   │  Boîtier    │              │
+            │           │             │              │             │              │
+ENG:        ░░ ████████████████████████████████████████████████████████████████████
+            │  Mapper+HAL stubs Scènes+Collisions   │  MicroPy    │  Intégration │
+            │           │             │              │             │              │
+AUD:        ░░ ████████████████████████████████████████████████████░░░░░░░░░░░░░░│
+            │  Recherche HRTF  Proto PC│  Benchmark  │  Portage    │              │
+            │           │             │  ESP32       │  ESP32      │              │
+            │           │             │              │             │              │
+JEU:        ░░ ░░░░████████████████████████████████████████████████████████████████
+            │     Design+Sons  Salon+Cuisine+Chambre │  Musique+École│  Polish    │
 ```
 
----
+### 12.2 Phase 0 — Contrats d'interface et setup (semaines 1-2)
 
-### 11.2 Phase 1 — Refonte Hardware
+**Durée :** 2 semaines
+**Équipes :** TOUTES
+**Objectif :** Aligner toutes les équipes, figer les interfaces, préparer l'environnement.
 
-**Durée estimée :** 6-10 semaines
-**Prérequis :** Aucun
+| ID | Tâche | Responsable | Dépendances | Priorité |
+|----|-------|-------------|-------------|----------|
+| P0.1 | Rédiger et valider le contrat InputMapper | ENG + ELEC | — | Critique |
+| P0.2 | Rédiger et valider le contrat SpatialAudioEngine | ENG + AUD | — | Critique |
+| P0.3 | Rédiger et valider le contrat HapticEngine | ENG + ELEC | — | Critique |
+| P0.4 | Rédiger et valider le contrat StorageProvider | ENG | — | Critique |
+| P0.5 | Rédiger et valider le contrat MiniGameRunner | ENG | — | Critique |
+| P0.6 | Acheter 2-3 manettes USB (DualShock/Xbox) pour dev | ENG | — | Critique |
+| P0.7 | Acheter ESP32-S3 DevKit + PCM5102A module (pour ELEC et AUD) | ELEC | — | Critique |
+| P0.8 | Setup repo : structure dossiers `firmware/`, `engine/`, `game/`, `audio/` | ENG | — | Haute |
+| P0.9 | Setup ESP-IDF + CMake + premier build vide | ENG | P0.8 | Haute |
+| P0.10 | Document de conventions (nommage, coding style, format WAV, arborescence SD) | TOUTES | — | Haute |
 
-#### Tâches
-
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| H1 | Sélection et commande ESP32-S3 DevKit | — | Critique |
-| H2 | Breadboard prototype ESP32-S3 + PCM5102A + test I2S | H1 | Critique |
-| H3 | Breadboard prototype 5 moteurs + PWM | H1 | Haute |
-| H4 | Breadboard prototype 2 joysticks ADC | H1 | Haute |
-| H5 | Schéma KiCAD v2.0 complet | H2, H3, H4 | Critique |
-| H6 | PCB KiCAD v2.0 layout | H5 | Critique |
-| H7 | Commande PCB (JLCPCB / PCBWay) | H6 | Critique |
-| H8 | Soudure et tests PCB v2.0 | H7 | Critique |
-| H9 | Refonte boîtier SolidWorks v2.0 | H4, H3 | Haute |
-| H10 | Impression 3D prototype boîtier | H9 | Haute |
-| H11 | Test ergonomie boîtier | H10 | Moyenne |
-| H12 | Mise à jour BOM v2.0 | H5 | Moyenne |
-
-**Jalon Phase 1 :** Prototype hardware fonctionnel (ESP32-S3 + audio + haptique + contrôles)
+**Jalon Phase 0 :** Contrats validés et signés par toutes les équipes. Matériel commandé.
 
 ---
 
-### 11.3 Phase 2 — Firmware de base (HAL)
+### 12.3 Workstream ELEC — Manette physique
 
-**Durée estimée :** 4-6 semaines
-**Prérequis :** H2, H3, H4 (breadboard au minimum)
+**Responsable :** Équipe génie électrique
+**Indépendant de :** ENG, AUD, JEU (aucune dépendance bloquante après Phase 0)
 
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| F1 | Setup projet ESP-IDF, structure CMake | H1 | Critique |
-| F2 | `hal_audio` : Init I2S + PCM5102A, lecture WAV depuis SD | F1, H2 | Critique |
-| F3 | `hal_input` : Lecture joysticks ADC + boutons GPIO | F1, H4 | Critique |
-| F4 | `hal_haptic` : PWM 5 moteurs, patterns de base | F1, H3 | Haute |
-| F5 | `hal_storage` : Interface micro SD, FAT32, listing fichiers | F1 | Haute |
-| F6 | Gestion alimentation : lecture niveau batterie, sleep | F1 | Moyenne |
-| F7 | USB CDC : communication série avec PC (pour IDE) | F1 | Haute |
-| F8 | Tests unitaires HAL (Unity framework) | F2-F7 | Haute |
+| ID | Tâche | Semaines | Dépendances | Priorité |
+|----|-------|----------|-------------|----------|
+| ELEC.1 | Breadboard ESP32-S3 + PCM5102A : valider I2S audio | 2-4 | P0.7 | Critique |
+| ELEC.2 | Breadboard 5 moteurs PWM : valider contrôle intensité | 2-4 | P0.7 | Critique |
+| ELEC.3 | Breadboard 2 joysticks ADC : valider lecture | 2-4 | P0.7 | Haute |
+| ELEC.4 | Breadboard alimentation LiPo + USB-C charge | 3-5 | P0.7 | Haute |
+| ELEC.5 | Schéma KiCAD v2.0 complet | 4-7 | ELEC.1-4 | Critique |
+| ELEC.6 | PCB KiCAD v2.0 layout + DRC | 6-8 | ELEC.5 | Critique |
+| ELEC.7 | Commande PCB (JLCPCB/PCBWay) | 8 | ELEC.6 | Critique |
+| ELEC.8 | *Attente fabrication PCB (~2 semaines)* | 8-10 | ELEC.7 | — |
+| ELEC.9 | Soudure composants PCB v2.0 | 10-11 | ELEC.8 | Critique |
+| ELEC.10 | Tests électriques PCB (continuité, tensions, courant) | 11-12 | ELEC.9 | Critique |
+| ELEC.11 | Flash firmware de test sur PCB (valider ESP-IDF boot) | 12-13 | ELEC.10, ENG.2 | Critique |
+| ELEC.12 | Refonte boîtier SolidWorks v2.0 | 8-14 | ELEC.3, ELEC.2 | Haute |
+| ELEC.13 | Impression 3D prototype boîtier | 14-15 | ELEC.12 | Haute |
+| ELEC.14 | Assemblage complet : PCB + boîtier + batterie | 15-16 | ELEC.13, ELEC.10 | Haute |
+| ELEC.15 | Test ergonomie avec utilisateur | 16-18 | ELEC.14 | Haute |
+| ELEC.16 | Mise à jour BOM v2.0 | 7-8 | ELEC.5 | Moyenne |
 
-**Jalon Phase 2 :** La console joue un son WAV depuis la SD, les joysticks sont lus, les moteurs vibrent
-
----
-
-### 11.4 Phase 3 — Game Engine
-
-**Durée estimée :** 6-8 semaines
-**Prérequis :** F2, F3, F4, F5
-
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| E1 | Représentation monde 2D+Z, gestion entités | F1 | Critique |
-| E2 | Calcul azimut/élévation/distance par source | E1 | Critique |
-| E3 | HRTF lookup tables (MIT KEMAR, intégration binaire) | E2 | Critique |
-| E4 | Rendu audio binaural (convolution + mix + DMA) | E2, E3, F2 | Critique |
-| E5 | Système de collision (murs, raycast bâton) | E1 | Haute |
-| E6 | Gestion scènes (load/unload, transitions) | E1, E4 | Haute |
-| E7 | API publique game engine documentée | E1-E6 | Haute |
-| E8 | Déplacement joueur + orientation | E1, E5, F3 | Haute |
-| E9 | Simulation bâton (raycast + haptique directionnel) | E5, E8, F4 | Haute |
-| E10 | Tests moteur (scène de test avec sons positionnés) | E7 | Haute |
-
-**Jalon Phase 3 :** Scène de test : le joueur marche dans un couloir, les sons sont spatialisés correctement, le bâton détecte les murs
+**Jalons ELEC :**
+- **SYNC 1 (sem 6) :** Breadboard fonctionnel, schéma en cours. Fournir aux devs les specs exactes des GPIO/ADC.
+- **SYNC 2 (sem 14) :** PCB soudé et testé. Prêt pour flash firmware.
+- **SYNC 3 (sem 22) :** Manette complète assemblée (PCB + boîtier + batterie). Prête pour intégration finale.
 
 ---
 
-### 11.5 Phase 4 — Premier jeu : La Maison de Nathan
+### 12.4 Workstream ENG — Game Engine
 
-**Durée estimée :** 10-16 semaines
-**Prérequis :** E7, E9
+**Responsable :** Équipe génie informatique (engine)
+**Utilise :** Manette USB de substitution (GamepadMapper) jusqu'à SYNC 3
+**Dépend de :** Contrats d'interface (Phase 0)
 
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| G1 | Banque de sons (samples, musiques d'ambiance) | — | Critique |
-| G2 | Design de la carte de la maison (coordonnées 2D) | E7 | Critique |
-| G3 | Système de navigation inter-pièces (audio signatures) | E6, G2 | Critique |
-| G4 | Salon — ambiance et interactions de base | G2, G3 | Haute |
-| G5 | Tutoriel intégré (voix Nathan) | G4 | Haute |
-| G6 | Cuisine — mini-jeu "faire à manger" | G2, E9 | Haute |
-| G7 | Chambre — exploration + point de sauvegarde | G2 | Moyenne |
-| G8 | Salle de musique — guitare | G2, F3, F4 | Haute |
-| G9 | Salle de musique — batterie | G2, F3, F4 | Haute |
-| G10 | Zone école — navigation bâton en extérieur | E9, G2 | Haute |
-| G11 | Salle de mini-jeux — hub de lancement | G2, MJ4 | Haute |
-| G12 | Système de combats (bâton comme arme) | E9, G10 | Moyenne |
-| G13 | Tâches quotidiennes additionnelles | G4, G6, G7 | Basse |
-| G14 | Narration audio (voix du personnage) | G1 | Haute |
+| ID | Tâche | Semaines | Dépendances | Priorité |
+|----|-------|----------|-------------|----------|
+| ENG.1 | Implémenter `GamepadMapper` (manette USB → InputState) | 2-3 | P0.1, P0.6 | Critique |
+| ENG.2 | Implémenter `StubAudio` (logs sans son) | 2-3 | P0.2 | Critique |
+| ENG.3 | Implémenter `StubHaptic` + `GamepadHaptic` | 2-3 | P0.3 | Critique |
+| ENG.4 | Implémenter `StorageProvider` (SD card FAT32) | 3-4 | P0.4 | Haute |
+| ENG.5 | Implémenter `DebugMapper` (clavier/souris) | 3 | P0.1 | Moyenne |
+| ENG.6 | Système de scènes : create/load/unload/transition | 4-6 | ENG.2 | Critique |
+| ENG.7 | Représentation monde 2D+Z, gestion entités | 4-6 | — | Critique |
+| ENG.8 | Système de collision : murs, obstacles | 5-7 | ENG.7 | Critique |
+| ENG.9 | Déplacement joueur (joystick gauche → position + orientation) | 5-7 | ENG.1, ENG.7 | Critique |
+| ENG.10 | Bâton d'aveugle : raycast + direction + collision | 7-9 | ENG.8, ENG.9 | Critique |
+| ENG.11 | Pont bâton → HapticEngine (contact → moteur directionnel) | 8-10 | ENG.10, ENG.3 | Haute |
+| ENG.12 | Pont entités → SpatialAudioEngine (positions → audio) | 8-10 | ENG.7, P0.2 | Haute |
+| ENG.13 | *Intégration PCAudio* (remplacer StubAudio par l'implémentation AUD) | 10-11 | ENG.12, AUD.5 | Haute |
+| ENG.14 | USB CDC : protocole de communication avec IDE | 10-12 | P0.8 | Haute |
+| ENG.15 | Intégration MicroPython (`micropython-embed`) | 12-16 | ENG.4 | Haute |
+| ENG.16 | Module `nathan` Python (bridge C → MicroPython) | 14-17 | ENG.15, P0.5 | Haute |
+| ENG.17 | MiniGameRunner : loader, sandbox, limites mémoire/temps | 16-18 | ENG.16, ENG.4 | Haute |
+| ENG.18 | `NathanMapper` (manette réelle → InputState) | 18-20 | P0.1, ELEC.11 | Critique |
+| ENG.19 | `NathanHaptic` (5 moteurs PWM réels) | 18-20 | P0.3, ELEC.11 | Haute |
+| ENG.20 | Intégration `ESP32Audio` (module audio final sur ESP32) | 20-22 | AUD.8 | Critique |
+| ENG.21 | Tests d'intégration complets sur matériel réel | 22-24 | ENG.18-20, ELEC.14 | Critique |
+| ENG.22 | Optimisation et profiling sur ESP32-S3 | 24-26 | ENG.21 | Haute |
 
-**Jalon Phase 4 :** Jeu complet jouable avec toutes les pièces et mécaniques de base
-
----
-
-### 11.6 Phase 5 — Système de mini-jeux
-
-**Durée estimée :** 4-6 semaines
-**Prérequis :** F5, F7, E7
-
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| MJ1 | Intégration MicroPython (micropython-embed + ESP-IDF) | F1 | Critique |
-| MJ2 | Module `nathan` Python : bridge C → MicroPython | MJ1, E7, F3, F4 | Critique |
-| MJ3 | Loader de mini-jeux depuis SD | MJ1, F5 | Critique |
-| MJ4 | Hub in-game (liste de mini-jeux navigable à l'audio) | MJ3, E7 | Haute |
-| MJ5 | Sandbox sécurisée (limite temps, mémoire) | MJ1 | Haute |
-| MJ6 | 2-3 mini-jeux d'exemple fournis | MJ2 | Haute |
-| MJ7 | Documentation API MicroPython | MJ2 | Haute |
-
-**Jalon Phase 5 :** Un mini-jeu `.py` simple peut être joué depuis la console
+**Jalons ENG :**
+- **SYNC 1 (sem 6) :** GamepadMapper + stubs fonctionnels. Le game engine tourne sur PC/ESP32 avec manette USB, sans son réel, avec logs haptiques.
+- **SYNC 2 (sem 14) :** Scènes, collisions, bâton, déplacement fonctionnels. Audio spatial PC intégré. Le jeu est jouable au casque sur PC avec manette USB.
+- **SYNC 3 (sem 22) :** Tout fonctionne sur hardware réel. NathanMapper + NathanHaptic + ESP32Audio intégrés.
 
 ---
 
-### 11.7 Phase 6 — IDE Cantante (intégration NATHAN)
+### 12.5 Workstream AUD — Audio spatial
 
-**Durée estimée :** En cours (parallèle aux phases 2-5)
-**Prérequis :** F7 (communication USB firmware) pour les tâches de connexion hardware
+**Responsable :** 1 développeur spécialisé signal/audio
+**Indépendant de :** ELEC (développement entièrement sur PC jusqu'à Phase 3)
+**Dépend de :** Contrat SpatialAudioEngine (Phase 0)
 
-> Cantante existe déjà avec une base solide (éditeur, fichiers, terminal, TTS, Maestro IA). Les tâches ci-dessous portent uniquement sur les **ajouts spécifiques à NATHAN**.
+| ID | Tâche | Semaines | Dépendances | Priorité |
+|----|-------|----------|-------------|----------|
+| AUD.1 | Recherche HRTF : évaluer MIT KEMAR, CIPIC, SOFA | 2-4 | P0.2 | Critique |
+| AUD.2 | Choix de la bibliothèque audio PC (`miniaudio`, `libsoundio`, ou custom) | 2-3 | — | Critique |
+| AUD.3 | Prototype HRTF sur PC : 1 source, convolution basique | 3-5 | AUD.1, AUD.2 | Critique |
+| AUD.4 | Multi-sources : mix de 4-6 sources HRTF simultanées | 5-7 | AUD.3 | Critique |
+| AUD.5 | `PCAudio` : implémentation complète du contrat SpatialAudioEngine sur PC | 6-9 | AUD.4, P0.2 | Critique |
+| AUD.6 | Tests perceptuels au casque (validation immersion) | 8-10 | AUD.5 | Haute |
+| AUD.7 | Benchmark ESP32-S3 : portage convolution HRTF, mesure CPU/latence | 10-14 | AUD.5, P0.7 | Critique |
+| AUD.8 | **Décision : software pur OU DSP externe** | 14 | AUD.7 | Critique |
+| AUD.9a | *(Si software pur)* `ESP32Audio` : implémentation finale I2S + HRTF | 14-20 | AUD.8, ELEC.1 | Critique |
+| AUD.9b | *(Si DSP externe)* Sélection puce DSP, intégration I2S ESP32 → DSP → DAC | 14-20 | AUD.8, ELEC.5 | Critique |
+| AUD.10 | Optimisation : taille filtre, nombre de sources, latence cible < 20ms | 18-22 | AUD.9 | Haute |
+| AUD.11 | Tests sur matériel final (PCB + casque) | 22-24 | AUD.10, ELEC.14 | Haute |
 
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| IDE1 | Intégration de Cantante dans ce repo (`ide/`) | — | Critique |
-| IDE2 | Coloration syntaxique MicroPython (étendre tokenizer existant) | IDE1 | Critique |
-| IDE3 | Template de mini-jeu (nouveau fichier = structure de base pré-remplie) | IDE1 | Haute |
-| IDE4 | Auto-complétion API `nathan.*` | IDE2 | Haute |
-| IDE5 | Communication USB CDC (Web Serial API ou `serialport`) | F7 | Critique |
-| IDE6 | Upload mini-jeu (`.py` + `sounds/`) vers carte SD via USB | IDE5 | Critique |
-| IDE7 | Lecture liste mini-jeux sur carte SD via USB | IDE5 | Haute |
-| IDE8 | Gestionnaire de mini-jeux (liste, supprimer, renommer, métadonnées) | IDE7 | Haute |
-| IDE9 | Visualisateur de scène 2D (grille drag & drop sources sonores) | IDE1 | Haute |
-| IDE10 | Simulation audio WebAudio + HRTF simplifié | IDE9 | Moyenne |
-| IDE11 | Affichage logs/erreurs console en temps réel | IDE5 | Haute |
-| IDE12 | Mode accessibilité renforcé (grand texte, fort contraste, navigation vocale complète) | IDE1 | Haute |
-| IDE13 | Build/package installeur (Windows/Mac/Linux via Electron Builder) | IDE1-IDE12 | Basse |
-
-**Jalon Phase 6 :** L'IDE permet d'écrire un mini-jeu, le tester visuellement, et l'envoyer sur la console en un clic — le tout navigable entièrement au clavier et à la voix
-
----
-
-### 11.8 Phase 7 — Intégration, polish et tests
-
-**Durée estimée :** 4-6 semaines
-**Prérequis :** Toutes phases précédentes
-
-| ID | Tâche | Dépendances | Priorité |
-|----|-------|-------------|----------|
-| T1 | Tests d'intégration hardware/firmware complets | H8, F8 | Critique |
-| T2 | Test utilisateur avec une personne non-voyante | G14 | Critique |
-| T3 | Ajustements suite au test utilisateur | T2 | Critique |
-| T4 | Optimisation performances audio (profiling) | E4 | Haute |
-| T5 | Mise à jour documentation complète | Tout | Haute |
-| T6 | Release v2.0 (tag git, binaires) | T3, T4, T5 | Haute |
+**Jalons AUD :**
+- **SYNC 1 (sem 6) :** HRTF prototype PC fonctionnel (1 source). Premiers résultats de spatialisation au casque.
+- **SYNC 2 (sem 14) :** `PCAudio` complet, 4-6 sources simultanées sur PC. Benchmark ESP32 en cours. Décision software/DSP prise.
+- **SYNC 3 (sem 22) :** `ESP32Audio` fonctionnel sur matériel réel. Prêt pour intégration game engine.
 
 ---
 
-### 11.9 Graphe de dépendances critique
+### 12.6 Workstream JEU — Contenu et design de jeu
+
+**Responsable :** Équipe contenu / game design
+**Utilise :** Game engine (ENG) + PCAudio (AUD) + GamepadMapper sur PC
+**Dépend de :** Scènes et collisions de ENG (sem ~6-8)
+
+| ID | Tâche | Semaines | Dépendances | Priorité |
+|----|-------|----------|-------------|----------|
+| JEU.1 | Design détaillé de la carte de la maison (coordonnées 2D, tailles pièces) | 2-4 | — | Critique |
+| JEU.2 | Liste exhaustive des sons nécessaires (ambiances, effets, voix) | 2-4 | — | Critique |
+| JEU.3 | Sourcing / enregistrement de la banque de sons | 3-10 | JEU.2 | Critique |
+| JEU.4 | Enregistrement narration audio (voix de Nathan, tutoriel) | 6-10 | JEU.1 | Haute |
+| JEU.5 | Salon : placement des entités, ambiance, interactions | 7-9 | JEU.1, JEU.3, ENG.6 | Critique |
+| JEU.6 | Tutoriel intégré (voix Nathan explique les contrôles) | 8-10 | JEU.5, JEU.4 | Haute |
+| JEU.7 | Navigation inter-pièces (signatures musicales par porte) | 8-10 | JEU.5, ENG.12 | Critique |
+| JEU.8 | Cuisine : ambiance + mini-jeu "faire à manger" | 9-12 | JEU.3, ENG.9 | Haute |
+| JEU.9 | Chambre : ambiance + mini-jeux + point de sauvegarde | 9-12 | JEU.3, ENG.6 | Haute |
+| JEU.10 | Salle de musique — guitare (samples + mapping joystick) | 10-14 | JEU.3, ENG.1 | Haute |
+| JEU.11 | Salle de musique — batterie (samples + mapping joystick/gâchettes) | 10-14 | JEU.3, ENG.1 | Haute |
+| JEU.12 | École — navigation bâton en extérieur | 12-16 | JEU.3, ENG.10 | Haute |
+| JEU.13 | École — combats imaginaires | 14-18 | JEU.12, ENG.10 | Moyenne |
+| JEU.14 | Salle de mini-jeux (hub, navigation liste) | 16-18 | ENG.17 | Haute |
+| JEU.15 | 2-3 mini-jeux d'exemple en MicroPython | 18-20 | ENG.16 | Haute |
+| JEU.16 | Tâches quotidiennes additionnelles | 18-22 | JEU.5-JEU.9 | Basse |
+| JEU.17 | Polish : équilibrage, transitions, flow narratif | 22-24 | JEU.5-JEU.16 | Haute |
+| JEU.18 | Test avec utilisateur non-voyant | 24-25 | JEU.17 | Critique |
+| JEU.19 | Ajustements post-test utilisateur | 25-26 | JEU.18 | Critique |
+
+**Jalons JEU :**
+- **SYNC 1 (sem 6) :** Design de la carte complet. Liste des sons établie. Sourcing en cours.
+- **SYNC 2 (sem 14) :** Salon + Cuisine + Chambre jouables sur PC avec audio spatial. Navigation inter-pièces fonctionnelle.
+- **SYNC 3 (sem 22) :** Toutes les pièces fonctionnelles. Mini-jeux d'exemple prêts. Prêt pour tests utilisateur.
+
+---
+
+### 12.7 Points de synchronisation détaillés
+
+#### SYNC 1 — Semaine 6 : Validation des fondations
+
+**Réunion toutes équipes. Critères de passage :**
+
+| Équipe | Livrable attendu | Validation |
+|--------|------------------|------------|
+| ELEC | Breadboards fonctionnels (I2S, moteurs, joysticks). Schéma en cours. | Démonstration breadboard |
+| ENG | GamepadMapper + stubs + DebugMapper. Début scènes/collisions. | Démo : déplacement au joystick USB avec logs |
+| AUD | Prototype HRTF PC 1 source. | Écoute au casque : son qui tourne autour de la tête |
+| JEU | Carte de la maison finalisée. Liste des sons. | Document de design validé |
+
+**Décisions à prendre :**
+- Valider/ajuster les contrats d'interface si problèmes détectés
+- Confirmer la liste de composants pour commande PCB
+
+#### SYNC 2 — Semaine 14 : Prototype logiciel complet sur PC
+
+**Réunion toutes équipes. Critères de passage :**
+
+| Équipe | Livrable attendu | Validation |
+|--------|------------------|------------|
+| ELEC | PCB fabriqué, soudé, testé électriquement. | PCB boot ESP-IDF |
+| ENG | Scènes + collisions + bâton + audio intégrés. | Démo : navigation dans le Salon avec son spatial au casque |
+| AUD | PCAudio complet (4-6 sources). Benchmark ESP32 en cours. **Décision software/DSP.** | Rapport benchmark + recommandation |
+| JEU | Salon + Cuisine + Chambre jouables. Navigation inter-pièces. | Démo jouable au casque |
+
+**Décisions à prendre :**
+- **Go/No-go** sur l'approche audio (software pur vs DSP externe)
+- Ajuster le budget si DSP externe nécessaire
+- Priorisation des pièces restantes
+
+#### SYNC 3 — Semaine 22 : Intégration matérielle
+
+**Réunion toutes équipes. Critères de passage :**
+
+| Équipe | Livrable attendu | Validation |
+|--------|------------------|------------|
+| ELEC | Manette complète assemblée (PCB + boîtier + batterie). | Manette physique fonctionnelle |
+| ENG | NathanMapper + NathanHaptic + ESP32Audio intégrés. | Jeu tourne sur manette réelle |
+| AUD | ESP32Audio fonctionnel et optimisé. | Audio spatial correct sur casque depuis la manette |
+| JEU | Toutes pièces + mini-jeux d'exemple. | Jeu complet jouable |
+
+**Décisions à prendre :**
+- Go/No-go pour tests utilisateur
+- Liste de bugs critiques à corriger
+
+---
+
+### 12.8 Graphe de dépendances critique
 
 ```
-H1 → H2 → F2 → E4 → G3 (navigation sonore)
-H1 → H3 → F4 → E9 → G12 (combat/bâton)
-H1 → H4 → F3 → E8 → G4 (déplacement)
-H1 → H4 → F3 → G8/G9 (instruments)
-H1 → H5 → H6 → H7 → H8 (PCB final)
-F1 → MJ1 → MJ2 → MJ3 → MJ4 → G11 (mini-jeux in-game)
-F7 → IDE5 → IDE6 (upload IDE → console)
-IDE1 → IDE2 → IDE3 (Cantante, indépendant du hardware)
+Phase 0 (toutes) ─┬─→ ELEC.1-4 (breadboard) ─→ ELEC.5 (schéma) ─→ ELEC.6-7 (PCB) ─→ ELEC.9-10 (soudure)
+                   │
+                   ├─→ ENG.1 (GamepadMapper) ─→ ENG.9 (déplacement) ─→ ENG.10 (bâton) ──┐
+                   │                                                                       │
+                   ├─→ ENG.2 (StubAudio) ─→ ENG.6 (scènes) ─→ ENG.12 (pont audio) ───────┤
+                   │                                                                       │
+                   ├─→ AUD.1-3 (recherche+proto) ─→ AUD.5 (PCAudio) ─┬─→ ENG.13 ─────────┤
+                   │                                                   │                   │
+                   │                                                   └─→ AUD.7 (bench)   │
+                   │                                                       ─→ AUD.9 (ESP32)│
+                   │                                                                       │
+                   └─→ JEU.1-2 (design) ─→ JEU.3 (sons) ─→ JEU.5 (salon) ───────────────┘
+                                                                                    │
+                                                                                    ▼
+                                                            SYNC 2 (sem 14) : tout converge
+                                                                                    │
+                                                                    ┌───────────────┤
+                                                                    ▼               ▼
+                                                            ENG.18-20         JEU.12-14
+                                                           (NathanMapper)    (école+minijeux)
+                                                                    │               │
+                                                                    └───────┬───────┘
+                                                                            ▼
+                                                                    SYNC 3 (sem 22)
+                                                                            │
+                                                                            ▼
+                                                                    JEU.18-19 (tests DV)
 ```
 
-**Chemin critique :** `H1 → H2 → F2 → E3 → E4 → G3`
-(Hardware → Audio I2S → HRTF → Navigation sonore)
+**Chemin critique :** `P0 → AUD.1 → AUD.3 → AUD.5 → AUD.7 → AUD.8 (décision) → AUD.9 → ENG.20 → ENG.21`
 
-### 11.10 Points de référence avec le code existant
+Le **goulot d'étranglement** du projet est le **portage audio HRTF sur ESP32-S3**. C'est pourquoi l'équipe AUD commence dès le jour 1 et que la décision software/DSP est prévue à la semaine 14.
+
+---
+
+### 12.9 Points de référence avec le code existant (GlassBreaker)
 
 | Élément v2.0 | Référence dans GlassBreaker | Notes |
 |---|---|---|
-| HAL audio | `output/audio.py` (AudioManager) | Migrer la logique de gestion des WAV |
-| HAL input | `input/buttons.py` (ButtonManager) | Étendre avec joysticks ADC |
-| HAL haptique | `output/motors.py` (MotorManager) | Passer de 2 à 5 moteurs avec intensité |
-| Persistance scores | `utils/memory.py` (MemoryManager) | Même principe, FAT32 sur SD |
-| Format mini-jeu | `game/menu.py` (MenuExtension) | Même pattern classe + `run()` |
+| InputMapper | `input/buttons.py` (ButtonManager) | Même pattern, étendre avec joysticks |
+| SpatialAudioEngine | `output/audio.py` (AudioManager) | Logique de gestion WAV réutilisable |
+| HapticEngine | `output/motors.py` (MotorManager) | Passer de 2 à 5 moteurs avec intensité |
+| StorageProvider | `utils/memory.py` (MemoryManager) | Même principe, FAT32 sur SD |
+| MiniGameRunner | `game/menu.py` (MenuExtension) | Même pattern classe + `run()` |
 | Dossier sons | `/sd/sounds/` | Reproduire en `/sd/minigames/<jeu>/sounds/` |
-| Convention WAV | `{1-5}H.wav`, `{1-5}C{mode}.wav` | Définir convention v2.0 similaire |
 
 ---
 
-## 12. Budget
+## 13. Budget
 
-### 12.1 Contrainte budgétaire
+### 13.1 Contrainte budgétaire
 
 Budget total : **~500$ CAD** (couvrant prototype + développement)
 Objectif de coût de production unitaire : **< 100$ CAD** pour rendre la console accessible
 
-### 12.2 Estimation des coûts hardware prototype
+### 13.2 Estimation des coûts hardware prototype
 
 | Composant | Quantité | Coût estimé (CAD) |
 |-----------|----------|-------------------|
@@ -1151,62 +1397,68 @@ Objectif de coût de production unitaire : **< 100$ CAD** pour rendre la console
 | Composants divers (résistances, MOSFET, etc.) | — | ~30$ |
 | PCB fabrication (JLCPCB, 5 exemplaires) | — | ~40$ |
 | Impression 3D filament | — | ~30$ |
+| **Manettes USB de substitution (DualShock/Xbox)** | **2-3** | **~60$** |
 | Casque stéréo (test) | 1 | ~30$ |
 | Câbles, connecteurs, SD card | — | ~20$ |
-| **Total prototype** | | **~280$ CAD** |
-| **Réserve (imprévus 30%)** | | **~85$ CAD** |
-| **Total estimé** | | **~365$ CAD** |
+| **Total prototype** | | **~340$ CAD** |
+| **Réserve (imprévus 30%)** | | **~100$ CAD** |
+| **Total estimé** | | **~440$ CAD** |
 
-### 12.3 Budget logiciel
+### 13.3 Budget logiciel
 
 - ESP-IDF : **Gratuit** (open-source)
 - MicroPython : **Gratuit** (MIT License)
 - KiCAD : **Gratuit**
 - MIT KEMAR HRTF dataset : **Gratuit** (usage libre)
 - Samples audio : **Gratuit** (sources libres de droits — Freesound.org, etc.)
+- miniaudio (dev PC) : **Gratuit** (MIT License)
 
 ---
 
-## 13. Livrables
+## 14. Livrables
 
-### 13.1 Livrables hardware
+### 14.1 Livrables hardware (ELEC)
 
 - [ ] Schéma KiCAD v2.0 complet (ESP32-S3)
 - [ ] PCB KiCAD v2.0 (Gerbers prêts)
-- [ ] Modèles SolidWorks boîtier v2.0 (assemblage + pièces)
+- [ ] Modèles SolidWorks boîtier v2.0
 - [ ] Fichiers STL v2.0 pour impression 3D
 - [ ] BOM v2.0 mise à jour
-- [ ] Instructions d'assemblage (dossier `Assembly Instructions/`)
+- [ ] Instructions d'assemblage
 
-### 13.2 Livrables firmware
+### 14.2 Livrables firmware et engine (ENG)
 
-- [ ] Projet ESP-IDF structuré dans `firmware/`
-- [ ] HAL complet (audio, haptique, input, stockage)
-- [ ] Game engine C/C++ avec API documentée
+- [ ] Contrats d'interface (fichiers `.h` validés)
+- [ ] InputMapper : GamepadMapper + DebugMapper + NathanMapper
+- [ ] HapticEngine : StubHaptic + GamepadHaptic + NathanHaptic
+- [ ] Game engine complet (scènes, collisions, bâton, navigation)
 - [ ] Intégration MicroPython + module `nathan`
+- [ ] USB CDC protocole pour IDE Cantante
 - [ ] Firmware compilé + instructions de flash
 
-### 13.3 Livrables jeu
+### 14.3 Livrables audio (AUD)
 
-- [ ] Premier jeu "La Maison de Nathan" complet
+- [ ] Rapport de recherche HRTF (choix dataset, taille filtre, performances)
+- [ ] PCAudio : implémentation de test sur PC
+- [ ] ESP32Audio : implémentation embarquée finale
+- [ ] Rapport benchmark ESP32-S3 (CPU, latence, nb sources max)
+- [ ] Rapport décision software vs DSP
+
+### 14.4 Livrables jeu (JEU)
+
+- [ ] Premier jeu "La Maison de Nathan" complet (6 zones)
 - [ ] Banque de sons (samples + musiques d'ambiance)
+- [ ] Narration audio (voix Nathan, tutoriel)
 - [ ] 2-3 mini-jeux d'exemple en MicroPython
+- [ ] Document de game design (carte, mécaniques, flow)
 
-### 13.4 Livrables IDE (Cantante intégré)
-
-- [ ] Cantante intégré dans ce repo (`ide/`)
-- [ ] Support syntaxique MicroPython
-- [ ] Connexion USB + upload mini-jeux
-- [ ] Visualisateur de scène 2D
-- [ ] Documentation d'utilisation accessible
-- [ ] Build installable Windows/Mac/Linux
-
-### 13.5 Livrables documentation
+### 14.5 Livrables documentation (TOUTES)
 
 - [ ] Ce cahier des charges (maintenu à jour)
 - [ ] README mis à jour pour v2.0
 - [ ] Documentation API game engine
 - [ ] Documentation API MicroPython (`nathan.*`)
+- [ ] Protocole USB CDC (pour l'intégration Cantante)
 - [ ] Guide de contribution open-source
 
 ---
