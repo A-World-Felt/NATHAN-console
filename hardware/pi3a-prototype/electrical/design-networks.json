@@ -1,0 +1,3695 @@
+{
+  "status": "D1 proposals; see validation/native-current for revision-specific native checks; original D0 boards not synchronized yet",
+  "sources": {
+    "DRV2604L": {
+      "url": "https://www.ti.com/lit/ds/symlink/drv2604l.pdf",
+      "revision": "SLOS866F, March 2018",
+      "pages": "4,23-24"
+    },
+    "MCP3208": {
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/21298e.pdf",
+      "revision": "DS21298E, 2008",
+      "pages": "1,15,17-18"
+    },
+    "MCP23017": {
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf",
+      "revision": "DS20001952D, June 2022",
+      "pages": "1,11"
+    },
+    "TCA9548A": {
+      "url": "https://www.ti.com/lit/ds/symlink/tca9548a.pdf",
+      "revision": "SCPS207H, September 2024",
+      "pages": "3,19-24"
+    },
+    "TPS62080": {
+      "url": "https://www.ti.com/lit/ds/symlink/tps62080.pdf",
+      "revision": "SLVSAE8F, November 2016",
+      "pages": "4,12-14,19"
+    },
+    "Pi_GPIO": {
+      "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio",
+      "revision": "Official GPIO documentation",
+      "pages": "online; physical header map must also be verified against actual board"
+    }
+  },
+  "components": [
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "J100",
+      "value": "J100 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "type": "passive",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "8",
+          "name": "Pin_8",
+          "type": "passive",
+          "net": "INPUT_IRQ_N"
+        },
+        {
+          "number": "9",
+          "name": "Pin_9",
+          "type": "passive",
+          "net": "SPI_SCLK"
+        },
+        {
+          "number": "10",
+          "name": "Pin_10",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "Pin_11",
+          "type": "passive",
+          "net": "SPI_MOSI"
+        },
+        {
+          "number": "12",
+          "name": "Pin_12",
+          "type": "passive",
+          "net": "SPI_MISO"
+        },
+        {
+          "number": "13",
+          "name": "Pin_13",
+          "type": "passive",
+          "net": "ADC_CS_N"
+        },
+        {
+          "number": "14",
+          "name": "Pin_14",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "name": "Pin_15",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "16",
+          "name": "Pin_16",
+          "type": "passive",
+          "net": "CTRL_RESET_N"
+        }
+      ],
+      "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+      "source": "design proposal",
+      "note": "Proposed keyed 16-way signal cable; 5 V supply contact/current and cable assembly qualification pending. Pins 15/16 change D0 reserved assignments.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "R11",
+      "value": "4.7k DNP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "DNP until total Pi/PiSugar pullup network is measured",
+      "dnp": true
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "R12",
+      "value": "4.7k DNP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "DNP until total Pi/PiSugar pullup network is measured",
+      "dnp": true
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "R13",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CTRL_RESET_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "R14",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "INPUT_IRQ_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "R15",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_CS_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "C13",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CTRL_RESET_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "C14",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "U7",
+      "value": "MCP23017-E/SO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "GPB0",
+          "type": "bidirectional",
+          "net": "FACE_R_LEFT"
+        },
+        {
+          "number": "2",
+          "name": "GPB1",
+          "type": "bidirectional",
+          "net": "CENTRAL_1"
+        },
+        {
+          "number": "3",
+          "name": "GPB2",
+          "type": "bidirectional",
+          "net": "CENTRAL_2"
+        },
+        {
+          "number": "4",
+          "name": "GPB3",
+          "type": "bidirectional",
+          "net": "STICK_L_CLICK"
+        },
+        {
+          "number": "5",
+          "name": "GPB4",
+          "type": "bidirectional",
+          "net": "STICK_R_CLICK"
+        },
+        {
+          "number": "6",
+          "name": "GPB5",
+          "type": "bidirectional",
+          "net": "SHOULDER_L1"
+        },
+        {
+          "number": "7",
+          "name": "GPB6",
+          "type": "bidirectional",
+          "net": "SHOULDER_R1"
+        },
+        {
+          "number": "8",
+          "name": "GPB7",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "9",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "10",
+          "name": "VSS",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "12",
+          "name": "SCL",
+          "type": "input",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "13",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "14",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "15",
+          "name": "A0",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "16",
+          "name": "A1",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "17",
+          "name": "A2",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "18",
+          "name": "RESET_N",
+          "type": "input",
+          "net": "CTRL_RESET_N"
+        },
+        {
+          "number": "19",
+          "name": "INTB",
+          "type": "output",
+          "net": null
+        },
+        {
+          "number": "20",
+          "name": "INTA",
+          "type": "output",
+          "net": "INPUT_IRQ_N"
+        },
+        {
+          "number": "21",
+          "name": "GPA0",
+          "type": "bidirectional",
+          "net": "FACE_L_UP"
+        },
+        {
+          "number": "22",
+          "name": "GPA1",
+          "type": "bidirectional",
+          "net": "FACE_L_RIGHT"
+        },
+        {
+          "number": "23",
+          "name": "GPA2",
+          "type": "bidirectional",
+          "net": "FACE_L_DOWN"
+        },
+        {
+          "number": "24",
+          "name": "GPA3",
+          "type": "bidirectional",
+          "net": "FACE_L_LEFT"
+        },
+        {
+          "number": "25",
+          "name": "GPA4",
+          "type": "bidirectional",
+          "net": "FACE_R_UP"
+        },
+        {
+          "number": "26",
+          "name": "GPA5",
+          "type": "bidirectional",
+          "net": "FACE_R_RIGHT"
+        },
+        {
+          "number": "27",
+          "name": "GPA6",
+          "type": "bidirectional",
+          "net": "FACE_R_DOWN"
+        },
+        {
+          "number": "28",
+          "name": "GPA7",
+          "type": "bidirectional",
+          "net": null
+        }
+      ],
+      "footprint": "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm",
+      "source": "MCP23017",
+      "note": "0x20. Configure GPA7/GPB7 outputs low; mirror both interrupt banks into INTA; INTB left open. Verify manufacturer land pattern before routing.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "C15",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R30",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_L_UP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW2",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_L_UP"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R31",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_L_RIGHT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW3",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_L_RIGHT"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R32",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_L_DOWN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW4",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_L_DOWN"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R33",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_L_LEFT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW5",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_L_LEFT"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R34",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_R_UP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW6",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_R_UP"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R35",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_R_RIGHT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW7",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_R_RIGHT"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R36",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_R_DOWN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW8",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_R_DOWN"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R37",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "FACE_R_LEFT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW9",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "FACE_R_LEFT"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R38",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CENTRAL_1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW10",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "CENTRAL_1"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R39",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CENTRAL_2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "SW11",
+      "value": "B3F-4055 candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "contact_1",
+          "type": "passive",
+          "net": "CENTRAL_2"
+        },
+        {
+          "number": "2",
+          "name": "contact_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "source": "design proposal",
+      "note": "Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R40",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "STICK_L_CLICK"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R41",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "STICK_R_CLICK"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R42",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SHOULDER_L1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "R43",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "SHOULDER_R1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "U6",
+      "value": "MCP3208-CI/SL",
+      "pins": [
+        {
+          "number": "1",
+          "name": "CH0",
+          "type": "input",
+          "net": "ADC_LX"
+        },
+        {
+          "number": "2",
+          "name": "CH1",
+          "type": "input",
+          "net": "ADC_LY"
+        },
+        {
+          "number": "3",
+          "name": "CH2",
+          "type": "input",
+          "net": "ADC_RX"
+        },
+        {
+          "number": "4",
+          "name": "CH3",
+          "type": "input",
+          "net": "ADC_RY"
+        },
+        {
+          "number": "5",
+          "name": "CH4",
+          "type": "input",
+          "net": "ADC_L2"
+        },
+        {
+          "number": "6",
+          "name": "CH5",
+          "type": "input",
+          "net": "ADC_R2"
+        },
+        {
+          "number": "7",
+          "name": "CH6",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "8",
+          "name": "CH7",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "DGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "10",
+          "name": "CS_N",
+          "type": "input",
+          "net": "ADC_CS_N"
+        },
+        {
+          "number": "11",
+          "name": "DIN",
+          "type": "input",
+          "net": "SPI_MOSI"
+        },
+        {
+          "number": "12",
+          "name": "DOUT",
+          "type": "output",
+          "net": "SPI_MISO"
+        },
+        {
+          "number": "13",
+          "name": "CLK",
+          "type": "input",
+          "net": "SPI_SCLK"
+        },
+        {
+          "number": "14",
+          "name": "AGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "name": "VREF",
+          "type": "input",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "16",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "source": "MCP3208",
+      "note": "Proposed 12-bit replacement for MCP3008. SPI command framing changes; not software drop-in. Six ratiometric channels.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C16",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C17",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R50",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_LX"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_LX"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C20",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_LX"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R51",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_LY"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_LY"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C21",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_LY"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R52",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_RX"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_RX"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C22",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_RX"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R53",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_RY"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_RY"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C23",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_RY"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R54",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_L2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_L2"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C24",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_L2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "R55",
+      "value": "100R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "RAW_R2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "ADC_R2"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "C25",
+      "value": "1nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "ADC_R2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "J20",
+      "value": "J20 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "RAW_LX"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "RAW_LY"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "STICK_L_CLICK"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Joystick left interface, not COM-09032 physical pin numbering",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "J21",
+      "value": "J21 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "RAW_RX"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "RAW_RY"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "STICK_R_CLICK"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Joystick right interface, not COM-09032 physical pin numbering",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "J22",
+      "value": "J22 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "RAW_L2"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Analog trigger left; sensor and pivot not selected",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "analog",
+      "reference": "J23",
+      "value": "J23 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "RAW_R2"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Analog trigger right; sensor and pivot not selected",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "J24",
+      "value": "J24 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "SHOULDER_L1"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Additional left shoulder switch beyond workbook quantities",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "digital",
+      "reference": "J25",
+      "value": "J25 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "SHOULDER_R1"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Additional right shoulder switch beyond workbook quantities",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-mux",
+      "reference": "U8",
+      "value": "TCA9548APWR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A0",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "A1",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "RESET_N",
+          "type": "input",
+          "net": "CTRL_RESET_N"
+        },
+        {
+          "number": "4",
+          "name": "SD0",
+          "type": "bidirectional",
+          "net": "H1_SDA"
+        },
+        {
+          "number": "5",
+          "name": "SC0",
+          "type": "bidirectional",
+          "net": "H1_SCL"
+        },
+        {
+          "number": "6",
+          "name": "SD1",
+          "type": "bidirectional",
+          "net": "H2_SDA"
+        },
+        {
+          "number": "7",
+          "name": "SC1",
+          "type": "bidirectional",
+          "net": "H2_SCL"
+        },
+        {
+          "number": "8",
+          "name": "SD2",
+          "type": "bidirectional",
+          "net": "H3_SDA"
+        },
+        {
+          "number": "9",
+          "name": "SC2",
+          "type": "bidirectional",
+          "net": "H3_SCL"
+        },
+        {
+          "number": "10",
+          "name": "SD3",
+          "type": "bidirectional",
+          "net": "H4_SDA"
+        },
+        {
+          "number": "11",
+          "name": "SC3",
+          "type": "bidirectional",
+          "net": "H4_SCL"
+        },
+        {
+          "number": "12",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "13",
+          "name": "SD4",
+          "type": "bidirectional",
+          "net": "H5_SDA"
+        },
+        {
+          "number": "14",
+          "name": "SC4",
+          "type": "bidirectional",
+          "net": "H5_SCL"
+        },
+        {
+          "number": "15",
+          "name": "SD5",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "16",
+          "name": "SC5",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "17",
+          "name": "SD6",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "18",
+          "name": "SC6",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "19",
+          "name": "SD7",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "20",
+          "name": "SC7",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "21",
+          "name": "A2",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "22",
+          "name": "SCL",
+          "type": "input",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "23",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "24",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+      "source": "TCA9548A",
+      "note": "Address 0x70; channels 0-4 used, 5-7 unconnected. Select one channel for each transaction with 0x5A devices.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-mux",
+      "reference": "C18",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "U1",
+      "value": "DRV2604LDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "REG",
+          "type": "power_out",
+          "net": "H1_REG"
+        },
+        {
+          "number": "2",
+          "name": "SCL",
+          "type": "input",
+          "net": "H1_SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "H1_SDA"
+        },
+        {
+          "number": "4",
+          "name": "IN_TRIG",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "VDD_NC",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "7",
+          "name": "OUT_PLUS",
+          "type": "output",
+          "net": "H1_PLUS"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "OUT_MINUS",
+          "type": "output",
+          "net": "H1_MINUS"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "DRV2604L",
+      "note": "EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "C1",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H1_REG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "C2",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "R1",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H1_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "R2",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H1_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-1",
+      "reference": "J2",
+      "value": "J2 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "H1_PLUS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "H1_MINUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "U2",
+      "value": "DRV2604LDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "REG",
+          "type": "power_out",
+          "net": "H2_REG"
+        },
+        {
+          "number": "2",
+          "name": "SCL",
+          "type": "input",
+          "net": "H2_SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "H2_SDA"
+        },
+        {
+          "number": "4",
+          "name": "IN_TRIG",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "VDD_NC",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "7",
+          "name": "OUT_PLUS",
+          "type": "output",
+          "net": "H2_PLUS"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "OUT_MINUS",
+          "type": "output",
+          "net": "H2_MINUS"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "DRV2604L",
+      "note": "EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "C3",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H2_REG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "C4",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "R3",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H2_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "R4",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H2_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-2",
+      "reference": "J3",
+      "value": "J3 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "H2_PLUS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "H2_MINUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "U3",
+      "value": "DRV2604LDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "REG",
+          "type": "power_out",
+          "net": "H3_REG"
+        },
+        {
+          "number": "2",
+          "name": "SCL",
+          "type": "input",
+          "net": "H3_SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "H3_SDA"
+        },
+        {
+          "number": "4",
+          "name": "IN_TRIG",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "VDD_NC",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "7",
+          "name": "OUT_PLUS",
+          "type": "output",
+          "net": "H3_PLUS"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "OUT_MINUS",
+          "type": "output",
+          "net": "H3_MINUS"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "DRV2604L",
+      "note": "EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "C5",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H3_REG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "C6",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "R5",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H3_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "R6",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H3_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-3",
+      "reference": "J4",
+      "value": "J4 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "H3_PLUS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "H3_MINUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "U4",
+      "value": "DRV2604LDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "REG",
+          "type": "power_out",
+          "net": "H4_REG"
+        },
+        {
+          "number": "2",
+          "name": "SCL",
+          "type": "input",
+          "net": "H4_SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "H4_SDA"
+        },
+        {
+          "number": "4",
+          "name": "IN_TRIG",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "VDD_NC",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "7",
+          "name": "OUT_PLUS",
+          "type": "output",
+          "net": "H4_PLUS"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "OUT_MINUS",
+          "type": "output",
+          "net": "H4_MINUS"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "DRV2604L",
+      "note": "EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "C7",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H4_REG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "C8",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "R7",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H4_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "R8",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H4_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-4",
+      "reference": "J5",
+      "value": "J5 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "H4_PLUS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "H4_MINUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "U5",
+      "value": "DRV2604LDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "REG",
+          "type": "power_out",
+          "net": "H5_REG"
+        },
+        {
+          "number": "2",
+          "name": "SCL",
+          "type": "input",
+          "net": "H5_SCL"
+        },
+        {
+          "number": "3",
+          "name": "SDA",
+          "type": "bidirectional",
+          "net": "H5_SDA"
+        },
+        {
+          "number": "4",
+          "name": "IN_TRIG",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "EN",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "VDD_NC",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "7",
+          "name": "OUT_PLUS",
+          "type": "output",
+          "net": "H5_PLUS"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "OUT_MINUS",
+          "type": "output",
+          "net": "H5_MINUS"
+        },
+        {
+          "number": "10",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "DRV2604L",
+      "note": "EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "C9",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H5_REG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "C10",
+      "value": "1uF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "R9",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H5_SDA"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "R10",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "H5_SCL"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "haptic-5",
+      "reference": "J6",
+      "value": "J6 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "H5_PLUS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "H5_MINUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "PS2",
+      "value": "TPS62080DSGR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "EN",
+          "type": "input",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "MODE",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "FB",
+          "type": "input",
+          "net": "HAPTIC_FB"
+        },
+        {
+          "number": "5",
+          "name": "VOS",
+          "type": "input",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "6",
+          "name": "PG",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "7",
+          "name": "SW",
+          "type": "power_out",
+          "net": "HAPTIC_SW"
+        },
+        {
+          "number": "8",
+          "name": "VIN",
+          "type": "power_in",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "9",
+          "name": "EP",
+          "type": "power_in",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "source": "TPS62080",
+      "note": "3.308 V nominal divider, MODE low disables snooze. PG unused. EP grounded; land pattern/thermal layout pending.",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "L1",
+      "value": "1uH XFL3012-102ME candidate",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HAPTIC_SW"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Inductor exact order suffix and footprint must be qualified; no substitute footprint accepted",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "C30",
+      "value": "10uF 10V X5R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "design proposal",
+      "note": "Effective capacitance under bias to confirm",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "C31",
+      "value": "22uF 6.3V X5R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "design proposal",
+      "note": "Candidate Murata GRM21BR60J226ME39L per TI example; derating to verify",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "R60",
+      "value": "249k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_HAPTIC"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HAPTIC_FB"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "R61",
+      "value": "39.2k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HAPTIC_FB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "#FLG1",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "5V_SYS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "ERC source declaration only; physical supply qualification remains open",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "#FLG2",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "ERC source declaration only; physical supply qualification remains open",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "controls",
+      "sheet": "interface",
+      "reference": "#FLG3",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "ERC source declaration only; physical supply qualification remains open",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "controls",
+      "sheet": "power",
+      "reference": "#FLG4",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "3V3_HAPTIC"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "ERC source declaration only; physical supply qualification remains open",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "J100",
+      "value": "J100 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "type": "passive",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "8",
+          "name": "Pin_8",
+          "type": "passive",
+          "net": "INPUT_IRQ_N"
+        },
+        {
+          "number": "9",
+          "name": "Pin_9",
+          "type": "passive",
+          "net": "SPI_SCLK"
+        },
+        {
+          "number": "10",
+          "name": "Pin_10",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "Pin_11",
+          "type": "passive",
+          "net": "SPI_MOSI"
+        },
+        {
+          "number": "12",
+          "name": "Pin_12",
+          "type": "passive",
+          "net": "SPI_MISO"
+        },
+        {
+          "number": "13",
+          "name": "Pin_13",
+          "type": "passive",
+          "net": "ADC_CS_N"
+        },
+        {
+          "number": "14",
+          "name": "Pin_14",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "name": "Pin_15",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "16",
+          "name": "Pin_16",
+          "type": "passive",
+          "net": "CTRL_RESET_N"
+        }
+      ],
+      "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+      "source": "design proposal",
+      "note": "Same 1:1 pin contract as controls; cable keyed polarity/current pending",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "J1",
+      "value": "J1 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "8",
+          "name": "Pin_8",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "9",
+          "name": "Pin_9",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "10",
+          "name": "Pin_10",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "11",
+          "name": "Pin_11",
+          "type": "passive",
+          "net": "AUDIO_ENABLE"
+        },
+        {
+          "number": "12",
+          "name": "Pin_12",
+          "type": "passive",
+          "net": "I2S_BCLK"
+        },
+        {
+          "number": "13",
+          "name": "Pin_13",
+          "type": "passive",
+          "net": "CTRL_RESET_N"
+        },
+        {
+          "number": "14",
+          "name": "Pin_14",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "15",
+          "name": "Pin_15",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "16",
+          "name": "Pin_16",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "17",
+          "name": "Pin_17",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "18",
+          "name": "Pin_18",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "19",
+          "name": "Pin_19",
+          "type": "passive",
+          "net": "SPI_MOSI"
+        },
+        {
+          "number": "20",
+          "name": "Pin_20",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "21",
+          "name": "Pin_21",
+          "type": "passive",
+          "net": "SPI_MISO"
+        },
+        {
+          "number": "22",
+          "name": "Pin_22",
+          "type": "passive",
+          "net": "INPUT_IRQ_N"
+        },
+        {
+          "number": "23",
+          "name": "Pin_23",
+          "type": "passive",
+          "net": "SPI_SCLK"
+        },
+        {
+          "number": "24",
+          "name": "Pin_24",
+          "type": "passive",
+          "net": "ADC_CS_N"
+        },
+        {
+          "number": "25",
+          "name": "Pin_25",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "26",
+          "name": "Pin_26",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "27",
+          "name": "Pin_27",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "28",
+          "name": "Pin_28",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "29",
+          "name": "Pin_29",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "30",
+          "name": "Pin_30",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "31",
+          "name": "Pin_31",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "32",
+          "name": "Pin_32",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "33",
+          "name": "Pin_33",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "34",
+          "name": "Pin_34",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "35",
+          "name": "Pin_35",
+          "type": "passive",
+          "net": "I2S_LRCLK"
+        },
+        {
+          "number": "36",
+          "name": "Pin_36",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "37",
+          "name": "Pin_37",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "38",
+          "name": "Pin_38",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "39",
+          "name": "Pin_39",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "40",
+          "name": "Pin_40",
+          "type": "passive",
+          "net": "I2S_DOUT"
+        }
+      ],
+      "footprint": "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical",
+      "source": "Pi_GPIO",
+      "note": "Proposed cable to actual Pi GPIO, not an assumed socket below Pi. Pin assignments need actual orientation/connector verification; no power import qualification.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "J101",
+      "value": "J101 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "PiSugar 5 V output interface only. Actual contact geometry and primary supply route unresolved; not a validated power connector.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "J102",
+      "value": "J102 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "PiSugar management interface only; exact hardware contacts not specified",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-boundary",
+      "reference": "J110",
+      "value": "J110 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "Pin_4",
+          "type": "passive",
+          "net": "I2S_BCLK"
+        },
+        {
+          "number": "5",
+          "name": "Pin_5",
+          "type": "passive",
+          "net": "I2S_LRCLK"
+        },
+        {
+          "number": "6",
+          "name": "Pin_6",
+          "type": "passive",
+          "net": "I2S_DOUT"
+        },
+        {
+          "number": "7",
+          "name": "Pin_7",
+          "type": "passive",
+          "net": "AUDIO_ENABLE"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Explicit unresolved boundary: I2S DAC plus headphone amplifier not yet schematized. No headphone driver inferred from PCM5102A.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-boundary",
+      "reference": "J120",
+      "value": "J120 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VBUS",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "D_MINUS",
+          "type": "passive",
+          "net": "USB_PC_DM"
+        },
+        {
+          "number": "3",
+          "name": "D_PLUS",
+          "type": "passive",
+          "net": "USB_PC_DP"
+        },
+        {
+          "number": "4",
+          "name": "ID",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "5",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Micro-B external connector pin contract; exact MPN, shield, ESD and supply limiting pending",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-boundary",
+      "reference": "J121",
+      "value": "J121 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "USB_CHARGE_LIMITED"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "PiSugar charging INPUT: must be isolated from 5V_SYS; missing qualified current limiter/reverse block",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-boundary",
+      "reference": "J122",
+      "value": "J122 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "Pin_1",
+          "type": "passive",
+          "net": "USB_PI_DM"
+        },
+        {
+          "number": "2",
+          "name": "Pin_2",
+          "type": "passive",
+          "net": "USB_PI_DP"
+        },
+        {
+          "number": "3",
+          "name": "Pin_3",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "Pi USB data interface: actual USB-A mating path, VBUS sensing and peripheral attach control pending",
+      "dnp": false
+    }
+  ]
+}

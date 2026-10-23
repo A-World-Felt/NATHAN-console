@@ -1,0 +1,106 @@
+** Drc report for C:\Projects\_codex\vocaux-22\nathan-conception\pcb\controls\nathan-controls.kicad_pcb **
+** Created on 2026-10-22 20:01:17 **
+
+** Found 21 DRC violations **
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(123.0000 mm, 117.0000 mm): Footprint C6
+    @(113.7500 mm, 121.5000 mm): Footprint SW9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(95.4000 mm, 113.0000 mm): Footprint C4
+    @(97.7500 mm, 105.5000 mm): Footprint SW3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(95.4000 mm, 113.0000 mm): Footprint C4
+    @(81.7500 mm, 105.5000 mm): Footprint SW2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(117.0000 mm, 117.0000 mm): Footprint C5
+    @(113.7500 mm, 121.5000 mm): Footprint SW9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(144.6000 mm, 113.0000 mm): Footprint C7
+    @(129.7500 mm, 105.5000 mm): Footprint SW5
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(144.6000 mm, 113.0000 mm): Footprint C7
+    @(145.7500 mm, 105.5000 mm): Footprint SW6
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(150.6000 mm, 113.0000 mm): Footprint C8
+    @(145.7500 mm, 105.5000 mm): Footprint SW6
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(89.4000 mm, 113.0000 mm): Footprint C3
+    @(81.7500 mm, 105.5000 mm): Footprint SW2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(147.6000 mm, 117.0000 mm): Footprint U4
+    @(145.7500 mm, 121.5000 mm): Footprint SW11
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(120.0000 mm, 121.0000 mm): Footprint U3
+    @(113.7500 mm, 121.5000 mm): Footprint SW9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(81.7500 mm, 121.5000 mm): Footprint SW7
+    @(92.4000 mm, 117.0000 mm): Footprint U2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(95.4000 mm, 111.5700 mm): Reference 'C4'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(144.6000 mm, 111.5700 mm): Reference 'C7'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(151.5800 mm, 116.0900 mm): Reference 'SW11'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(145.8900 mm, 117.8900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(145.8900 mm, 117.8900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(81.8900 mm, 117.8900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.1100 mm, 117.8900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(120.0000 mm, 124.0000 mm): Circle on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(147.6000 mm, 114.5500 mm): Reference 'U4'
+    @(158.1100 mm, 114.1100 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(94.1100 mm, 114.1100 mm): Segment on F.Silkscreen
+    @(92.4000 mm, 114.5500 mm): Reference 'U2'
+
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.0000 mm, 73.4600 mm): PTH pad 2 [5V_SYS] of J_LINK
+    @(111.0000 mm, 76.0000 mm): PTH pad 1 [5V_SYS] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.5400 mm, 73.4600 mm): PTH pad 4 [GND] of J_LINK
+    @(113.5400 mm, 76.0000 mm): PTH pad 3 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(118.6200 mm, 76.0000 mm): PTH pad 7 [GND] of J_LINK
+    @(121.1600 mm, 73.4600 mm): PTH pad 10 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.5400 mm, 76.0000 mm): PTH pad 3 [GND] of J_LINK
+    @(118.6200 mm, 76.0000 mm): PTH pad 7 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.2400 mm, 73.4600 mm): PTH pad 14 [GND] of J_LINK
+    @(121.1600 mm, 73.4600 mm): PTH pad 10 [GND] of J_LINK
+
+** Found 0 Footprint errors **
+
+** End of Report **

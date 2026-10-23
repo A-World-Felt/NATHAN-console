@@ -1,0 +1,26 @@
+{
+  "operation": "netlist",
+  "board": "controls",
+  "own_pid": 67236,
+  "returncode": 0,
+  "timeout_terminated_own_process": false,
+  "elapsed_seconds": 0.62,
+  "stdout": "",
+  "stderr": "8:46:46 PM: Error: Can't create registry key 'HKCU\\Software\\KiCad\\kicad-cli' (error 5: Access is denied.)\n8:46:46 PM: Error: Can't open registry key 'HKCU\\Software\\KiCad\\kicad-cli' (error 2: The system cannot find the file specified.)\n",
+  "command": [
+    "C:\\Program Files\\KiCad\\8.0\\bin\\kicad-cli.exe",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "--output",
+    "C:\\Projects\\_codex\\vocaux-22\\nathan-pr\\hardware\\pi3a-prototype\\validation\\native-current\\controls-native.net",
+    "C:\\Projects\\_codex\\vocaux-22\\nathan-pr\\hardware\\pi3a-prototype\\electrical\\controls\\nathan-controls.kicad_sch"
+  ],
+  "note": "Exit success or report generation alone is not ERC/DRC pass.",
+  "configuration_directory": "validation\\native-current\\config\\fresh-netlist-first",
+  "previous_report_archive": "validation\\native-current\\history\\controls-native.net.1792716406514362300",
+  "report_generated": true,
+  "report_sha256": "ecf310c02c28bf381e311b3b061a3b3cc465e257220bb0a17dbee6017289414f"
+}

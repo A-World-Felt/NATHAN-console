@@ -1,0 +1,12 @@
+{
+  "controls": {
+    "before_sha256": "27529885a7124f0e75d6d378dda7d980182e814a385b14fb4ee40634f5482fce",
+    "after_sha256": "f3bf81784bc30225b3505b31e270fb94277421f6cc92bee4bf7d53d08ba4cbec",
+    "removed_empty_footprints": 13
+  },
+  "base": {
+    "before_sha256": "97e2c2a7e6990530063fc7a3b86479cf1b7321ad96a8554587b528300ee2d19c",
+    "after_sha256": "2ba025e5392b5ced05a52db11953850c326a55d93ab28154b01a15288c518af0",
+    "removed_empty_footprints": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "operation": "drc",
+  "board": "controls",
+  "own_pid": 21968,
+  "returncode": 0,
+  "timeout_terminated_own_process": false,
+  "elapsed_seconds": 0.6,
+  "stdout": "PID=21968 IMPORT_OK\nLOAD_OK\nREPORT_GENERATED=True\n",
+  "stderr": "",
+  "command": [
+    "C:\\Program Files\\KiCad\\8.0\\bin\\python.exe",
+    "-u",
+    "-c",
+    "import os,pcbnew; print(\"PID=\"+str(os.getpid())+\" IMPORT_OK\",flush=True); b=pcbnew.LoadBoard('C:\\\\Projects\\\\_codex\\\\vocaux-22\\\\nathan-conception\\\\pcb\\\\controls\\\\nathan-controls.kicad_pcb'); print(\"LOAD_OK\",flush=True); r=pcbnew.WriteDRCReport(b,'C:\\\\Projects\\\\_codex\\\\vocaux-22\\\\nathan-conception\\\\validation\\\\native-current\\\\controls-drc.txt',pcbnew.EDA_UNITS_MILLIMETRES,True); print(\"REPORT_GENERATED=\"+str(r),flush=True)"
+  ],
+  "note": "Exit success or report generation alone is not ERC/DRC pass."
+}

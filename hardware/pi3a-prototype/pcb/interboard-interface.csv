@@ -1,0 +1,17 @@
+pin,net,direction_from_base,status
+1,5V_SYS,power_out,proposed_contact_rating_unverified
+2,5V_SYS,power_out,proposed_parallel_contact_unverified
+3,GND,return,proposed
+4,GND,return,proposed
+5,I2C_SDA,bidirectional,3V3_logic_only
+6,I2C_SCL,out,3V3_logic_only
+7,GND,return,proposed
+8,INPUT_IRQ_N,in,optional_expander_interrupt
+9,SPI_SCLK,out,proposed
+10,GND,return,proposed
+11,SPI_MOSI,out,proposed
+12,SPI_MISO,in,proposed
+13,ADC_CS_N,out,proposed
+14,GND,return,proposed
+15,RESERVED_15,unassigned,no_power_or_function_yet
+16,RESERVED_16,unassigned,no_power_or_function_yet

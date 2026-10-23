@@ -23,6 +23,7 @@
 | [0005](./0005-micropython-mini-jeux-usb-cdc.md) | **MicroPython** pour les mini-jeux + USB CDC | ✅ Accepté | fondatrice | Game Engine / IDE |
 | [0006](./0006-ide-accessible-assistance-vocale.md) | IDE accessible à **assistance vocale (TTS/STT + IA)** | ✅ Accepté *(orientation)* | 2026-06-07 | IDE |
 | [0007](./0007-adoption-adr-structure-docs.md) | Adopter les **ADR** et la structure `docs/` | ✅ Accepté | 2026-06-07 | Gouvernance |
+| [0008](./0008-prototype-pi3a-deux-pcb-pisugar.md) | Prototype Pi 3 A+, deux PCB et alimentation PiSugar | Proposé | 2026-10-22 | PCB / mécanique / alimentation |
 
 ## Décisions à venir (futurs ADR)
 

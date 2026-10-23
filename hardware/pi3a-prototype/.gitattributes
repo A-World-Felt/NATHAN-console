@@ -1,0 +1,4 @@
+# Preserve exact CAD/report bytes and SHA-256 evidence across Windows checkouts.
+* -text whitespace=cr-at-eol
+# KiCad 8 emits indented blank lines in generated boards.
+*.kicad_pcb whitespace=cr-at-eol,-blank-at-eol

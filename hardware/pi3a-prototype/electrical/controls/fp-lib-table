@@ -1,0 +1,8 @@
+(fp_lib_table (version 7)
+(lib (name "Button_Switch_THT")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Button_Switch_THT.pretty")(options "")(descr "Installed KiCad candidate library"))
+(lib (name "Capacitor_SMD")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Capacitor_SMD.pretty")(options "")(descr "Installed KiCad candidate library"))
+(lib (name "Connector_IDC")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Connector_IDC.pretty")(options "")(descr "Installed KiCad candidate library"))
+(lib (name "Package_SO")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Package_SO.pretty")(options "")(descr "Installed KiCad candidate library"))
+(lib (name "Package_SON")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Package_SON.pretty")(options "")(descr "Installed KiCad candidate library"))
+(lib (name "Resistor_SMD")(type "KiCad")(uri "C:/Program Files/KiCad/8.0/share/kicad/footprints/Resistor_SMD.pretty")(options "")(descr "Installed KiCad candidate library"))
+)

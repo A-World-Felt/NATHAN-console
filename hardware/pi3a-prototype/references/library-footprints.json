@@ -1,0 +1,14 @@
+{
+  "library": "KiCad 8.0.2 installed standard footprints",
+  "source_root": "C:\\Program Files\\KiCad\\8.0\\share\\kicad\\footprints",
+  "sha256": {
+    "MountingHole:MountingHole_2.7mm_M2.5": "7b0d28503ce7f5da286be4467ffb9de9fa36e7a1b6fdc1264d8e73edc31ef944",
+    "Button_Switch_THT:SW_PUSH-12mm": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb",
+    "Package_SO:VSSOP-10_3x3mm_P0.5mm": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3",
+    "Capacitor_SMD:C_0603_1608Metric": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879",
+    "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm": "80af5b3c1dec4020acd37f2ee06f85b044f782e21fdf3cc5950f1c68a43757c6",
+    "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical": "da549227f7e588abd30bb3d48a5eef3afd6bdf8657e2ad028ec8bf89e2e878cf",
+    "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical": "43d3904aaac0ab52ec86f38b792f8d49f9aa349ebfe23b3947a5836173b60aff"
+  },
+  "note": "Library presence is not manufacturer footprint qualification. No original project custom library reused."
+}

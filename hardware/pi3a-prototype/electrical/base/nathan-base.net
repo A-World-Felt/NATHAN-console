@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<export version="E">
+  <design>
+    <source>nathan-base.kicad_sch</source>
+    <tool>Codex standard-library generator: NOT native KiCad export</tool>
+  </design>
+  <components>
+    <comp ref="J100">
+      <value>J100 interface</value>
+      <footprint>Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical</footprint>
+    </comp>
+    <comp ref="J1">
+      <value>J1 interface</value>
+      <footprint>Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical</footprint>
+    </comp>
+    <comp ref="J101">
+      <value>J101 interface</value>
+      <footprint />
+    </comp>
+    <comp ref="J102">
+      <value>J102 interface</value>
+      <footprint />
+    </comp>
+    <comp ref="J110">
+      <value>J110 interface</value>
+      <footprint />
+    </comp>
+    <comp ref="J120">
+      <value>J120 interface</value>
+      <footprint />
+    </comp>
+    <comp ref="J121">
+      <value>J121 interface</value>
+      <footprint />
+    </comp>
+    <comp ref="J122">
+      <value>J122 interface</value>
+      <footprint />
+    </comp>
+  </components>
+  <nets>
+    <net code="1" name="3V3_PI">
+      <node ref="J100" pin="15" pinfunction="Pin_15" pintype="passive" />
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="J110" pin="2" pinfunction="Pin_2" pintype="passive" />
+    </net>
+    <net code="2" name="5V_SYS">
+      <node ref="J100" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="J100" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive" />
+      <node ref="J101" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="J110" pin="1" pinfunction="Pin_1" pintype="passive" />
+    </net>
+    <net code="3" name="ADC_CS_N">
+      <node ref="J100" pin="13" pinfunction="Pin_13" pintype="passive" />
+      <node ref="J1" pin="24" pinfunction="Pin_24" pintype="passive" />
+    </net>
+    <net code="4" name="AUDIO_ENABLE">
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive" />
+      <node ref="J110" pin="7" pinfunction="Pin_7" pintype="passive" />
+    </net>
+    <net code="5" name="CTRL_RESET_N">
+      <node ref="J100" pin="16" pinfunction="Pin_16" pintype="passive" />
+      <node ref="J1" pin="13" pinfunction="Pin_13" pintype="passive" />
+    </net>
+    <net code="6" name="GND">
+      <node ref="J100" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J100" pin="4" pinfunction="Pin_4" pintype="passive" />
+      <node ref="J100" pin="7" pinfunction="Pin_7" pintype="passive" />
+      <node ref="J100" pin="10" pinfunction="Pin_10" pintype="passive" />
+      <node ref="J100" pin="14" pinfunction="Pin_14" pintype="passive" />
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive" />
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive" />
+      <node ref="J1" pin="14" pinfunction="Pin_14" pintype="passive" />
+      <node ref="J1" pin="20" pinfunction="Pin_20" pintype="passive" />
+      <node ref="J1" pin="25" pinfunction="Pin_25" pintype="passive" />
+      <node ref="J1" pin="30" pinfunction="Pin_30" pintype="passive" />
+      <node ref="J1" pin="34" pinfunction="Pin_34" pintype="passive" />
+      <node ref="J1" pin="39" pinfunction="Pin_39" pintype="passive" />
+      <node ref="J101" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J102" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J110" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J120" pin="5" pinfunction="GND" pintype="passive" />
+      <node ref="J121" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J122" pin="3" pinfunction="Pin_3" pintype="passive" />
+    </net>
+    <net code="7" name="I2C_SCL">
+      <node ref="J100" pin="6" pinfunction="Pin_6" pintype="passive" />
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive" />
+      <node ref="J102" pin="2" pinfunction="Pin_2" pintype="passive" />
+    </net>
+    <net code="8" name="I2C_SDA">
+      <node ref="J100" pin="5" pinfunction="Pin_5" pintype="passive" />
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J102" pin="1" pinfunction="Pin_1" pintype="passive" />
+    </net>
+    <net code="9" name="I2S_BCLK">
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive" />
+      <node ref="J110" pin="4" pinfunction="Pin_4" pintype="passive" />
+    </net>
+    <net code="10" name="I2S_DOUT">
+      <node ref="J1" pin="40" pinfunction="Pin_40" pintype="passive" />
+      <node ref="J110" pin="6" pinfunction="Pin_6" pintype="passive" />
+    </net>
+    <net code="11" name="I2S_LRCLK">
+      <node ref="J1" pin="35" pinfunction="Pin_35" pintype="passive" />
+      <node ref="J110" pin="5" pinfunction="Pin_5" pintype="passive" />
+    </net>
+    <net code="12" name="INPUT_IRQ_N">
+      <node ref="J100" pin="8" pinfunction="Pin_8" pintype="passive" />
+      <node ref="J1" pin="22" pinfunction="Pin_22" pintype="passive" />
+    </net>
+    <net code="13" name="SPI_MISO">
+      <node ref="J100" pin="12" pinfunction="Pin_12" pintype="passive" />
+      <node ref="J1" pin="21" pinfunction="Pin_21" pintype="passive" />
+    </net>
+    <net code="14" name="SPI_MOSI">
+      <node ref="J100" pin="11" pinfunction="Pin_11" pintype="passive" />
+      <node ref="J1" pin="19" pinfunction="Pin_19" pintype="passive" />
+    </net>
+    <net code="15" name="SPI_SCLK">
+      <node ref="J100" pin="9" pinfunction="Pin_9" pintype="passive" />
+      <node ref="J1" pin="23" pinfunction="Pin_23" pintype="passive" />
+    </net>
+    <net code="16" name="USB_CHARGE_LIMITED">
+      <node ref="J121" pin="1" pinfunction="Pin_1" pintype="passive" />
+    </net>
+    <net code="17" name="USB_PC_DM">
+      <node ref="J120" pin="2" pinfunction="D_MINUS" pintype="passive" />
+    </net>
+    <net code="18" name="USB_PC_DP">
+      <node ref="J120" pin="3" pinfunction="D_PLUS" pintype="passive" />
+    </net>
+    <net code="19" name="USB_PC_VBUS">
+      <node ref="J120" pin="1" pinfunction="VBUS" pintype="passive" />
+    </net>
+    <net code="20" name="USB_PI_DM">
+      <node ref="J122" pin="1" pinfunction="Pin_1" pintype="passive" />
+    </net>
+    <net code="21" name="USB_PI_DP">
+      <node ref="J122" pin="2" pinfunction="Pin_2" pintype="passive" />
+    </net>
+  </nets>
+</export>

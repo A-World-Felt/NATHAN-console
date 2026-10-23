@@ -1,0 +1,56 @@
+{
+  "status": "D0 placement checks only; NOT an electrical or manufacturing qualification",
+  "boards": {
+    "controls": {
+      "native_load": true,
+      "footprints_and_reservations": 44,
+      "duplicate_refs": [],
+      "pads_centres_outside_outline": [],
+      "min_pad_centre_to_edge_mm": 3.46,
+      "tracks": 0,
+      "zones": 0,
+      "drc_report_generated": true,
+      "drc_note": "Read report; generation success is not DRC pass. Unassigned circuitry is not tested by DRC."
+    },
+    "base": {
+      "native_load": true,
+      "footprints_and_reservations": 10,
+      "duplicate_refs": [],
+      "pads_centres_outside_outline": [],
+      "min_pad_centre_to_edge_mm": 4.0,
+      "tracks": 0,
+      "zones": 0,
+      "drc_report_generated": true,
+      "drc_note": "Read report; generation success is not DRC pass. Unassigned circuitry is not tested by DRC."
+    }
+  },
+  "mechanical": {
+    "nominal_profile_width_mm": 160.0,
+    "nominal_profile_length_mm": 106.418,
+    "allocated_height_mm": 66.0,
+    "width_le_160": true,
+    "pcb_vertices_outside_full_size_profile": {
+      "controls": [],
+      "base": []
+    },
+    "joystick_reserved_top_z_mm": 59.6,
+    "note": "Plan-only check at full-size profile. Does not validate wall clearance, Z taper, connector movement, fasteners, battery or motor mounting."
+  },
+  "not_executed": [
+    "OpenSCAD compile/render (not installed in searched locations; rendering forbidden)",
+    "ERC (no electrical schematic yet)",
+    "3D interference analysis",
+    "fabrication exports",
+    "hardware measurements",
+    "ergonomics tests"
+  ],
+  "known_open_items": [
+    "Component and reserved-area overlaps must be resolved after the schematic/footprint choices",
+    "LRA attachment height and clearance to through-hole tails unqualified",
+    "Pi/PiSugar fixing and pogo/header alignment unqualified",
+    "USB VBUS source current and reverse flow unresolved",
+    "Case openings/bosses deliberately disabled"
+  ],
+  "native_validation_status": "INCONCLUSIVE: wxWidgets integer overflow assertion; reports preceded text correction and must not be treated as current DRC validation",
+  "superseded_by": "text-correction-record.json; native validation not rerun"
+}

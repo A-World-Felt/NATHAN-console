@@ -1,0 +1,400 @@
+board,sheet,reference,value,pin,name,type,net,dnp
+controls,interface,J100,J100 interface,1,Pin_1,passive,5V_SYS,False
+controls,interface,J100,J100 interface,2,Pin_2,passive,5V_SYS,False
+controls,interface,J100,J100 interface,3,Pin_3,passive,GND,False
+controls,interface,J100,J100 interface,4,Pin_4,passive,GND,False
+controls,interface,J100,J100 interface,5,Pin_5,passive,I2C_SDA,False
+controls,interface,J100,J100 interface,6,Pin_6,passive,I2C_SCL,False
+controls,interface,J100,J100 interface,7,Pin_7,passive,GND,False
+controls,interface,J100,J100 interface,8,Pin_8,passive,INPUT_IRQ_N,False
+controls,interface,J100,J100 interface,9,Pin_9,passive,SPI_SCLK,False
+controls,interface,J100,J100 interface,10,Pin_10,passive,GND,False
+controls,interface,J100,J100 interface,11,Pin_11,passive,SPI_MOSI,False
+controls,interface,J100,J100 interface,12,Pin_12,passive,SPI_MISO,False
+controls,interface,J100,J100 interface,13,Pin_13,passive,ADC_CS_N,False
+controls,interface,J100,J100 interface,14,Pin_14,passive,GND,False
+controls,interface,J100,J100 interface,15,Pin_15,passive,3V3_PI,False
+controls,interface,J100,J100 interface,16,Pin_16,passive,CTRL_RESET_N,False
+controls,interface,R11,4.7k DNP,1,1,passive,I2C_SDA,True
+controls,interface,R11,4.7k DNP,2,2,passive,3V3_PI,True
+controls,interface,R12,4.7k DNP,1,1,passive,I2C_SCL,True
+controls,interface,R12,4.7k DNP,2,2,passive,3V3_PI,True
+controls,interface,R13,10k,1,1,passive,CTRL_RESET_N,False
+controls,interface,R13,10k,2,2,passive,3V3_PI,False
+controls,interface,R14,10k,1,1,passive,INPUT_IRQ_N,False
+controls,interface,R14,10k,2,2,passive,3V3_PI,False
+controls,interface,R15,10k,1,1,passive,ADC_CS_N,False
+controls,interface,R15,10k,2,2,passive,3V3_PI,False
+controls,interface,C13,100nF,1,1,passive,CTRL_RESET_N,False
+controls,interface,C13,100nF,2,2,passive,GND,False
+controls,interface,C14,1uF,1,1,passive,3V3_PI,False
+controls,interface,C14,1uF,2,2,passive,GND,False
+controls,digital,U7,MCP23017-E/SO,1,GPB0,bidirectional,FACE_R_LEFT,False
+controls,digital,U7,MCP23017-E/SO,2,GPB1,bidirectional,CENTRAL_1,False
+controls,digital,U7,MCP23017-E/SO,3,GPB2,bidirectional,CENTRAL_2,False
+controls,digital,U7,MCP23017-E/SO,4,GPB3,bidirectional,STICK_L_CLICK,False
+controls,digital,U7,MCP23017-E/SO,5,GPB4,bidirectional,STICK_R_CLICK,False
+controls,digital,U7,MCP23017-E/SO,6,GPB5,bidirectional,SHOULDER_L1,False
+controls,digital,U7,MCP23017-E/SO,7,GPB6,bidirectional,SHOULDER_R1,False
+controls,digital,U7,MCP23017-E/SO,8,GPB7,bidirectional,NC,False
+controls,digital,U7,MCP23017-E/SO,9,VDD,power_in,3V3_PI,False
+controls,digital,U7,MCP23017-E/SO,10,VSS,power_in,GND,False
+controls,digital,U7,MCP23017-E/SO,11,NC,no_connect,NC,False
+controls,digital,U7,MCP23017-E/SO,12,SCL,input,I2C_SCL,False
+controls,digital,U7,MCP23017-E/SO,13,SDA,bidirectional,I2C_SDA,False
+controls,digital,U7,MCP23017-E/SO,14,NC,no_connect,NC,False
+controls,digital,U7,MCP23017-E/SO,15,A0,input,GND,False
+controls,digital,U7,MCP23017-E/SO,16,A1,input,GND,False
+controls,digital,U7,MCP23017-E/SO,17,A2,input,GND,False
+controls,digital,U7,MCP23017-E/SO,18,RESET_N,input,CTRL_RESET_N,False
+controls,digital,U7,MCP23017-E/SO,19,INTB,output,NC,False
+controls,digital,U7,MCP23017-E/SO,20,INTA,output,INPUT_IRQ_N,False
+controls,digital,U7,MCP23017-E/SO,21,GPA0,bidirectional,FACE_L_UP,False
+controls,digital,U7,MCP23017-E/SO,22,GPA1,bidirectional,FACE_L_RIGHT,False
+controls,digital,U7,MCP23017-E/SO,23,GPA2,bidirectional,FACE_L_DOWN,False
+controls,digital,U7,MCP23017-E/SO,24,GPA3,bidirectional,FACE_L_LEFT,False
+controls,digital,U7,MCP23017-E/SO,25,GPA4,bidirectional,FACE_R_UP,False
+controls,digital,U7,MCP23017-E/SO,26,GPA5,bidirectional,FACE_R_RIGHT,False
+controls,digital,U7,MCP23017-E/SO,27,GPA6,bidirectional,FACE_R_DOWN,False
+controls,digital,U7,MCP23017-E/SO,28,GPA7,bidirectional,NC,False
+controls,digital,C15,100nF,1,1,passive,3V3_PI,False
+controls,digital,C15,100nF,2,2,passive,GND,False
+controls,digital,R30,10k,1,1,passive,FACE_L_UP,False
+controls,digital,R30,10k,2,2,passive,3V3_PI,False
+controls,digital,SW2,B3F-4055 candidate,1,contact_1,passive,FACE_L_UP,False
+controls,digital,SW2,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R31,10k,1,1,passive,FACE_L_RIGHT,False
+controls,digital,R31,10k,2,2,passive,3V3_PI,False
+controls,digital,SW3,B3F-4055 candidate,1,contact_1,passive,FACE_L_RIGHT,False
+controls,digital,SW3,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R32,10k,1,1,passive,FACE_L_DOWN,False
+controls,digital,R32,10k,2,2,passive,3V3_PI,False
+controls,digital,SW4,B3F-4055 candidate,1,contact_1,passive,FACE_L_DOWN,False
+controls,digital,SW4,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R33,10k,1,1,passive,FACE_L_LEFT,False
+controls,digital,R33,10k,2,2,passive,3V3_PI,False
+controls,digital,SW5,B3F-4055 candidate,1,contact_1,passive,FACE_L_LEFT,False
+controls,digital,SW5,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R34,10k,1,1,passive,FACE_R_UP,False
+controls,digital,R34,10k,2,2,passive,3V3_PI,False
+controls,digital,SW6,B3F-4055 candidate,1,contact_1,passive,FACE_R_UP,False
+controls,digital,SW6,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R35,10k,1,1,passive,FACE_R_RIGHT,False
+controls,digital,R35,10k,2,2,passive,3V3_PI,False
+controls,digital,SW7,B3F-4055 candidate,1,contact_1,passive,FACE_R_RIGHT,False
+controls,digital,SW7,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R36,10k,1,1,passive,FACE_R_DOWN,False
+controls,digital,R36,10k,2,2,passive,3V3_PI,False
+controls,digital,SW8,B3F-4055 candidate,1,contact_1,passive,FACE_R_DOWN,False
+controls,digital,SW8,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R37,10k,1,1,passive,FACE_R_LEFT,False
+controls,digital,R37,10k,2,2,passive,3V3_PI,False
+controls,digital,SW9,B3F-4055 candidate,1,contact_1,passive,FACE_R_LEFT,False
+controls,digital,SW9,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R38,10k,1,1,passive,CENTRAL_1,False
+controls,digital,R38,10k,2,2,passive,3V3_PI,False
+controls,digital,SW10,B3F-4055 candidate,1,contact_1,passive,CENTRAL_1,False
+controls,digital,SW10,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R39,10k,1,1,passive,CENTRAL_2,False
+controls,digital,R39,10k,2,2,passive,3V3_PI,False
+controls,digital,SW11,B3F-4055 candidate,1,contact_1,passive,CENTRAL_2,False
+controls,digital,SW11,B3F-4055 candidate,2,contact_2,passive,GND,False
+controls,digital,R40,10k,1,1,passive,STICK_L_CLICK,False
+controls,digital,R40,10k,2,2,passive,3V3_PI,False
+controls,digital,R41,10k,1,1,passive,STICK_R_CLICK,False
+controls,digital,R41,10k,2,2,passive,3V3_PI,False
+controls,digital,R42,10k,1,1,passive,SHOULDER_L1,False
+controls,digital,R42,10k,2,2,passive,3V3_PI,False
+controls,digital,R43,10k,1,1,passive,SHOULDER_R1,False
+controls,digital,R43,10k,2,2,passive,3V3_PI,False
+controls,analog,U6,MCP3208-CI/SL,1,CH0,input,ADC_LX,False
+controls,analog,U6,MCP3208-CI/SL,2,CH1,input,ADC_LY,False
+controls,analog,U6,MCP3208-CI/SL,3,CH2,input,ADC_RX,False
+controls,analog,U6,MCP3208-CI/SL,4,CH3,input,ADC_RY,False
+controls,analog,U6,MCP3208-CI/SL,5,CH4,input,ADC_L2,False
+controls,analog,U6,MCP3208-CI/SL,6,CH5,input,ADC_R2,False
+controls,analog,U6,MCP3208-CI/SL,7,CH6,input,GND,False
+controls,analog,U6,MCP3208-CI/SL,8,CH7,input,GND,False
+controls,analog,U6,MCP3208-CI/SL,9,DGND,power_in,GND,False
+controls,analog,U6,MCP3208-CI/SL,10,CS_N,input,ADC_CS_N,False
+controls,analog,U6,MCP3208-CI/SL,11,DIN,input,SPI_MOSI,False
+controls,analog,U6,MCP3208-CI/SL,12,DOUT,output,SPI_MISO,False
+controls,analog,U6,MCP3208-CI/SL,13,CLK,input,SPI_SCLK,False
+controls,analog,U6,MCP3208-CI/SL,14,AGND,power_in,GND,False
+controls,analog,U6,MCP3208-CI/SL,15,VREF,input,3V3_PI,False
+controls,analog,U6,MCP3208-CI/SL,16,VDD,power_in,3V3_PI,False
+controls,analog,C16,100nF,1,1,passive,3V3_PI,False
+controls,analog,C16,100nF,2,2,passive,GND,False
+controls,analog,C17,1uF,1,1,passive,3V3_PI,False
+controls,analog,C17,1uF,2,2,passive,GND,False
+controls,analog,R50,100R,1,1,passive,RAW_LX,False
+controls,analog,R50,100R,2,2,passive,ADC_LX,False
+controls,analog,C20,1nF,1,1,passive,ADC_LX,False
+controls,analog,C20,1nF,2,2,passive,GND,False
+controls,analog,R51,100R,1,1,passive,RAW_LY,False
+controls,analog,R51,100R,2,2,passive,ADC_LY,False
+controls,analog,C21,1nF,1,1,passive,ADC_LY,False
+controls,analog,C21,1nF,2,2,passive,GND,False
+controls,analog,R52,100R,1,1,passive,RAW_RX,False
+controls,analog,R52,100R,2,2,passive,ADC_RX,False
+controls,analog,C22,1nF,1,1,passive,ADC_RX,False
+controls,analog,C22,1nF,2,2,passive,GND,False
+controls,analog,R53,100R,1,1,passive,RAW_RY,False
+controls,analog,R53,100R,2,2,passive,ADC_RY,False
+controls,analog,C23,1nF,1,1,passive,ADC_RY,False
+controls,analog,C23,1nF,2,2,passive,GND,False
+controls,analog,R54,100R,1,1,passive,RAW_L2,False
+controls,analog,R54,100R,2,2,passive,ADC_L2,False
+controls,analog,C24,1nF,1,1,passive,ADC_L2,False
+controls,analog,C24,1nF,2,2,passive,GND,False
+controls,analog,R55,100R,1,1,passive,RAW_R2,False
+controls,analog,R55,100R,2,2,passive,ADC_R2,False
+controls,analog,C25,1nF,1,1,passive,ADC_R2,False
+controls,analog,C25,1nF,2,2,passive,GND,False
+controls,analog,J20,J20 interface,1,Pin_1,passive,3V3_PI,False
+controls,analog,J20,J20 interface,2,Pin_2,passive,GND,False
+controls,analog,J20,J20 interface,3,Pin_3,passive,RAW_LX,False
+controls,analog,J20,J20 interface,4,Pin_4,passive,RAW_LY,False
+controls,analog,J20,J20 interface,5,Pin_5,passive,STICK_L_CLICK,False
+controls,analog,J21,J21 interface,1,Pin_1,passive,3V3_PI,False
+controls,analog,J21,J21 interface,2,Pin_2,passive,GND,False
+controls,analog,J21,J21 interface,3,Pin_3,passive,RAW_RX,False
+controls,analog,J21,J21 interface,4,Pin_4,passive,RAW_RY,False
+controls,analog,J21,J21 interface,5,Pin_5,passive,STICK_R_CLICK,False
+controls,analog,J22,J22 interface,1,Pin_1,passive,3V3_PI,False
+controls,analog,J22,J22 interface,2,Pin_2,passive,GND,False
+controls,analog,J22,J22 interface,3,Pin_3,passive,RAW_L2,False
+controls,analog,J23,J23 interface,1,Pin_1,passive,3V3_PI,False
+controls,analog,J23,J23 interface,2,Pin_2,passive,GND,False
+controls,analog,J23,J23 interface,3,Pin_3,passive,RAW_R2,False
+controls,digital,J24,J24 interface,1,Pin_1,passive,SHOULDER_L1,False
+controls,digital,J24,J24 interface,2,Pin_2,passive,GND,False
+controls,digital,J25,J25 interface,1,Pin_1,passive,SHOULDER_R1,False
+controls,digital,J25,J25 interface,2,Pin_2,passive,GND,False
+controls,haptic-mux,U8,TCA9548APWR,1,A0,input,GND,False
+controls,haptic-mux,U8,TCA9548APWR,2,A1,input,GND,False
+controls,haptic-mux,U8,TCA9548APWR,3,RESET_N,input,CTRL_RESET_N,False
+controls,haptic-mux,U8,TCA9548APWR,4,SD0,bidirectional,H1_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,5,SC0,bidirectional,H1_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,6,SD1,bidirectional,H2_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,7,SC1,bidirectional,H2_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,8,SD2,bidirectional,H3_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,9,SC2,bidirectional,H3_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,10,SD3,bidirectional,H4_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,11,SC3,bidirectional,H4_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,12,GND,power_in,GND,False
+controls,haptic-mux,U8,TCA9548APWR,13,SD4,bidirectional,H5_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,14,SC4,bidirectional,H5_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,15,SD5,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,16,SC5,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,17,SD6,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,18,SC6,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,19,SD7,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,20,SC7,bidirectional,NC,False
+controls,haptic-mux,U8,TCA9548APWR,21,A2,input,GND,False
+controls,haptic-mux,U8,TCA9548APWR,22,SCL,input,I2C_SCL,False
+controls,haptic-mux,U8,TCA9548APWR,23,SDA,bidirectional,I2C_SDA,False
+controls,haptic-mux,U8,TCA9548APWR,24,VCC,power_in,3V3_PI,False
+controls,haptic-mux,C18,100nF,1,1,passive,3V3_PI,False
+controls,haptic-mux,C18,100nF,2,2,passive,GND,False
+controls,haptic-1,U1,DRV2604LDGSR,1,REG,power_out,H1_REG,False
+controls,haptic-1,U1,DRV2604LDGSR,2,SCL,input,H1_SCL,False
+controls,haptic-1,U1,DRV2604LDGSR,3,SDA,bidirectional,H1_SDA,False
+controls,haptic-1,U1,DRV2604LDGSR,4,IN_TRIG,input,GND,False
+controls,haptic-1,U1,DRV2604LDGSR,5,EN,input,3V3_HAPTIC,False
+controls,haptic-1,U1,DRV2604LDGSR,6,VDD_NC,power_in,3V3_HAPTIC,False
+controls,haptic-1,U1,DRV2604LDGSR,7,OUT_PLUS,output,H1_PLUS,False
+controls,haptic-1,U1,DRV2604LDGSR,8,GND,power_in,GND,False
+controls,haptic-1,U1,DRV2604LDGSR,9,OUT_MINUS,output,H1_MINUS,False
+controls,haptic-1,U1,DRV2604LDGSR,10,VDD,power_in,3V3_HAPTIC,False
+controls,haptic-1,C1,1uF,1,1,passive,H1_REG,False
+controls,haptic-1,C1,1uF,2,2,passive,GND,False
+controls,haptic-1,C2,1uF,1,1,passive,3V3_HAPTIC,False
+controls,haptic-1,C2,1uF,2,2,passive,GND,False
+controls,haptic-1,R1,4.7k,1,1,passive,H1_SDA,False
+controls,haptic-1,R1,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-1,R2,4.7k,1,1,passive,H1_SCL,False
+controls,haptic-1,R2,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-1,J2,J2 interface,1,Pin_1,passive,H1_PLUS,False
+controls,haptic-1,J2,J2 interface,2,Pin_2,passive,H1_MINUS,False
+controls,haptic-2,U2,DRV2604LDGSR,1,REG,power_out,H2_REG,False
+controls,haptic-2,U2,DRV2604LDGSR,2,SCL,input,H2_SCL,False
+controls,haptic-2,U2,DRV2604LDGSR,3,SDA,bidirectional,H2_SDA,False
+controls,haptic-2,U2,DRV2604LDGSR,4,IN_TRIG,input,GND,False
+controls,haptic-2,U2,DRV2604LDGSR,5,EN,input,3V3_HAPTIC,False
+controls,haptic-2,U2,DRV2604LDGSR,6,VDD_NC,power_in,3V3_HAPTIC,False
+controls,haptic-2,U2,DRV2604LDGSR,7,OUT_PLUS,output,H2_PLUS,False
+controls,haptic-2,U2,DRV2604LDGSR,8,GND,power_in,GND,False
+controls,haptic-2,U2,DRV2604LDGSR,9,OUT_MINUS,output,H2_MINUS,False
+controls,haptic-2,U2,DRV2604LDGSR,10,VDD,power_in,3V3_HAPTIC,False
+controls,haptic-2,C3,1uF,1,1,passive,H2_REG,False
+controls,haptic-2,C3,1uF,2,2,passive,GND,False
+controls,haptic-2,C4,1uF,1,1,passive,3V3_HAPTIC,False
+controls,haptic-2,C4,1uF,2,2,passive,GND,False
+controls,haptic-2,R3,4.7k,1,1,passive,H2_SDA,False
+controls,haptic-2,R3,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-2,R4,4.7k,1,1,passive,H2_SCL,False
+controls,haptic-2,R4,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-2,J3,J3 interface,1,Pin_1,passive,H2_PLUS,False
+controls,haptic-2,J3,J3 interface,2,Pin_2,passive,H2_MINUS,False
+controls,haptic-3,U3,DRV2604LDGSR,1,REG,power_out,H3_REG,False
+controls,haptic-3,U3,DRV2604LDGSR,2,SCL,input,H3_SCL,False
+controls,haptic-3,U3,DRV2604LDGSR,3,SDA,bidirectional,H3_SDA,False
+controls,haptic-3,U3,DRV2604LDGSR,4,IN_TRIG,input,GND,False
+controls,haptic-3,U3,DRV2604LDGSR,5,EN,input,3V3_HAPTIC,False
+controls,haptic-3,U3,DRV2604LDGSR,6,VDD_NC,power_in,3V3_HAPTIC,False
+controls,haptic-3,U3,DRV2604LDGSR,7,OUT_PLUS,output,H3_PLUS,False
+controls,haptic-3,U3,DRV2604LDGSR,8,GND,power_in,GND,False
+controls,haptic-3,U3,DRV2604LDGSR,9,OUT_MINUS,output,H3_MINUS,False
+controls,haptic-3,U3,DRV2604LDGSR,10,VDD,power_in,3V3_HAPTIC,False
+controls,haptic-3,C5,1uF,1,1,passive,H3_REG,False
+controls,haptic-3,C5,1uF,2,2,passive,GND,False
+controls,haptic-3,C6,1uF,1,1,passive,3V3_HAPTIC,False
+controls,haptic-3,C6,1uF,2,2,passive,GND,False
+controls,haptic-3,R5,4.7k,1,1,passive,H3_SDA,False
+controls,haptic-3,R5,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-3,R6,4.7k,1,1,passive,H3_SCL,False
+controls,haptic-3,R6,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-3,J4,J4 interface,1,Pin_1,passive,H3_PLUS,False
+controls,haptic-3,J4,J4 interface,2,Pin_2,passive,H3_MINUS,False
+controls,haptic-4,U4,DRV2604LDGSR,1,REG,power_out,H4_REG,False
+controls,haptic-4,U4,DRV2604LDGSR,2,SCL,input,H4_SCL,False
+controls,haptic-4,U4,DRV2604LDGSR,3,SDA,bidirectional,H4_SDA,False
+controls,haptic-4,U4,DRV2604LDGSR,4,IN_TRIG,input,GND,False
+controls,haptic-4,U4,DRV2604LDGSR,5,EN,input,3V3_HAPTIC,False
+controls,haptic-4,U4,DRV2604LDGSR,6,VDD_NC,power_in,3V3_HAPTIC,False
+controls,haptic-4,U4,DRV2604LDGSR,7,OUT_PLUS,output,H4_PLUS,False
+controls,haptic-4,U4,DRV2604LDGSR,8,GND,power_in,GND,False
+controls,haptic-4,U4,DRV2604LDGSR,9,OUT_MINUS,output,H4_MINUS,False
+controls,haptic-4,U4,DRV2604LDGSR,10,VDD,power_in,3V3_HAPTIC,False
+controls,haptic-4,C7,1uF,1,1,passive,H4_REG,False
+controls,haptic-4,C7,1uF,2,2,passive,GND,False
+controls,haptic-4,C8,1uF,1,1,passive,3V3_HAPTIC,False
+controls,haptic-4,C8,1uF,2,2,passive,GND,False
+controls,haptic-4,R7,4.7k,1,1,passive,H4_SDA,False
+controls,haptic-4,R7,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-4,R8,4.7k,1,1,passive,H4_SCL,False
+controls,haptic-4,R8,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-4,J5,J5 interface,1,Pin_1,passive,H4_PLUS,False
+controls,haptic-4,J5,J5 interface,2,Pin_2,passive,H4_MINUS,False
+controls,haptic-5,U5,DRV2604LDGSR,1,REG,power_out,H5_REG,False
+controls,haptic-5,U5,DRV2604LDGSR,2,SCL,input,H5_SCL,False
+controls,haptic-5,U5,DRV2604LDGSR,3,SDA,bidirectional,H5_SDA,False
+controls,haptic-5,U5,DRV2604LDGSR,4,IN_TRIG,input,GND,False
+controls,haptic-5,U5,DRV2604LDGSR,5,EN,input,3V3_HAPTIC,False
+controls,haptic-5,U5,DRV2604LDGSR,6,VDD_NC,power_in,3V3_HAPTIC,False
+controls,haptic-5,U5,DRV2604LDGSR,7,OUT_PLUS,output,H5_PLUS,False
+controls,haptic-5,U5,DRV2604LDGSR,8,GND,power_in,GND,False
+controls,haptic-5,U5,DRV2604LDGSR,9,OUT_MINUS,output,H5_MINUS,False
+controls,haptic-5,U5,DRV2604LDGSR,10,VDD,power_in,3V3_HAPTIC,False
+controls,haptic-5,C9,1uF,1,1,passive,H5_REG,False
+controls,haptic-5,C9,1uF,2,2,passive,GND,False
+controls,haptic-5,C10,1uF,1,1,passive,3V3_HAPTIC,False
+controls,haptic-5,C10,1uF,2,2,passive,GND,False
+controls,haptic-5,R9,4.7k,1,1,passive,H5_SDA,False
+controls,haptic-5,R9,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-5,R10,4.7k,1,1,passive,H5_SCL,False
+controls,haptic-5,R10,4.7k,2,2,passive,3V3_HAPTIC,False
+controls,haptic-5,J6,J6 interface,1,Pin_1,passive,H5_PLUS,False
+controls,haptic-5,J6,J6 interface,2,Pin_2,passive,H5_MINUS,False
+controls,power,PS2,TPS62080DSGR,1,EN,input,5V_SYS,False
+controls,power,PS2,TPS62080DSGR,2,GND,power_in,GND,False
+controls,power,PS2,TPS62080DSGR,3,MODE,input,GND,False
+controls,power,PS2,TPS62080DSGR,4,FB,input,HAPTIC_FB,False
+controls,power,PS2,TPS62080DSGR,5,VOS,input,3V3_HAPTIC,False
+controls,power,PS2,TPS62080DSGR,6,PG,open_collector,NC,False
+controls,power,PS2,TPS62080DSGR,7,SW,power_out,HAPTIC_SW,False
+controls,power,PS2,TPS62080DSGR,8,VIN,power_in,5V_SYS,False
+controls,power,PS2,TPS62080DSGR,9,EP,power_in,GND,False
+controls,power,L1,1uH XFL3012-102ME candidate,1,1,passive,HAPTIC_SW,False
+controls,power,L1,1uH XFL3012-102ME candidate,2,2,passive,3V3_HAPTIC,False
+controls,power,C30,10uF 10V X5R,1,1,passive,5V_SYS,False
+controls,power,C30,10uF 10V X5R,2,2,passive,GND,False
+controls,power,C31,22uF 6.3V X5R,1,1,passive,3V3_HAPTIC,False
+controls,power,C31,22uF 6.3V X5R,2,2,passive,GND,False
+controls,power,R60,249k 1%,1,1,passive,3V3_HAPTIC,False
+controls,power,R60,249k 1%,2,2,passive,HAPTIC_FB,False
+controls,power,R61,39.2k 1%,1,1,passive,HAPTIC_FB,False
+controls,power,R61,39.2k 1%,2,2,passive,GND,False
+controls,interface,#FLG1,PWR_FLAG,1,pwr,power_out,5V_SYS,False
+controls,interface,#FLG2,PWR_FLAG,1,pwr,power_out,GND,False
+controls,interface,#FLG3,PWR_FLAG,1,pwr,power_out,3V3_PI,False
+controls,power,#FLG4,PWR_FLAG,1,pwr,power_out,3V3_HAPTIC,False
+base,interfaces,J100,J100 interface,1,Pin_1,passive,5V_SYS,False
+base,interfaces,J100,J100 interface,2,Pin_2,passive,5V_SYS,False
+base,interfaces,J100,J100 interface,3,Pin_3,passive,GND,False
+base,interfaces,J100,J100 interface,4,Pin_4,passive,GND,False
+base,interfaces,J100,J100 interface,5,Pin_5,passive,I2C_SDA,False
+base,interfaces,J100,J100 interface,6,Pin_6,passive,I2C_SCL,False
+base,interfaces,J100,J100 interface,7,Pin_7,passive,GND,False
+base,interfaces,J100,J100 interface,8,Pin_8,passive,INPUT_IRQ_N,False
+base,interfaces,J100,J100 interface,9,Pin_9,passive,SPI_SCLK,False
+base,interfaces,J100,J100 interface,10,Pin_10,passive,GND,False
+base,interfaces,J100,J100 interface,11,Pin_11,passive,SPI_MOSI,False
+base,interfaces,J100,J100 interface,12,Pin_12,passive,SPI_MISO,False
+base,interfaces,J100,J100 interface,13,Pin_13,passive,ADC_CS_N,False
+base,interfaces,J100,J100 interface,14,Pin_14,passive,GND,False
+base,interfaces,J100,J100 interface,15,Pin_15,passive,3V3_PI,False
+base,interfaces,J100,J100 interface,16,Pin_16,passive,CTRL_RESET_N,False
+base,interfaces,J1,J1 interface,1,Pin_1,passive,3V3_PI,False
+base,interfaces,J1,J1 interface,2,Pin_2,passive,5V_SYS,False
+base,interfaces,J1,J1 interface,3,Pin_3,passive,I2C_SDA,False
+base,interfaces,J1,J1 interface,4,Pin_4,passive,5V_SYS,False
+base,interfaces,J1,J1 interface,5,Pin_5,passive,I2C_SCL,False
+base,interfaces,J1,J1 interface,6,Pin_6,passive,GND,False
+base,interfaces,J1,J1 interface,7,Pin_7,passive,NC,False
+base,interfaces,J1,J1 interface,8,Pin_8,passive,NC,False
+base,interfaces,J1,J1 interface,9,Pin_9,passive,GND,False
+base,interfaces,J1,J1 interface,10,Pin_10,passive,NC,False
+base,interfaces,J1,J1 interface,11,Pin_11,passive,AUDIO_ENABLE,False
+base,interfaces,J1,J1 interface,12,Pin_12,passive,I2S_BCLK,False
+base,interfaces,J1,J1 interface,13,Pin_13,passive,CTRL_RESET_N,False
+base,interfaces,J1,J1 interface,14,Pin_14,passive,GND,False
+base,interfaces,J1,J1 interface,15,Pin_15,passive,NC,False
+base,interfaces,J1,J1 interface,16,Pin_16,passive,NC,False
+base,interfaces,J1,J1 interface,17,Pin_17,passive,NC,False
+base,interfaces,J1,J1 interface,18,Pin_18,passive,NC,False
+base,interfaces,J1,J1 interface,19,Pin_19,passive,SPI_MOSI,False
+base,interfaces,J1,J1 interface,20,Pin_20,passive,GND,False
+base,interfaces,J1,J1 interface,21,Pin_21,passive,SPI_MISO,False
+base,interfaces,J1,J1 interface,22,Pin_22,passive,INPUT_IRQ_N,False
+base,interfaces,J1,J1 interface,23,Pin_23,passive,SPI_SCLK,False
+base,interfaces,J1,J1 interface,24,Pin_24,passive,ADC_CS_N,False
+base,interfaces,J1,J1 interface,25,Pin_25,passive,GND,False
+base,interfaces,J1,J1 interface,26,Pin_26,passive,NC,False
+base,interfaces,J1,J1 interface,27,Pin_27,passive,NC,False
+base,interfaces,J1,J1 interface,28,Pin_28,passive,NC,False
+base,interfaces,J1,J1 interface,29,Pin_29,passive,NC,False
+base,interfaces,J1,J1 interface,30,Pin_30,passive,GND,False
+base,interfaces,J1,J1 interface,31,Pin_31,passive,NC,False
+base,interfaces,J1,J1 interface,32,Pin_32,passive,NC,False
+base,interfaces,J1,J1 interface,33,Pin_33,passive,NC,False
+base,interfaces,J1,J1 interface,34,Pin_34,passive,GND,False
+base,interfaces,J1,J1 interface,35,Pin_35,passive,I2S_LRCLK,False
+base,interfaces,J1,J1 interface,36,Pin_36,passive,NC,False
+base,interfaces,J1,J1 interface,37,Pin_37,passive,NC,False
+base,interfaces,J1,J1 interface,38,Pin_38,passive,NC,False
+base,interfaces,J1,J1 interface,39,Pin_39,passive,GND,False
+base,interfaces,J1,J1 interface,40,Pin_40,passive,I2S_DOUT,False
+base,interfaces,J101,J101 interface,1,Pin_1,passive,5V_SYS,False
+base,interfaces,J101,J101 interface,2,Pin_2,passive,GND,False
+base,interfaces,J102,J102 interface,1,Pin_1,passive,I2C_SDA,False
+base,interfaces,J102,J102 interface,2,Pin_2,passive,I2C_SCL,False
+base,interfaces,J102,J102 interface,3,Pin_3,passive,GND,False
+base,audio-boundary,J110,J110 interface,1,Pin_1,passive,5V_SYS,False
+base,audio-boundary,J110,J110 interface,2,Pin_2,passive,3V3_PI,False
+base,audio-boundary,J110,J110 interface,3,Pin_3,passive,GND,False
+base,audio-boundary,J110,J110 interface,4,Pin_4,passive,I2S_BCLK,False
+base,audio-boundary,J110,J110 interface,5,Pin_5,passive,I2S_LRCLK,False
+base,audio-boundary,J110,J110 interface,6,Pin_6,passive,I2S_DOUT,False
+base,audio-boundary,J110,J110 interface,7,Pin_7,passive,AUDIO_ENABLE,False
+base,usb-boundary,J120,J120 interface,1,VBUS,passive,USB_PC_VBUS,False
+base,usb-boundary,J120,J120 interface,2,D_MINUS,passive,USB_PC_DM,False
+base,usb-boundary,J120,J120 interface,3,D_PLUS,passive,USB_PC_DP,False
+base,usb-boundary,J120,J120 interface,4,ID,passive,NC,False
+base,usb-boundary,J120,J120 interface,5,GND,passive,GND,False
+base,usb-boundary,J121,J121 interface,1,Pin_1,passive,USB_CHARGE_LIMITED,False
+base,usb-boundary,J121,J121 interface,2,Pin_2,passive,GND,False
+base,usb-boundary,J122,J122 interface,1,Pin_1,passive,USB_PI_DM,False
+base,usb-boundary,J122,J122 interface,2,Pin_2,passive,USB_PI_DP,False
+base,usb-boundary,J122,J122 interface,3,Pin_3,passive,GND,False

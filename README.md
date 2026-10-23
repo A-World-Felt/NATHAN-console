@@ -88,6 +88,7 @@ Toute la documentation projet vit dans [`docs/`](./docs/) :
 - **[Journal des décisions — ADR](./docs/decisions/README.md)** — *pourquoi* le projet est ainsi, et son évolution dans le temps.
 - **[Specs](./docs/specs/)** · **[Planification & GANTT](./docs/planning/)** · **[Architecture](./docs/architecture/)**.
 - **[CONTRIBUTING.md](./CONTRIBUTING.md)** — comment contribuer et **tracer une décision**.
+- **[Étude matérielle Pi 3 A+ / deux PCB](./hardware/pi3a-prototype/README.md)** — proposition Codex en cours de revue, avec schémas et placements ; statut exact des validations indiqué dans le dossier.
 
 ---
 

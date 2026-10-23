@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+consultation/
+*.kicad_prl
+validation/native-config/
+validation/native-current/config/
+validation/freecad-runtime.json
+tools/check_solidworks_availability.ps1
+tools/check_freecad_availability.py

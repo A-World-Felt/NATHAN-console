@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "filename": "nathan-base.kicad_pro",
+    "version": 1
+  },
+  "text_variables": {
+    "DESIGN_STATUS": "D1 electrical proposal; see validation/native-current for revision-specific evidence"
+  }
+}

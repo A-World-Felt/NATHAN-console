@@ -1,0 +1,79 @@
+{
+  "mode": "TEXT ONLY - no KiCad native API",
+  "native_validation": "separate evidence in native-current; historical overflow cause not established",
+  "boards": [
+    {
+      "file": "pcb\\controls\\nathan-controls.kicad_pcb",
+      "sha256": "e97e223c4fd02190d7d651c89ee0e4a9bf2ffa1b7154ccdac54659095d4fd60e",
+      "sexpression_balanced": true,
+      "geometry_value_range": [
+        -5.9,
+        193.5
+      ],
+      "invalid_or_abs_over_1000_values": [],
+      "empty_footprints": [],
+      "footprint_count": 31,
+      "duplicate_references": [],
+      "tracks": 0,
+      "zones": 0,
+      "front_courtyard_aabb_overlaps": [],
+      "limitations": "AABB test is only a conservative 2D screen on explicit front courtyards. Does not qualify reserved modules, circuitry, solder tails or 3D fit."
+    },
+    {
+      "file": "pcb\\base\\nathan-base.kicad_pcb",
+      "sha256": "2ba025e5392b5ced05a52db11953850c326a55d93ab28154b01a15288c518af0",
+      "sexpression_balanced": true,
+      "geometry_value_range": [
+        -4.34,
+        186.0
+      ],
+      "invalid_or_abs_over_1000_values": [],
+      "empty_footprints": [],
+      "footprint_count": 6,
+      "duplicate_references": [],
+      "tracks": 0,
+      "zones": 0,
+      "front_courtyard_aabb_overlaps": [],
+      "limitations": "AABB test is only a conservative 2D screen on explicit front courtyards. Does not qualify reserved modules, circuitry, solder tails or 3D fit."
+    }
+  ],
+  "parameters_json_valid": true,
+  "nominal_width_le_160": true,
+  "openings_and_bosses_disabled": true,
+  "layout_consistency": {
+    "cardinal_group_errors": [],
+    "face_count": 8,
+    "central_count": 2,
+    "pcb_origin_mismatches": [],
+    "scad_parameter_mismatches": [],
+    "sticks_symmetric_and_below_faces": true,
+    "shoulders_stacked_left_right": true,
+    "bom_delta": {
+      "face_buttons": 8,
+      "central_buttons": 2,
+      "total_existing_BOM_pushbuttons": 10,
+      "additional_L1_R1_controls": 2,
+      "new_electrical_footprints_or_pads_added": 0,
+      "trigger_functions_preserved": 2,
+      "digital_inputs_if_two_stick_clicks_and_analog_L2_R2": 14,
+      "digital_inputs_if_L2_R2_are_digital": 16,
+      "analog_channels_if_L2_R2_are_analog": 6,
+      "note": "L1/R1 hardware and qualification to add to BOM; no sensor type inferred from PS4 styling."
+    }
+  },
+  "scad_text_checks": {
+    "nathan-enclosure.scad": "balanced delimiters only; not compiled",
+    "parameters.scad": "balanced delimiters only; not compiled"
+  },
+  "python_syntax_checks": {
+    "build_design.py": "AST parse only; not executed by this check",
+    "compare_native_netlist.py": "AST parse only; not executed by this check",
+    "inspect_sources.py": "AST parse only; not executed by this check",
+    "layout_data.py": "AST parse only; not executed by this check",
+    "preflight_text.py": "AST parse only; not executed by this check",
+    "prepare_electronics.py": "AST parse only; not executed by this check",
+    "run_native_check.py": "AST parse only; not executed by this check",
+    "sync_controls_text.py": "AST parse only; not executed by this check",
+    "validate_design.py": "AST parse only; not executed by this check"
+  }
+}

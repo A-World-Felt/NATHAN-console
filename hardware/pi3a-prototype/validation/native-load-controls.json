@@ -1,0 +1,10 @@
+{
+  "operation": "LoadBoard only, controls D0.1",
+  "own_pid": 12112,
+  "timeout_terminated_own_process": false,
+  "returncode": 0,
+  "elapsed_seconds": 0.42,
+  "stdout": "PID=12112 IMPORT_OK\nLOAD_OK footprints=31 tracks=0\n",
+  "stderr": "",
+  "no_drc_invoked": true
+}
