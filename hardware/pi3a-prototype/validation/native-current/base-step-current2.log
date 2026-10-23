@@ -1,0 +1,103 @@
+9:46:50 PM: Error: Can't create registry key 'HKCU\Software\KiCad\kicad-cli' (error 5: Access is denied.)
+9:46:50 PM: Error: Can't open registry key 'HKCU\Software\KiCad\kicad-cli' (error 2: The system cannot find the file specified.)
+Loading board
+Determining PCB data
+Board Thickness from stackup: 1.600 mm
+Build STEP data
+Add component R213.
+Add component J400.
+Add component R203.
+Add component C202.
+Add component R204.
+Could not add 3D model to U202.
+File not found: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_UQFN-10_1.5x2mm_P0.5mm.wrl
+Add component J102.
+Add component D201.
+Add component D200.
+Add component R216.
+Add component U203.
+Add component R200.
+Add component R201.
+Add component C204.
+Add component R202.
+Add component J1.
+Could not add 3D model to U201.
+File not found: ${KICAD8_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_X2QFN-12_1.6x1.6mm_P0.4mm.wrl
+Add component C215.
+Add component Q200.
+Add component C203.
+Add component R214.
+Add component J120.
+Add component R217.
+Add component R205.
+Add component J100.
+Add component R215.
+Add component C216.
+Add component C214.
+Add component C416.
+Add component C404.
+Add component C212.
+Add component R403.
+Add component C200.
+Add component C412.
+Add component C410.
+Add component C415.
+Add component C403.
+Add component U200.
+Add component C401.
+Add component C411.
+Add component U208.
+Add component C206.
+Add component C417.
+Add component C207.
+Add component C208.
+Add component R210.
+Add component R206.
+Add component C408.
+Add component R400.
+Add component C400.
+Add component R401.
+Add component R207.
+Add component C406.
+Add component C414.
+Add component C413.
+Add component U211.
+Add component R404.
+Add component C211.
+Add component C213.
+Add component C402.
+Add component C209.
+Add component U210.
+Add component U207.
+Add component C419.
+Add component R208.
+Add component U402.
+Add component C418.
+Add component U204.
+Add component R405.
+Add component R212.
+Add component C201.
+Add component U401.
+Add component U209.
+Add component R402.
+Add component R211.
+Add component C409.
+Add component R209.
+Add component C210.
+Add component U400.
+Add component U206.
+Add component R406.
+Add component C407.
+Add component C405.
+Add component U205.
+Create PCB solid model
+Board outline: find 12 initial points
+Build board outlines (1 outlines) with 12 points.
+Build board cutouts and holes (160 hole(s)).
+Build holes for shapes
+
+Generate board full shape.
+Writing STEP file
+STEP file 'mechanical/assembly/base-D1.step' created.
+
+Export time 8.304 s

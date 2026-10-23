@@ -1,0 +1,22 @@
+{
+  "own_pid": 62536,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 5.25,
+  "log": "validation\\native-current\\base-step.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "export",
+    "step",
+    "--force",
+    "--subst-models",
+    "--user-origin",
+    "120x100mm",
+    "-D",
+    "KICAD8_3DMODEL_DIR=C:/Program Files/KiCad/8.0/share/kicad/3dmodels",
+    "--output",
+    "mechanical/assembly/base-placement-D0.step",
+    "pcb/base/nathan-base.kicad_pcb"
+  ]
+}

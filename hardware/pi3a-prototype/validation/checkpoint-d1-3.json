@@ -1,0 +1,40 @@
+{
+  "checkpoint": "D1-3 routed controls / placed USB-C audio carrier / synchronized assembly",
+  "files": {
+    "electrical/design-networks.json": "2688348273663153611ec9ec23f6cb521097ec1970fcca44208e5e5e5be704c4",
+    "electrical/controls/nathan-controls.kicad_pcb": "25d1bc161466d2937debb6b99466d0252977bc9ea181cf128b51e193575da0c4",
+    "electrical/base/nathan-base.kicad_pcb": "cae3100e793529bdeebb2d9612561f2a0a5d93d31f2fa21120d985783dd5dd25",
+    "mechanical/assembly/controls-D1.step": "6679458b55f5aaf55545d62a08fae2325cbe628b2658d411934dd8eeb2cff52c",
+    "mechanical/assembly/base-D1.step": "0c069665073d4a47b9e43ab2c30910c79352339aae402993188e45aec25046c3",
+    "mechanical/assembly/nathan-D1-review.FCStd": "1a8ec46981c5897a12d664be2637b82b00acf471602682b01969a5fc0f7a3f11",
+    "mechanical/assembly/nathan-D1-review.step": "1bd49e4871f7f119a8861a593f5f203f10e8a68cd94fe682bf05ff88e720ac9d",
+    "validation/freecad-assembly-d1.json": "575dd5a906265a0aa664bc37d09e1fde2180bd6c92cf61117cfcffd5143e3a32",
+    "validation/native-current/controls-closed-drc.json": "9fc940b0f29bc070d7dadbcf3aa858f688e0e7002f4b1d4c3614fa1fce8cbce3",
+    "validation/native-current/base-current2-drc.json": "e06fa6751dc34a96a8afbb6b46e3ca0edf4054a1af377d1245ee4f7214b920ca",
+    "validation/pcb-pin-contract.json": "99cda301d11b23cc7d8cc64bd2c8d979a6fdb4aee811c82111acad9cbc9d80d0"
+  },
+  "controls_drc": {
+    "errors": 0,
+    "warnings": 17,
+    "unconnected": 0
+  },
+  "base_drc": {
+    "errors": 4,
+    "warnings": 0,
+    "unconnected": 257,
+    "error_scope": "Intrinsic J120 NPTH-to-copper 0.1944 mm versus current 0.25 mm rule; no exemption applied"
+  },
+  "assembly": {
+    "objects": 58,
+    "all_shapes_valid": true,
+    "exact_pcb_collision_check": "Parent independent review pending; board pairs screened by bounding box only"
+  },
+  "limitations": [
+    "Not manufacturing release",
+    "Power path width, thermal and return loop review pending",
+    "No impedance stackup qualification",
+    "72 mm shell height is an unvalidated stack proposal",
+    "L2 lowering to 35.5 mm is a mechanical proposal, not a user-stated dimension",
+    "FreeCAD/STEP omit unmodeled purchased detail; see export logs; no fit certification"
+  ]
+}

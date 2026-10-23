@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "filename": "nathan-controls.kicad_pro",
+    "version": 1
+  },
+  "text_variables": {
+    "DESIGN_STATUS": "D0 UNROUTED - NOT FOR FABRICATION",
+    "AUTHOR": "Codex/OpenAI nathan_bom"
+  }
+}

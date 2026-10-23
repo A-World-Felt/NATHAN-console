@@ -1,0 +1,594 @@
+{
+  "status": "review assembly; unqualified purchased envelopes explicitly tagged",
+  "objects": [
+    {
+      "name": "Switch_SW2",
+      "label": "B3F-4055 SW2 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999995
+    },
+    {
+      "name": "Cap_SW2",
+      "label": "Cap SW2 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.337014913279
+    },
+    {
+      "name": "Switch_SW3",
+      "label": "B3F-4055 SW3 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999996
+    },
+    {
+      "name": "Cap_SW3",
+      "label": "Cap SW3 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132795
+    },
+    {
+      "name": "Switch_SW4",
+      "label": "B3F-4055 SW4 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999995
+    },
+    {
+      "name": "Cap_SW4",
+      "label": "Cap SW4 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132796
+    },
+    {
+      "name": "Switch_SW5",
+      "label": "B3F-4055 SW5 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999995
+    },
+    {
+      "name": "Cap_SW5",
+      "label": "Cap SW5 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132793
+    },
+    {
+      "name": "Switch_SW6",
+      "label": "B3F-4055 SW6 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999995
+    },
+    {
+      "name": "Cap_SW6",
+      "label": "Cap SW6 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132794
+    },
+    {
+      "name": "Switch_SW7",
+      "label": "B3F-4055 SW7 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999996
+    },
+    {
+      "name": "Cap_SW7",
+      "label": "Cap SW7 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132793
+    },
+    {
+      "name": "Switch_SW8",
+      "label": "B3F-4055 SW8 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999995
+    },
+    {
+      "name": "Cap_SW8",
+      "label": "Cap SW8 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132791
+    },
+    {
+      "name": "Switch_SW9",
+      "label": "B3F-4055 SW9 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999996
+    },
+    {
+      "name": "Cap_SW9",
+      "label": "Cap SW9 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132787
+    },
+    {
+      "name": "Switch_SW10",
+      "label": "B3F-4055 SW10 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999996
+    },
+    {
+      "name": "Cap_SW10",
+      "label": "Cap SW10 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132794
+    },
+    {
+      "name": "Switch_SW11",
+      "label": "B3F-4055 SW11 / nominal body",
+      "status": "Nominal Omron body/plunger dimensions; simplified terminals and travel, actual part still to qualify",
+      "valid": true,
+      "volume_mm3": 662.5199999999996
+    },
+    {
+      "name": "Cap_SW11",
+      "label": "Cap SW11 / printed prototype",
+      "status": "Actuator length and 0.35 mm travel are design allowances; verify preload, guides and overload stop",
+      "valid": true,
+      "volume_mm3": 595.3370149132791
+    },
+    {
+      "name": "LowerShell",
+      "label": "Lower shell / new design",
+      "status": "Designed solid; no print fit, thermal or strength qualification",
+      "valid": true,
+      "volume_mm3": 71719.543455822
+    },
+    {
+      "name": "UpperShell",
+      "label": "Upper shell / new design",
+      "status": "Designed solid with button/stick and shoulder openings, proposed hinge supports; USB-C/audio port placement awaits carrier revision",
+      "valid": true,
+      "volume_mm3": 69873.79692938505
+    },
+    {
+      "name": "base_Post_1",
+      "label": "base post 1",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 501.27925986991283
+    },
+    {
+      "name": "base_Post_2",
+      "label": "base post 2",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 501.2792598699128
+    },
+    {
+      "name": "base_Post_3",
+      "label": "base post 3",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 501.2792598699131
+    },
+    {
+      "name": "base_Post_4",
+      "label": "base post 4",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 501.2792598699128
+    },
+    {
+      "name": "controls_Post_1",
+      "label": "controls post 1",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 479.16399840506324
+    },
+    {
+      "name": "controls_Post_2",
+      "label": "controls post 2",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 479.16399840506256
+    },
+    {
+      "name": "controls_Post_3",
+      "label": "controls post 3",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 479.1639984050636
+    },
+    {
+      "name": "controls_Post_4",
+      "label": "controls post 4",
+      "status": "Proposed pilot hole for M2.5 fastening; material and thread process unqualified",
+      "valid": true,
+      "volume_mm3": 479.16399840506364
+    },
+    {
+      "name": "PCB_controls",
+      "label": "PCB controls D1",
+      "status": "Actual KiCad STEP; standard library bodies may not match exact purchased variants",
+      "valid": true,
+      "volume_mm3": 20424.842590963428
+    },
+    {
+      "name": "PCB_base",
+      "label": "PCB base D1",
+      "status": "Actual KiCad STEP; standard library bodies may not match exact purchased variants",
+      "valid": true,
+      "volume_mm3": 19021.85208740494
+    },
+    {
+      "name": "Pi3A_Board",
+      "label": "Pi 3 Model A+ / board-size model",
+      "status": "65 x 56 mm board outline from Raspberry Pi; thickness/location proposed; connectors simplified",
+      "valid": true,
+      "volume_mm3": 5824.000000000005
+    },
+    {
+      "name": "PiSugar3Plus_Board",
+      "label": "PiSugar 3 Plus / board-size model",
+      "status": "65 x 56 mm documented; exact kit revision, contacts and heights unqualified",
+      "valid": true,
+      "volume_mm3": 5824.000000000005
+    },
+    {
+      "name": "Battery_ALLOCATION",
+      "label": "BATTERY SPACE ALLOCATION / measure supplied cell",
+      "status": "Allocated space only, NOT dimensions of the PiSugar supplied cell; no battery compression or final tray approved",
+      "valid": true,
+      "volume_mm3": 41759.99999999999
+    },
+    {
+      "name": "Pi_Connectors_ALLOCATION",
+      "label": "Pi connectors / clearance allocation",
+      "status": "Reserve only; not exact connector body or orientation",
+      "valid": true,
+      "volume_mm3": 15795.0
+    },
+    {
+      "name": "Joystick_1_NOMINAL",
+      "label": "RKJXV122400R stick 1 / nominal simplified model",
+      "status": "RKJXV122400R selected prototype candidate, nominal body dimensions from Alps Alpine. Simplified solid, NOT exact COM-09032 replacement guarantee. Printed mounting/cap and full 23 degree motion require qualification.",
+      "valid": true,
+      "volume_mm3": 4521.601473728337
+    },
+    {
+      "name": "Joystick_cap_1",
+      "label": "Stick cap 1 / printed proposal",
+      "status": "Shaft interface simplified; neutral and 23 degree sweep fit to verify against actual purchased part",
+      "valid": true,
+      "volume_mm3": 737.8805575126402
+    },
+    {
+      "name": "Joystick_2_NOMINAL",
+      "label": "RKJXV122400R stick 2 / nominal simplified model",
+      "status": "RKJXV122400R selected prototype candidate, nominal body dimensions from Alps Alpine. Simplified solid, NOT exact COM-09032 replacement guarantee. Printed mounting/cap and full 23 degree motion require qualification.",
+      "valid": true,
+      "volume_mm3": 4521.601473728336
+    },
+    {
+      "name": "Joystick_cap_2",
+      "label": "Stick cap 2 / printed proposal",
+      "status": "Shaft interface simplified; neutral and 23 degree sweep fit to verify against actual purchased part",
+      "valid": true,
+      "volume_mm3": 737.8805575126404
+    },
+    {
+      "name": "LRA_1",
+      "label": "LRA 1 / VG0832013D nominal body",
+      "status": "VG0832013D nominal body; bracket and adhesive need mechanical/haptic qualification. Arc adjusted to clear the allocated battery in this proposal.",
+      "valid": true,
+      "volume_mm3": 164.770252680181
+    },
+    {
+      "name": "Motor_saddle_1",
+      "label": "Motor saddle 1 / prototype",
+      "status": "Adhesive gap, vibration coupling and compliance unqualified",
+      "valid": true,
+      "volume_mm3": 461.49537006028635
+    },
+    {
+      "name": "LRA_2",
+      "label": "LRA 2 / VG0832013D nominal body",
+      "status": "VG0832013D nominal body; bracket and adhesive need mechanical/haptic qualification. Arc adjusted to clear the allocated battery in this proposal.",
+      "valid": true,
+      "volume_mm3": 164.7702526801813
+    },
+    {
+      "name": "Motor_saddle_2",
+      "label": "Motor saddle 2 / prototype",
+      "status": "Adhesive gap, vibration coupling and compliance unqualified",
+      "valid": true,
+      "volume_mm3": 461.4953700602864
+    },
+    {
+      "name": "LRA_3",
+      "label": "LRA 3 / VG0832013D nominal body",
+      "status": "VG0832013D nominal body; bracket and adhesive need mechanical/haptic qualification. Arc adjusted to clear the allocated battery in this proposal.",
+      "valid": true,
+      "volume_mm3": 164.77025268018124
+    },
+    {
+      "name": "Motor_saddle_3",
+      "label": "Motor saddle 3 / prototype",
+      "status": "Adhesive gap, vibration coupling and compliance unqualified",
+      "valid": true,
+      "volume_mm3": 461.49537006028646
+    },
+    {
+      "name": "LRA_4",
+      "label": "LRA 4 / VG0832013D nominal body",
+      "status": "VG0832013D nominal body; bracket and adhesive need mechanical/haptic qualification. Arc adjusted to clear the allocated battery in this proposal.",
+      "valid": true,
+      "volume_mm3": 164.77025268018122
+    },
+    {
+      "name": "Motor_saddle_4",
+      "label": "Motor saddle 4 / prototype",
+      "status": "Adhesive gap, vibration coupling and compliance unqualified",
+      "valid": true,
+      "volume_mm3": 461.4953700602865
+    },
+    {
+      "name": "LRA_5",
+      "label": "LRA 5 / VG0832013D nominal body",
+      "status": "VG0832013D nominal body; bracket and adhesive need mechanical/haptic qualification. Arc adjusted to clear the allocated battery in this proposal.",
+      "valid": true,
+      "volume_mm3": 164.77025268018107
+    },
+    {
+      "name": "Motor_saddle_5",
+      "label": "Motor saddle 5 / prototype",
+      "status": "Adhesive gap, vibration coupling and compliance unqualified",
+      "valid": true,
+      "volume_mm3": 461.4953700602867
+    },
+    {
+      "name": "Lever_L1",
+      "label": "L1 shoulder lever / prototype",
+      "status": "Printed lever/pivot with cover clearances and 3 mm shaft proposal; L1/R1 tactile and L2/R2 potentiometer attachment, return springs and hard stops remain unqualified.",
+      "valid": true,
+      "volume_mm3": 868.5295667906834
+    },
+    {
+      "name": "Shaft_L1",
+      "label": "L1 pivot shaft / proposed 3 mm",
+      "status": "Dimensional proposal; retaining feature, material, spring and shaft purchase reference not qualified",
+      "valid": true,
+      "volume_mm3": 228.14342678794281
+    },
+    {
+      "name": "Lever_L2",
+      "label": "L2 shoulder lever / prototype",
+      "status": "Printed lever/pivot with cover clearances and 3 mm shaft proposal; L1/R1 tactile and L2/R2 potentiometer attachment, return springs and hard stops remain unqualified.",
+      "valid": true,
+      "volume_mm3": 1908.2980133252177
+    },
+    {
+      "name": "Shaft_L2",
+      "label": "L2 pivot shaft / proposed 3 mm",
+      "status": "Dimensional proposal; retaining feature, material, spring and shaft purchase reference not qualified",
+      "valid": true,
+      "volume_mm3": 228.14342678794316
+    },
+    {
+      "name": "Lever_R1",
+      "label": "R1 shoulder lever / prototype",
+      "status": "Printed lever/pivot with cover clearances and 3 mm shaft proposal; L1/R1 tactile and L2/R2 potentiometer attachment, return springs and hard stops remain unqualified.",
+      "valid": true,
+      "volume_mm3": 868.5295672907806
+    },
+    {
+      "name": "Shaft_R1",
+      "label": "R1 pivot shaft / proposed 3 mm",
+      "status": "Dimensional proposal; retaining feature, material, spring and shaft purchase reference not qualified",
+      "valid": true,
+      "volume_mm3": 228.14342678794281
+    },
+    {
+      "name": "Lever_R2",
+      "label": "R2 shoulder lever / prototype",
+      "status": "Printed lever/pivot with cover clearances and 3 mm shaft proposal; L1/R1 tactile and L2/R2 potentiometer attachment, return springs and hard stops remain unqualified.",
+      "valid": true,
+      "volume_mm3": 1908.2980139356716
+    },
+    {
+      "name": "Shaft_R2",
+      "label": "R2 pivot shaft / proposed 3 mm",
+      "status": "Dimensional proposal; retaining feature, material, spring and shaft purchase reference not qualified",
+      "valid": true,
+      "volume_mm3": 228.14342678794316
+    }
+  ],
+  "collisions": [
+    {
+      "a": "Switch_SW2",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW2",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW3",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW3",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW4",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW4",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW5",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW5",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW6",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW6",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW7",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW7",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW8",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW8",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW9",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW9",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW10",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW10",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Switch_SW11",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "Cap_SW11",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "LowerShell",
+      "b": "UpperShell",
+      "volume_mm3": 3.712,
+      "interpretation": "Review intersection; some retention/support interfaces are intentional. Envelope intersections are risks, not measured part collisions."
+    },
+    {
+      "a": "LowerShell",
+      "b": "PCB_base",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "UpperShell",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "base_Post_1",
+      "b": "PCB_base",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "base_Post_2",
+      "b": "PCB_base",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "base_Post_3",
+      "b": "PCB_base",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "base_Post_4",
+      "b": "PCB_base",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "controls_Post_1",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "controls_Post_2",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "controls_Post_3",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "controls_Post_4",
+      "b": "PCB_controls",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "PCB_controls",
+      "b": "Joystick_1_NOMINAL",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "PCB_controls",
+      "b": "Joystick_2_NOMINAL",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    },
+    {
+      "a": "PCB_base",
+      "b": "PiSugar3Plus_Board",
+      "type": "bounding-box screening only; exact PCB interference not evaluated in this bounded pass"
+    }
+  ],
+  "input_sha256": {
+    "parameters/design.json": "d830f9d6f5015335155dbebb8ee27a001696b76cfca97b607cf1deeba59be4bb",
+    "parameters/assembly-d1.json": "233d97d774dbda2a02014de62b4575e34de2f7e6e896ba76d12082882c3087e0",
+    "mechanical/parameters.scad": "36bf97da5503593263bca77110f799fe0cb697093c5666f1941ff0f2b09af7e4",
+    "mechanical/assembly/controls-D1.step": "6679458b55f5aaf55545d62a08fae2325cbe628b2658d411934dd8eeb2cff52c",
+    "mechanical/assembly/base-D1.step": "0c069665073d4a47b9e43ab2c30910c79352339aae402993188e45aec25046c3"
+  },
+  "native_file": "mechanical/assembly/nathan-D1-review.FCStd",
+  "step_file": "mechanical/assembly/nathan-D1-review.step",
+  "all_shapes_valid": true
+}

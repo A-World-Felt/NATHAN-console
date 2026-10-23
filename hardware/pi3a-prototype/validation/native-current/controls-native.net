@@ -1,0 +1,3342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Projects\_codex\vocaux-22\nathan-conception\electrical\controls\nathan-controls.kicad_sch</source>
+    <date>2026-10-22T20:57:10-0400</date>
+    <tool>Eeschema 8.0.2</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NATHAN controls D1 electrical proposal</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1</rev>
+        <date/>
+        <source>nathan-controls.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / analog</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>analog.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / digital</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>digital.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-1</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-1.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-2</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-2.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-3</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-3.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-4</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-4.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-5</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-5.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/haptic-mux/" tstamps="/7aa015a3-fcb5-5126-ae68-ff53c60904a3/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / haptic-mux</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>haptic-mux.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / interface</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>interface.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/">
+      <title_block>
+        <title>NATHAN D1 proposal / controls / power</title>
+        <company>Codex/OpenAI nathan_bom</company>
+        <rev>D1-proposal</rev>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value="Pin-level proposal; see versioned validation reports; physical qualification pending"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C16" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>b18fa13f-8590-5d8e-87f4-2a15d3343b42</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C17" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>afd2d0e3-e8ed-5617-88df-7745c62a3792</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C20" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>ae7b5713-0b3d-5fb1-bfb9-59a9c8ee3441</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C21" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>5b1552a8-5cec-50fd-b3cd-5d23c86e99d9</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C22" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>52b3f458-362b-541a-8684-b6091f69b591</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C23" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>15f6e80d-d34a-5d5d-9948-a1e2f8e4ec4a</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C24" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>c0b43717-0d33-57a2-8b98-161b02b0839c</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C25" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>575e6471-300d-5646-84d3-4a29b3537516</tstamps>
+    </comp>
+    <comp ref="J20">
+      <value>J20 interface</value>
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J20" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>d47433ef-53e1-514d-ba4c-9a795518aa31</tstamps>
+    </comp>
+    <comp ref="J21">
+      <value>J21 interface</value>
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J21" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>58339892-6878-58bf-a6c6-7432119cc4c8</tstamps>
+    </comp>
+    <comp ref="J22">
+      <value>J22 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J22" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>8d3179fd-4560-5ea0-bdeb-cdb62a268612</tstamps>
+    </comp>
+    <comp ref="J23">
+      <value>J23 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J23" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>34fffc00-2858-5ac8-848b-2de124676fbf</tstamps>
+    </comp>
+    <comp ref="R50">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R50" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>b2403ea7-4315-53bb-8485-3397ab32e1e9</tstamps>
+    </comp>
+    <comp ref="R51">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R51" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>0939a06d-5602-5643-84e0-2ac4f2b1c5f1</tstamps>
+    </comp>
+    <comp ref="R52">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R52" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>63de8f6e-f25f-5f0f-8e3a-c64ce39c3db8</tstamps>
+    </comp>
+    <comp ref="R53">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R53" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>b176c523-d671-50c4-bb18-268eadb78cf9</tstamps>
+    </comp>
+    <comp ref="R54">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R54" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>c2aa65fa-e4c8-540f-9169-204f36ce56f7</tstamps>
+    </comp>
+    <comp ref="R55">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R55" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>75ad2b79-0962-5425-8e84-d0e752172dac</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>MCP3208-CI/SL</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/21298e.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/en/DeviceDoc/21298e.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U6" description=""/>
+      <property name="Sheetname" value="analog"/>
+      <property name="Sheetfile" value="analog.kicad_sch"/>
+      <sheetpath names="/analog/" tstamps="/d169995f-4bc5-51f5-ae04-4808cddc92f7/"/>
+      <tstamps>5c7dbc5a-ad91-5d39-935d-27c3c19e81b4</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C15" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>5346d6aa-91db-526b-bf11-9e3936400880</tstamps>
+    </comp>
+    <comp ref="J24">
+      <value>J24 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J24" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>efb18eb7-8e98-569a-a0e5-d6f38d81b521</tstamps>
+    </comp>
+    <comp ref="J25">
+      <value>J25 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J25" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>8f9f94dd-d308-501b-af9f-4c3d78780ac5</tstamps>
+    </comp>
+    <comp ref="R30">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R30" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>bc0d0a0a-6041-5767-bc7d-8f7bf6d7e97f</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R31" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>499f1405-fff5-5180-a53a-673642c4c70a</tstamps>
+    </comp>
+    <comp ref="R32">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R32" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>a224b0c0-c221-563b-a5fb-9414907d9689</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R33" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>37bcbfd1-3498-5d8e-82d8-cdf1848ec8dc</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R34" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>7d5327d4-ffe1-5bbf-ae57-2574a28d7616</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R35" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>a681bda9-406d-5fb2-a208-41ec925601c4</tstamps>
+    </comp>
+    <comp ref="R36">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R36" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>c6f1406a-1975-54d3-b492-94318a34faed</tstamps>
+    </comp>
+    <comp ref="R37">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R37" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>a1e3e729-0b8e-5132-9362-4c080b0fe4f3</tstamps>
+    </comp>
+    <comp ref="R38">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R38" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>f73ecd47-3ea1-563a-9431-2b7385bcd170</tstamps>
+    </comp>
+    <comp ref="R39">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R39" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>239c8b54-1827-559e-9364-909f9690c063</tstamps>
+    </comp>
+    <comp ref="R40">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R40" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>782c983d-ab4c-5bf7-a2b1-25cd3f4b928a</tstamps>
+    </comp>
+    <comp ref="R41">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R41" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>b49639e7-0f04-5a5b-a3c2-d97ec6fe9d43</tstamps>
+    </comp>
+    <comp ref="R42">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R42" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>cd08652f-f41e-5c49-8bee-9ead6e039709</tstamps>
+    </comp>
+    <comp ref="R43">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R43" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>c755c77d-43b0-5e94-8f99-bf0f75d26514</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW2" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>9225f2dc-41d0-59d1-bb33-8659dc2ab507</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW3" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>17f3e5d5-224d-5e4c-a3a5-c19d392c5eba</tstamps>
+    </comp>
+    <comp ref="SW4">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW4" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>cfee9d12-2be3-5517-ae9f-d91d8ae01db4</tstamps>
+    </comp>
+    <comp ref="SW5">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW5" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>9451542f-01e6-5581-b282-7a1a283065e3</tstamps>
+    </comp>
+    <comp ref="SW6">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW6" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>e9489cac-2637-5a55-8987-57d8b5955f98</tstamps>
+    </comp>
+    <comp ref="SW7">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW7" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>9d54a702-320e-58b8-a6bd-0eac6051eb80</tstamps>
+    </comp>
+    <comp ref="SW8">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW8" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>0c27b2a2-6370-5210-9048-83db62b4a1f1</tstamps>
+    </comp>
+    <comp ref="SW9">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW9" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>c6b5c1d0-fbb5-5463-9026-8efaa951677e</tstamps>
+    </comp>
+    <comp ref="SW10">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW10" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>7d99a76a-5cd1-5d55-8b5f-8f8cdc94cf6d</tstamps>
+    </comp>
+    <comp ref="SW11">
+      <value>B3F-4055 candidate</value>
+      <footprint>Button_Switch_THT:SW_PUSH-12mm</footprint>
+      <fields>
+        <field name="Footprint">Button_Switch_THT:SW_PUSH-12mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="SW11" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>bc2a43be-871b-5957-b8e7-163398be03b3</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>MCP23017-E/SO</value>
+      <footprint>Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm</footprint>
+      <datasheet>https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm</field>
+        <field name="Datasheet">https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U7" description=""/>
+      <property name="Sheetname" value="digital"/>
+      <property name="Sheetfile" value="digital.kicad_sch"/>
+      <sheetpath names="/digital/" tstamps="/335e8db8-b1a3-55fa-81b5-5d0597f4b273/"/>
+      <tstamps>21530156-28c8-54ce-9ad8-9065251105c8</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C1" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>8a56c3eb-0c59-5073-a5cb-68ca6f262437</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C2" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>a523d1b0-3dac-5ca3-93d2-372b5a7d75a9</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>J2 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J2" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>dd93ff38-cfe6-5447-8f71-33515b069b53</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R1" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>a99f22e6-f68e-56bb-a411-160e756c9a2c</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R2" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>b5f0e870-adca-5848-96bb-1a5e18227a7c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>DRV2604LDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv2604l.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2604l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U1" description=""/>
+      <property name="Sheetname" value="haptic-1"/>
+      <property name="Sheetfile" value="haptic-1.kicad_sch"/>
+      <sheetpath names="/haptic-1/" tstamps="/0b6e697c-c4f1-5ad5-8f0c-e6f9fe418179/"/>
+      <tstamps>f3a7dd05-6ebb-5e9b-bedf-97a66e75c1c3</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C3" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>39b54a79-7660-5e13-b30d-9690d5be5cb0</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C4" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>f44323a0-3a14-53a2-8b43-b2e14979e0cf</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>J3 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J3" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>7b2cf6d1-0288-5357-83fa-b1d5a1abc10f</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R3" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>28cdb0ff-0658-5bcc-8804-9ffd0ffb37f6</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R4" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>b839ddcc-9959-5dba-ac2b-88386d67faab</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>DRV2604LDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv2604l.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2604l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U2" description=""/>
+      <property name="Sheetname" value="haptic-2"/>
+      <property name="Sheetfile" value="haptic-2.kicad_sch"/>
+      <sheetpath names="/haptic-2/" tstamps="/5791e634-0733-58a9-922e-3756f704e1d8/"/>
+      <tstamps>6dfa5db6-fba1-5186-bafb-043cefb0859f</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C5" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>34297b4a-bdd2-5191-b03f-265afd00261a</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C6" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>00819385-887f-5bc6-8a00-1b708ab65a5a</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>J4 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J4" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>7580020e-eaf8-50a3-8368-f0276eb6bad3</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R5" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>2eb9a1ad-d960-5baa-81f2-63e4215a0362</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R6" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>72626457-f2f7-5b89-8ae3-99dcb79d2eb4</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>DRV2604LDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv2604l.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2604l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U3" description=""/>
+      <property name="Sheetname" value="haptic-3"/>
+      <property name="Sheetfile" value="haptic-3.kicad_sch"/>
+      <sheetpath names="/haptic-3/" tstamps="/4fe9310d-f79b-5d05-b398-7b84abc2cd0d/"/>
+      <tstamps>bdb00050-bbda-5971-a9a6-a599b9e1b5be</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C7" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>91ccfcc4-0a6f-51ce-aad4-7701071a6c95</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C8" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>4bbd8a42-20f9-58e7-9b52-24d9e68809ac</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>J5 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J5" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>bc7cf84e-8f4b-5cd4-8b3b-bd2666d588f0</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R7" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>05b4b095-8727-5540-be09-6e231d86043e</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R8" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>e2105cc4-6d09-50e6-8c59-1e2d7432bfc6</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>DRV2604LDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv2604l.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2604l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U4" description=""/>
+      <property name="Sheetname" value="haptic-4"/>
+      <property name="Sheetfile" value="haptic-4.kicad_sch"/>
+      <sheetpath names="/haptic-4/" tstamps="/d8936d5a-6373-5746-90a6-40c2ac06e7e6/"/>
+      <tstamps>8660a6e9-b8af-58e6-9fb8-5c6ad3324bf0</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C9" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>7ab4d2f3-17b0-5119-b58a-47d1684ba6b4</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C10" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>dc7006ba-0684-5f95-9adc-1d1b08658865</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>J6 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J6" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>be3d3098-2d75-5f5e-b3ab-145fa58d091c</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R9" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>255ae63b-dba7-56a2-812e-047c607482f4</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R10" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>d808c2a1-9aae-51f8-b18a-a591ffe8eccd</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>DRV2604LDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/drv2604l.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:VSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2604l.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U5" description=""/>
+      <property name="Sheetname" value="haptic-5"/>
+      <property name="Sheetfile" value="haptic-5.kicad_sch"/>
+      <sheetpath names="/haptic-5/" tstamps="/a481d3d3-a1bc-5e55-a505-fd84b2acd155/"/>
+      <tstamps>9ad53710-7341-5c65-ab1f-0144a031635a</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C18" description=""/>
+      <property name="Sheetname" value="haptic-mux"/>
+      <property name="Sheetfile" value="haptic-mux.kicad_sch"/>
+      <sheetpath names="/haptic-mux/" tstamps="/7aa015a3-fcb5-5126-ae68-ff53c60904a3/"/>
+      <tstamps>e8eca2ff-0e85-538d-ae87-3ef2c0c91ffe</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>TCA9548APWR</value>
+      <footprint>Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tca9548a.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tca9548a.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="U8" description=""/>
+      <property name="Sheetname" value="haptic-mux"/>
+      <property name="Sheetfile" value="haptic-mux.kicad_sch"/>
+      <sheetpath names="/haptic-mux/" tstamps="/7aa015a3-fcb5-5126-ae68-ff53c60904a3/"/>
+      <tstamps>83394445-73c1-5df7-80ff-736dbb72b741</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C13" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>dba45647-fa22-5544-8d62-416a22912e3d</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C14" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>f4ef8d64-b0e8-5279-aba5-616b4569a32d</tstamps>
+    </comp>
+    <comp ref="J100">
+      <value>J100 interface</value>
+      <footprint>Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="J100" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>8f592453-a433-5657-aa1f-1cd221c23d65</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>4.7k DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R11" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>e6bb139d-7fb6-5b7a-b1f1-0875c592a1df</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>4.7k DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R12" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>9debacb0-6972-541a-b3a5-02439fa9f799</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R13" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>6f8593ed-ac74-5eef-9a78-66b82ae19562</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R14" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>847afc76-a4e8-5712-9309-41c41785e40e</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R15" description=""/>
+      <property name="Sheetname" value="interface"/>
+      <property name="Sheetfile" value="interface.kicad_sch"/>
+      <sheetpath names="/interface/" tstamps="/6b4bb311-ba04-55ca-a5fe-03c49658f9d1/"/>
+      <tstamps>24175502-bcbf-52ff-ab35-a2ef9768ebd6</tstamps>
+    </comp>
+    <comp ref="C30">
+      <value>10uF 10V X5R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C30" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>3306a3a3-3769-59a0-9ad2-b47408cf0c15</tstamps>
+    </comp>
+    <comp ref="C31">
+      <value>22uF 6.3V X5R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="C31" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>0b5e2652-2675-5603-87ad-4c9502b8618c</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>1uH XAL4020-102MEC candidate</value>
+      <footprint>Inductor_SMD:L_Coilcraft_XAL4020-XXX</footprint>
+      <datasheet>https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_Coilcraft_XAL4020-XXX</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="L1" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>4c478c98-7406-5f19-8745-6b4d9575355f</tstamps>
+    </comp>
+    <comp ref="PS2">
+      <value>TPS62080DSGR</value>
+      <footprint>Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps62080.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps62080.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="PS2" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>928f507d-2b92-53f6-b11b-5e89851f1c7b</tstamps>
+    </comp>
+    <comp ref="R60">
+      <value>249k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R60" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>6493d172-5274-56ff-9253-804f09cac3d5</tstamps>
+    </comp>
+    <comp ref="R61">
+      <value>39.2k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NATHAN" part="R61" description=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9e74ff15-340f-5f3e-8810-2012facb9e33/"/>
+      <tstamps>096b5477-bd04-5953-9034-9fe5e8280338</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NATHAN" part="C1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C10">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C13">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C14">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C15">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C16">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C17">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C18">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C20">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C21">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C22">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C23">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C24">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C25">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C30">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10uF 10V X5R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C31">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">22uF 6.3V X5R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="C9">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J100">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J100 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J2 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J20">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J20 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J21">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J21 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J22">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J22 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J23">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J23 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J24">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J24 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J25">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J25 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J3 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J4 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J5 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="J6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">J6 interface</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="L1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">1uH XAL4020-102MEC candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="PS2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS62080DSGR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="MODE" type="input"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="VOS" type="input"/>
+        <pin num="6" name="PG" type="open_collector"/>
+        <pin num="7" name="SW" type="power_out"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R10">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R11">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k DNP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R12">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k DNP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R13">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R14">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R15">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R30">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R31">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R32">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R33">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R34">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R35">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R36">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R37">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R38">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R39">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R40">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R41">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R42">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R43">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R50">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R51">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R52">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R53">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R54">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R55">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">100R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R60">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">249k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R61">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">39.2k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="R9">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW10">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW11">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="SW9">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">B3F-4055 candidate</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="contact_1" type="passive"/>
+        <pin num="2" name="contact_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV2604LDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REG" type="power_out"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="IN_TRIG" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VDD_NC" type="power_in"/>
+        <pin num="7" name="OUT_PLUS" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUT_MINUS" type="output"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV2604LDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REG" type="power_out"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="IN_TRIG" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VDD_NC" type="power_in"/>
+        <pin num="7" name="OUT_PLUS" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUT_MINUS" type="output"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV2604LDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REG" type="power_out"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="IN_TRIG" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VDD_NC" type="power_in"/>
+        <pin num="7" name="OUT_PLUS" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUT_MINUS" type="output"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV2604LDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REG" type="power_out"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="IN_TRIG" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VDD_NC" type="power_in"/>
+        <pin num="7" name="OUT_PLUS" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUT_MINUS" type="output"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV2604LDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REG" type="power_out"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="IN_TRIG" type="input"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="VDD_NC" type="power_in"/>
+        <pin num="7" name="OUT_PLUS" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="OUT_MINUS" type="output"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP3208-CI/SL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CH0" type="input"/>
+        <pin num="2" name="CH1" type="input"/>
+        <pin num="3" name="CH2" type="input"/>
+        <pin num="4" name="CH3" type="input"/>
+        <pin num="5" name="CH4" type="input"/>
+        <pin num="6" name="CH5" type="input"/>
+        <pin num="7" name="CH6" type="input"/>
+        <pin num="8" name="CH7" type="input"/>
+        <pin num="9" name="DGND" type="power_in"/>
+        <pin num="10" name="CS_N" type="input"/>
+        <pin num="11" name="DIN" type="input"/>
+        <pin num="12" name="DOUT" type="output"/>
+        <pin num="13" name="CLK" type="input"/>
+        <pin num="14" name="AGND" type="power_in"/>
+        <pin num="15" name="VREF" type="input"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP23017-E/SO</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GPB0" type="bidirectional"/>
+        <pin num="2" name="GPB1" type="bidirectional"/>
+        <pin num="3" name="GPB2" type="bidirectional"/>
+        <pin num="4" name="GPB3" type="bidirectional"/>
+        <pin num="5" name="GPB4" type="bidirectional"/>
+        <pin num="6" name="GPB5" type="bidirectional"/>
+        <pin num="7" name="GPB6" type="bidirectional"/>
+        <pin num="8" name="GPB7" type="bidirectional"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VSS" type="power_in"/>
+        <pin num="11" name="NC" type="passive"/>
+        <pin num="12" name="SCL" type="input"/>
+        <pin num="13" name="SDA" type="bidirectional"/>
+        <pin num="14" name="NC" type="passive"/>
+        <pin num="15" name="A0" type="input"/>
+        <pin num="16" name="A1" type="input"/>
+        <pin num="17" name="A2" type="input"/>
+        <pin num="18" name="RESET_N" type="input"/>
+        <pin num="19" name="INTB" type="output"/>
+        <pin num="20" name="INTA" type="output"/>
+        <pin num="21" name="GPA0" type="bidirectional"/>
+        <pin num="22" name="GPA1" type="bidirectional"/>
+        <pin num="23" name="GPA2" type="bidirectional"/>
+        <pin num="24" name="GPA3" type="bidirectional"/>
+        <pin num="25" name="GPA4" type="bidirectional"/>
+        <pin num="26" name="GPA5" type="bidirectional"/>
+        <pin num="27" name="GPA6" type="bidirectional"/>
+        <pin num="28" name="GPA7" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="NATHAN" part="U8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCA9548APWR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="RESET_N" type="input"/>
+        <pin num="4" name="SD0" type="bidirectional"/>
+        <pin num="5" name="SC0" type="bidirectional"/>
+        <pin num="6" name="SD1" type="bidirectional"/>
+        <pin num="7" name="SC1" type="bidirectional"/>
+        <pin num="8" name="SD2" type="bidirectional"/>
+        <pin num="9" name="SC2" type="bidirectional"/>
+        <pin num="10" name="SD3" type="bidirectional"/>
+        <pin num="11" name="SC3" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="SD4" type="bidirectional"/>
+        <pin num="14" name="SC4" type="bidirectional"/>
+        <pin num="15" name="SD5" type="bidirectional"/>
+        <pin num="16" name="SC5" type="bidirectional"/>
+        <pin num="17" name="SD6" type="bidirectional"/>
+        <pin num="18" name="SC6" type="bidirectional"/>
+        <pin num="19" name="SD7" type="bidirectional"/>
+        <pin num="20" name="SC7" type="bidirectional"/>
+        <pin num="21" name="A2" type="input"/>
+        <pin num="22" name="SCL" type="input"/>
+        <pin num="23" name="SDA" type="bidirectional"/>
+        <pin num="24" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="NATHAN">
+      <uri>C:\Projects\_codex\vocaux-22\nathan-conception\electrical\controls/NATHAN.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="3V3_HAPTIC">
+      <node ref="C10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C31" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="PS2" pin="5" pinfunction="VOS" pintype="input"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R60" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="EN" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="VDD_NC" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="EN" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="VDD_NC" pintype="power_in"/>
+      <node ref="U3" pin="10" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="EN" pintype="input"/>
+      <node ref="U3" pin="6" pinfunction="VDD_NC" pintype="power_in"/>
+      <node ref="U4" pin="10" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="EN" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="VDD_NC" pintype="power_in"/>
+      <node ref="U5" pin="10" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="EN" pintype="input"/>
+      <node ref="U5" pin="6" pinfunction="VDD_NC" pintype="power_in"/>
+    </net>
+    <net code="2" name="3V3_PI">
+      <node ref="C14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="C18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J100" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="J20" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J21" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J22" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J23" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R30" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R31" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R32" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R33" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R34" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R37" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R38" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R39" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R40" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R41" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R42" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R43" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="15" pinfunction="VREF" pintype="input"/>
+      <node ref="U6" pin="16" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U7" pin="9" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U8" pin="24" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="3" name="5V_SYS">
+      <node ref="C30" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J100" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J100" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="PS2" pin="1" pinfunction="EN" pintype="input"/>
+      <node ref="PS2" pin="8" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="4" name="ADC_CS_N">
+      <node ref="J100" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="10" pinfunction="CS_N" pintype="input"/>
+    </net>
+    <net code="5" name="ADC_L2">
+      <node ref="C24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R54" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="CH4" pintype="input"/>
+    </net>
+    <net code="6" name="ADC_LX">
+      <node ref="C20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R50" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="CH0" pintype="input"/>
+    </net>
+    <net code="7" name="ADC_LY">
+      <node ref="C21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R51" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="CH1" pintype="input"/>
+    </net>
+    <net code="8" name="ADC_R2">
+      <node ref="C25" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R55" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="6" pinfunction="CH5" pintype="input"/>
+    </net>
+    <net code="9" name="ADC_RX">
+      <node ref="C22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R52" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="CH2" pintype="input"/>
+    </net>
+    <net code="10" name="ADC_RY">
+      <node ref="C23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R53" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="CH3" pintype="input"/>
+    </net>
+    <net code="11" name="CENTRAL_1">
+      <node ref="R38" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW10" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="GPB1" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="CENTRAL_2">
+      <node ref="R39" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW11" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="3" pinfunction="GPB2" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="CTRL_RESET_N">
+      <node ref="C13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="J100" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="18" pinfunction="RESET_N" pintype="input"/>
+      <node ref="U8" pin="3" pinfunction="RESET_N" pintype="input"/>
+    </net>
+    <net code="14" name="FACE_L_DOWN">
+      <node ref="R32" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="23" pinfunction="GPA2" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="FACE_L_LEFT">
+      <node ref="R33" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="24" pinfunction="GPA3" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="FACE_L_RIGHT">
+      <node ref="R31" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="22" pinfunction="GPA1" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="FACE_L_UP">
+      <node ref="R30" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="21" pinfunction="GPA0" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="FACE_R_DOWN">
+      <node ref="R36" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW8" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="27" pinfunction="GPA6" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="FACE_R_LEFT">
+      <node ref="R37" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW9" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="GPB0" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="FACE_R_RIGHT">
+      <node ref="R35" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW7" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="26" pinfunction="GPA5" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="FACE_R_UP">
+      <node ref="R34" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW6" pin="1" pinfunction="contact_1" pintype="passive"/>
+      <node ref="U7" pin="25" pinfunction="GPA4" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="GND">
+      <node ref="C1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C18" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C21" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C22" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C23" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C24" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C25" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C30" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C31" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="J100" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="J100" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="J100" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J100" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J100" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J20" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J21" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J22" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J23" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J24" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J25" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="PS2" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="PS2" pin="3" pinfunction="MODE" pintype="input"/>
+      <node ref="PS2" pin="9" pinfunction="EP" pintype="power_in"/>
+      <node ref="R61" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW10" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW11" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW6" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW7" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW8" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="SW9" pin="2" pinfunction="contact_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="IN_TRIG" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="IN_TRIG" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="IN_TRIG" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="4" pinfunction="IN_TRIG" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="IN_TRIG" pintype="input"/>
+      <node ref="U5" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="14" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U6" pin="7" pinfunction="CH6" pintype="input"/>
+      <node ref="U6" pin="8" pinfunction="CH7" pintype="input"/>
+      <node ref="U6" pin="9" pinfunction="DGND" pintype="power_in"/>
+      <node ref="U7" pin="10" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U7" pin="15" pinfunction="A0" pintype="input"/>
+      <node ref="U7" pin="16" pinfunction="A1" pintype="input"/>
+      <node ref="U7" pin="17" pinfunction="A2" pintype="input"/>
+      <node ref="U8" pin="1" pinfunction="A0" pintype="input"/>
+      <node ref="U8" pin="12" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="2" pinfunction="A1" pintype="input"/>
+      <node ref="U8" pin="21" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="23" name="H1_MINUS">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="OUT_MINUS" pintype="output"/>
+    </net>
+    <net code="24" name="H1_PLUS">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="OUT_PLUS" pintype="output"/>
+    </net>
+    <net code="25" name="H1_REG">
+      <node ref="C1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="REG" pintype="power_out"/>
+    </net>
+    <net code="26" name="H1_SCL">
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="SC0" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="H1_SDA">
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="4" pinfunction="SD0" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="H2_MINUS">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="OUT_MINUS" pintype="output"/>
+    </net>
+    <net code="29" name="H2_PLUS">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="OUT_PLUS" pintype="output"/>
+    </net>
+    <net code="30" name="H2_REG">
+      <node ref="C3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="REG" pintype="power_out"/>
+    </net>
+    <net code="31" name="H2_SCL">
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="7" pinfunction="SC1" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="H2_SDA">
+      <node ref="R3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="6" pinfunction="SD1" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="H3_MINUS">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="OUT_MINUS" pintype="output"/>
+    </net>
+    <net code="34" name="H3_PLUS">
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="OUT_PLUS" pintype="output"/>
+    </net>
+    <net code="35" name="H3_REG">
+      <node ref="C5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="REG" pintype="power_out"/>
+    </net>
+    <net code="36" name="H3_SCL">
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="9" pinfunction="SC2" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="H3_SDA">
+      <node ref="R5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="8" pinfunction="SD2" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="H4_MINUS">
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="OUT_MINUS" pintype="output"/>
+    </net>
+    <net code="39" name="H4_PLUS">
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="OUT_PLUS" pintype="output"/>
+    </net>
+    <net code="40" name="H4_REG">
+      <node ref="C7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="REG" pintype="power_out"/>
+    </net>
+    <net code="41" name="H4_SCL">
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="11" pinfunction="SC3" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="H4_SDA">
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="10" pinfunction="SD3" pintype="bidirectional"/>
+    </net>
+    <net code="43" name="H5_MINUS">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U5" pin="9" pinfunction="OUT_MINUS" pintype="output"/>
+    </net>
+    <net code="44" name="H5_PLUS">
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="OUT_PLUS" pintype="output"/>
+    </net>
+    <net code="45" name="H5_REG">
+      <node ref="C9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="REG" pintype="power_out"/>
+    </net>
+    <net code="46" name="H5_SCL">
+      <node ref="R10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="14" pinfunction="SC4" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="H5_SDA">
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="13" pinfunction="SD4" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="HAPTIC_FB">
+      <node ref="PS2" pin="4" pinfunction="FB" pintype="input"/>
+      <node ref="R60" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R61" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="49" name="HAPTIC_SW">
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="PS2" pin="7" pinfunction="SW" pintype="power_out"/>
+    </net>
+    <net code="50" name="I2C_SCL">
+      <node ref="J100" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="12" pinfunction="SCL" pintype="input"/>
+      <node ref="U8" pin="22" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="51" name="I2C_SDA">
+      <node ref="J100" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="13" pinfunction="SDA" pintype="bidirectional"/>
+      <node ref="U8" pin="23" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="INPUT_IRQ_N">
+      <node ref="J100" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="20" pinfunction="INTA" pintype="output"/>
+    </net>
+    <net code="53" name="RAW_L2">
+      <node ref="J22" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R54" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="54" name="RAW_LX">
+      <node ref="J20" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R50" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="55" name="RAW_LY">
+      <node ref="J20" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R51" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="56" name="RAW_R2">
+      <node ref="J23" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R55" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="57" name="RAW_RX">
+      <node ref="J21" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R52" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="58" name="RAW_RY">
+      <node ref="J21" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R53" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="59" name="SHOULDER_L1">
+      <node ref="J24" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R42" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="6" pinfunction="GPB5" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="SHOULDER_R1">
+      <node ref="J25" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R43" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="7" pinfunction="GPB6" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="SPI_MISO">
+      <node ref="J100" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="U6" pin="12" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="62" name="SPI_MOSI">
+      <node ref="J100" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="U6" pin="11" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="63" name="SPI_SCLK">
+      <node ref="J100" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="U6" pin="13" pinfunction="CLK" pintype="input"/>
+    </net>
+    <net code="64" name="STICK_L_CLICK">
+      <node ref="J20" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R40" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="4" pinfunction="GPB3" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="STICK_R_CLICK">
+      <node ref="J21" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R41" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="5" pinfunction="GPB4" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="unconnected-(PS2-PG-Pad6)">
+      <node ref="PS2" pin="6" pinfunction="PG" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U7-GPA7-Pad28)">
+      <node ref="U7" pin="28" pinfunction="GPA7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U7-GPB7-Pad8)">
+      <node ref="U7" pin="8" pinfunction="GPB7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U7-INTB-Pad19)">
+      <node ref="U7" pin="19" pinfunction="INTB" pintype="output+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U7-NC-Pad11)">
+      <node ref="U7" pin="11" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U7-NC-Pad14)">
+      <node ref="U7" pin="14" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U8-SC5-Pad16)">
+      <node ref="U8" pin="16" pinfunction="SC5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U8-SC6-Pad18)">
+      <node ref="U8" pin="18" pinfunction="SC6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U8-SC7-Pad20)">
+      <node ref="U8" pin="20" pinfunction="SC7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U8-SD5-Pad15)">
+      <node ref="U8" pin="15" pinfunction="SD5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U8-SD6-Pad17)">
+      <node ref="U8" pin="17" pinfunction="SD6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U8-SD7-Pad19)">
+      <node ref="U8" pin="19" pinfunction="SD7" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

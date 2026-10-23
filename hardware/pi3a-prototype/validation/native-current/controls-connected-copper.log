@@ -1,0 +1,14 @@
+CTRL_RESET_N failures=0
+FACE_R_RIGHT failures=0
+H1_SCL failures=0
+H1_SDA failures=0
+H2_SCL failures=1
+H2_SDA failures=3
+H3_SCL failures=3
+H3_SDA failures=3
+H4_SCL failures=3
+H4_SDA failures=3
+H5_SCL failures=3
+H5_SDA failures=3
+I2C_SCL failures=3
+I2C_SDA failures=3

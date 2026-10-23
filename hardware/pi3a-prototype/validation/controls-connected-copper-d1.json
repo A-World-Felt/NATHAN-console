@@ -1,0 +1,45 @@
+{
+  "status": "Native DRC still required",
+  "failures": [
+    {
+      "net": "H2_SCL",
+      "from": [
+        104.8,
+        106.5
+      ],
+      "to": [
+        117.1375,
+        76.325
+      ],
+      "source_nodes": 15,
+      "target_nodes": 4
+    },
+    {
+      "net": "H2_SDA",
+      "from": [
+        117.1375,
+        75.675
+      ],
+      "to": [
+        104.8,
+        107.0
+      ],
+      "source_nodes": 4,
+      "target_nodes": 1
+    },
+    {
+      "net": "H2_SDA",
+      "from": [
+        104.8,
+        107.0
+      ],
+      "to": [
+        102.2,
+        109.825
+      ],
+      "source_nodes": 1,
+      "target_nodes": 1
+    }
+  ],
+  "board_sha256": "b31c1aa4d3590d0ccbd0654ed162dc1994f25de7ce117927dd7e05be4aff2606"
+}

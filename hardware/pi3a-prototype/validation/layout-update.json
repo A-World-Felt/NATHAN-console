@@ -1,0 +1,7 @@
+{
+  "mode": "standard-library text update only",
+  "layout": "User explicitly requested four left and four right face buttons plus PS4-style triggers; lower symmetric sticks are the agent implementation proposal",
+  "controls_sha256": "e97e223c4fd02190d7d651c89ee0e4a9bf2ffa1b7154ccdac54659095d4fd60e",
+  "moved_footprint_count": 31,
+  "notes": "8 face + 2 central switches; shoulders are drawings/reserves, no added pads. Base and consultation untouched."
+}

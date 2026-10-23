@@ -1,0 +1,20 @@
+{
+  "own_pid": 42604,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 9.14,
+  "log": "validation\\native-current\\base-step-current.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "export",
+    "step",
+    "--force",
+    "--subst-models",
+    "--user-origin",
+    "120x100mm",
+    "-o",
+    "mechanical/assembly/base-D1.step",
+    "electrical/base/nathan-base.kicad_pcb"
+  ]
+}

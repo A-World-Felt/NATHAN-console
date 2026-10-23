@@ -1,0 +1,1041 @@
+{
+  "source_root": "C:\\Projects\\Ecole\\NATHAN\\NATHAN-console",
+  "read_only": true,
+  "stl": [
+    {
+      "file": "3D Print Models\\NATHAN-Front-console.STL",
+      "sha256": "ea84d5b66372f43972fdec88823cc5ab524edbb363b3a485ab16ad2a0f1c9ec5",
+      "triangles": 9776,
+      "min": [
+        9.168706893920898,
+        15.372678756713867,
+        17.899751663208008
+      ],
+      "max": [
+        181.67178344726562,
+        126.09054565429688,
+        50.57993698120117
+      ],
+      "span": [
+        172.50307655334473,
+        110.71786689758301,
+        32.680185317993164
+      ],
+      "unit_status": "STL is unitless; millimetres assumed for provisional mechanical study"
+    },
+    {
+      "file": "3D Print Models\\NATHAN-Middle-console.STL",
+      "sha256": "10f7758122ab1bf00204add16bb6dc54ef3aea506139c676e1bf2645bdc71aeb",
+      "triangles": 1884,
+      "min": [
+        6.1349945068359375,
+        0.18470361828804016,
+        7.939428806304932
+      ],
+      "max": [
+        178.62344360351562,
+        110.81075286865234,
+        23.439428329467773
+      ],
+      "span": [
+        172.4884490966797,
+        110.6260492503643,
+        15.499999523162842
+      ],
+      "unit_status": "STL is unitless; millimetres assumed for provisional mechanical study"
+    },
+    {
+      "file": "3D Print Models\\NATHAN-Rear-console.STL",
+      "sha256": "2942e42e4d8beddca8d213fc6f1121728e3321d5edf1132f653657c9c2c816d6",
+      "triangles": 10406,
+      "min": [
+        6.315223693847656,
+        4.209354400634766,
+        49.085514068603516
+      ],
+      "max": [
+        178.421875,
+        114.88065338134766,
+        78.11077880859375
+      ],
+      "span": [
+        172.10665130615234,
+        110.67129898071289,
+        29.025264739990234
+      ],
+      "unit_status": "STL is unitless; millimetres assumed for provisional mechanical study"
+    }
+  ],
+  "boards": [
+    {
+      "file": "CAD_Files/PCB/NATHAN-pcb.kicad_pcb",
+      "sha256": "49432de37843b37cec46d2c82e68c00e657b30d4fe0a65920f7bc507c4f9a13a",
+      "version": [
+        "version",
+        "20240108"
+      ],
+      "footprints": [
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "163.6"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "361",
+            "158.4"
+          ]
+        },
+        {
+          "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "reference": "REF**",
+          "value": "PinHeader_1x06_P2.54mm_Vertical",
+          "at": [
+            "at",
+            "351.5",
+            "212.75"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "172"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "183.9"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "316.9",
+            "178.9"
+          ]
+        },
+        {
+          "library_id": "Library_Perso:pad 1mm",
+          "reference": "REF**",
+          "value": "pad 1mm",
+          "at": [
+            "at",
+            "347",
+            "178.8"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "171.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "337",
+            "205"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "309",
+            "170"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "189"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "379.25",
+            "152"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "166.1"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "166.2"
+          ]
+        },
+        {
+          "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "reference": "REF**",
+          "value": "PinHeader_1x06_P2.54mm_Vertical",
+          "at": [
+            "at",
+            "381",
+            "187",
+            "-90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "327",
+            "205"
+          ]
+        },
+        {
+          "library_id": "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm",
+          "reference": "REF**",
+          "value": "C_Radial_D5.0mm_H5.0mm_P2.00mm",
+          "at": [
+            "at",
+            "355.5",
+            "159.5",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "374.25",
+            "154"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "359",
+            "152"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "332",
+            "205"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "351.6",
+            "204.4"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "182.5"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "173.7"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CON_702461004_MOL",
+          "reference": "REF**",
+          "value": "CON_702461004_MOL",
+          "at": [
+            "at",
+            "386.04",
+            "171.5",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "346",
+            "153.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "176.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "176.2"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CUI_SJ1-3524NG",
+          "reference": "REF**",
+          "value": "CUI_SJ1-3524NG",
+          "at": [
+            "at",
+            "319",
+            "228.3",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "158.4"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "175.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "179"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "364.8",
+            "158.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:SOT-23_DIO",
+          "reference": "REF**",
+          "value": "SOT-23_DIO",
+          "at": [
+            "at",
+            "349.83",
+            "152",
+            "-90"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "185.9"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "163.5"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "186.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH",
+          "reference": "REF**",
+          "value": "RPi_Pico_SMD_TH",
+          "at": [
+            "at",
+            "332",
+            "175"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CONN_S4B-PH-K-S_JST",
+          "reference": "REF**",
+          "value": "CONN_S4B-PH-K-S_JST",
+          "at": [
+            "at",
+            "351.2",
+            "170.5",
+            "-90"
+          ]
+        }
+      ],
+      "edge_control_point_bounds_mm": [
+        [
+          303.15,
+          149.0
+        ],
+        [
+          396.15,
+          233.0
+        ]
+      ],
+      "note": "Control-point bounds do not include every possible arc extremum."
+    },
+    {
+      "file": "CAD_Files/PCB/NATHAN-console_KiCAD.kicad_pro/NATHAN-console_KiCAD.kicad_pro.kicad_pcb",
+      "sha256": "010eaeddc0ea94f09c7f87ef07f1002d9fab51e75e443b1a8c5c260cfcc9df17",
+      "version": [
+        "version",
+        "20240108"
+      ],
+      "footprints": [
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "163.6"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "361",
+            "158.4"
+          ]
+        },
+        {
+          "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "reference": "REF**",
+          "value": "PinHeader_1x06_P2.54mm_Vertical",
+          "at": [
+            "at",
+            "351.5",
+            "212.75"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "172"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "183.9"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "316.9",
+            "178.9"
+          ]
+        },
+        {
+          "library_id": "Library_Perso:pad 1mm",
+          "reference": "REF**",
+          "value": "pad 1mm",
+          "at": [
+            "at",
+            "347",
+            "178.8"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "171.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "375.5",
+            "152"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "337",
+            "205"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "309",
+            "170"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "189"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "166.1"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "166.2"
+          ]
+        },
+        {
+          "library_id": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "reference": "REF**",
+          "value": "PinHeader_1x06_P2.54mm_Vertical",
+          "at": [
+            "at",
+            "381",
+            "187",
+            "-90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "327",
+            "205"
+          ]
+        },
+        {
+          "library_id": "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm",
+          "reference": "REF**",
+          "value": "C_Radial_D5.0mm_H5.0mm_P2.00mm",
+          "at": [
+            "at",
+            "355.5",
+            "159.5",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "359",
+            "152"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "332",
+            "205"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "351.6",
+            "204.4"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "182.5"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "173.7"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CON_702461004_MOL",
+          "reference": "REF**",
+          "value": "CON_702461004_MOL",
+          "at": [
+            "at",
+            "386.04",
+            "171.5",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "346",
+            "153.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "315",
+            "176.3"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "176.2"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CUI_SJ1-3524NG",
+          "reference": "REF**",
+          "value": "CUI_SJ1-3524NG",
+          "at": [
+            "at",
+            "319",
+            "228.3",
+            "90"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "158.4"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "175.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "179"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "364.8",
+            "158.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:SOT-23_DIO",
+          "reference": "REF**",
+          "value": "SOT-23_DIO",
+          "at": [
+            "at",
+            "349.83",
+            "152",
+            "-90"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:Res",
+          "reference": "REF**",
+          "value": "Res",
+          "at": [
+            "at",
+            "370",
+            "185.9"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "347",
+            "163.5"
+          ]
+        },
+        {
+          "library_id": "",
+          "reference": "",
+          "value": "",
+          "at": [
+            "at",
+            "317",
+            "186.5"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH",
+          "reference": "REF**",
+          "value": "RPi_Pico_SMD_TH",
+          "at": [
+            "at",
+            "332",
+            "175"
+          ]
+        },
+        {
+          "library_id": "MCU_RaspberryPi_and_Boards:CONN_S4B-PH-K-S_JST",
+          "reference": "REF**",
+          "value": "CONN_S4B-PH-K-S_JST",
+          "at": [
+            "at",
+            "351.2",
+            "170.5",
+            "-90"
+          ]
+        }
+      ],
+      "edge_control_point_bounds_mm": [
+        [
+          303.15,
+          149.0
+        ],
+        [
+          396.15,
+          233.0
+        ]
+      ],
+      "note": "Control-point bounds do not include every possible arc extremum."
+    }
+  ],
+  "legacy_outline": {
+    "section_z_source_units": 34.23984432220459,
+    "closed_loops": 6,
+    "outer_points_centered": [
+      [
+        -82.1837,
+        -50.0042
+      ],
+      [
+        -78.3533,
+        -52.7569
+      ],
+      [
+        -72.2639,
+        -54.8243
+      ],
+      [
+        -68.7297,
+        -55.275
+      ],
+      [
+        -58.4853,
+        -54.9929
+      ],
+      [
+        -52.9807,
+        -53.3471
+      ],
+      [
+        -49.9856,
+        -50.1805
+      ],
+      [
+        -43.2678,
+        -38.3795
+      ],
+      [
+        43.2863,
+        -38.3795
+      ],
+      [
+        52.1755,
+        -52.7545
+      ],
+      [
+        56.3272,
+        -54.6179
+      ],
+      [
+        64.5707,
+        -55.3235
+      ],
+      [
+        73.3101,
+        -54.5971
+      ],
+      [
+        77.2757,
+        -53.2817
+      ],
+      [
+        81.6828,
+        -50.5312
+      ],
+      [
+        82.2022,
+        -50.0042
+      ],
+      [
+        83.1792,
+        -25.7741
+      ],
+      [
+        82.2956,
+        -17.0322
+      ],
+      [
+        77.7735,
+        4.9131
+      ],
+      [
+        73.4987,
+        19.7494
+      ],
+      [
+        67.6426,
+        36.0754
+      ],
+      [
+        62.8205,
+        46.079
+      ],
+      [
+        58.0504,
+        54.8147
+      ],
+      [
+        57.059,
+        55.3235
+      ],
+      [
+        40.146,
+        55.3226
+      ],
+      [
+        35.448,
+        54.2605
+      ],
+      [
+        30.4098,
+        51.701
+      ],
+      [
+        -32.259,
+        52.0717
+      ],
+      [
+        -35.4295,
+        54.2605
+      ],
+      [
+        -40.1276,
+        55.3226
+      ],
+      [
+        -57.1984,
+        55.3235
+      ],
+      [
+        -58.032,
+        54.8147
+      ],
+      [
+        -64.9225,
+        41.8873
+      ],
+      [
+        -70.081,
+        29.8023
+      ],
+      [
+        -75.9114,
+        11.7802
+      ],
+      [
+        -80.9152,
+        -9.3674
+      ],
+      [
+        -82.8252,
+        -21.2715
+      ],
+      [
+        -83.1792,
+        -30.6222
+      ]
+    ],
+    "outer_span_source_units": [
+      166.3584,
+      110.64699999999999
+    ],
+    "outer_area_source_units2": 14861.66677817,
+    "simplification_tolerance_source_units": 0.15,
+    "source_file": "3D Print Models\\NATHAN-Front-console.STL"
+  },
+  "section_selection": "Largest enclosed area among 22 attempted horizontal sections of Front/Middle; outline only, no old solid imported."
+}

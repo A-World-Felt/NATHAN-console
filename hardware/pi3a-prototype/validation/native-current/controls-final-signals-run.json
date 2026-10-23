@@ -1,0 +1,12 @@
+{
+  "own_pid": 49652,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 166.05,
+  "log": "validation\\native-current\\controls-final-signals.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/finalize_controls_signals.py"
+  ]
+}

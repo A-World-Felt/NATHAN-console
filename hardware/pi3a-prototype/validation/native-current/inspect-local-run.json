@@ -1,0 +1,12 @@
+{
+  "own_pid": 22556,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 1.05,
+  "log": "validation\\native-current\\inspect-local.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/inspect_local_copper.py"
+  ]
+}

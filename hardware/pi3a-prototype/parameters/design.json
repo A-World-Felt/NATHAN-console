@@ -1,0 +1,508 @@
+{
+  "revision": "D0.1-commandes-style-PS4-non-fabricable",
+  "author": "Codex/OpenAI nathan_bom",
+  "units": "mm",
+  "coordinate_system": "Origin at controller plan centre; negative Y is the proposed front; Z from bottom upwards. KiCad uses the same numeric XY translated by (120,100).",
+  "source_outline": "references/source-geometry.json:legacy_outline",
+  "shell": {
+    "width": 160.0,
+    "width_status": "Design limit R-27/C-29, not an ergonomically validated dimension",
+    "height": 66.0,
+    "wall": 2.4,
+    "seam_z": 31.0,
+    "lip_height": 2.0,
+    "lip_clearance": 0.3,
+    "status": "Height, wall, seam and clearances are editable design hypotheses. No print fit or structural validation.",
+    "enable_control_cutouts": false,
+    "enable_port_cutouts": false,
+    "enable_mounting_bosses": false
+  },
+  "boards": {
+    "controls": {
+      "z": 38.0,
+      "thickness": 1.6,
+      "outline": [
+        [
+          -73.5,
+          -44
+        ],
+        [
+          -47,
+          -41
+        ],
+        [
+          -39,
+          -33.5
+        ],
+        [
+          39,
+          -33.5
+        ],
+        [
+          47,
+          -41
+        ],
+        [
+          73.5,
+          -44
+        ],
+        [
+          73.5,
+          -2
+        ],
+        [
+          57,
+          34
+        ],
+        [
+          49,
+          46
+        ],
+        [
+          -49,
+          46
+        ],
+        [
+          -57,
+          34
+        ],
+        [
+          -73.5,
+          -2
+        ]
+      ],
+      "mounts": [
+        [
+          -63,
+          -32
+        ],
+        [
+          63,
+          -32
+        ],
+        [
+          -52,
+          30
+        ],
+        [
+          52,
+          30
+        ]
+      ],
+      "status": "New provisional outline; front/upper PCB. Holes are proposed M2.5, not legacy mounting coordinates."
+    },
+    "base": {
+      "z": 6.0,
+      "thickness": 1.6,
+      "outline": [
+        [
+          -40,
+          -30
+        ],
+        [
+          40,
+          -30
+        ],
+        [
+          40,
+          -8
+        ],
+        [
+          66,
+          -8
+        ],
+        [
+          66,
+          20
+        ],
+        [
+          40,
+          20
+        ],
+        [
+          40,
+          34
+        ],
+        [
+          -40,
+          34
+        ]
+      ],
+      "mounts": [
+        [
+          -36,
+          -26
+        ],
+        [
+          36,
+          -26
+        ],
+        [
+          -36,
+          30
+        ],
+        [
+          36,
+          30
+        ]
+      ],
+      "status": "New provisional carrier. Pi/PiSugar fixing holes and connector alignment not validated; reserve only."
+    }
+  },
+  "envelopes": {
+    "pi_3_a_plus": {
+      "xy": [
+        0,
+        2
+      ],
+      "size": [
+        65,
+        56,
+        17
+      ],
+      "z": 18,
+      "status": "Plan dimensions from model family; 17 mm height and placement are provisional connector keepout, not board thickness"
+    },
+    "pisugar_3_plus": {
+      "xy": [
+        0,
+        2
+      ],
+      "size": [
+        65,
+        56,
+        10
+      ],
+      "z": 8,
+      "status": "65x56 manufacturer PCB dimensions; 10 mm is reserved space only, battery thickness must be measured"
+    },
+    "audio": {
+      "xy": [
+        53,
+        6
+      ],
+      "size": [
+        24,
+        20,
+        8
+      ],
+      "z": 8,
+      "status": "Unknown module: provisional reserve on a new lateral wing, not a qualified module envelope"
+    },
+    "joystick": {
+      "size": [
+        28,
+        28,
+        20
+      ],
+      "status": "Placement reserve only; COM-09032 footprint/height and stem travel remain unverified"
+    },
+    "lra": {
+      "diameter": 8.0,
+      "height": 3.25,
+      "status": "VG0832013D manufacturer envelope, wiring and adhesive space extra"
+    }
+  },
+  "controls": {
+    "joysticks": [
+      [
+        -31,
+        29
+      ],
+      [
+        31,
+        29
+      ]
+    ],
+    "switches": [
+      [
+        -48,
+        -27
+      ],
+      [
+        -32,
+        -11
+      ],
+      [
+        -48,
+        5
+      ],
+      [
+        -64,
+        -11
+      ],
+      [
+        48,
+        -27
+      ],
+      [
+        64,
+        -11
+      ],
+      [
+        48,
+        5
+      ],
+      [
+        32,
+        -11
+      ],
+      [
+        -15.5,
+        -8
+      ],
+      [
+        15.5,
+        -8
+      ]
+    ],
+    "triggers": [
+      [
+        -57,
+        -44
+      ],
+      [
+        57,
+        -44
+      ]
+    ],
+    "motors": [
+      [
+        -56,
+        14
+      ],
+      [
+        -30,
+        27
+      ],
+      [
+        0,
+        31
+      ],
+      [
+        30,
+        27
+      ],
+      [
+        56,
+        14
+      ]
+    ],
+    "status": "User-approved intent: 4 left + 4 right face buttons and PS4-style triggers. Agent proposes exact cardinal XY, symmetric lower sticks, retained separate central controls and stacked L1/L2-R1/R2 reserves. All dimensions are provisional; no independent user approval of those coordinates. No touchpad/lightbar implied. Motors preserved; XY overlap with sticks is not a 3D collision finding: attachment Z and through-hole tails unresolved.",
+    "layout_revision": "User explicitly requested four left and four right face buttons plus PS4-style triggers; lower symmetric sticks are the agent implementation proposal",
+    "switch_labels": [
+      "LEFT_UP",
+      "LEFT_RIGHT",
+      "LEFT_DOWN",
+      "LEFT_LEFT",
+      "RIGHT_UP",
+      "RIGHT_RIGHT",
+      "RIGHT_DOWN",
+      "RIGHT_LEFT",
+      "CENTRAL_1",
+      "CENTRAL_2"
+    ],
+    "face_groups": {
+      "left": {
+        "centre": [
+          -48,
+          -11
+        ],
+        "radius": 16,
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "right": {
+        "centre": [
+          48,
+          -11
+        ],
+        "radius": 16,
+        "indices": [
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "central_switch_indices": [
+      8,
+      9
+    ],
+    "shoulders": {
+      "left": {
+        "bumper": {
+          "label": "L1",
+          "xy": [
+            -57,
+            -44
+          ],
+          "z": 50,
+          "size": [
+            22,
+            10,
+            8
+          ],
+          "status": "Additional independent control beyond ten BOM pushbuttons; mechanism/switch/MPN TBD"
+        },
+        "trigger": {
+          "label": "L2",
+          "xy": [
+            -57,
+            -44
+          ],
+          "z": 32,
+          "size": [
+            22,
+            12,
+            16
+          ],
+          "status": "Existing left/right trigger function; analog/digital sensor, travel, pivot and spring unqualified"
+        }
+      },
+      "right": {
+        "bumper": {
+          "label": "R1",
+          "xy": [
+            57,
+            -44
+          ],
+          "z": 50,
+          "size": [
+            22,
+            10,
+            8
+          ],
+          "status": "Additional independent control beyond ten BOM pushbuttons; mechanism/switch/MPN TBD"
+        },
+        "trigger": {
+          "label": "R2",
+          "xy": [
+            57,
+            -44
+          ],
+          "z": 32,
+          "size": [
+            22,
+            12,
+            16
+          ],
+          "status": "Existing left/right trigger function; analog/digital sensor, travel, pivot and spring unqualified"
+        }
+      }
+    },
+    "drivers": [
+      [
+        -12,
+        11
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        12,
+        11
+      ],
+      [
+        -6,
+        25
+      ],
+      [
+        6,
+        25
+      ]
+    ],
+    "adc": [
+      -17,
+      -25
+    ],
+    "link": [
+      -9,
+      40
+    ],
+    "electronics_reserves": {
+      "U7": {
+        "xy": [
+          17,
+          -25
+        ],
+        "size": [
+          12,
+          12
+        ]
+      },
+      "U8": {
+        "xy": [
+          0,
+          -27
+        ],
+        "size": [
+          10,
+          10
+        ]
+      },
+      "PS2": {
+        "xy": [
+          0,
+          -4
+        ],
+        "size": [
+          14,
+          12
+        ]
+      },
+      "U9": {
+        "xy": [
+          0,
+          -16
+        ],
+        "size": [
+          10,
+          10
+        ]
+      }
+    },
+    "bom_delta": {
+      "face_buttons": 8,
+      "central_buttons": 2,
+      "total_existing_BOM_pushbuttons": 10,
+      "additional_L1_R1_controls": 2,
+      "new_electrical_footprints_or_pads_added": 0,
+      "trigger_functions_preserved": 2,
+      "digital_inputs_if_two_stick_clicks_and_analog_L2_R2": 14,
+      "digital_inputs_if_L2_R2_are_digital": 16,
+      "analog_channels_if_L2_R2_are_analog": 6,
+      "note": "L1/R1 hardware and qualification to add to BOM; no sensor type inferred from PS4 styling."
+    }
+  },
+  "ports": {
+    "micro_usb": {
+      "centre": [
+        0,
+        -37,
+        22
+      ],
+      "opening": [
+        10,
+        5
+      ],
+      "status": "Provisional opening reserve only; connector MPN, mating clearance, VBUS protection and CDC path unresolved"
+    },
+    "audio_jack": {
+      "centre": [
+        25,
+        50,
+        22
+      ],
+      "opening_diameter": 7,
+      "status": "Provisional reserve only; actual jack/module unknown"
+    }
+  },
+  "electrical_status": "Placement studies only: no verified schematic, no routed tracks, no copper zones, no production export. USB charge/data and exact regulator/module support components remain blockers."
+}

@@ -1,0 +1,12 @@
+{
+  "own_pid": 22364,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 162.97,
+  "log": "validation\\native-current\\controls-connected-copper.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/route_remaining_controls.py"
+  ]
+}

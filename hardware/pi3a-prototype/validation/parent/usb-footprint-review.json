@@ -1,0 +1,633 @@
+{
+  "components": [
+    {
+      "reference": "J120",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "unique_pads": [
+        "A1",
+        "A12",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "B1",
+        "B12",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "S1"
+      ],
+      "physical_pads": 22,
+      "sha256": "c2681f80545de029c2c5a5c6995416f172f840e34fbe7016d2bd9b12411da88d"
+    },
+    {
+      "reference": "D200",
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "physical_pads": 5,
+      "sha256": "ca66d9c0eaeb45c8c867c32ef24f4a7c1eb3beee5bca698b2537bdb40bfcd791"
+    },
+    {
+      "reference": "D201",
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "physical_pads": 5,
+      "sha256": "ca66d9c0eaeb45c8c867c32ef24f4a7c1eb3beee5bca698b2537bdb40bfcd791"
+    },
+    {
+      "reference": "U200",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "physical_pads": 5,
+      "sha256": "3d1c550bcd167a7a15b01aa23eb2d448e60e27f9cc95160b25845b56a32e6548"
+    },
+    {
+      "reference": "C200",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C201",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "5eee680a53df2bf776020b42f3cc66b10ee9e6ec874689031661ed890c2a1136"
+    },
+    {
+      "reference": "U201",
+      "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "unique_pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "physical_pads": 12,
+      "sha256": "c0c3acf30bba7ee8b19a6df1e9e8e646c0f2fa28e0bcae6c6fcc5a6aaffde29d"
+    },
+    {
+      "reference": "R200",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R201",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R202",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "C202",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "U202",
+      "footprint": "Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm",
+      "unique_pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "physical_pads": 10,
+      "sha256": "f1f177b5a31a391401e616425fd3f3f819c29d3a7a2a53fabb6f88c7b760810b"
+    },
+    {
+      "reference": "R203",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R204",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R205",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "C203",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "U203",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "unique_pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "physical_pads": 10,
+      "sha256": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "reference": "C204",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "J122",
+      "footprint": "NATHAN_USB:USB_Data_Pigtail_4Pad",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "physical_pads": 4,
+      "sha256": "0b6ab1bcea391b6ab4e5c7fc37f78920acccd5c0587af61da35bc24c98607265"
+    },
+    {
+      "reference": "U206",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "physical_pads": 6,
+      "sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "reference": "U207",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "physical_pads": 8,
+      "sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "reference": "U208",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "physical_pads": 8,
+      "sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "reference": "U209",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "physical_pads": 5,
+      "sha256": "3d1c550bcd167a7a15b01aa23eb2d448e60e27f9cc95160b25845b56a32e6548"
+    },
+    {
+      "reference": "U210",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "physical_pads": 6,
+      "sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "reference": "U211",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "physical_pads": 8,
+      "sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "reference": "C206",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C207",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C208",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C209",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C210",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C211",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "R206",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R207",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R208",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R209",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R210",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R211",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "U204",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "physical_pads": 6,
+      "sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "reference": "R212",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "C212",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C213",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "U205",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "unique_pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "physical_pads": 6,
+      "sha256": "ba9d822787042e196f9b1249f651261f5c2b1558b5fc61659813bff36fbf8425"
+    },
+    {
+      "reference": "U212",
+      "footprint": "NATHAN_USB:TI_RPW0010A",
+      "unique_pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "physical_pads": 14,
+      "sha256": "45b3eae85d593d8806545598e77edc5aad0979f888208b6b916e4c75166de212"
+    },
+    {
+      "reference": "R213",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R214",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "Q200",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "unique_pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "physical_pads": 3,
+      "sha256": "84c1c9513d956fda19cbe83995d345023526a2a8a8ef130794b58d31df70f098"
+    },
+    {
+      "reference": "R215",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R216",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "R217",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "reference": "C214",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C215",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "C216",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "reference": "J121",
+      "footprint": "NATHAN_USB:Power_Pigtail_2Pad",
+      "unique_pads": [
+        "1",
+        "2"
+      ],
+      "physical_pads": 2,
+      "sha256": "9f85dfca538bc3c1ea7f4352503dad8ab0ec6323cc37cdfeb925e7e642deae4b"
+    }
+  ],
+  "scope": "Native load and pin-name coverage only. Manufacturer land geometry, routing, assembly and EMC need further review."
+}

@@ -1,0 +1,19 @@
+{
+  "operation": "erc",
+  "board": "controls",
+  "own_pid": 53768,
+  "returncode": 3221225477,
+  "timeout_terminated_own_process": false,
+  "elapsed_seconds": 6.53,
+  "stdout": "",
+  "stderr": "8:43:06 PM: Error: Can't create registry key 'HKCU\\Software\\KiCad\\kicad-cli' (error 5: Access is denied.)\n8:43:06 PM: Error: Can't open registry key 'HKCU\\Software\\KiCad\\kicad-cli' (error 2: The system cannot find the file specified.)\n",
+  "command": [
+    "C:\\Program Files\\KiCad\\8.0\\bin\\kicad-cli.exe",
+    "sch",
+    "erc",
+    "--output",
+    "C:\\Projects\\_codex\\vocaux-22\\nathan-pr\\hardware\\pi3a-prototype\\validation\\native-current\\controls-erc.rpt",
+    "C:\\Projects\\_codex\\vocaux-22\\nathan-pr\\hardware\\pi3a-prototype\\electrical\\controls\\nathan-controls.kicad_sch"
+  ],
+  "note": "Exit success or report generation alone is not ERC/DRC pass."
+}

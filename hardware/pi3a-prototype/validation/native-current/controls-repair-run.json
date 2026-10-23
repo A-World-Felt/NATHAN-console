@@ -1,0 +1,12 @@
+{
+  "own_pid": 47948,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 207.22,
+  "log": "validation\\native-current\\controls-repair.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/repair_controls.py"
+  ]
+}

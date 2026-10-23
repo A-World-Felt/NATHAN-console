@@ -1,0 +1,182 @@
+board,reference,value,footprint,dnp,source,qualification_note
+controls,J100,J100 interface,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical,False,design proposal,Proposed keyed 16-way signal cable; 5 V supply contact/current and cable assembly qualification pending. Pins 15/16 change D0 reserved assignments.
+controls,R11,4.7k DNP,Resistor_SMD:R_0603_1608Metric,True,design proposal,DNP until total Pi/PiSugar pullup network is measured
+controls,R12,4.7k DNP,Resistor_SMD:R_0603_1608Metric,True,design proposal,DNP until total Pi/PiSugar pullup network is measured
+controls,R13,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R14,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R15,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C13,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C14,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,U7,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm,False,MCP23017,0x20. Configure GPA7/GPB7 outputs low; mirror both interrupt banks into INTA; INTB left open. Verify manufacturer land pattern before routing.
+controls,C15,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R30,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW2,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R31,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW3,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R32,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW4,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R33,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW5,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R34,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW6,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R35,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW7,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R36,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW8,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R37,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW9,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R38,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW10,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R39,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,SW11,B3F-4055 candidate,Button_Switch_THT:SW_PUSH-12mm,False,design proposal,Ten existing BOM buttons: 8 face + 2 central. Candidate footprint still to qualify.
+controls,R40,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R41,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R42,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R43,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,U6,MCP3208-CI/SL,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,False,MCP3208,Proposed 12-bit replacement for MCP3008. SPI command framing changes; not software drop-in. Six ratiometric channels.
+controls,C16,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C17,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R50,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C20,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,R51,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C21,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,R52,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C22,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,R53,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C23,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,R54,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C24,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,R55,100R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,C25,1nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,"Initial filter candidate; settle/error must be measured with actual sensor. Start SPI at 100 kHz, dummy conversion after channel change."
+controls,J20,J20 interface,Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical,False,design proposal,"Joystick left interface, not COM-09032 physical pin numbering; prototype PCB connector JST B5B-PH-K-S, PHR-5 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,J21,J21 interface,Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical,False,design proposal,"Joystick right interface, not COM-09032 physical pin numbering; prototype PCB connector JST B5B-PH-K-S, PHR-5 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,J22,J22 interface,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,False,design proposal,"Analog trigger left; sensor and pivot not selected; prototype PCB connector JST B3B-PH-K-S, PHR-3 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,J23,J23 interface,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,False,design proposal,"Analog trigger right; sensor and pivot not selected; prototype PCB connector JST B3B-PH-K-S, PHR-3 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,J24,J24 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"Additional left shoulder switch beyond workbook quantities; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,J25,J25 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"Additional right shoulder switch beyond workbook quantities; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,U8,TCA9548APWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,False,TCA9548A,"Address 0x70; channels 0-4 used, 5-7 unconnected. Select one channel for each transaction with 0x5A devices."
+controls,C18,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,U1,DRV2604LDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,DRV2604L,"EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately."
+controls,C1,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C2,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R1,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R2,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,J2,J2 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,U2,DRV2604LDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,DRV2604L,"EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately."
+controls,C3,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C4,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R3,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R4,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,J3,J3 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,U3,DRV2604LDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,DRV2604L,"EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately."
+controls,C5,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C6,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R5,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R6,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,J4,J4 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,U4,DRV2604LDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,DRV2604L,"EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately."
+controls,C7,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C8,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R7,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R8,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,J5,J5 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,U5,DRV2604LDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,DRV2604L,"EN follows motor rail; I2C runtime/standby control. OUT_MINUS is a differential output, never ground. LRA rated voltage must be configured separately."
+controls,C9,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,C10,1uF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+controls,R9,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R10,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,J6,J6 interface,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,False,design proposal,"VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation"
+controls,PS2,TPS62080DSGR,Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,False,TPS62080,"3.308 V nominal divider, MODE low disables snooze. PG unused. EP grounded; land pattern/thermal layout pending."
+controls,L1,1uH XAL4020-102MEC candidate,Inductor_SMD:L_Coilcraft_XAL4020-XXX,False,XAL4020,"Prototype alternative: XAL4020-102MEC; 8.7 A at 30% drop, 6.7 A reference current for 20 C rise, 14.6 mOhm max DCR; larger 4 mm package chosen for generous current/thermal margin; compare actual worst-case peak and thermal behavior"
+controls,C30,10uF 10V X5R,Capacitor_SMD:C_0805_2012Metric,False,design proposal,Effective capacitance under bias to confirm
+controls,C31,22uF 6.3V X5R,Capacitor_SMD:C_0805_2012Metric,False,design proposal,Candidate Murata GRM21BR60J226ME39L per TI example; derating to verify
+controls,R60,249k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+controls,R61,39.2k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,J100,J100 interface,Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical,False,design proposal,Same 1:1 pin contract as controls; cable keyed polarity/current pending
+base,J1,J1 interface,Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical,False,Pi_GPIO,"Proposed cable to actual Pi GPIO, not an assumed socket below Pi. Pin assignments need actual orientation/connector verification; no power import qualification."
+base,J101,J101 interface,NATHAN_USB:Power_Pigtail_2Pad,False,design proposal,"PiSugar 5 V OUTPUT cable, separate from charging INPUT. 20/22AWG soldered wire candidate with strain relief; pad counterpart and load/temperature qualification pending. Avoid a 2A JST PH contact on the full system supply."
+base,J102,J102 interface,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,False,design proposal,PiSugar management cable interface; exact module solder contacts need revision verification
+base,U400,RT9193-33GB,Package_TO_SOT_SMD:SOT-23-5,False,RT9193,"300 mA regulator, not 500 mA. Audio only; no motor current. Dissipation and effective capacitors to qualify."
+base,C400,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C401,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C402,22nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,U401,PCM5102APW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,False,PCM5102A,"3-wire I2S PLL, 48 kHz/64 BCLK initial setting; low-latency filter; line output feeds a separate headphone amplifier."
+base,C403,2.2uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C404,2.2uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C405,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C406,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C407,10uF 6.3V X5R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C408,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C409,10uF 6.3V X5R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C410,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C411,10uF 6.3V X5R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,R400,100k,Resistor_SMD:R_0603_1608Metric,False,design proposal,Default mute at boot; software must sequence clocks and mute before shutdown
+base,R401,470R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C412,2.2nF C0G,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,R403,10k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R405,10k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C414,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,R402,470R,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C413,2.2nF C0G,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,R404,10k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R406,10k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C415,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,U402,TPA6132A2RTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,False,TPA6132A2,"G0=G1=0 gives -6 dB. HPVDD is an internal output, NOT tied to supply. Gain/input attenuation provisional; not a hearing-safety level guarantee."
+base,C416,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C417,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C418,2.2uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C419,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,J400,J400 interface,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,False,design proposal,"JST PH cable to a panel-mounted 3.5 mm stereo TRS jack. Jack mechanics not qualified; this is an explicit cable interface, not an assumed jack pinout."
+base,J120,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,False,USB4105,"USB2 sink only, 5 V only. Both plug orientations. Shell to local ground; EMC validation pending. No PD voltage request."
+base,D200,TPD2E2U06DRLR,Package_TO_SOT_SMD:SOT-553,False,TPD2E2U06,Short ESD return at connector. Protection response and USB eye require measurements; no CC-to-VBUS short protection claimed.
+base,D201,TPD2E2U06DRLR,Package_TO_SOT_SMD:SOT-553,False,TPD2E2U06,Short ESD return at connector. Protection response and USB eye require measurements; no CC-to-VBUS short protection claimed.
+base,U200,TPS70933DBVR,Package_TO_SOT_SMD:SOT-23-5,False,TPS709,USB-domain supply only; TPS70933 pinout differs from TPS709A/B.
+base,C200,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C201,4.7uF 10V X7R,Capacitor_SMD:C_0805_2012Metric,False,design proposal,Verify >=2.2uF effective at bias.
+base,U201,TUSB320LAIRWBR,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,False,TUSB320LAI,"UFP fixed, ADDR floating selects GPIO. Internal Rd in dead battery; do NOT add parallel external Rd. Autonomous 1.5A/3A detection."
+base,R200,887k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,Within specified 855..920k range.
+base,R201,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R202,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C202,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,U202,BQ24392RSER,Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm,False,BQ24392,"GOOD_BAT follows cable supply to avoid dead-battery timer interrupting wall charge. CHG_DET is a 5V-domain output, never a Pi GPIO."
+base,R203,47k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R204,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R205,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C203,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,U203,TS3USB30EDGSR,Package_SO:VSSOP-10_3x3mm_P0.5mm,False,TS3USB30E,Pi-side Ioff isolation when Pi is off. Two series switches: 480Mbps signal integrity is NOT qualified.
+base,C204,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,J122,J122 interface,NATHAN_USB:USB_Data_Pigtail_4Pad,False,design proposal,"Internal short shielded USB cable to actual Pi USB-A data pins. Pi VBUS wire MUST terminate insulated and unconnected. Footprint is solder pads, not a certified high-speed connector. Cable continuity and eye tests required."
+base,U206,SN74LVC2G04DBVR,Package_TO_SOT_SMD:SOT-23-6,False,LVC2G04,
+base,U207,SN74LVC2G08DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,False,LVC2G08,
+base,U208,SN74LVC1G74DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,False,LVC1G74,Fresh rising pulse only after USB configured >=500mA. RUN low clears on suspend/deconfigure; BQ data detach also clears. A stale GPIO high does not restore grant after reconnect. Q is pin5.
+base,U209,SN74LVC1G32DBVR,Package_TO_SOT_SMD:SOT-23-5,False,LVC1G32,Input accepts BQ 5V output; output is USB-domain 3.3V.
+base,U210,SN74LVC2G04DBVR,Package_TO_SOT_SMD:SOT-23-6,False,LVC2G04,
+base,U211,SN74LVC2G08DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,False,LVC2G08,
+base,C206,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C207,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C208,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C209,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C210,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C211,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,R206,1k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R207,1k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R208,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R209,4.7k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R210,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R211,10k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,U204,TPS2553DBVR,Package_TO_SOT_SMD:SOT-23-6,False,TPS2553,"62k 1%: calculated DC bounds 377..479mA, plus detector/logic supply. Current and voltage sag with PiSugar require measurement."
+base,R212,62k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,C212,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C213,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,U205,LM66100DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,False,LM66100,"CE=VOUT reverse protection on legacy path only (<0.5A). Does not imply zero reverse transient. ST is physically open-drain; modeled passive ONLY for the manufacturer-prescribed unused GND strap, avoiding a generic ERC open-drain/power-flag false conflict."
+base,U212,TPS259470ARPWR,NATHAN_USB:TI_RPW0010A,False,TPS25947,Autonomous path only for CC>=1.5A. 2.80k -> nominal1.191A; parallel2.80k on CC3A ->2.381A. ITIMER open gives fastest current-limit response. True reverse blocking. Not a USB compliance guarantee.
+base,R213,2.80k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R214,2.80k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,Q200,2N7002,Package_TO_SOT_SMD:SOT-23,False,2N7002,Low-current ILIM resistor selection. Finite Rds(on) reduces requested current; qualification at 3.3V gate and temperature required.
+base,R215,100k,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R216,348k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,
+base,R217,100k 1%,Resistor_SMD:R_0603_1608Metric,False,design proposal,OVLO nominal5.376V; this is NOT proof that PiSugar 5.2V maximum input is protected. Source/module voltage tolerance remains a qualification gate.
+base,C214,3.3nF C0G,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C215,100nF,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,C216,1uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,False,design proposal,
+base,J121,J121 interface,NATHAN_USB:Power_Pigtail_2Pad,False,design proposal,"Soldered 20/22AWG candidate wire pair to identified PiSugar INPUT pads, not BAT or 5V output. Confirm module pad polarity, wire strain relief, thermal rise and voltage drop. No parallel 5V_SYS connection."

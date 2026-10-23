@@ -1,0 +1,12 @@
+{
+  "own_pid": 50212,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 15.02,
+  "log": "validation\\native-current\\base-build-parented.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/build_connected_base.py"
+  ]
+}

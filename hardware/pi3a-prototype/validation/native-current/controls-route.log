@@ -1,0 +1,69 @@
+BOARD_LOADED
+PLANE_ACCESS 3V3_PI
+PLANE_ACCESS GND
+PLANE_ACCESS 3V3_HAPTIC
+NET HAPTIC_SW / failed=1
+NET H1_REG / failed=1
+NET H3_REG / failed=1
+NET H2_REG / failed=1
+NET H5_REG / failed=1
+NET H4_REG / failed=1
+NET H5_PLUS / failed=1
+NET H4_PLUS / failed=1
+NET H1_PLUS / failed=1
+NET H2_PLUS / failed=1
+NET H3_PLUS / failed=1
+NET HAPTIC_FB / failed=1
+NET H1_MINUS / failed=1
+NET H2_MINUS / failed=1
+NET H3_MINUS / failed=1
+NET H5_MINUS / failed=1
+NET H4_MINUS / failed=1
+NET ADC_RY / failed=1
+NET ADC_RX / failed=1
+NET ADC_L2 / failed=1
+NET ADC_LY / failed=1
+NET ADC_R2 / failed=1
+NET ADC_LX / failed=1
+NET SPI_MISO / failed=1
+NET SPI_MOSI / failed=1
+NET RAW_RX / failed=1
+NET SPI_SCLK / failed=1
+NET RAW_RY / failed=1
+NET H3_SDA / failed=1
+NET H4_SDA / failed=1
+NET H3_SCL / failed=1
+NET H5_SDA / failed=1
+NET H4_SCL / failed=2
+NET H2_SDA / failed=2
+NET H5_SCL / failed=2
+NET H2_SCL / failed=2
+NET CENTRAL_1 / failed=2
+NET FACE_L_RIGHT / failed=2
+NET 5V_SYS / failed=2
+NET H1_SDA / failed=2
+NET STICK_L_CLICK / failed=2
+NET H1_SCL / failed=3
+NET RAW_LY / failed=3
+NET INPUT_IRQ_N / failed=3
+NET FACE_L_DOWN / failed=3
+NET ADC_CS_N / failed=3
+NET RAW_LX / failed=3
+NET SHOULDER_L1 / failed=3
+NET RAW_R2 / failed=3
+NET CTRL_RESET_N / failed=4
+NET FACE_L_UP / failed=4
+NET CENTRAL_2 / failed=4
+NET RAW_L2 / failed=5
+NET FACE_L_LEFT / failed=5
+NET I2C_SCL / failed=5
+NET I2C_SDA / failed=5
+NET STICK_R_CLICK / failed=6
+NET FACE_R_LEFT / failed=7
+NET FACE_R_DOWN / failed=7
+NET SHOULDER_R1 / failed=7
+NET FACE_R_UP / failed=9
+NET FACE_R_RIGHT / failed=11
+ROUTES_SAVED
+ZONES_FILLED
+{"status": "routing proposal; native DRC must be assessed, not fabrication approved", "elapsed_seconds": 343.4, "connected_operations": 216, "failures": [{"plane_pad": "PS2.9", "net": "GND", "reason": "no local path"}, {"net": "H4_SCL", "from": "U4.2", "to": "U8.11", "reason": "grid path not found; left open"}, {"net": "H1_SCL", "from": "U8.5", "to": "U1.2", "reason": "grid path not found; left open"}, {"net": "CTRL_RESET_N", "from": "U8.3", "to": "C13.1", "reason": "grid path not found; left open"}, {"net": "RAW_L2", "from": "R54.1", "to": "J22.3", "reason": "grid path not found; left open"}, {"net": "STICK_R_CLICK", "from": "J21.5", "to": "R41.1", "reason": "grid path not found; left open"}, {"net": "FACE_R_LEFT", "from": "SW9.1", "to": "R37.1", "reason": "grid path not found; left open"}, {"net": "FACE_R_UP", "from": "R34.1", "to": "U7.25", "reason": "grid path not found; left open"}, {"net": "FACE_R_UP", "from": "R34.1", "to": "SW6.1", "reason": "grid path not found; left open"}, {"net": "FACE_R_RIGHT", "from": "R35.1", "to": "U7.26", "reason": "grid path not found; left open"}, {"net": "FACE_R_RIGHT", "from": "R35.1", "to": "SW7.1", "reason": "grid path not found; left open"}], "tracks_and_vias": 1413, "vias": 188, "plane_layers": {"GND": 1, "3V3_PI": 2, "3V3_HAPTIC": 31}, "board_sha256": "7a89fd30c21a823d87fff2d6c19a9fd42fa3a11c7d12f4bc6a8c331fb8d20440", "limitations": ["All neck traces are 0.2 mm; supply trunks need widening or plane verification before current qualification.", "No impedance/length/skew validation.", "B.Cu is filled with motor 3V3; inner GND shields digital/ADC reference but noise remains to measure."]}

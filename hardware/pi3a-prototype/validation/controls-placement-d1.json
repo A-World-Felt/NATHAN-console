@@ -1,0 +1,942 @@
+{
+  "components": [
+    {
+      "ref": "J100",
+      "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+      "xy": [
+        -9,
+        39
+      ],
+      "angle": 90,
+      "sha256_library": "4cdd95f6cfbbb48c2fb28c252fc7cc48ecdf0cb44240ecf73ff9224ee8af92c1"
+    },
+    {
+      "ref": "R11",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -5,
+        -16
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R12",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -2.5,
+        -16
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R13",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        0,
+        -16
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R14",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        2.5,
+        -16
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R15",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        5,
+        -16
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C13",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -5,
+        -20
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C14",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -7.5,
+        -20
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U7",
+      "footprint": "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm",
+      "xy": [
+        -30,
+        28
+      ],
+      "angle": 0,
+      "sha256_library": "ac8b5a049fee780e158a3b3985bca62ecd141ef3a061d77974682a72f0bf19f5"
+    },
+    {
+      "ref": "C15",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -23,
+        33
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R30",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -6,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW2",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        -54.25,
+        -29.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R31",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -4,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW3",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        -38.25,
+        -13.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R32",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -2,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW4",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        -54.25,
+        2.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R33",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        0,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW5",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        -70.25,
+        -13.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R34",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        2,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW6",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        41.75,
+        -29.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R35",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        4,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW7",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        57.75,
+        -13.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R36",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        6,
+        -11.0
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW8",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        41.75,
+        2.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R37",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -6,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW9",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        25.75,
+        -13.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R38",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -4,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW10",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        -21.75,
+        -10.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R39",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -2,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "SW11",
+      "footprint": "Button_Switch_THT:SW_PUSH-12mm",
+      "xy": [
+        9.25,
+        -10.5
+      ],
+      "angle": 0,
+      "sha256_library": "b551050ba35b03107e4b16a999df15293782735f830fd21d14e01f57ffa533eb"
+    },
+    {
+      "ref": "R40",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        0,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R41",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        2,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R42",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        4,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R43",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        6,
+        -7.5
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "U6",
+      "footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "xy": [
+        20,
+        25
+      ],
+      "angle": 0,
+      "sha256_library": "80af5b3c1dec4020acd37f2ee06f85b044f782e21fdf3cc5950f1c68a43757c6"
+    },
+    {
+      "ref": "C16",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        25,
+        22
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C17",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        25,
+        26
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R50",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        17.0
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C20",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        17.0
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R51",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        19.5
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C21",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        19.5
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R52",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        22.0
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C22",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        22.0
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R53",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        24.5
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C23",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        24.5
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R54",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        27.0
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C24",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        27.0
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R55",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        12,
+        29.5
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C25",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8,
+        29.5
+      ],
+      "angle": 0,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "J20",
+      "footprint": "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical",
+      "xy": [
+        -47,
+        19
+      ],
+      "angle": 0,
+      "sha256_library": "9767cb7500c3b6b547308111217445df5db921b406b3c3bb7084dffe470c5c45"
+    },
+    {
+      "ref": "J21",
+      "footprint": "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical",
+      "xy": [
+        32,
+        19
+      ],
+      "angle": 0,
+      "sha256_library": "9767cb7500c3b6b547308111217445df5db921b406b3c3bb7084dffe470c5c45"
+    },
+    {
+      "ref": "J22",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "xy": [
+        -25,
+        -30
+      ],
+      "angle": 0,
+      "sha256_library": "6b1676d945ee3bb8807bea0426e1c35b9f4da04ca0534e78a3e8e0bd27638650"
+    },
+    {
+      "ref": "J23",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "xy": [
+        21,
+        -30
+      ],
+      "angle": 0,
+      "sha256_library": "6b1676d945ee3bb8807bea0426e1c35b9f4da04ca0534e78a3e8e0bd27638650"
+    },
+    {
+      "ref": "J24",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        -36,
+        -32
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "J25",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        32,
+        -32
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "U8",
+      "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+      "xy": [
+        0,
+        -24
+      ],
+      "angle": 0,
+      "sha256_library": "55c031d25bc31a820acd263f68146011c0b16aa666b20f8dfe3670ee3da606af"
+    },
+    {
+      "ref": "C18",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        6,
+        -24
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U1",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        -26,
+        7
+      ],
+      "angle": 0,
+      "sha256_library": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C1",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -30.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C2",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -21.2,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R1",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -30.8,
+        9
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R2",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -30.8,
+        12
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "J2",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        -24,
+        12
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "U2",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        -13,
+        7
+      ],
+      "angle": 0,
+      "sha256_library": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C3",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -17.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C4",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -8.2,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R3",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -17.8,
+        9
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R4",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -17.8,
+        12
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "J3",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        -11,
+        12
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "U3",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        0,
+        7
+      ],
+      "angle": 0,
+      "sha256_library": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C5",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -4.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C6",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        4.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R5",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -4.8,
+        9
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R6",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -4.8,
+        12
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "J4",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        2,
+        12
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "U4",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        13,
+        7
+      ],
+      "angle": 0,
+      "sha256_library": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C7",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        8.2,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C8",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        17.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R7",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        8.2,
+        9
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R8",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        8.2,
+        12
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "J5",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        15,
+        12
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "U5",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        26,
+        7
+      ],
+      "angle": 0,
+      "sha256_library": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C9",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        21.2,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C10",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        30.8,
+        5
+      ],
+      "angle": 90,
+      "sha256_library": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R9",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        21.2,
+        9
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R10",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        21.2,
+        12
+      ],
+      "angle": 90,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "J6",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "xy": [
+        28,
+        12
+      ],
+      "angle": 0,
+      "sha256_library": "e47e86bf8a6784c1a779228e405f668083f89c672bb9c34d24a5f79aadb02730"
+    },
+    {
+      "ref": "PS2",
+      "footprint": "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "xy": [
+        0,
+        -3
+      ],
+      "angle": 0,
+      "sha256_library": "1e2e6db0abe32c2226c6ad61a08025ad23448cb07b3c8278edaa9c20d1b17e84"
+    },
+    {
+      "ref": "L1",
+      "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "xy": [
+        4,
+        -3
+      ],
+      "angle": 0,
+      "sha256_library": "eee5d22a365565c945e2608882b75b3b2e525aab6ea30aa1bf4adb738f5c1a87"
+    },
+    {
+      "ref": "C30",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        -3,
+        -3
+      ],
+      "angle": 90,
+      "sha256_library": "5eee680a53df2bf776020b42f3cc66b10ee9e6ec874689031661ed890c2a1136"
+    },
+    {
+      "ref": "C31",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        10,
+        1
+      ],
+      "angle": 90,
+      "sha256_library": "5eee680a53df2bf776020b42f3cc66b10ee9e6ec874689031661ed890c2a1136"
+    },
+    {
+      "ref": "R60",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        3,
+        1
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R61",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        0,
+        1
+      ],
+      "angle": 0,
+      "sha256_library": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    }
+  ],
+  "copper_layers": 4,
+  "status": "prototype component choices; native DRC and routing reported separately",
+  "signal_width_mm": 0.2,
+  "clearance_mm": 0.15,
+  "plane_layers": [
+    "In1.Cu GND",
+    "In2.Cu 3V3_PI"
+  ]
+}

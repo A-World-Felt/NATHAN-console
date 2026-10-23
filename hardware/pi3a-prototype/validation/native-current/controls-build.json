@@ -1,0 +1,12 @@
+{
+  "own_pid": 22240,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 16.86,
+  "log": "validation\\native-current\\controls-build.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/build_connected_controls.py"
+  ]
+}

@@ -1,0 +1,38 @@
+** Drc report for C:\Projects\_codex\vocaux-22\nathan-conception\pcb\base\nathan-base.kicad_pcb **
+** Created on 2026-10-22 20:01:17 **
+
+** Found 2 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(80.0000 mm, 70.0000 mm): Segment on Edge.Cuts
+    @(84.0000 mm, 70.3000 mm): Reference 'H1'
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(80.0000 mm, 70.0000 mm): Segment on Edge.Cuts
+    @(156.0000 mm, 70.3000 mm): Reference 'H2'
+
+** Found 5 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.0000 mm, 124.4600 mm): PTH pad 2 [5V_SYS] of J_LINK
+    @(111.0000 mm, 127.0000 mm): PTH pad 1 [5V_SYS] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.5400 mm, 124.4600 mm): PTH pad 4 [GND] of J_LINK
+    @(113.5400 mm, 127.0000 mm): PTH pad 3 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(118.6200 mm, 127.0000 mm): PTH pad 7 [GND] of J_LINK
+    @(121.1600 mm, 124.4600 mm): PTH pad 10 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.5400 mm, 127.0000 mm): PTH pad 3 [GND] of J_LINK
+    @(118.6200 mm, 127.0000 mm): PTH pad 7 [GND] of J_LINK
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.2400 mm, 124.4600 mm): PTH pad 14 [GND] of J_LINK
+    @(121.1600 mm, 124.4600 mm): PTH pad 10 [GND] of J_LINK
+
+** Found 0 Footprint errors **
+
+** End of Report **

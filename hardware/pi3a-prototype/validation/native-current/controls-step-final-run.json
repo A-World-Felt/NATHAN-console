@@ -1,0 +1,20 @@
+{
+  "own_pid": 55180,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 5.11,
+  "log": "validation\\native-current\\controls-step-final.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "export",
+    "step",
+    "--force",
+    "--subst-models",
+    "--user-origin",
+    "120x100mm",
+    "-o",
+    "mechanical/assembly/controls-D1.step",
+    "electrical/controls/nathan-controls.kicad_pcb"
+  ]
+}

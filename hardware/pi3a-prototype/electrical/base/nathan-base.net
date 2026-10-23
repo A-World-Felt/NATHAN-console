@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='utf-8'?>
+<export version="E">
+  <design>
+    <source>nathan-base.kicad_sch</source>
+    <tool>Codex standard-library generator: NOT native KiCad export</tool>
+  </design>
+  <components>
+    <comp ref="J100">
+      <value>J100 interface</value>
+      <footprint>Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical</footprint>
+    </comp>
+    <comp ref="J1">
+      <value>J1 interface</value>
+      <footprint>Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical</footprint>
+    </comp>
+    <comp ref="J101">
+      <value>J101 interface</value>
+      <footprint>NATHAN_USB:Power_Pigtail_2Pad</footprint>
+    </comp>
+    <comp ref="J102">
+      <value>J102 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+    </comp>
+    <comp ref="U400">
+      <value>RT9193-33GB</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+    </comp>
+    <comp ref="C400">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C401">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C402">
+      <value>22nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U401">
+      <value>PCM5102APW</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+    </comp>
+    <comp ref="C403">
+      <value>2.2uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C404">
+      <value>2.2uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C405">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C406">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C407">
+      <value>10uF 6.3V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C408">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C409">
+      <value>10uF 6.3V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C410">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C411">
+      <value>10uF 6.3V X5R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R400">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R401">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C412">
+      <value>2.2nF C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R403">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R405">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C414">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R402">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C413">
+      <value>2.2nF C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R404">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R406">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C415">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U402">
+      <value>TPA6132A2RTER</value>
+      <footprint>Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm</footprint>
+    </comp>
+    <comp ref="C416">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C417">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C418">
+      <value>2.2uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C419">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="J400">
+      <value>J400 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
+    </comp>
+    <comp ref="J120">
+      <value>USB4105-GF-A</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+    </comp>
+    <comp ref="D200">
+      <value>TPD2E2U06DRLR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-553</footprint>
+    </comp>
+    <comp ref="D201">
+      <value>TPD2E2U06DRLR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-553</footprint>
+    </comp>
+    <comp ref="U200">
+      <value>TPS70933DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+    </comp>
+    <comp ref="C200">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C201">
+      <value>4.7uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+    </comp>
+    <comp ref="U201">
+      <value>TUSB320LAIRWBR</value>
+      <footprint>Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm</footprint>
+    </comp>
+    <comp ref="R200">
+      <value>887k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R201">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R202">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C202">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U202">
+      <value>BQ24392RSER</value>
+      <footprint>Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm</footprint>
+    </comp>
+    <comp ref="R203">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R204">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R205">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C203">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U203">
+      <value>TS3USB30EDGSR</value>
+      <footprint>Package_SO:VSSOP-10_3x3mm_P0.5mm</footprint>
+    </comp>
+    <comp ref="C204">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="J122">
+      <value>J122 interface</value>
+      <footprint>NATHAN_USB:USB_Data_Pigtail_4Pad</footprint>
+    </comp>
+    <comp ref="U206">
+      <value>SN74LVC2G04DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+    </comp>
+    <comp ref="U207">
+      <value>SN74LVC2G08DCUR</value>
+      <footprint>Package_SO:VSSOP-8_2.3x2mm_P0.5mm</footprint>
+    </comp>
+    <comp ref="U208">
+      <value>SN74LVC1G74DCUR</value>
+      <footprint>Package_SO:VSSOP-8_2.3x2mm_P0.5mm</footprint>
+    </comp>
+    <comp ref="U209">
+      <value>SN74LVC1G32DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+    </comp>
+    <comp ref="U210">
+      <value>SN74LVC2G04DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+    </comp>
+    <comp ref="U211">
+      <value>SN74LVC2G08DCUR</value>
+      <footprint>Package_SO:VSSOP-8_2.3x2mm_P0.5mm</footprint>
+    </comp>
+    <comp ref="C206">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C207">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C208">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C209">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C210">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C211">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R206">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R207">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R208">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R209">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R210">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R211">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U204">
+      <value>TPS2553DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+    </comp>
+    <comp ref="R212">
+      <value>62k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C212">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C213">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="U205">
+      <value>LM66100DCKR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-363_SC-70-6</footprint>
+    </comp>
+    <comp ref="U212">
+      <value>TPS259470ARPWR</value>
+      <footprint>NATHAN_USB:TI_RPW0010A</footprint>
+    </comp>
+    <comp ref="R213">
+      <value>2.80k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R214">
+      <value>2.80k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="Q200">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+    </comp>
+    <comp ref="R215">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R216">
+      <value>348k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="R217">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C214">
+      <value>3.3nF C0G</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C215">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="C216">
+      <value>1uF 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+    </comp>
+    <comp ref="J121">
+      <value>J121 interface</value>
+      <footprint>NATHAN_USB:Power_Pigtail_2Pad</footprint>
+    </comp>
+    <comp ref="#FLG1">
+      <value>PWR_FLAG</value>
+      <footprint />
+    </comp>
+    <comp ref="#FLG2">
+      <value>PWR_FLAG</value>
+      <footprint />
+    </comp>
+    <comp ref="#FLG3">
+      <value>PWR_FLAG</value>
+      <footprint />
+    </comp>
+    <comp ref="#FLG4">
+      <value>PWR_FLAG</value>
+      <footprint />
+    </comp>
+  </components>
+  <nets>
+    <net code="1" name="3V3_AUDIO">
+      <node ref="U400" pin="5" pinfunction="VOUT" pintype="power_out" />
+      <node ref="C401" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U401" pin="1" pinfunction="CPVDD" pintype="power_in" />
+      <node ref="U401" pin="8" pinfunction="AVDD" pintype="power_in" />
+      <node ref="C408" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C409" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C410" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C411" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U402" pin="14" pinfunction="VDD" pintype="power_in" />
+      <node ref="C419" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="2" name="3V3_PI">
+      <node ref="J100" pin="15" pinfunction="Pin_15" pintype="passive" />
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="U401" pin="11" pinfunction="FLT" pintype="input" />
+      <node ref="U401" pin="20" pinfunction="DVDD" pintype="power_in" />
+      <node ref="C406" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C407" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U203" pin="10" pinfunction="VCC" pintype="power_in" />
+      <node ref="C204" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="#FLG2" pin="1" pinfunction="pwr" pintype="power_out" />
+    </net>
+    <net code="3" name="3V3_USB">
+      <node ref="U200" pin="5" pinfunction="OUT" pintype="power_out" />
+      <node ref="C201" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U201" pin="12" pinfunction="VDD" pintype="power_in" />
+      <node ref="R201" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R202" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C202" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="R204" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R205" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U206" pin="5" pinfunction="VCC" pintype="power_in" />
+      <node ref="U207" pin="8" pinfunction="VCC" pintype="power_in" />
+      <node ref="U208" pin="2" pinfunction="D" pintype="input" />
+      <node ref="U208" pin="7" pinfunction="PRE_N" pintype="input" />
+      <node ref="U208" pin="8" pinfunction="VCC" pintype="power_in" />
+      <node ref="U209" pin="5" pinfunction="VCC" pintype="power_in" />
+      <node ref="U210" pin="5" pinfunction="VCC" pintype="power_in" />
+      <node ref="U211" pin="8" pinfunction="VCC" pintype="power_in" />
+      <node ref="C206" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C207" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C208" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C209" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C210" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C211" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="4" name="5V_SYS">
+      <node ref="J100" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="J100" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive" />
+      <node ref="J101" pin="1" pinfunction="Pin_1" pintype="passive" />
+      <node ref="U400" pin="1" pinfunction="VIN" pintype="power_in" />
+      <node ref="U400" pin="3" pinfunction="EN" pintype="input" />
+      <node ref="C400" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="#FLG1" pin="1" pinfunction="pwr" pintype="power_out" />
+    </net>
+    <net code="5" name="ADC_CS_N">
+      <node ref="J100" pin="13" pinfunction="Pin_13" pintype="passive" />
+      <node ref="J1" pin="24" pinfunction="Pin_24" pintype="passive" />
+    </net>
+    <net code="6" name="AUDIO_BP">
+      <node ref="U400" pin="4" pinfunction="BP" pintype="passive" />
+      <node ref="C402" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="7" name="AUDIO_ENABLE">
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive" />
+      <node ref="U401" pin="17" pinfunction="XSMT" pintype="input" />
+      <node ref="R400" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U402" pin="13" pinfunction="EN" pintype="input" />
+    </net>
+    <net code="8" name="CC_OUT1">
+      <node ref="U201" pin="7" pinfunction="OUT1" pintype="open_collector" />
+      <node ref="R201" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U210" pin="1" pinfunction="1A" pintype="input" />
+      <node ref="U211" pin="2" pinfunction="1B" pintype="input" />
+    </net>
+    <net code="9" name="CC_OUT2">
+      <node ref="U201" pin="8" pinfunction="OUT2" pintype="open_collector" />
+      <node ref="R202" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U210" pin="3" pinfunction="2A" pintype="input" />
+    </net>
+    <net code="10" name="CC_OUT2_LOW">
+      <node ref="U210" pin="4" pinfunction="2Y" pintype="output" />
+      <node ref="U211" pin="6" pinfunction="2B" pintype="input" />
+    </net>
+    <net code="11" name="CC_VBUS_SENSE">
+      <node ref="U201" pin="4" pinfunction="VBUS_DET" pintype="input" />
+      <node ref="R200" pin="2" pinfunction="2" pintype="passive" />
+    </net>
+    <net code="12" name="CTRL_RESET_N">
+      <node ref="J100" pin="16" pinfunction="Pin_16" pintype="passive" />
+      <node ref="J1" pin="13" pinfunction="Pin_13" pintype="passive" />
+    </net>
+    <net code="13" name="DAC_CAPM">
+      <node ref="U401" pin="4" pinfunction="CAPM" pintype="passive" />
+      <node ref="C403" pin="2" pinfunction="2" pintype="passive" />
+    </net>
+    <net code="14" name="DAC_CAPP">
+      <node ref="U401" pin="2" pinfunction="CAPP" pintype="passive" />
+      <node ref="C403" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="15" name="DAC_FILTER_L">
+      <node ref="R401" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C412" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="R403" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="16" name="DAC_FILTER_R">
+      <node ref="R402" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C413" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="R404" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="17" name="DAC_L">
+      <node ref="U401" pin="6" pinfunction="OUTL" pintype="output" />
+      <node ref="R401" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="18" name="DAC_LDOO">
+      <node ref="U401" pin="18" pinfunction="LDOO" pintype="power_out" />
+      <node ref="C405" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="19" name="DAC_R">
+      <node ref="U401" pin="7" pinfunction="OUTR" pintype="output" />
+      <node ref="R402" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="20" name="DAC_VNEG">
+      <node ref="U401" pin="5" pinfunction="VNEG" pintype="power_out" />
+      <node ref="C404" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="21" name="GND">
+      <node ref="J100" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J100" pin="4" pinfunction="Pin_4" pintype="passive" />
+      <node ref="J100" pin="7" pinfunction="Pin_7" pintype="passive" />
+      <node ref="J100" pin="10" pinfunction="Pin_10" pintype="passive" />
+      <node ref="J100" pin="14" pinfunction="Pin_14" pintype="passive" />
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive" />
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive" />
+      <node ref="J1" pin="14" pinfunction="Pin_14" pintype="passive" />
+      <node ref="J1" pin="20" pinfunction="Pin_20" pintype="passive" />
+      <node ref="J1" pin="25" pinfunction="Pin_25" pintype="passive" />
+      <node ref="J1" pin="30" pinfunction="Pin_30" pintype="passive" />
+      <node ref="J1" pin="34" pinfunction="Pin_34" pintype="passive" />
+      <node ref="J1" pin="39" pinfunction="Pin_39" pintype="passive" />
+      <node ref="J101" pin="2" pinfunction="Pin_2" pintype="passive" />
+      <node ref="J102" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="U400" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="C400" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C401" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C402" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U401" pin="3" pinfunction="CPGND" pintype="power_in" />
+      <node ref="U401" pin="9" pinfunction="AGND" pintype="power_in" />
+      <node ref="U401" pin="10" pinfunction="DEMP" pintype="input" />
+      <node ref="U401" pin="12" pinfunction="SCK" pintype="input" />
+      <node ref="U401" pin="16" pinfunction="FMT" pintype="input" />
+      <node ref="U401" pin="19" pinfunction="DGND" pintype="power_in" />
+      <node ref="C404" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C405" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C406" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C407" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C408" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C409" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C410" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C411" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R400" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C412" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R405" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C413" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R406" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U402" pin="2" pinfunction="INL_PLUS" pintype="input" />
+      <node ref="U402" pin="3" pinfunction="INR_PLUS" pintype="input" />
+      <node ref="U402" pin="6" pinfunction="G0" pintype="input" />
+      <node ref="U402" pin="7" pinfunction="G1" pintype="input" />
+      <node ref="U402" pin="10" pinfunction="PGND" pintype="power_in" />
+      <node ref="U402" pin="15" pinfunction="SGND" pintype="power_in" />
+      <node ref="U402" pin="17" pinfunction="EP" pintype="power_in" />
+      <node ref="C417" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C418" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C419" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="J400" pin="3" pinfunction="SLEEVE" pintype="passive" />
+      <node ref="J120" pin="A1" pinfunction="A1" pintype="passive" />
+      <node ref="J120" pin="A12" pinfunction="A12" pintype="passive" />
+      <node ref="J120" pin="B1" pinfunction="B1" pintype="passive" />
+      <node ref="J120" pin="B12" pinfunction="B12" pintype="passive" />
+      <node ref="J120" pin="S1" pinfunction="S1" pintype="passive" />
+      <node ref="D200" pin="4" pinfunction="GND" pintype="power_in" />
+      <node ref="D201" pin="4" pinfunction="GND" pintype="power_in" />
+      <node ref="U200" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="C200" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C201" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U201" pin="3" pinfunction="PORT" pintype="input" />
+      <node ref="U201" pin="10" pinfunction="GND" pintype="power_in" />
+      <node ref="U201" pin="11" pinfunction="EN_N" pintype="input" />
+      <node ref="C202" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U202" pin="6" pinfunction="GND" pintype="power_in" />
+      <node ref="C203" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U203" pin="1" pinfunction="S" pintype="input" />
+      <node ref="U203" pin="5" pinfunction="GND" pintype="power_in" />
+      <node ref="C204" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="J122" pin="1" pinfunction="GND" pintype="passive" />
+      <node ref="J122" pin="4" pinfunction="SHIELD" pintype="passive" />
+      <node ref="U206" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="U207" pin="4" pinfunction="GND" pintype="power_in" />
+      <node ref="U208" pin="4" pinfunction="GND" pintype="power_in" />
+      <node ref="U209" pin="3" pinfunction="GND" pintype="power_in" />
+      <node ref="U210" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="U211" pin="4" pinfunction="GND" pintype="power_in" />
+      <node ref="C206" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C207" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C208" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C209" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C210" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C211" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R208" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R209" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R210" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R211" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U204" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="R212" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C212" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C213" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U205" pin="2" pinfunction="GND" pintype="power_in" />
+      <node ref="U205" pin="5" pinfunction="ST_UNUSED_GND" pintype="passive" />
+      <node ref="U212" pin="8" pinfunction="GND" pintype="power_in" />
+      <node ref="R213" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="Q200" pin="2" pinfunction="S" pintype="passive" />
+      <node ref="R215" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R217" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C214" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C215" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="C216" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="J121" pin="2" pinfunction="GND" pintype="passive" />
+      <node ref="#FLG3" pin="1" pinfunction="pwr" pintype="power_out" />
+    </net>
+    <net code="22" name="HEADPHONE_L">
+      <node ref="U402" pin="16" pinfunction="OUTL" pintype="output" />
+      <node ref="J400" pin="1" pinfunction="TIP_LEFT" pintype="passive" />
+    </net>
+    <net code="23" name="HEADPHONE_R">
+      <node ref="U402" pin="5" pinfunction="OUTR" pintype="output" />
+      <node ref="J400" pin="2" pinfunction="RING_RIGHT" pintype="passive" />
+    </net>
+    <net code="24" name="HP_ATT_L">
+      <node ref="R403" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R405" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C414" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="25" name="HP_ATT_R">
+      <node ref="R404" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R406" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C415" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="26" name="HP_CPN">
+      <node ref="U402" pin="9" pinfunction="CPN" pintype="passive" />
+      <node ref="C416" pin="2" pinfunction="2" pintype="passive" />
+    </net>
+    <net code="27" name="HP_CPP">
+      <node ref="U402" pin="11" pinfunction="CPP" pintype="passive" />
+      <node ref="C416" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="28" name="HP_IN_L">
+      <node ref="C414" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U402" pin="1" pinfunction="INL_MINUS" pintype="input" />
+    </net>
+    <net code="29" name="HP_IN_R">
+      <node ref="C415" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="U402" pin="4" pinfunction="INR_MINUS" pintype="input" />
+    </net>
+    <net code="30" name="HP_VDD">
+      <node ref="U402" pin="12" pinfunction="HPVDD" pintype="power_out" />
+      <node ref="C418" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="31" name="HP_VSS">
+      <node ref="U402" pin="8" pinfunction="HPVSS" pintype="power_out" />
+      <node ref="C417" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="32" name="I2C_SCL">
+      <node ref="J100" pin="6" pinfunction="Pin_6" pintype="passive" />
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive" />
+      <node ref="J102" pin="2" pinfunction="Pin_2" pintype="passive" />
+    </net>
+    <net code="33" name="I2C_SDA">
+      <node ref="J100" pin="5" pinfunction="Pin_5" pintype="passive" />
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive" />
+      <node ref="J102" pin="1" pinfunction="Pin_1" pintype="passive" />
+    </net>
+    <net code="34" name="I2S_BCLK">
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive" />
+      <node ref="U401" pin="13" pinfunction="BCK" pintype="input" />
+    </net>
+    <net code="35" name="I2S_DOUT">
+      <node ref="J1" pin="40" pinfunction="Pin_40" pintype="passive" />
+      <node ref="U401" pin="14" pinfunction="DIN" pintype="input" />
+    </net>
+    <net code="36" name="I2S_LRCLK">
+      <node ref="J1" pin="35" pinfunction="Pin_35" pintype="passive" />
+      <node ref="U401" pin="15" pinfunction="LRCK" pintype="input" />
+    </net>
+    <net code="37" name="INPUT_IRQ_N">
+      <node ref="J100" pin="8" pinfunction="Pin_8" pintype="passive" />
+      <node ref="J1" pin="22" pinfunction="Pin_22" pintype="passive" />
+    </net>
+    <net code="38" name="SPI_MISO">
+      <node ref="J100" pin="12" pinfunction="Pin_12" pintype="passive" />
+      <node ref="J1" pin="21" pinfunction="Pin_21" pintype="passive" />
+    </net>
+    <net code="39" name="SPI_MOSI">
+      <node ref="J100" pin="11" pinfunction="Pin_11" pintype="passive" />
+      <node ref="J1" pin="19" pinfunction="Pin_19" pintype="passive" />
+    </net>
+    <net code="40" name="SPI_SCLK">
+      <node ref="J100" pin="9" pinfunction="Pin_9" pintype="passive" />
+      <node ref="J1" pin="23" pinfunction="Pin_23" pintype="passive" />
+    </net>
+    <net code="41" name="USB_CC1">
+      <node ref="J120" pin="A5" pinfunction="A5" pintype="passive" />
+      <node ref="D201" pin="3" pinfunction="IO1" pintype="passive" />
+      <node ref="U201" pin="1" pinfunction="CC1" pintype="bidirectional" />
+    </net>
+    <net code="42" name="USB_CC2">
+      <node ref="J120" pin="B5" pinfunction="B5" pintype="passive" />
+      <node ref="D201" pin="5" pinfunction="IO2" pintype="passive" />
+      <node ref="U201" pin="2" pinfunction="CC2" pintype="bidirectional" />
+    </net>
+    <net code="43" name="USB_CC_3A">
+      <node ref="U211" pin="3" pinfunction="2Y" pintype="output" />
+      <node ref="Q200" pin="1" pinfunction="G" pintype="input" />
+      <node ref="R215" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="44" name="USB_CC_POWER">
+      <node ref="U210" pin="6" pinfunction="1Y" pintype="output" />
+      <node ref="U211" pin="5" pinfunction="2A" pintype="input" />
+      <node ref="R211" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U212" pin="1" pinfunction="EN_UVLO" pintype="input" />
+    </net>
+    <net code="45" name="USB_CHARGE_ALLOWED">
+      <node ref="U206" pin="4" pinfunction="2Y" pintype="output" />
+      <node ref="U207" pin="6" pinfunction="2B" pintype="input" />
+    </net>
+    <net code="46" name="USB_CHARGE_CLOCK">
+      <node ref="J1" pin="31" pinfunction="Pin_31" pintype="passive" />
+      <node ref="R207" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="47" name="USB_CHARGE_LIMITED">
+      <node ref="U205" pin="3" pinfunction="CE" pintype="input" />
+      <node ref="U205" pin="6" pinfunction="VOUT" pintype="passive" />
+      <node ref="U212" pin="6" pinfunction="OUT" pintype="power_out" />
+      <node ref="C216" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="J121" pin="1" pinfunction="PISUGAR_INPUT_5V" pintype="passive" />
+    </net>
+    <net code="48" name="USB_CHARGE_RUN">
+      <node ref="J1" pin="29" pinfunction="Pin_29" pintype="passive" />
+      <node ref="R206" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="49" name="USB_CHG_AL_N">
+      <node ref="U202" pin="4" pinfunction="CHG_AL_N" pintype="open_collector" />
+      <node ref="R205" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U206" pin="3" pinfunction="2A" pintype="input" />
+    </net>
+    <net code="50" name="USB_CHG_DET">
+      <node ref="U202" pin="10" pinfunction="CHG_DET" pintype="output" />
+      <node ref="U209" pin="1" pinfunction="A" pintype="input" />
+    </net>
+    <net code="51" name="USB_CLOCK_IN">
+      <node ref="U208" pin="1" pinfunction="CLK" pintype="input" />
+      <node ref="R207" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R209" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="52" name="USB_DATA_ACTIVE">
+      <node ref="U206" pin="6" pinfunction="1Y" pintype="output" />
+      <node ref="U207" pin="1" pinfunction="1A" pintype="input" />
+    </net>
+    <net code="53" name="USB_DVDT">
+      <node ref="U212" pin="7" pinfunction="DVDT" pintype="passive" />
+      <node ref="C214" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="54" name="USB_GOOD_BAT">
+      <node ref="U202" pin="5" pinfunction="GOOD_BAT" pintype="input" />
+      <node ref="R203" pin="2" pinfunction="2" pintype="passive" />
+    </net>
+    <net code="55" name="USB_GRANT_CLEAR_N">
+      <node ref="U207" pin="7" pinfunction="1Y" pintype="output" />
+      <node ref="U208" pin="6" pinfunction="CLR_N" pintype="input" />
+    </net>
+    <net code="56" name="USB_ILIM_EXTRA">
+      <node ref="R214" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="Q200" pin="3" pinfunction="D" pintype="passive" />
+    </net>
+    <net code="57" name="USB_LEGACY_EN">
+      <node ref="U211" pin="7" pinfunction="1Y" pintype="output" />
+      <node ref="R210" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U204" pin="3" pinfunction="EN" pintype="input" />
+    </net>
+    <net code="58" name="USB_LEGACY_ILIM">
+      <node ref="U204" pin="5" pinfunction="ILIM" pintype="passive" />
+      <node ref="R212" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="59" name="USB_LEGACY_LIMITED">
+      <node ref="U204" pin="6" pinfunction="OUT" pintype="power_out" />
+      <node ref="C213" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U205" pin="1" pinfunction="VIN" pintype="power_in" />
+    </net>
+    <net code="60" name="USB_LEGACY_REQUEST">
+      <node ref="U207" pin="3" pinfunction="2Y" pintype="output" />
+      <node ref="U211" pin="1" pinfunction="1A" pintype="input" />
+    </net>
+    <net code="61" name="USB_MID_DM">
+      <node ref="U202" pin="2" pinfunction="DM_HOST" pintype="bidirectional" />
+      <node ref="U203" pin="6" pinfunction="D_MINUS" pintype="bidirectional" />
+    </net>
+    <net code="62" name="USB_MID_DP">
+      <node ref="U202" pin="3" pinfunction="DP_HOST" pintype="bidirectional" />
+      <node ref="U203" pin="4" pinfunction="D_PLUS" pintype="bidirectional" />
+    </net>
+    <net code="63" name="USB_OVLO">
+      <node ref="U212" pin="2" pinfunction="OVLO" pintype="input" />
+      <node ref="R216" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R217" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="64" name="USB_PC_DM">
+      <node ref="J120" pin="A7" pinfunction="A7" pintype="passive" />
+      <node ref="J120" pin="B7" pinfunction="B7" pintype="passive" />
+      <node ref="D200" pin="5" pinfunction="IO2" pintype="passive" />
+      <node ref="U202" pin="8" pinfunction="DM_CON" pintype="bidirectional" />
+    </net>
+    <net code="65" name="USB_PC_DP">
+      <node ref="J120" pin="A6" pinfunction="A6" pintype="passive" />
+      <node ref="J120" pin="B6" pinfunction="B6" pintype="passive" />
+      <node ref="D200" pin="3" pinfunction="IO1" pintype="passive" />
+      <node ref="U202" pin="7" pinfunction="DP_CON" pintype="bidirectional" />
+    </net>
+    <net code="66" name="USB_PC_VBUS">
+      <node ref="J120" pin="A4" pinfunction="A4" pintype="passive" />
+      <node ref="J120" pin="A9" pinfunction="A9" pintype="passive" />
+      <node ref="J120" pin="B4" pinfunction="B4" pintype="passive" />
+      <node ref="J120" pin="B9" pinfunction="B9" pintype="passive" />
+      <node ref="U200" pin="1" pinfunction="IN" pintype="power_in" />
+      <node ref="U200" pin="3" pinfunction="EN" pintype="input" />
+      <node ref="C200" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="R200" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U202" pin="9" pinfunction="VBUS" pintype="power_in" />
+      <node ref="R203" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C203" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U204" pin="1" pinfunction="IN" pintype="power_in" />
+      <node ref="C212" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U212" pin="5" pinfunction="IN" pintype="power_in" />
+      <node ref="R216" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="C215" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="#FLG4" pin="1" pinfunction="pwr" pintype="power_out" />
+    </net>
+    <net code="67" name="USB_PI_DM">
+      <node ref="U203" pin="8" pinfunction="D1_MINUS" pintype="bidirectional" />
+      <node ref="J122" pin="2" pinfunction="D_MINUS" pintype="passive" />
+    </net>
+    <net code="68" name="USB_PI_DP">
+      <node ref="U203" pin="2" pinfunction="D1_PLUS" pintype="bidirectional" />
+      <node ref="J122" pin="3" pinfunction="D_PLUS" pintype="passive" />
+    </net>
+    <net code="69" name="USB_REQUEST">
+      <node ref="U207" pin="5" pinfunction="2A" pintype="input" />
+      <node ref="U209" pin="4" pinfunction="Y" pintype="output" />
+    </net>
+    <net code="70" name="USB_RUN_IN">
+      <node ref="U207" pin="2" pinfunction="1B" pintype="input" />
+      <node ref="R206" pin="2" pinfunction="2" pintype="passive" />
+      <node ref="R208" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+    <net code="71" name="USB_SDP_GRANT">
+      <node ref="U208" pin="5" pinfunction="Q" pintype="output" />
+      <node ref="U209" pin="2" pinfunction="B" pintype="input" />
+    </net>
+    <net code="72" name="USB_SW_OPEN_N">
+      <node ref="U202" pin="1" pinfunction="SW_OPEN" pintype="open_collector" />
+      <node ref="R204" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="U203" pin="9" pinfunction="OE_N" pintype="input" />
+      <node ref="U206" pin="1" pinfunction="1A" pintype="input" />
+    </net>
+    <net code="73" name="USB_TYPEC_ILIM">
+      <node ref="U212" pin="9" pinfunction="ILM" pintype="passive" />
+      <node ref="R213" pin="1" pinfunction="1" pintype="passive" />
+      <node ref="R214" pin="1" pinfunction="1" pintype="passive" />
+    </net>
+  </nets>
+</export>

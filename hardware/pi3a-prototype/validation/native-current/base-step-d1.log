@@ -1,0 +1,52 @@
+9:27:33 PM: Error: Can't create registry key 'HKCU\Software\KiCad\kicad-cli' (error 5: Access is denied.)
+9:27:33 PM: Error: Can't open registry key 'HKCU\Software\KiCad\kicad-cli' (error 2: The system cannot find the file specified.)
+Loading board
+Determining PCB data
+Board Thickness from stackup: 1.600 mm
+Build STEP data
+Add component J1.
+Add component J102.
+Add component J100.
+Add component J101.
+Add component J400.
+Add component C409.
+Add component R406.
+Add component C411.
+Add component C402.
+Add component C419.
+Add component C406.
+Add component C414.
+Add component C404.
+Add component C418.
+Add component C413.
+Add component C408.
+Add component C412.
+Add component U400.
+Add component R403.
+Add component C416.
+Add component R400.
+Add component R404.
+Add component R405.
+Add component C405.
+Add component C400.
+Add component R402.
+Add component C417.
+Add component C403.
+Add component C401.
+Add component U402.
+Add component U401.
+Add component R401.
+Add component C410.
+Add component C415.
+Add component C407.
+Create PCB solid model
+Board outline: find 12 initial points
+Build board outlines (1 outlines) with 12 points.
+Build board cutouts and holes (136 hole(s)).
+Build holes for shapes
+
+Generate board full shape.
+Writing STEP file
+STEP file 'mechanical/assembly/base-D1.step' created.
+
+Export time 3.728 s

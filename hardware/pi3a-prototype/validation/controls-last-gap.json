@@ -1,0 +1,9 @@
+{
+  "result": [
+    {
+      "net": "3V3_PI",
+      "routed": true
+    }
+  ],
+  "board_sha256": "25d1bc161466d2937debb6b99466d0252977bc9ea181cf128b51e193575da0c4"
+}

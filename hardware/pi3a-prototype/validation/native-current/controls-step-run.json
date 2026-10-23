@@ -1,0 +1,22 @@
+{
+  "own_pid": 50932,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 9.31,
+  "log": "validation\\native-current\\controls-step.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "export",
+    "step",
+    "--force",
+    "--subst-models",
+    "--user-origin",
+    "120x100mm",
+    "-D",
+    "KICAD8_3DMODEL_DIR=C:/Program Files/KiCad/8.0/share/kicad/3dmodels",
+    "--output",
+    "mechanical/assembly/controls-D1.step",
+    "electrical/controls/nathan-controls.kicad_pcb"
+  ]
+}

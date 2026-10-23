@@ -1,0 +1,15 @@
+{
+  "own_pid": 17944,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 53.39,
+  "log": "validation\\native-current\\freecad-assembly.log",
+  "command": [
+    "C:/Projects/_codex/vocaux-22/outils-locaux/FreeCAD-1.1.4/bin/FreeCADCmd.exe",
+    "--user-cfg",
+    "C:/Projects/_codex/vocaux-22/outils-locaux/FreeCAD-1.1.4/portable-profile/data/user.cfg",
+    "--system-cfg",
+    "C:/Projects/_codex/vocaux-22/outils-locaux/FreeCAD-1.1.4/portable-profile/data/system.cfg",
+    "tools/build_freecad_assembly.py"
+  ]
+}

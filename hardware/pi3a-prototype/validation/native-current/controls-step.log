@@ -1,0 +1,120 @@
+8:57:43 PM: Error: Can't create registry key 'HKCU\Software\KiCad\kicad-cli' (error 5: Access is denied.)
+8:57:43 PM: Error: Can't open registry key 'HKCU\Software\KiCad\kicad-cli' (error 2: The system cannot find the file specified.)
+Loading board
+Determining PCB data
+Board Thickness from stackup: 1.600 mm
+Build STEP data
+Add component R54.
+Add component J23.
+Add component R53.
+Add component R60.
+Add component C25.
+Add component R6.
+Add component R4.
+Add component R61.
+Add component J22.
+Add component J6.
+Add component R40.
+Add component J5.
+Add component R14.
+Add component C17.
+Add component R36.
+Could not add 3D model to SW5.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Could not add 3D model to SW9.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Could not add 3D model to SW8.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component R43.
+Add component J20.
+Add component R51.
+Add component J2.
+Add component PS2.
+Add component U4.
+Add component R50.
+Add component C31.
+Add component R5.
+Add component C1.
+Add component R12.
+Add component J21.
+Add component C4.
+Add component R35.
+Add component C7.
+Add component R9.
+Add component C9.
+Add component R38.
+Could not add 3D model to SW10.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component R32.
+Add component R30.
+Add component R34.
+Add component C23.
+Add component U8.
+Add component R11.
+Add component R8.
+Add component R10.
+Add component R1.
+Add component J25.
+Add component C16.
+Add component C22.
+Add component R52.
+Add component R37.
+Add component C14.
+Could not add 3D model to SW4.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component R41.
+Add component R7.
+Add component C21.
+Could not add 3D model to SW2.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component C10.
+Add component R42.
+Add component J3.
+Add component C20.
+Add component C24.
+Add component U1.
+Add component U3.
+Could not add 3D model to SW7.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component R13.
+Add component R55.
+Add component C15.
+Add component J100.
+Add component U7.
+Add component C8.
+Add component J24.
+Add component C6.
+Add component R2.
+Add component R3.
+Add component J4.
+Add component R33.
+Add component C5.
+Add component C13.
+Could not add 3D model to SW6.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Could not add 3D model to SW11.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component U6.
+Add component C30.
+Add component C3.
+Add component L1.
+Could not add 3D model to SW3.
+File not found: ${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.wrl
+Add component R31.
+Add component U5.
+Add component C18.
+Add component U2.
+Add component R15.
+Add component R39.
+Add component C2.
+Create PCB solid model
+Board outline: find 12 initial points
+Build board outlines (1 outlines) with 12 points.
+Build board cutouts and holes (180 hole(s)).
+Build holes for shapes
+
+Generate board full shape.
+Writing STEP file
+STEP file 'mechanical/assembly/controls-D1.step' created.
+
+Export time 8.404 s
