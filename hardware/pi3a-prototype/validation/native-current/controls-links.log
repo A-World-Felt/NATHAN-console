@@ -1,0 +1,14 @@
+ATTEMPT 3V3_PI [(760, 417, 0)] [(772, 417, 0), (772, 417, 1), (772, 417, 2)] [True] [True, True, True]
+RESULT 3V3_PI True
+ATTEMPT 3V3_PI [(840, 382, 0)] [(852, 382, 0), (852, 382, 1), (852, 382, 2)] [True] [True, True, True]
+RESULT 3V3_PI True
+ATTEMPT CTRL_RESET_N [(750, 308, 0)] [(771, 237, 0)] [True] [True]
+RESULT CTRL_RESET_N False
+ATTEMPT FACE_R_RIGHT [(840, 398, 0)] [(546, 723, 0)] [True] [True]
+RESULT FACE_R_RIGHT False
+ATTEMPT FACE_R_RIGHT [(1378, 365, 0)] [(840, 398, 0)] [True] [True]
+RESULT FACE_R_RIGHT False
+ATTEMPT H1_SCL [(518, 565, 0)] [(771, 250, 0)] [True] [True]
+RESULT H1_SCL False
+ATTEMPT H4_SCL [(771, 289, 0)] [(908, 565, 0)] [True] [True]
+RESULT H4_SCL False

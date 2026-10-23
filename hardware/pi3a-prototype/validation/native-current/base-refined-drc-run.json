@@ -1,0 +1,17 @@
+{
+  "own_pid": 57264,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 1.48,
+  "log": "validation\\native-current\\base-refined-drc.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "drc",
+    "--format",
+    "json",
+    "--output",
+    "validation/native-current/base-refined-drc.json",
+    "electrical/base/nathan-base.kicad_pcb"
+  ]
+}

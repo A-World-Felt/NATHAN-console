@@ -1,0 +1,12 @@
+{
+  "own_pid": 49264,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 299.41,
+  "log": "validation\\native-current\\controls-links.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/complete_controls_links.py"
+  ]
+}

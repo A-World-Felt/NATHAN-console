@@ -1,0 +1,12 @@
+{
+  "own_pid": 47008,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 345.67,
+  "log": "validation\\native-current\\controls-route.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/route_controls.py"
+  ]
+}

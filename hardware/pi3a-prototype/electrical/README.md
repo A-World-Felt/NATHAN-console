@@ -1,14 +1,14 @@
+> État figé et résultats de référence : [README D1-3](../README.md). Les points de conception ci-dessous restent des propositions, distinctes des essais matériels.
+
 # Schémas D1 — connexions proposées pour revue
 
 Auteur : Codex/OpenAI `nathan_bom`. Les projets `controls/nathan-controls.kicad_pro` et `base/nathan-base.kicad_pro` contiennent des schémas KiCad 8 éditables. Les symboles fonctionnels locaux portent des broches numérotées ; leurs connexions sont nommées explicitement. `design-networks.json`, `pin-map.csv` et `bom-proposal.csv` détaillent la source et la limite de chaque proposition.
 
 La carte commandes comprend **93 composants physiques proposés et 4 déclarations ERC**, répartis entre interface, entrées numériques, entrées analogiques, multiplexeur, cinq branches haptiques et buck. Son ERC natif actuel rapporte **0 violation**. L’export natif initial, comparé au modèle broche par broche, ne présentait aucune connexion divergente ou absente. Un ERC réussi ne remplace ni la vérification du dessin fabricant, ni le dimensionnement thermique, ni les essais du matériel.
 
-La porteuse comprend encore **8 interfaces de travail**, et non des circuits USB/audio terminés. Les nets `USB_PC_VBUS`, `USB_CHARGE_LIMITED` et `5V_SYS` restent distincts. Aucun fil artificiel ne remplace les protections et contrôles manquants. Le projet PCB D0.1 est une étude de placement séparée : **ces schémas D1 ne sont pas encore intégralement reportés et routés sur les deux PCB**.
+La porteuse D1 comprend **88 composants physiques proposés**, dont circuits audio et USB-C ; leur qualification reste à faire. Les nets `USB_PC_VBUS`, `USB_CHARGE_LIMITED` et `5V_SYS` restent distincts. Aucun fil artificiel ne remplace les protections et contrôles manquants. Le projet PCB D0.1 est une étude de placement séparée : **le checkpoint D1-3 comporte des commandes routées et une porteuse placée avec 257 liaisons encore ouvertes**.
 
 ## Choix proposés à partir des données connues
-
-Le lancement ERC reproductible et son contournement de première initialisation KiCad 8.0.2 sont documentés dans [incident-kicad.md](../docs/incident-kicad.md). La comparaison indépendante du checkout de revue couvre 317 broches physiques, sans différence ; son rapport est `validation/native-current/controls-netlist-comparison.json`.
 
 | Choix D1 | Motif et limite |
 |---|---|

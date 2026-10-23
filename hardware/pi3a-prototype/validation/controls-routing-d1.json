@@ -1,0 +1,85 @@
+{
+  "status": "routing proposal; native DRC must be assessed, not fabrication approved",
+  "elapsed_seconds": 343.4,
+  "connected_operations": 216,
+  "failures": [
+    {
+      "plane_pad": "PS2.9",
+      "net": "GND",
+      "reason": "no local path"
+    },
+    {
+      "net": "H4_SCL",
+      "from": "U4.2",
+      "to": "U8.11",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "H1_SCL",
+      "from": "U8.5",
+      "to": "U1.2",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "CTRL_RESET_N",
+      "from": "U8.3",
+      "to": "C13.1",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "RAW_L2",
+      "from": "R54.1",
+      "to": "J22.3",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "STICK_R_CLICK",
+      "from": "J21.5",
+      "to": "R41.1",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "FACE_R_LEFT",
+      "from": "SW9.1",
+      "to": "R37.1",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "FACE_R_UP",
+      "from": "R34.1",
+      "to": "U7.25",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "FACE_R_UP",
+      "from": "R34.1",
+      "to": "SW6.1",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": "R35.1",
+      "to": "U7.26",
+      "reason": "grid path not found; left open"
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": "R35.1",
+      "to": "SW7.1",
+      "reason": "grid path not found; left open"
+    }
+  ],
+  "tracks_and_vias": 1413,
+  "vias": 188,
+  "plane_layers": {
+    "GND": 1,
+    "3V3_PI": 2,
+    "3V3_HAPTIC": 31
+  },
+  "board_sha256": "7a89fd30c21a823d87fff2d6c19a9fd42fa3a11c7d12f4bc6a8c331fb8d20440",
+  "limitations": [
+    "All neck traces are 0.2 mm; supply trunks need widening or plane verification before current qualification.",
+    "No impedance/length/skew validation.",
+    "B.Cu is filled with motor 3V3; inner GND shields digital/ADC reference but noise remains to measure."
+  ]
+}

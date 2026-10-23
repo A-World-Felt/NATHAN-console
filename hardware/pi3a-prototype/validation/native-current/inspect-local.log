@@ -1,0 +1,598 @@
+[
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      102.2,
+      108.175
+    ],
+    "c": [
+      102.2,
+      108.2
+    ],
+    "layer": "F.Cu",
+    "uuid": "593b7ac0-86c0-4bbd-8b40-73a531ee6306"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      102.2,
+      108.2
+    ],
+    "c": [
+      101.4,
+      108.2
+    ],
+    "layer": "F.Cu",
+    "uuid": "a8d6e977-36b6-4d8b-b1d5-723d3d043aeb"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      104.8,
+      108.0
+    ],
+    "c": [
+      104.8,
+      108.8
+    ],
+    "layer": "F.Cu",
+    "uuid": "f9ce838c-9658-4c18-8db4-bfb473cb4591"
+  },
+  {
+    "kind": "via",
+    "net": "3V3_HAPTIC",
+    "xy": [
+      104.8,
+      108.8
+    ],
+    "uuid": "b84db067-bcb1-474b-9855-0d96993041c9"
+  },
+  {
+    "kind": "via",
+    "net": "3V3_HAPTIC",
+    "xy": [
+      101.4,
+      108.2
+    ],
+    "uuid": "f98ccd81-05fd-41e7-b79f-be0432bd7ea6"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      101.4,
+      108.2
+    ],
+    "c": [
+      101.4,
+      111.2
+    ],
+    "layer": "In2.Cu",
+    "uuid": "3b30ea40-21a7-4b0a-9eb5-485a6935ed3a"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      102.0,
+      108.8
+    ],
+    "c": [
+      104.8,
+      108.8
+    ],
+    "layer": "In2.Cu",
+    "uuid": "52b4f270-d0be-47d2-9281-36fb41f6bbce"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      100.4,
+      108.2
+    ],
+    "c": [
+      101.4,
+      108.2
+    ],
+    "layer": "In2.Cu",
+    "uuid": "7b965ebf-a194-4a59-970f-fbd8262e213a"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      101.4,
+      108.2
+    ],
+    "c": [
+      102.0,
+      108.8
+    ],
+    "layer": "In2.Cu",
+    "uuid": "b03e51cf-db98-4139-9c79-fca1d54399e0"
+  },
+  {
+    "kind": "track",
+    "net": "3V3_HAPTIC",
+    "a": [
+      104.8,
+      108.8
+    ],
+    "c": [
+      109.2,
+      108.8
+    ],
+    "layer": "In2.Cu",
+    "uuid": "dc8b8d14-50ed-4fad-a381-74272008d616"
+  },
+  {
+    "kind": "track",
+    "net": "CENTRAL_2",
+    "a": [
+      106.6,
+      110.1
+    ],
+    "c": [
+      106.6,
+      106.4
+    ],
+    "layer": "F.Cu",
+    "uuid": "3589dfa1-f807-4cac-91b7-c4c2d4399eff"
+  },
+  {
+    "kind": "track",
+    "net": "CENTRAL_2",
+    "a": [
+      106.7,
+      106.2
+    ],
+    "c": [
+      107.7,
+      105.2
+    ],
+    "layer": "F.Cu",
+    "uuid": "8cca42bc-60a5-4720-8fbf-fcf1697123d9"
+  },
+  {
+    "kind": "track",
+    "net": "CENTRAL_2",
+    "a": [
+      106.6,
+      106.4
+    ],
+    "c": [
+      106.7,
+      106.3
+    ],
+    "layer": "F.Cu",
+    "uuid": "e6c2d195-3188-4194-921a-e26c2ca8ba53"
+  },
+  {
+    "kind": "track",
+    "net": "CENTRAL_2",
+    "a": [
+      106.7,
+      106.3
+    ],
+    "c": [
+      106.7,
+      106.2
+    ],
+    "layer": "F.Cu",
+    "uuid": "fc286857-a261-4da5-a5f7-a0b2a6db7394"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.8,
+      105.4
+    ],
+    "c": [
+      105.9,
+      105.5
+    ],
+    "layer": "F.Cu",
+    "uuid": "0510db17-e907-4870-9293-5f9eb05bfcb8"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.5,
+      108.9
+    ],
+    "c": [
+      105.5,
+      109.0
+    ],
+    "layer": "F.Cu",
+    "uuid": "3784c01b-a0ac-4952-90a6-aaf936c56285"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.5,
+      109.0
+    ],
+    "c": [
+      105.4,
+      109.1
+    ],
+    "layer": "F.Cu",
+    "uuid": "5724f977-cfdf-4733-bff0-f7e29c04cd30"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.9,
+      105.5
+    ],
+    "c": [
+      105.9,
+      108.5
+    ],
+    "layer": "F.Cu",
+    "uuid": "7701cfb2-dfbd-49eb-b164-69684b2848f8"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.9,
+      108.5
+    ],
+    "c": [
+      105.5,
+      108.9
+    ],
+    "layer": "F.Cu",
+    "uuid": "86492f85-dfb2-4ae6-80a3-08ea958b9701"
+  },
+  {
+    "kind": "track",
+    "net": "CTRL_RESET_N",
+    "a": [
+      105.8,
+      86.7
+    ],
+    "c": [
+      105.8,
+      105.4
+    ],
+    "layer": "F.Cu",
+    "uuid": "8a2fa595-9aa1-4093-bd76-76cdfa58f585"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_L_UP",
+    "a": [
+      112.7,
+      95.8
+    ],
+    "c": [
+      98.9,
+      109.6
+    ],
+    "layer": "B.Cu",
+    "uuid": "6b969af5-3d34-467e-a9e4-eb8b763bcb10"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_R_LEFT",
+    "a": [
+      104.0,
+      107.8
+    ],
+    "c": [
+      101.3,
+      110.5
+    ],
+    "layer": "B.Cu",
+    "uuid": "64857d6c-4fcb-4984-a1e3-cb5733b52855"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_R_LEFT",
+    "a": [
+      104.0,
+      106.4
+    ],
+    "c": [
+      104.0,
+      107.8
+    ],
+    "layer": "B.Cu",
+    "uuid": "e5b29882-b8ac-4478-868e-e509887bc5e9"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_R_LEFT",
+    "a": [
+      106.6,
+      103.8
+    ],
+    "c": [
+      104.0,
+      106.4
+    ],
+    "layer": "B.Cu",
+    "uuid": "ee2adf30-cf22-41ce-a2b7-7ef6b2bf5b70"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_R_UP",
+    "a": [
+      102.3,
+      107.1
+    ],
+    "c": [
+      100.5,
+      107.1
+    ],
+    "layer": "In2.Cu",
+    "uuid": "3c418d58-d53c-493f-a7f4-7b09c6ce1b65"
+  },
+  {
+    "kind": "track",
+    "net": "FACE_R_UP",
+    "a": [
+      106.3,
+      103.1
+    ],
+    "c": [
+      102.3,
+      107.1
+    ],
+    "layer": "In2.Cu",
+    "uuid": "f521039b-b4dd-44d4-affa-31ecf1dcb25b"
+  },
+  {
+    "kind": "track",
+    "net": "GND",
+    "a": [
+      104.8,
+      107.5
+    ],
+    "c": [
+      103.3,
+      107.5
+    ],
+    "layer": "F.Cu",
+    "uuid": "0a166484-0fca-4d7f-96b2-36ece1d7656b"
+  },
+  {
+    "kind": "via",
+    "net": "GND",
+    "xy": [
+      103.3,
+      107.5
+    ],
+    "uuid": "79166290-3c9a-471c-a29c-4740ae2af743"
+  },
+  {
+    "kind": "track",
+    "net": "H2_REG",
+    "a": [
+      102.2,
+      105.775
+    ],
+    "c": [
+      102.2,
+      105.8
+    ],
+    "layer": "F.Cu",
+    "uuid": "3d4b3a3a-06c0-4d6a-8e8f-949e44e14b02"
+  },
+  {
+    "kind": "track",
+    "net": "H2_REG",
+    "a": [
+      102.4,
+      106.0
+    ],
+    "c": [
+      104.8,
+      106.0
+    ],
+    "layer": "F.Cu",
+    "uuid": "47183fa9-cd99-47ff-9926-42d4b0e99352"
+  },
+  {
+    "kind": "track",
+    "net": "H2_REG",
+    "a": [
+      102.2,
+      105.8
+    ],
+    "c": [
+      102.4,
+      106.0
+    ],
+    "layer": "F.Cu",
+    "uuid": "798f27ad-2bbd-45c0-8e1f-e29699984539"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      101.3,
+      106.6
+    ],
+    "c": [
+      101.3,
+      105.1
+    ],
+    "layer": "F.Cu",
+    "uuid": "1ef1edc0-df90-4219-8f05-8abeb8ae84a3"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      102.0,
+      106.6
+    ],
+    "c": [
+      103.0,
+      106.6
+    ],
+    "layer": "F.Cu",
+    "uuid": "242f54dd-d909-478f-b38c-4056dacd44cc"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      100.8,
+      107.8
+    ],
+    "c": [
+      102.0,
+      106.6
+    ],
+    "layer": "F.Cu",
+    "uuid": "3c32965d-a4ee-4c9e-a2ed-745ddcc2cef2"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      103.1,
+      106.5
+    ],
+    "c": [
+      104.8,
+      106.5
+    ],
+    "layer": "F.Cu",
+    "uuid": "727caca8-046d-4e31-8c4e-13b0fd598c2d"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      102.0,
+      106.6
+    ],
+    "c": [
+      101.3,
+      106.6
+    ],
+    "layer": "F.Cu",
+    "uuid": "82eb4b87-16f4-4d5f-ad25-c9df3f795922"
+  },
+  {
+    "kind": "track",
+    "net": "H2_SCL",
+    "a": [
+      103.0,
+      106.6
+    ],
+    "c": [
+      103.1,
+      106.5
+    ],
+    "layer": "F.Cu",
+    "uuid": "edbb013e-1987-4b41-b980-c2682b36e12e"
+  },
+  {
+    "kind": "via",
+    "net": "STICK_L_CLICK",
+    "xy": [
+      106.6,
+      105.4
+    ],
+    "uuid": "fbb86ae9-adcd-4108-95ca-8b3fcfca5cbc"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      108.0,
+      105.4
+    ],
+    "c": [
+      106.6,
+      105.4
+    ],
+    "layer": "In2.Cu",
+    "uuid": "1dc1308c-38ff-421a-b3bc-e34e0b574a90"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      106.6,
+      105.4
+    ],
+    "c": [
+      104.5,
+      107.5
+    ],
+    "layer": "B.Cu",
+    "uuid": "2e9547c4-9ff0-4923-b27c-2348367f3b7a"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      104.5,
+      107.5
+    ],
+    "c": [
+      104.5,
+      108.0
+    ],
+    "layer": "B.Cu",
+    "uuid": "44a044a4-1509-4a66-a9f4-69febe5b6522"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      104.4,
+      108.1
+    ],
+    "c": [
+      104.4,
+      108.2
+    ],
+    "layer": "B.Cu",
+    "uuid": "50017bd7-2790-4d5c-9076-20ce9dfa9873"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      104.4,
+      108.2
+    ],
+    "c": [
+      102.1,
+      110.5
+    ],
+    "layer": "B.Cu",
+    "uuid": "c3b0f4ed-a0c9-401b-8713-6631e1145ceb"
+  },
+  {
+    "kind": "track",
+    "net": "STICK_L_CLICK",
+    "a": [
+      104.5,
+      108.0
+    ],
+    "c": [
+      104.4,
+      108.1
+    ],
+    "layer": "B.Cu",
+    "uuid": "cdd51503-ea49-439b-b8fe-b40d24e765b9"
+  }
+]

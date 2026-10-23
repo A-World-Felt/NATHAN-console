@@ -1,0 +1,11 @@
+{
+  "own_pid": 20948,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 8.71,
+  "log": "validation\\native-current\\controls-last-gap.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "tools/close_controls_plane_gap.py"
+  ]
+}

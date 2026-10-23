@@ -4,7 +4,7 @@
   "pins_compared": 317,
   "duplicate_nodes": [],
   "differences": [],
-  "model_sha256": "03e73d4e8de599ed638c378c1b7defd11b0af5df2a0300514291a7022f7d27f3",
-  "native_netlist_sha256": "ecf310c02c28bf381e311b3b061a3b3cc465e257220bb0a17dbee6017289414f",
+  "model_sha256": "f2c690a4f1710085d8f922982c687ea6728e4b4440b774d460a9c49ca0945330",
+  "native_netlist_sha256": "068f9cb01840fa87653d7542d1d48b70e393692e65696b503302b145b90ad99e",
   "scope": "Pin-to-net agreement only; no component, PCB or circuit qualification."
 }

@@ -1,0 +1,8 @@
+FANOUT_SAVED removed=399
+CTRL_RESET_N failures=0
+FACE_R_RIGHT failures=0
+H1_SCL failures=1
+H4_SCL failures=2
+H1_SDA failures=3
+H2_SCL failures=4
+H2_SDA failures=6

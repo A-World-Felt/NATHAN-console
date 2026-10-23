@@ -1,0 +1,1965 @@
+{
+  "module_sha256": "110b225cca8beec4714c03020cca13a8816e076e462e89544a59c2930d130c41",
+  "base_physical_components": 88,
+  "digital_cases_passed": 128,
+  "reconnect_sequence": [
+    {
+      "event": "configured_no_pulse",
+      "grant": false,
+      "low_path": false
+    },
+    {
+      "event": "fresh_grant",
+      "grant": true,
+      "low_path": true
+    },
+    {
+      "event": "disconnect_clock_stuck_high",
+      "grant": false,
+      "low_path": false
+    },
+    {
+      "event": "reconnect_clock_still_high",
+      "grant": false,
+      "low_path": false
+    },
+    {
+      "event": "clock_low",
+      "grant": false,
+      "low_path": false
+    },
+    {
+      "event": "new_host_grant",
+      "grant": true,
+      "low_path": true
+    },
+    {
+      "event": "suspend",
+      "grant": false,
+      "low_path": false
+    }
+  ],
+  "scope": "Ideal settled digital logic only. No analog, propagation-delay, power-ramp, signal-integrity, safety or USB compliance qualification.",
+  "state_rows": [
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": true
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": false,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": true,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": false,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": false,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": false,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": true,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": false,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": false,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": false,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    },
+    {
+      "inputs": {
+        "CC_OUT1": true,
+        "CC_OUT2": true,
+        "USB_SW_OPEN_N": true,
+        "USB_CHG_AL_N": true,
+        "USB_CHG_DET": true,
+        "USB_CHARGE_RUN": true,
+        "USB_CHARGE_CLOCK": false
+      },
+      "prior_grant": true,
+      "low_path": false,
+      "high_path": false,
+      "high_current_setting": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "own_pid": 29536,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 0.72,
+  "log": "validation\\native-current\\pcb-pin-contract.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "tools/check_pcb_pin_contract.py"
+  ]
+}

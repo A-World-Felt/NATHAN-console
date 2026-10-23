@@ -1,0 +1,89 @@
+{
+  "links": [
+    {
+      "net": "3V3_PI",
+      "from": [
+        116.0,
+        91.7
+      ],
+      "to": [
+        117.2,
+        91.7
+      ],
+      "connected": true
+    },
+    {
+      "net": "3V3_PI",
+      "from": [
+        124.0,
+        88.2
+      ],
+      "to": [
+        125.2,
+        88.2
+      ],
+      "connected": true
+    },
+    {
+      "net": "CTRL_RESET_N",
+      "from": [
+        115.0,
+        80.775
+      ],
+      "to": [
+        117.1375,
+        73.725
+      ],
+      "connected": false
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": [
+        124.0,
+        89.825
+      ],
+      "to": [
+        94.65,
+        122.285
+      ],
+      "connected": false
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": [
+        177.75,
+        86.5
+      ],
+      "to": [
+        124.0,
+        89.825
+      ],
+      "connected": false
+    },
+    {
+      "net": "H1_SCL",
+      "from": [
+        91.8,
+        106.5
+      ],
+      "to": [
+        117.1375,
+        75.025
+      ],
+      "connected": false
+    },
+    {
+      "net": "H4_SCL",
+      "from": [
+        117.1375,
+        78.925
+      ],
+      "to": [
+        130.8,
+        106.5
+      ],
+      "connected": false
+    }
+  ],
+  "board_sha256": "16407d51e1ae114c2c859ace607f3ca1a039dc283c6e6fa98983d5c96cb59a91"
+}

@@ -1,0 +1,467 @@
+[
+  {
+    "board": "controls",
+    "board_sha256": "25d1bc161466d2937debb6b99466d0252977bc9ea181cf128b51e193575da0c4",
+    "model_sha256": "2688348273663153611ec9ec23f6cb521097ec1970fcca44208e5e5e5be704c4",
+    "components": 93,
+    "physical_numbered_pads": 337,
+    "duplicate_pad_numbers": {
+      "SW5": {
+        "1": 2,
+        "2": 2
+      },
+      "SW9": {
+        "1": 2,
+        "2": 2
+      },
+      "SW8": {
+        "1": 2,
+        "2": 2
+      },
+      "SW10": {
+        "1": 2,
+        "2": 2
+      },
+      "SW4": {
+        "1": 2,
+        "2": 2
+      },
+      "SW2": {
+        "1": 2,
+        "2": 2
+      },
+      "SW7": {
+        "1": 2,
+        "2": 2
+      },
+      "SW6": {
+        "1": 2,
+        "2": 2
+      },
+      "SW11": {
+        "1": 2,
+        "2": 2
+      },
+      "SW3": {
+        "1": 2,
+        "2": 2
+      }
+    },
+    "errors": [],
+    "tracks": {
+      "3V3_HAPTIC": {
+        "length_mm_by_width": {
+          "0.2": 27.7357,
+          "0.5": 120.3374
+        },
+        "vias": 34
+      },
+      "3V3_PI": {
+        "length_mm_by_width": {
+          "0.2": 39.6715
+        },
+        "vias": 28
+      },
+      "5V_SYS": {
+        "length_mm_by_width": {
+          "0.2": 53.3199
+        },
+        "vias": 0
+      },
+      "ADC_CS_N": {
+        "length_mm_by_width": {
+          "0.2": 73.6567
+        },
+        "vias": 2
+      },
+      "ADC_L2": {
+        "length_mm_by_width": {
+          "0.2": 11.6607
+        },
+        "vias": 0
+      },
+      "ADC_LX": {
+        "length_mm_by_width": {
+          "0.2": 12.5805
+        },
+        "vias": 0
+      },
+      "ADC_LY": {
+        "length_mm_by_width": {
+          "0.2": 12.0259
+        },
+        "vias": 0
+      },
+      "ADC_R2": {
+        "length_mm_by_width": {
+          "0.2": 12.1403
+        },
+        "vias": 0
+      },
+      "ADC_RX": {
+        "length_mm_by_width": {
+          "0.2": 11.5189
+        },
+        "vias": 0
+      },
+      "ADC_RY": {
+        "length_mm_by_width": {
+          "0.2": 11.1222
+        },
+        "vias": 0
+      },
+      "CENTRAL_1": {
+        "length_mm_by_width": {
+          "0.2": 57.4317
+        },
+        "vias": 0
+      },
+      "CENTRAL_2": {
+        "length_mm_by_width": {
+          "0.2": 73.4921
+        },
+        "vias": 4
+      },
+      "CTRL_RESET_N": {
+        "length_mm_by_width": {
+          "0.2": 117.7483
+        },
+        "vias": 6
+      },
+      "FACE_L_DOWN": {
+        "length_mm_by_width": {
+          "0.2": 93.3078
+        },
+        "vias": 3
+      },
+      "FACE_L_LEFT": {
+        "length_mm_by_width": {
+          "0.2": 119.2447
+        },
+        "vias": 6
+      },
+      "FACE_L_RIGHT": {
+        "length_mm_by_width": {
+          "0.2": 78.244
+        },
+        "vias": 2
+      },
+      "FACE_L_UP": {
+        "length_mm_by_width": {
+          "0.2": 108.5151
+        },
+        "vias": 5
+      },
+      "FACE_R_DOWN": {
+        "length_mm_by_width": {
+          "0.2": 130.6536
+        },
+        "vias": 8
+      },
+      "FACE_R_LEFT": {
+        "length_mm_by_width": {
+          "0.2": 90.1652
+        },
+        "vias": 4
+      },
+      "FACE_R_RIGHT": {
+        "length_mm_by_width": {
+          "0.2": 124.5008
+        },
+        "vias": 5
+      },
+      "FACE_R_UP": {
+        "length_mm_by_width": {
+          "0.2": 111.7116
+        },
+        "vias": 4
+      },
+      "GND": {
+        "length_mm_by_width": {
+          "0.2": 55.2309
+        },
+        "vias": 48
+      },
+      "H1_MINUS": {
+        "length_mm_by_width": {
+          "0.2": 6.8899
+        },
+        "vias": 0
+      },
+      "H1_PLUS": {
+        "length_mm_by_width": {
+          "0.2": 5.9728
+        },
+        "vias": 0
+      },
+      "H1_REG": {
+        "length_mm_by_width": {
+          "0.2": 2.7078
+        },
+        "vias": 0
+      },
+      "H1_SCL": {
+        "length_mm_by_width": {
+          "0.2": 54.5804
+        },
+        "vias": 2
+      },
+      "H1_SDA": {
+        "length_mm_by_width": {
+          "0.2": 51.3993
+        },
+        "vias": 1
+      },
+      "H2_MINUS": {
+        "length_mm_by_width": {
+          "0.2": 6.8899
+        },
+        "vias": 0
+      },
+      "H2_PLUS": {
+        "length_mm_by_width": {
+          "0.2": 5.9728
+        },
+        "vias": 0
+      },
+      "H2_REG": {
+        "length_mm_by_width": {
+          "0.2": 2.7078
+        },
+        "vias": 0
+      },
+      "H2_SCL": {
+        "length_mm_by_width": {
+          "0.2": 57.1052
+        },
+        "vias": 3
+      },
+      "H2_SDA": {
+        "length_mm_by_width": {
+          "0.2": 43.4724
+        },
+        "vias": 2
+      },
+      "H3_MINUS": {
+        "length_mm_by_width": {
+          "0.2": 6.8899
+        },
+        "vias": 0
+      },
+      "H3_PLUS": {
+        "length_mm_by_width": {
+          "0.2": 5.9728
+        },
+        "vias": 0
+      },
+      "H3_REG": {
+        "length_mm_by_width": {
+          "0.2": 2.7078
+        },
+        "vias": 0
+      },
+      "H3_SCL": {
+        "length_mm_by_width": {
+          "0.2": 42.2739
+        },
+        "vias": 2
+      },
+      "H3_SDA": {
+        "length_mm_by_width": {
+          "0.2": 43.3994
+        },
+        "vias": 4
+      },
+      "H4_MINUS": {
+        "length_mm_by_width": {
+          "0.2": 6.8899
+        },
+        "vias": 0
+      },
+      "H4_PLUS": {
+        "length_mm_by_width": {
+          "0.2": 5.9728
+        },
+        "vias": 0
+      },
+      "H4_REG": {
+        "length_mm_by_width": {
+          "0.2": 2.7078
+        },
+        "vias": 0
+      },
+      "H4_SCL": {
+        "length_mm_by_width": {
+          "0.2": 47.5813
+        },
+        "vias": 4
+      },
+      "H4_SDA": {
+        "length_mm_by_width": {
+          "0.2": 53.328
+        },
+        "vias": 3
+      },
+      "H5_MINUS": {
+        "length_mm_by_width": {
+          "0.2": 6.8899
+        },
+        "vias": 0
+      },
+      "H5_PLUS": {
+        "length_mm_by_width": {
+          "0.2": 5.9728
+        },
+        "vias": 0
+      },
+      "H5_REG": {
+        "length_mm_by_width": {
+          "0.2": 2.7078
+        },
+        "vias": 0
+      },
+      "H5_SCL": {
+        "length_mm_by_width": {
+          "0.2": 47.2644
+        },
+        "vias": 2
+      },
+      "H5_SDA": {
+        "length_mm_by_width": {
+          "0.2": 43.569
+        },
+        "vias": 2
+      },
+      "HAPTIC_FB": {
+        "length_mm_by_width": {
+          "0.2": 8.6913
+        },
+        "vias": 0
+      },
+      "HAPTIC_SW": {
+        "length_mm_by_width": {
+          "0.2": 1.9685
+        },
+        "vias": 0
+      },
+      "I2C_SCL": {
+        "length_mm_by_width": {
+          "0.2": 107.8573
+        },
+        "vias": 5
+      },
+      "I2C_SDA": {
+        "length_mm_by_width": {
+          "0.2": 117.6181
+        },
+        "vias": 9
+      },
+      "INPUT_IRQ_N": {
+        "length_mm_by_width": {
+          "0.2": 80.2139
+        },
+        "vias": 3
+      },
+      "RAW_L2": {
+        "length_mm_by_width": {
+          "0.2": 71.5344
+        },
+        "vias": 4
+      },
+      "RAW_LX": {
+        "length_mm_by_width": {
+          "0.2": 63.6449
+        },
+        "vias": 1
+      },
+      "RAW_LY": {
+        "length_mm_by_width": {
+          "0.2": 59.1181
+        },
+        "vias": 1
+      },
+      "RAW_R2": {
+        "length_mm_by_width": {
+          "0.2": 67.8185
+        },
+        "vias": 1
+      },
+      "RAW_RX": {
+        "length_mm_by_width": {
+          "0.2": 26.5747
+        },
+        "vias": 1
+      },
+      "RAW_RY": {
+        "length_mm_by_width": {
+          "0.2": 29.1617
+        },
+        "vias": 0
+      },
+      "SHOULDER_L1": {
+        "length_mm_by_width": {
+          "0.2": 124.1618
+        },
+        "vias": 4
+      },
+      "SHOULDER_R1": {
+        "length_mm_by_width": {
+          "0.2": 132.2483
+        },
+        "vias": 6
+      },
+      "SPI_MISO": {
+        "length_mm_by_width": {
+          "0.2": 23.3979
+        },
+        "vias": 1
+      },
+      "SPI_MOSI": {
+        "length_mm_by_width": {
+          "0.2": 25.3019
+        },
+        "vias": 1
+      },
+      "SPI_SCLK": {
+        "length_mm_by_width": {
+          "0.2": 37.0164
+        },
+        "vias": 0
+      },
+      "STICK_L_CLICK": {
+        "length_mm_by_width": {
+          "0.2": 55.597
+        },
+        "vias": 3
+      },
+      "STICK_R_CLICK": {
+        "length_mm_by_width": {
+          "0.2": 106.6069
+        },
+        "vias": 6
+      }
+    },
+    "scope": "Pin contract including DNP footprints; track inventory does not establish current capacity or connectivity."
+  },
+  {
+    "board": "base",
+    "board_sha256": "cae3100e793529bdeebb2d9612561f2a0a5d93d31f2fa21120d985783dd5dd25",
+    "model_sha256": "2688348273663153611ec9ec23f6cb521097ec1970fcca44208e5e5e5be704c4",
+    "components": 88,
+    "physical_numbered_pads": 371,
+    "duplicate_pad_numbers": {
+      "U212": {
+        "1": 2,
+        "4": 2,
+        "7": 2,
+        "10": 2
+      },
+      "J120": {
+        "S1": 4
+      }
+    },
+    "errors": [],
+    "tracks": {},
+    "scope": "Pin contract including DNP footprints; track inventory does not establish current capacity or connectivity."
+  }
+]

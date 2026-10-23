@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Projects\_codex\vocaux-22\nathan-pr\hardware\pi3a-prototype\electrical\controls\nathan-controls.kicad_sch</source>
-    <date>2026-10-22T20:46:46-0400</date>
+    <source>C:\Projects\_codex\vocaux-22\nathan-conception\electrical\controls\nathan-controls.kicad_sch</source>
+    <date>2026-10-22T20:57:10-0400</date>
     <tool>Eeschema 8.0.2</tool>
-    <textvar name="DESIGN_STATUS">D1 electrical proposal; see validation/native-current for revision-specific evidence</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>NATHAN controls D1 electrical proposal</title>
@@ -319,8 +318,9 @@
     </comp>
     <comp ref="J20">
       <value>J20 interface</value>
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -332,8 +332,9 @@
     </comp>
     <comp ref="J21">
       <value>J21 interface</value>
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -345,8 +346,9 @@
     </comp>
     <comp ref="J22">
       <value>J22 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -358,8 +360,9 @@
     </comp>
     <comp ref="J23">
       <value>J23 interface</value>
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -484,8 +487,9 @@
     </comp>
     <comp ref="J24">
       <value>J24 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -497,8 +501,9 @@
     </comp>
     <comp ref="J25">
       <value>J25 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -889,8 +894,9 @@
     </comp>
     <comp ref="J2">
       <value>J2 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -973,8 +979,9 @@
     </comp>
     <comp ref="J3">
       <value>J3 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1057,8 +1064,9 @@
     </comp>
     <comp ref="J4">
       <value>J4 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1141,8 +1149,9 @@
     </comp>
     <comp ref="J5">
       <value>J5 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1225,8 +1234,9 @@
     </comp>
     <comp ref="J6">
       <value>J6 interface</value>
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -1451,10 +1461,12 @@
       <tstamps>0b5e2652-2675-5603-87ad-4c9502b8618c</tstamps>
     </comp>
     <comp ref="L1">
-      <value>1uH XFL3012-102ME candidate</value>
+      <value>1uH XAL4020-102MEC candidate</value>
+      <footprint>Inductor_SMD:L_Coilcraft_XAL4020-XXX</footprint>
+      <datasheet>https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf</datasheet>
       <fields>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
+        <field name="Footprint">Inductor_SMD:L_Coilcraft_XAL4020-XXX</field>
+        <field name="Datasheet">https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="NATHAN" part="L1" description=""/>
@@ -2001,7 +2013,7 @@
     <libpart lib="NATHAN" part="L1">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">1uH XFL3012-102ME candidate</field>
+        <field name="Value">1uH XAL4020-102MEC candidate</field>
         <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -2851,7 +2863,7 @@
   </libparts>
   <libraries>
     <library logical="NATHAN">
-      <uri>C:\Projects\_codex\vocaux-22\nathan-pr\hardware\pi3a-prototype\electrical\controls/NATHAN.kicad_sym</uri>
+      <uri>C:\Projects\_codex\vocaux-22\nathan-conception\electrical\controls/NATHAN.kicad_sym</uri>
     </library>
   </libraries>
   <nets>

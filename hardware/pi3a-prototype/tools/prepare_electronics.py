@@ -9,6 +9,8 @@ import json
 import math
 import uuid
 import xml.etree.ElementTree as ET
+import base_audio
+import base_usb
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'electrical'
@@ -18,8 +20,12 @@ SOURCES={
  'MCP23017':{'url':'https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf','revision':'DS20001952D, June 2022','pages':'1,11'},
  'TCA9548A':{'url':'https://www.ti.com/lit/ds/symlink/tca9548a.pdf','revision':'SCPS207H, September 2024','pages':'3,19-24'},
  'TPS62080':{'url':'https://www.ti.com/lit/ds/symlink/tps62080.pdf','revision':'SLVSAE8F, November 2016','pages':'4,12-14,19'},
+ 'XAL4020':{'url':'https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf','revision':'Coilcraft XAL40xx current datasheet; product page checked 2026-10-22','pages':'XAL4020-102MEC table and mechanical drawing'},
+ 'JST_PH':{'url':'https://www.jst-mfg.com/product/pdf/eng/ePH.pdf','revision':'PH manufacturer catalog','pages':'1-3'},
  'Pi_GPIO':{'url':'https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio','revision':'Official GPIO documentation','pages':'online; physical header map must also be verified against actual board'},
 }
+SOURCES.update(base_audio.SOURCES)
+SOURCES.update(base_usb.SOURCES)
 COMP=[]
 FPR='Resistor_SMD:R_0603_1608Metric'
 FPC='Capacitor_SMD:C_0603_1608Metric'
@@ -38,6 +44,9 @@ def passive(board,sheet,ref,value,a,b,footprint=None,note='',dnp=False):
 
 
 def conn(board,sheet,ref,nets,names=None,footprint='',note='Pin contract only; mating hardware not qualified'):
+    if not footprint and board=='controls' and ref!='J100':
+        n=len(nets); footprint=f'Connector_JST:JST_PH_B{n}B-PH-K_1x{n:02d}_P2.00mm_Vertical'
+        note += '; prototype PCB connector JST B'+str(n)+'B-PH-K-S, PHR-'+str(n)+' housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation'
     add(board,sheet,ref,ref+' interface',[(str(i),names[i-1] if names else 'Pin_'+str(i),'passive') for i in range(1,len(nets)+1)],
         {str(i):n for i,n in enumerate(nets,1)},footprint,note=note)
 
@@ -105,8 +114,8 @@ def controls():
     ppins=[(1,'EN','input'),(2,'GND','power_in'),(3,'MODE','input'),(4,'FB','input'),(5,'VOS','input'),(6,'PG','open_collector'),(7,'SW','power_out'),(8,'VIN','power_in'),(9,'EP','power_in')]
     pn={'1':'5V_SYS','2':'GND','3':'GND','4':'HAPTIC_FB','5':'3V3_HAPTIC','7':'HAPTIC_SW','8':'5V_SYS','9':'GND'}
     add(b,'power','PS2','TPS62080DSGR',ppins,pn,'Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm','TPS62080','3.308 V nominal divider, MODE low disables snooze. PG unused. EP grounded; land pattern/thermal layout pending.')
-    passive(b,'power','L1','1uH XFL3012-102ME candidate','HAPTIC_SW','3V3_HAPTIC',footprint='',note='Inductor exact order suffix and footprint must be qualified; no substitute footprint accepted')
-    COMP[-1]['footprint']=''
+    passive(b,'power','L1','1uH XAL4020-102MEC candidate','HAPTIC_SW','3V3_HAPTIC',footprint='Inductor_SMD:L_Coilcraft_XAL4020-XXX',note='Prototype alternative: XAL4020-102MEC; 8.7 A at 30% drop, 6.7 A reference current for 20 C rise, 14.6 mOhm max DCR; larger 4 mm package chosen for generous current/thermal margin; compare actual worst-case peak and thermal behavior')
+    COMP[-1]['source']='XAL4020'
     passive(b,'power','C30','10uF 10V X5R','5V_SYS','GND',footprint='Capacitor_SMD:C_0805_2012Metric',note='Effective capacitance under bias to confirm')
     passive(b,'power','C31','22uF 6.3V X5R','3V3_HAPTIC','GND',footprint='Capacitor_SMD:C_0805_2012Metric',note='Candidate Murata GRM21BR60J226ME39L per TI example; derating to verify')
     passive(b,'power','R60','249k 1%','3V3_HAPTIC','HAPTIC_FB')
@@ -124,15 +133,16 @@ def base(link):
     conn(b,'interfaces','J100',link,footprint='Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical',note='Same 1:1 pin contract as controls; cable keyed polarity/current pending')
     pn={1:'3V3_PI',2:'5V_SYS',3:'I2C_SDA',4:'5V_SYS',5:'I2C_SCL',11:'AUDIO_ENABLE',12:'I2S_BCLK',13:'CTRL_RESET_N',19:'SPI_MOSI',21:'SPI_MISO',22:'INPUT_IRQ_N',23:'SPI_SCLK',24:'ADC_CS_N',35:'I2S_LRCLK',40:'I2S_DOUT'}
     pn.update({i:'GND' for i in [6,9,14,20,25,30,34,39]})
+    pn.update(base_usb.PI_PHYSICAL_PINS)
     conn(b,'interfaces','J1',[pn.get(i) for i in range(1,41)],footprint='Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical',note='Proposed cable to actual Pi GPIO, not an assumed socket below Pi. Pin assignments need actual orientation/connector verification; no power import qualification.')
     COMP[-1]['source']='Pi_GPIO'
-    conn(b,'interfaces','J101',['5V_SYS','GND'],note='PiSugar 5 V output interface only. Actual contact geometry and primary supply route unresolved; not a validated power connector.')
-    conn(b,'interfaces','J102',['I2C_SDA','I2C_SCL','GND'],note='PiSugar management interface only; exact hardware contacts not specified')
-    conn(b,'audio-boundary','J110',['5V_SYS','3V3_PI','GND','I2S_BCLK','I2S_LRCLK','I2S_DOUT','AUDIO_ENABLE'],note='Explicit unresolved boundary: I2S DAC plus headphone amplifier not yet schematized. No headphone driver inferred from PCM5102A.')
-    # No invented USB bridge: separated connectors document the unresolved network.
-    conn(b,'usb-boundary','J120',['USB_PC_VBUS','USB_PC_DM','USB_PC_DP',None,'GND'],['VBUS','D_MINUS','D_PLUS','ID','GND'],note='Micro-B external connector pin contract; exact MPN, shield, ESD and supply limiting pending')
-    conn(b,'usb-boundary','J121',['USB_CHARGE_LIMITED','GND'],note='PiSugar charging INPUT: must be isolated from 5V_SYS; missing qualified current limiter/reverse block')
-    conn(b,'usb-boundary','J122',['USB_PI_DM','USB_PI_DP','GND'],note='Pi USB data interface: actual USB-A mating path, VBUS sensing and peripheral attach control pending')
+    conn(b,'interfaces','J101',['5V_SYS','GND'],footprint='NATHAN_USB:Power_Pigtail_2Pad',note='PiSugar 5 V OUTPUT cable, separate from charging INPUT. 20/22AWG soldered wire candidate with strain relief; pad counterpart and load/temperature qualification pending. Avoid a 2A JST PH contact on the full system supply.')
+    conn(b,'interfaces','J102',['I2C_SDA','I2C_SCL','GND'],footprint='Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical',note='PiSugar management cable interface; exact module solder contacts need revision verification')
+    base_audio.populate(add,passive,conn)
+    base_usb.populate(add,passive,conn)
+    for i,net in enumerate(['5V_SYS','3V3_PI','GND','USB_PC_VBUS'],1):
+        add(b,'interfaces','#FLG'+str(i),'PWR_FLAG',[(1,'pwr','power_out')],{'1':net},note='External power declaration only; not supply qualification')
+        COMP[-1]['virtual']=True
 
 
 def uid(text): return str(uuid.uuid5(uuid.NAMESPACE_URL,'nathan-electrical-D1/'+text))
@@ -193,7 +203,7 @@ def schematic(board):
         if c['footprint']: libs.add(c['footprint'].split(':')[0])
     (folder/'NATHAN.kicad_sym').write_text('(kicad_symbol_lib (version 20231120) (generator "kicad_symbol_editor")\n'+'\n'.join(local)+'\n)\n',encoding='utf-8')
     (folder/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name "NATHAN")(type "KiCad")(uri "${KIPRJMOD}/NATHAN.kicad_sym")(options "")(descr "Project-local generated pin models; source references in design-networks.json")))\n',encoding='utf-8')
-    (folder/'fp-lib-table').write_text('(fp_lib_table (version 7)\n'+'\n'.join('(lib (name '+q(name)+')(type "KiCad")(uri '+q('C:/Program Files/KiCad/8.0/share/kicad/footprints/'+name+'.pretty')+')(options "")(descr "Installed KiCad candidate library"))' for name in sorted(libs))+'\n)\n',encoding='utf-8')
+    (folder/'fp-lib-table').write_text('(fp_lib_table (version 7)\n'+'\n'.join('(lib (name '+q(name)+')(type "KiCad")(uri '+q(('${KIPRJMOD}/../' if name=='NATHAN_USB' else '${KICAD8_FOOTPRINT_DIR}/')+name+'.pretty')+')(options "")(descr "Candidate library; qualification pending"))' for name in sorted(libs))+'\n)\n',encoding='utf-8')
     root_id=uid(board+'/root'); project='nathan-'+board
     contents=[f'(kicad_sch (version 20231120) (generator "eeschema") (uuid "{root_id}") (paper "A3") (title_block (title {q("NATHAN "+board+" D1 electrical proposal")}) (rev "D1") (company "Codex/OpenAI nathan_bom")) (lib_symbols)']
     groups=sorted({c['sheet'] for c in COMP if c['board']==board})
@@ -201,10 +211,14 @@ def schematic(board):
         sid=uid(board+'/sheet/'+sheet); x=25+(i%3)*125; y=35+(i//3)*55
         contents.append(f'(sheet (at {x} {y}) (size 100 35) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "{sid}") (property "Sheetname" {q(sheet)} (at {x} {y-2} 0) {effect(1.27)}) (property "Sheetfile" {q(sheet+".kicad_sch")} (at {x} {y+37} 0) {effect(1.27)}) (instances (project {q(project)} (path "/{root_id}" (page "{i+2}")))))')
         draw_sheet(board,sheet,[c for c in COMP if c['board']==board and c['sheet']==sheet],root_id,sid)
-    contents.append('(text "D1 proposal: see validation/native-current for ERC evidence. USB/audio boundaries unresolved; no fabrication approval." (at 25 275 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "'+uid(board+'/warning')+'"))')
+    contents.append('(text "D1 proposal: see validation/native-current for revision-specific evidence. Component and manufacturing qualification pending." (at 25 275 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "'+uid(board+'/warning')+'"))')
     contents.append('(sheet_instances (path "/" (page "1")))')
     (folder/(project+'.kicad_sch')).write_text('\n'.join(contents)+'\n)\n',encoding='utf-8')
-    (folder/(project+'.kicad_pro')).write_text(json.dumps({'meta':{'filename':project+'.kicad_pro','version':1},'text_variables':{'DESIGN_STATUS':'D1 electrical proposal; see validation/native-current for revision-specific evidence'}},indent=2)+'\n',encoding='utf-8')
+    pro=folder/(project+'.kicad_pro')
+    config=json.loads(pro.read_text()) if pro.exists() else {}
+    config.setdefault('meta',{'filename':project+'.kicad_pro','version':1})
+    config.setdefault('text_variables',{})['DESIGN_STATUS']='D1 electrical proposal; see validation/native-current for revision-specific evidence'
+    pro.write_text(json.dumps(config,indent=2)+'\n',encoding='utf-8')
 
 
 def netlist(board):

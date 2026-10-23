@@ -1,0 +1,12 @@
+{
+  "own_pid": 55092,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 37.11,
+  "log": "validation\\native-current\\controls-clearance-repair.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "-u",
+    "tools/clear_controls_conflicts.py"
+  ]
+}

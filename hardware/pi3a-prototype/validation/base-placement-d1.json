@@ -1,0 +1,975 @@
+{
+  "status": "Connected placement; routing separate; missing items listed explicitly",
+  "components": [
+    {
+      "ref": "J100",
+      "footprint": "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical",
+      "xy": [
+        15,
+        37
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "4cdd95f6cfbbb48c2fb28c252fc7cc48ecdf0cb44240ecf73ff9224ee8af92c1"
+    },
+    {
+      "ref": "J1",
+      "footprint": "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical",
+      "xy": [
+        -54,
+        -24
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "343565d534a7db935400a8d240465ff774201a91e85dc0ed7eb6ea26a5cf5607"
+    },
+    {
+      "ref": "J101",
+      "footprint": "NATHAN_USB:Power_Pigtail_2Pad",
+      "xy": [
+        -35,
+        -27
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "9f85dfca538bc3c1ea7f4352503dad8ab0ec6323cc37cdfeb925e7e642deae4b"
+    },
+    {
+      "ref": "J102",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "xy": [
+        -26,
+        -27
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "6b1676d945ee3bb8807bea0426e1c35b9f4da04ca0534e78a3e8e0bd27638650"
+    },
+    {
+      "ref": "U400",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        -22,
+        -17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "3d1c550bcd167a7a15b01aa23eb2d448e60e27f9cc95160b25845b56a32e6548"
+    },
+    {
+      "ref": "C400",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -28,
+        -17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C401",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -16,
+        -17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C402",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -22,
+        -21
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U401",
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "xy": [
+        -23,
+        -2
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "01073920fde84a375eec6213d9ab57864cf2bc1c73c36c74fe1cc320571c7b92"
+    },
+    {
+      "ref": "C403",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -30,
+        -5
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C404",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -30,
+        0
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C405",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -16,
+        1
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C406",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -16,
+        -6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C407",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -12,
+        -6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C408",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -30,
+        4
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C409",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -34,
+        4
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C410",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -30,
+        -9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C411",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -34,
+        -9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R400",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -14,
+        6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R401",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -34,
+        9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C412",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -38,
+        9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R403",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -34,
+        13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R405",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -38,
+        13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C414",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -34,
+        17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R402",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -29,
+        9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C413",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -25,
+        9
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R404",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -29,
+        13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R406",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        -25,
+        13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C415",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -29,
+        17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U402",
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "xy": [
+        -24,
+        19
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "4b5ec7f80fb2adabd0d58f7f9572c2989c6b7f46b06db1539300392ae233d717"
+    },
+    {
+      "ref": "C416",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -24,
+        24
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C417",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -28,
+        24
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C418",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -20,
+        24
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C419",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        -18,
+        18
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "J400",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "xy": [
+        -31,
+        35
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "6b1676d945ee3bb8807bea0426e1c35b9f4da04ca0534e78a3e8e0bd27638650"
+    },
+    {
+      "ref": "J120",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "xy": [
+        53,
+        -33
+      ],
+      "angle": 180,
+      "back": false,
+      "library_sha256": "c2681f80545de029c2c5a5c6995416f172f840e34fbe7016d2bd9b12411da88d"
+    },
+    {
+      "ref": "D200",
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "xy": [
+        52,
+        -27
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "ca66d9c0eaeb45c8c867c32ef24f4a7c1eb3beee5bca698b2537bdb40bfcd791"
+    },
+    {
+      "ref": "D201",
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "xy": [
+        58,
+        -27
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "ca66d9c0eaeb45c8c867c32ef24f4a7c1eb3beee5bca698b2537bdb40bfcd791"
+    },
+    {
+      "ref": "U200",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        38,
+        -23
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "3d1c550bcd167a7a15b01aa23eb2d448e60e27f9cc95160b25845b56a32e6548"
+    },
+    {
+      "ref": "C200",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        38,
+        -27
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C201",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "xy": [
+        44,
+        -21
+      ],
+      "angle": 90,
+      "back": true,
+      "library_sha256": "5eee680a53df2bf776020b42f3cc66b10ee9e6ec874689031661ed890c2a1136"
+    },
+    {
+      "ref": "U201",
+      "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "xy": [
+        55,
+        -22
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "c0c3acf30bba7ee8b19a6df1e9e8e646c0f2fa28e0bcae6c6fcc5a6aaffde29d"
+    },
+    {
+      "ref": "R200",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        60,
+        -21
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R201",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        58,
+        -16
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R202",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        61,
+        -16
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C202",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        55,
+        -18
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U202",
+      "footprint": "Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm",
+      "xy": [
+        49,
+        -20
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "f1f177b5a31a391401e616425fd3f3f819c29d3a7a2a53fabb6f88c7b760810b"
+    },
+    {
+      "ref": "R203",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        -20
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R204",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        43,
+        -16
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R205",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        46,
+        -16
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C203",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        49,
+        -24
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U203",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "xy": [
+        48,
+        -11
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "9a0397936f244c3603c75c0f1d7f89ae5020752c6475cc94784ed1f818e9a5a3"
+    },
+    {
+      "ref": "C204",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        53,
+        -11
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "J122",
+      "footprint": "NATHAN_USB:USB_Data_Pigtail_4Pad",
+      "xy": [
+        54,
+        -2
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "0b6ab1bcea391b6ab4e5c7fc37f78920acccd5c0587af61da35bc24c98607265"
+    },
+    {
+      "ref": "U206",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "xy": [
+        12,
+        -16
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "ref": "U207",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "xy": [
+        12,
+        -7
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "ref": "U208",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "xy": [
+        12,
+        2
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "ref": "U209",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "xy": [
+        22,
+        2
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "3d1c550bcd167a7a15b01aa23eb2d448e60e27f9cc95160b25845b56a32e6548"
+    },
+    {
+      "ref": "U210",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "xy": [
+        22,
+        -16
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "ref": "U211",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "xy": [
+        22,
+        -7
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "e68ffbc8a137fd4cff44dd0c6818f2539dd5e5ba915dba736d4886478a61bb88"
+    },
+    {
+      "ref": "C206",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        12,
+        -20
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C207",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        12,
+        -11
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C208",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        12,
+        6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C209",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        22,
+        6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C210",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        22,
+        -20
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C211",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        22,
+        -11
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "R206",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        5,
+        2
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R207",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        5,
+        6
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R208",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        5,
+        -2
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R209",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        5,
+        10
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R210",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        31,
+        -8
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R211",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        28,
+        -24
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "U204",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "xy": [
+        38,
+        -13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "8eca7bb3ed5276c2be833f3a8d287438a0780c77ee280a76d995796a8b40b8e5"
+    },
+    {
+      "ref": "R212",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        -8
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C212",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        38,
+        -17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C213",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        32,
+        -17
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "U205",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "xy": [
+        32,
+        -13
+      ],
+      "angle": 0,
+      "back": true,
+      "library_sha256": "ba9d822787042e196f9b1249f651261f5c2b1558b5fc61659813bff36fbf8425"
+    },
+    {
+      "ref": "U212",
+      "footprint": "NATHAN_USB:TI_RPW0010A",
+      "xy": [
+        45,
+        4
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "45b3eae85d593d8806545598e77edc5aad0979f888208b6b916e4c75166de212"
+    },
+    {
+      "ref": "R213",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        41,
+        10
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R214",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        47,
+        10
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "Q200",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "xy": [
+        53,
+        10
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "84c1c9513d956fda19cbe83995d345023526a2a8a8ef130794b58d31df70f098"
+    },
+    {
+      "ref": "R215",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        58,
+        10
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R216",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        0
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "R217",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "xy": [
+        38,
+        4
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "952a7dd46c37c18b73c0a08d42a229358644727d9e2cda2aa730e085c74aa536"
+    },
+    {
+      "ref": "C214",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        45,
+        0
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C215",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        49,
+        0
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "C216",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "xy": [
+        49,
+        5
+      ],
+      "angle": 90,
+      "back": false,
+      "library_sha256": "be67e1bd50338d7512c1d0c3121c37f4d394d84a5dea3c4d59784bd1011c1879"
+    },
+    {
+      "ref": "J121",
+      "footprint": "NATHAN_USB:Power_Pigtail_2Pad",
+      "xy": [
+        55,
+        23
+      ],
+      "angle": 0,
+      "back": false,
+      "library_sha256": "9f85dfca538bc3c1ea7f4352503dad8ab0ec6323cc37cdfeb925e7e642deae4b"
+    }
+  ],
+  "omitted": [],
+  "board_sha256": "cae3100e793529bdeebb2d9612561f2a0a5d93d31f2fa21120d985783dd5dd25"
+}

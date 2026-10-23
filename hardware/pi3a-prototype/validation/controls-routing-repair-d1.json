@@ -1,0 +1,65 @@
+{
+  "status": "Native DRC needed after repair; no fabrication qualification",
+  "clearance_target_mm": 0.2,
+  "haptic_trunk_width_mm": 0.5,
+  "signal_width_mm": 0.2,
+  "failed_links": [
+    {
+      "net": "CTRL_RESET_N",
+      "from": [
+        117.1375,
+        73.725
+      ],
+      "to": [
+        115.0,
+        80.775
+      ]
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": [
+        124.0,
+        89.825
+      ],
+      "to": [
+        94.65,
+        122.285
+      ]
+    },
+    {
+      "net": "FACE_R_RIGHT",
+      "from": [
+        124.0,
+        89.825
+      ],
+      "to": [
+        177.75,
+        86.5
+      ]
+    },
+    {
+      "net": "H1_SCL",
+      "from": [
+        117.1375,
+        75.025
+      ],
+      "to": [
+        91.8,
+        106.5
+      ]
+    },
+    {
+      "net": "H4_SCL",
+      "from": [
+        130.8,
+        106.5
+      ],
+      "to": [
+        117.1375,
+        78.925
+      ]
+    }
+  ],
+  "tracks_and_vias": 1554,
+  "board_sha256": "9c7a3e765cccd099c58d7044b0ccc806b630c228310583c0eb5c66319b068e87"
+}

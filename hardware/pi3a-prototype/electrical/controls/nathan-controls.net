@@ -203,27 +203,27 @@
     </comp>
     <comp ref="J20">
       <value>J20 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="J21">
       <value>J21 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="J22">
       <value>J22 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="J23">
       <value>J23 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="J24">
       <value>J24 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="J25">
       <value>J25 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="U8">
       <value>TCA9548APWR</value>
@@ -255,7 +255,7 @@
     </comp>
     <comp ref="J2">
       <value>J2 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="U2">
       <value>DRV2604LDGSR</value>
@@ -279,7 +279,7 @@
     </comp>
     <comp ref="J3">
       <value>J3 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="U3">
       <value>DRV2604LDGSR</value>
@@ -303,7 +303,7 @@
     </comp>
     <comp ref="J4">
       <value>J4 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="U4">
       <value>DRV2604LDGSR</value>
@@ -327,7 +327,7 @@
     </comp>
     <comp ref="J5">
       <value>J5 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="U5">
       <value>DRV2604LDGSR</value>
@@ -351,15 +351,15 @@
     </comp>
     <comp ref="J6">
       <value>J6 interface</value>
-      <footprint />
+      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
     </comp>
     <comp ref="PS2">
       <value>TPS62080DSGR</value>
       <footprint>Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</footprint>
     </comp>
     <comp ref="L1">
-      <value>1uH XFL3012-102ME candidate</value>
-      <footprint />
+      <value>1uH XAL4020-102MEC candidate</value>
+      <footprint>Inductor_SMD:L_Coilcraft_XAL4020-XXX</footprint>
     </comp>
     <comp ref="C30">
       <value>10uF 10V X5R</value>

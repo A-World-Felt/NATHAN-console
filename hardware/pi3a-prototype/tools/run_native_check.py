@@ -38,7 +38,7 @@ def initialize_local_footprints(config):
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('operation',choices=['load','drc','netlist','erc']);ap.add_argument('board',choices=['controls','base']);ap.add_argument('--config-dir',type=Path);args=ap.parse_args()
     out=ROOT/'validation'/'native-current';out.mkdir(parents=True,exist_ok=True)
-    boardfile=ROOT/'pcb'/args.board/('nathan-'+args.board+'.kicad_pcb')
+    boardfile=ROOT/'electrical'/args.board/('nathan-'+args.board+'.kicad_pcb')
     sch=ROOT/'electrical'/args.board/('nathan-'+args.board+'.kicad_sch')
     if args.operation in ['load','drc']:
         code='import os,pcbnew; print("PID="+str(os.getpid())+" IMPORT_OK",flush=True); b=pcbnew.LoadBoard('+repr(str(boardfile))+'); print("LOAD_OK",flush=True); '

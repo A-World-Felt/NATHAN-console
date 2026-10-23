@@ -1,0 +1,11 @@
+{
+  "own_pid": 60852,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 9.81,
+  "log": "validation\\native-current\\base-place-final2.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/python.exe",
+    "tools/build_connected_base.py"
+  ]
+}

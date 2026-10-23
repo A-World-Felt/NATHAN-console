@@ -11,7 +11,7 @@
 
 La nouvelle demande de conception retient un Raspberry Pi 3 Model A+, deux PCB personnalisés reliés entre eux, cinq moteurs en arc, quatre boutons à gauche et quatre à droite, ainsi que des commandes d’épaule et gâchettes de style PS4. La carte des commandes se place au-dessus et vers l’avant de la carte porteuse. Le boîtier doit être reconstruit à partir de l’apparence historique et contenir l’assemblage des cartes et composants.
 
-La réutilisation d’un module PiSugar est demandée pour la batterie et la charge. Un port micro-USB commun est souhaité pour charge et données. Cette orientation diffère de R-24, qui prévoit USB-C, et du processus de sélection du calculateur décrit dans ADR-0003. Ces écarts doivent rester visibles ; les ADR acceptés et les exigences existantes ne sont pas réécrits par cette proposition.
+La réutilisation d’un module PiSugar est demandée pour la batterie et la charge. Après une mention initiale de micro-USB, Arthur précise USB-C pour le port commun de charge et données. Le prototype suit désormais USB-C, cohérent avec R-24. Le choix du calculateur diffère encore du processus de sélection décrit dans ADR-0003. Ces écarts doivent rester visibles ; les ADR acceptés et les exigences existantes ne sont pas réécrits par cette proposition.
 
 ## Options envisagées
 

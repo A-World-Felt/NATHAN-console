@@ -1,0 +1,17 @@
+{
+  "own_pid": 38936,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 2.34,
+  "log": "validation\\native-current\\controls-final-drc.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "drc",
+    "--format",
+    "json",
+    "--output",
+    "validation/native-current/controls-final-drc.json",
+    "electrical/controls/nathan-controls.kicad_pcb"
+  ]
+}

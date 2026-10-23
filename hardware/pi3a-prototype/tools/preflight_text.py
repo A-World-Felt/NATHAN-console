@@ -59,7 +59,7 @@ def board(path):
 
 
 def main():
-    report={"mode":"TEXT ONLY - no KiCad native API","native_validation":"separate evidence in native-current; historical overflow cause not established",
+    report={"mode":"TEXT ONLY - no KiCad native API","native_validation":"suspended after overflow assertion; exact cause not established",
             "boards":[board(ROOT/"pcb"/name/("nathan-"+name+".kicad_pcb")) for name in ["controls","base"]]}
     p=json.loads((ROOT/"parameters/design.json").read_text(encoding="utf-8"))
     report["parameters_json_valid"]=True

@@ -1,6 +1,6 @@
 # Contexte technique lu et écarts à réconcilier
 
-Les sources techniques proviennent de NATHAN-console. Les chemins ci-dessous sont relatifs à la racine du dépôt ; les documents sont référencés sans être recopiés intégralement.
+La lecture autorisée est limitée à `C:/Projects/Ecole/NATHAN/NATHAN-console`. Les autres dépôts NATHAN restent exclus. Aucun fichier de mémoire, secret, session ou espace privé n’est utilisé. Les documents ci-dessous sont référencés relativement au dépôt source ; ils ne sont pas recopiés intégralement.
 
 | Source | Fait utile | Effet sur la conception |
 |---|---|---|

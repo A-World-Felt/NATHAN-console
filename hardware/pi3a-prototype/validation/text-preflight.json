@@ -1,6 +1,6 @@
 {
   "mode": "TEXT ONLY - no KiCad native API",
-  "native_validation": "separate evidence in native-current; historical overflow cause not established",
+  "native_validation": "suspended after overflow assertion; exact cause not established",
   "boards": [
     {
       "file": "pcb\\controls\\nathan-controls.kicad_pcb",
@@ -67,12 +67,9 @@
   },
   "python_syntax_checks": {
     "build_design.py": "AST parse only; not executed by this check",
-    "compare_native_netlist.py": "AST parse only; not executed by this check",
     "inspect_sources.py": "AST parse only; not executed by this check",
     "layout_data.py": "AST parse only; not executed by this check",
     "preflight_text.py": "AST parse only; not executed by this check",
-    "prepare_electronics.py": "AST parse only; not executed by this check",
-    "run_native_check.py": "AST parse only; not executed by this check",
     "sync_controls_text.py": "AST parse only; not executed by this check",
     "validate_design.py": "AST parse only; not executed by this check"
   }

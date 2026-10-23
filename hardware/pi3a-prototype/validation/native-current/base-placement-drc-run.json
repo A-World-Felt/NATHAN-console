@@ -1,0 +1,17 @@
+{
+  "own_pid": 18180,
+  "returncode": 0,
+  "timeout": false,
+  "elapsed": 1.67,
+  "log": "validation\\native-current\\base-placement-drc.log",
+  "command": [
+    "C:/Program Files/KiCad/8.0/bin/kicad-cli.exe",
+    "pcb",
+    "drc",
+    "--format",
+    "json",
+    "--output",
+    "validation/native-current/base-placement-drc.json",
+    "electrical/base/nathan-base.kicad_pcb"
+  ]
+}

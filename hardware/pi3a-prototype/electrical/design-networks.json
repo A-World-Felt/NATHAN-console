@@ -26,10 +26,105 @@
       "revision": "SLVSAE8F, November 2016",
       "pages": "4,12-14,19"
     },
+    "XAL4020": {
+      "url": "https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf",
+      "revision": "Coilcraft XAL40xx current datasheet; product page checked 2026-10-22",
+      "pages": "XAL4020-102MEC table and mechanical drawing"
+    },
+    "JST_PH": {
+      "url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "revision": "PH manufacturer catalog",
+      "pages": "1-3"
+    },
     "Pi_GPIO": {
       "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio",
       "revision": "Official GPIO documentation",
       "pages": "online; physical header map must also be verified against actual board"
+    },
+    "PCM5102A": {
+      "url": "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf",
+      "revision": "SLAS859C May 2015",
+      "pages": "5,9-10,25-26,28,41"
+    },
+    "TPA6132A2": {
+      "url": "https://www.ti.com/lit/ds/symlink/tpa6132a2.pdf",
+      "revision": "SLOS597B July 2017",
+      "pages": "3,5-6,11-15"
+    },
+    "RT9193": {
+      "url": "https://www.richtek.com/assets/product_file/RT9193/DS9193-18.pdf",
+      "revision": "DS9193-18 June 2022",
+      "pages": "1-4"
+    },
+    "USB4105": {
+      "url": "https://gct.co/files/drawings/usb4105.pdf",
+      "revision": "B4, 18 December 2023",
+      "pages": "1"
+    },
+    "BQ24392": {
+      "url": "https://www.ti.com/lit/ds/slis146d/slis146d.pdf",
+      "revision": "SLIS146D",
+      "pages": "3-5,8-10"
+    },
+    "TUSB320LAI": {
+      "url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+      "revision": "SLLSEQ8D",
+      "pages": "3,11-14,28"
+    },
+    "TPS709": {
+      "url": "https://www.ti.com/lit/ds/symlink/tps709.pdf",
+      "revision": "SBVS186H",
+      "pages": "3-6,15"
+    },
+    "TPS2553": {
+      "url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "revision": "SLVS841F",
+      "pages": "3,7,14-19"
+    },
+    "LM66100": {
+      "url": "https://www.ti.com/lit/ds/symlink/lm66100.pdf",
+      "revision": "SLVSEZ8A",
+      "pages": "3-5,11"
+    },
+    "TPS25947": {
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "revision": "SLVSFC9C May 2026",
+      "pages": "4-10,29-32,73"
+    },
+    "TS3USB30E": {
+      "url": "https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf",
+      "revision": "SCDS255G",
+      "pages": "4-7"
+    },
+    "TPD2E2U06": {
+      "url": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf",
+      "revision": "SLLSEG9C",
+      "pages": "3-4"
+    },
+    "LVC2G04": {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g04.pdf",
+      "revision": "SCES195N",
+      "pages": "3-6"
+    },
+    "LVC2G08": {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g08.pdf",
+      "revision": "SCES198N",
+      "pages": "3-6"
+    },
+    "LVC1G32": {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+      "revision": "SCES219W",
+      "pages": "pin functions"
+    },
+    "LVC1G74": {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "revision": "SCES794G",
+      "pages": "3-6"
+    },
+    "2N7002": {
+      "url": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+      "revision": "Rev 7",
+      "pages": "1"
     }
   },
   "components": [
@@ -1570,9 +1665,9 @@
           "net": "STICK_L_CLICK"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Joystick left interface, not COM-09032 physical pin numbering",
+      "note": "Joystick left interface, not COM-09032 physical pin numbering; prototype PCB connector JST B5B-PH-K-S, PHR-5 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -1612,9 +1707,9 @@
           "net": "STICK_R_CLICK"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Joystick right interface, not COM-09032 physical pin numbering",
+      "note": "Joystick right interface, not COM-09032 physical pin numbering; prototype PCB connector JST B5B-PH-K-S, PHR-5 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -1642,9 +1737,9 @@
           "net": "RAW_L2"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Analog trigger left; sensor and pivot not selected",
+      "note": "Analog trigger left; sensor and pivot not selected; prototype PCB connector JST B3B-PH-K-S, PHR-3 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -1672,9 +1767,9 @@
           "net": "RAW_R2"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Analog trigger right; sensor and pivot not selected",
+      "note": "Analog trigger right; sensor and pivot not selected; prototype PCB connector JST B3B-PH-K-S, PHR-3 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -1696,9 +1791,9 @@
           "net": "GND"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Additional left shoulder switch beyond workbook quantities",
+      "note": "Additional left shoulder switch beyond workbook quantities; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -1720,9 +1815,9 @@
           "net": "GND"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "Additional right shoulder switch beyond workbook quantities",
+      "note": "Additional right shoulder switch beyond workbook quantities; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2092,9 +2187,9 @@
           "net": "H1_MINUS"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2284,9 +2379,9 @@
           "net": "H2_MINUS"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2476,9 +2571,9 @@
           "net": "H3_MINUS"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2668,9 +2763,9 @@
           "net": "H4_MINUS"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2860,9 +2955,9 @@
           "net": "H5_MINUS"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending",
+      "note": "VG0832013D cable interface; exact keyed connector/counterpart pending; prototype PCB connector JST B2B-PH-K-S, PHR-2 housing, SPH-002T-P0.5S contacts; confirm wire gauge and orientation",
       "dnp": false
     },
     {
@@ -2935,7 +3030,7 @@
       "board": "controls",
       "sheet": "power",
       "reference": "L1",
-      "value": "1uH XFL3012-102ME candidate",
+      "value": "1uH XAL4020-102MEC candidate",
       "pins": [
         {
           "number": "1",
@@ -2950,9 +3045,9 @@
           "net": "3V3_HAPTIC"
         }
       ],
-      "footprint": "",
-      "source": "design proposal",
-      "note": "Inductor exact order suffix and footprint must be qualified; no substitute footprint accepted",
+      "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "source": "XAL4020",
+      "note": "Prototype alternative: XAL4020-102MEC; 8.7 A at 30% drop, 6.7 A reference current for 20 C rise, 14.6 mOhm max DCR; larger 4 mm package chosen for generous current/thermal margin; compare actual worst-case peak and thermal behavior",
       "dnp": false
     },
     {
@@ -3413,7 +3508,7 @@
           "number": "29",
           "name": "Pin_29",
           "type": "passive",
-          "net": null
+          "net": "USB_CHARGE_RUN"
         },
         {
           "number": "30",
@@ -3425,7 +3520,7 @@
           "number": "31",
           "name": "Pin_31",
           "type": "passive",
-          "net": null
+          "net": "USB_CHARGE_CLOCK"
         },
         {
           "number": "32",
@@ -3506,9 +3601,9 @@
           "net": "GND"
         }
       ],
-      "footprint": "",
+      "footprint": "NATHAN_USB:Power_Pigtail_2Pad",
       "source": "design proposal",
-      "note": "PiSugar 5 V output interface only. Actual contact geometry and primary supply route unresolved; not a validated power connector.",
+      "note": "PiSugar 5 V OUTPUT cable, separate from charging INPUT. 20/22AWG soldered wire candidate with strain relief; pad counterpart and load/temperature qualification pending. Avoid a 2A JST PH contact on the full system supply.",
       "dnp": false
     },
     {
@@ -3536,160 +3631,2912 @@
           "net": "GND"
         }
       ],
-      "footprint": "",
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
       "source": "design proposal",
-      "note": "PiSugar management interface only; exact hardware contacts not specified",
+      "note": "PiSugar management cable interface; exact module solder contacts need revision verification",
       "dnp": false
     },
     {
       "board": "base",
-      "sheet": "audio-boundary",
-      "reference": "J110",
-      "value": "J110 interface",
+      "sheet": "audio-power",
+      "reference": "U400",
+      "value": "RT9193-33GB",
       "pins": [
         {
           "number": "1",
-          "name": "Pin_1",
+          "name": "VIN",
+          "type": "power_in",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "type": "input",
+          "net": "5V_SYS"
+        },
+        {
+          "number": "4",
+          "name": "BP",
+          "type": "passive",
+          "net": "AUDIO_BP"
+        },
+        {
+          "number": "5",
+          "name": "VOUT",
+          "type": "power_out",
+          "net": "3V3_AUDIO"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "RT9193",
+      "note": "300 mA regulator, not 500 mA. Audio only; no motor current. Dissipation and effective capacitors to qualify.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-power",
+      "reference": "C400",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
           "type": "passive",
           "net": "5V_SYS"
         },
         {
           "number": "2",
-          "name": "Pin_2",
-          "type": "passive",
-          "net": "3V3_PI"
-        },
-        {
-          "number": "3",
-          "name": "Pin_3",
+          "name": "2",
           "type": "passive",
           "net": "GND"
-        },
-        {
-          "number": "4",
-          "name": "Pin_4",
-          "type": "passive",
-          "net": "I2S_BCLK"
-        },
-        {
-          "number": "5",
-          "name": "Pin_5",
-          "type": "passive",
-          "net": "I2S_LRCLK"
-        },
-        {
-          "number": "6",
-          "name": "Pin_6",
-          "type": "passive",
-          "net": "I2S_DOUT"
-        },
-        {
-          "number": "7",
-          "name": "Pin_7",
-          "type": "passive",
-          "net": "AUDIO_ENABLE"
         }
       ],
-      "footprint": "",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "source": "design proposal",
-      "note": "Explicit unresolved boundary: I2S DAC plus headphone amplifier not yet schematized. No headphone driver inferred from PCM5102A.",
+      "note": "",
       "dnp": false
     },
     {
       "board": "base",
-      "sheet": "usb-boundary",
-      "reference": "J120",
-      "value": "J120 interface",
+      "sheet": "audio-power",
+      "reference": "C401",
+      "value": "1uF 10V X7R",
       "pins": [
         {
           "number": "1",
-          "name": "VBUS",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-power",
+      "reference": "C402",
+      "value": "22nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "AUDIO_BP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "U401",
+      "value": "PCM5102APW",
+      "pins": [
+        {
+          "number": "1",
+          "name": "CPVDD",
+          "type": "power_in",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "CAPP",
+          "type": "passive",
+          "net": "DAC_CAPP"
+        },
+        {
+          "number": "3",
+          "name": "CPGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "CAPM",
+          "type": "passive",
+          "net": "DAC_CAPM"
+        },
+        {
+          "number": "5",
+          "name": "VNEG",
+          "type": "power_out",
+          "net": "DAC_VNEG"
+        },
+        {
+          "number": "6",
+          "name": "OUTL",
+          "type": "output",
+          "net": "DAC_L"
+        },
+        {
+          "number": "7",
+          "name": "OUTR",
+          "type": "output",
+          "net": "DAC_R"
+        },
+        {
+          "number": "8",
+          "name": "AVDD",
+          "type": "power_in",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "9",
+          "name": "AGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "10",
+          "name": "DEMP",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "FLT",
+          "type": "input",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "12",
+          "name": "SCK",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "13",
+          "name": "BCK",
+          "type": "input",
+          "net": "I2S_BCLK"
+        },
+        {
+          "number": "14",
+          "name": "DIN",
+          "type": "input",
+          "net": "I2S_DOUT"
+        },
+        {
+          "number": "15",
+          "name": "LRCK",
+          "type": "input",
+          "net": "I2S_LRCLK"
+        },
+        {
+          "number": "16",
+          "name": "FMT",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "17",
+          "name": "XSMT",
+          "type": "input",
+          "net": "AUDIO_ENABLE"
+        },
+        {
+          "number": "18",
+          "name": "LDOO",
+          "type": "power_out",
+          "net": "DAC_LDOO"
+        },
+        {
+          "number": "19",
+          "name": "DGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "20",
+          "name": "DVDD",
+          "type": "power_in",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+      "source": "PCM5102A",
+      "note": "3-wire I2S PLL, 48 kHz/64 BCLK initial setting; low-latency filter; line output feeds a separate headphone amplifier.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C403",
+      "value": "2.2uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_CAPP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "DAC_CAPM"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C404",
+      "value": "2.2uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_VNEG"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C405",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_LDOO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C406",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C407",
+      "value": "10uF 6.3V X5R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C408",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C409",
+      "value": "10uF 6.3V X5R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C410",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "C411",
+      "value": "10uF 6.3V X5R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-dac",
+      "reference": "R400",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "AUDIO_ENABLE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Default mute at boot; software must sequence clocks and mute before shutdown",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R401",
+      "value": "470R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_L"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "DAC_FILTER_L"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "C412",
+      "value": "2.2nF C0G",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_FILTER_L"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R403",
+      "value": "10k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_FILTER_L"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HP_ATT_L"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R405",
+      "value": "10k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_ATT_L"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "C414",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_ATT_L"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HP_IN_L"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R402",
+      "value": "470R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_R"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "DAC_FILTER_R"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "C413",
+      "value": "2.2nF C0G",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_FILTER_R"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R404",
+      "value": "10k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "DAC_FILTER_R"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HP_ATT_R"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "R406",
+      "value": "10k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_ATT_R"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-filter",
+      "reference": "C415",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_ATT_R"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HP_IN_R"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "U402",
+      "value": "TPA6132A2RTER",
+      "pins": [
+        {
+          "number": "1",
+          "name": "INL_MINUS",
+          "type": "input",
+          "net": "HP_IN_L"
+        },
+        {
+          "number": "2",
+          "name": "INL_PLUS",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "INR_PLUS",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "INR_MINUS",
+          "type": "input",
+          "net": "HP_IN_R"
+        },
+        {
+          "number": "5",
+          "name": "OUTR",
+          "type": "output",
+          "net": "HEADPHONE_R"
+        },
+        {
+          "number": "6",
+          "name": "G0",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "G1",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "8",
+          "name": "HPVSS",
+          "type": "power_out",
+          "net": "HP_VSS"
+        },
+        {
+          "number": "9",
+          "name": "CPN",
+          "type": "passive",
+          "net": "HP_CPN"
+        },
+        {
+          "number": "10",
+          "name": "PGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "CPP",
+          "type": "passive",
+          "net": "HP_CPP"
+        },
+        {
+          "number": "12",
+          "name": "HPVDD",
+          "type": "power_out",
+          "net": "HP_VDD"
+        },
+        {
+          "number": "13",
+          "name": "EN",
+          "type": "input",
+          "net": "AUDIO_ENABLE"
+        },
+        {
+          "number": "14",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "15",
+          "name": "SGND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "16",
+          "name": "OUTL",
+          "type": "output",
+          "net": "HEADPHONE_L"
+        },
+        {
+          "number": "17",
+          "name": "EP",
+          "type": "power_in",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "source": "TPA6132A2",
+      "note": "G0=G1=0 gives -6 dB. HPVDD is an internal output, NOT tied to supply. Gain/input attenuation provisional; not a hearing-safety level guarantee.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "C416",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_CPP"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "HP_CPN"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "C417",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_VSS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "C418",
+      "value": "2.2uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "HP_VDD"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "C419",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_AUDIO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "audio-headphone",
+      "reference": "J400",
+      "value": "J400 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "TIP_LEFT",
+          "type": "passive",
+          "net": "HEADPHONE_L"
+        },
+        {
+          "number": "2",
+          "name": "RING_RIGHT",
+          "type": "passive",
+          "net": "HEADPHONE_R"
+        },
+        {
+          "number": "3",
+          "name": "SLEEVE",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "source": "design proposal",
+      "note": "JST PH cable to a panel-mounted 3.5 mm stereo TRS jack. Jack mechanics not qualified; this is an explicit cable interface, not an assumed jack pinout.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-port",
+      "reference": "J120",
+      "value": "USB4105-GF-A",
+      "pins": [
+        {
+          "number": "A1",
+          "name": "A1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "A4",
+          "name": "A4",
           "type": "passive",
           "net": "USB_PC_VBUS"
         },
         {
-          "number": "2",
-          "name": "D_MINUS",
+          "number": "A5",
+          "name": "A5",
+          "type": "passive",
+          "net": "USB_CC1"
+        },
+        {
+          "number": "A6",
+          "name": "A6",
+          "type": "passive",
+          "net": "USB_PC_DP"
+        },
+        {
+          "number": "A7",
+          "name": "A7",
           "type": "passive",
           "net": "USB_PC_DM"
         },
         {
+          "number": "A8",
+          "name": "A8",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "A9",
+          "name": "A9",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "A12",
+          "name": "A12",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B1",
+          "name": "B1",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "B4",
+          "name": "B4",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "B5",
+          "name": "B5",
+          "type": "passive",
+          "net": "USB_CC2"
+        },
+        {
+          "number": "B6",
+          "name": "B6",
+          "type": "passive",
+          "net": "USB_PC_DP"
+        },
+        {
+          "number": "B7",
+          "name": "B7",
+          "type": "passive",
+          "net": "USB_PC_DM"
+        },
+        {
+          "number": "B8",
+          "name": "B8",
+          "type": "passive",
+          "net": null
+        },
+        {
+          "number": "B9",
+          "name": "B9",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "B12",
+          "name": "B12",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "name": "S1",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "source": "USB4105",
+      "note": "USB2 sink only, 5 V only. Both plug orientations. Shell to local ground; EMC validation pending. No PD voltage request.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-port",
+      "reference": "D200",
+      "value": "TPD2E2U06DRLR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "2",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
           "number": "3",
-          "name": "D_PLUS",
+          "name": "IO1",
           "type": "passive",
           "net": "USB_PC_DP"
         },
         {
           "number": "4",
-          "name": "ID",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "IO2",
           "type": "passive",
+          "net": "USB_PC_DM"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "source": "TPD2E2U06",
+      "note": "Short ESD return at connector. Protection response and USB eye require measurements; no CC-to-VBUS short protection claimed.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-port",
+      "reference": "D201",
+      "value": "TPD2E2U06DRLR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "2",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "3",
+          "name": "IO1",
+          "type": "passive",
+          "net": "USB_CC1"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "IO2",
+          "type": "passive",
+          "net": "USB_CC2"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-553",
+      "source": "TPD2E2U06",
+      "note": "Short ESD return at connector. Protection response and USB eye require measurements; no CC-to-VBUS short protection claimed.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "U200",
+      "value": "TPS70933DBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN",
+          "type": "power_in",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "type": "input",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "type": "no_connect",
           "net": null
         },
         {
           "number": "5",
-          "name": "GND",
-          "type": "passive",
-          "net": "GND"
+          "name": "OUT",
+          "type": "power_out",
+          "net": "3V3_USB"
         }
       ],
-      "footprint": "",
-      "source": "design proposal",
-      "note": "Micro-B external connector pin contract; exact MPN, shield, ESD and supply limiting pending",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "TPS709",
+      "note": "USB-domain supply only; TPS70933 pinout differs from TPS709A/B.",
       "dnp": false
     },
     {
       "board": "base",
-      "sheet": "usb-boundary",
-      "reference": "J121",
-      "value": "J121 interface",
+      "sheet": "usb-detect",
+      "reference": "C200",
+      "value": "1uF 10V X7R",
       "pins": [
         {
           "number": "1",
-          "name": "Pin_1",
+          "name": "1",
           "type": "passive",
-          "net": "USB_CHARGE_LIMITED"
+          "net": "USB_PC_VBUS"
         },
         {
           "number": "2",
-          "name": "Pin_2",
+          "name": "2",
           "type": "passive",
           "net": "GND"
         }
       ],
-      "footprint": "",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
       "source": "design proposal",
-      "note": "PiSugar charging INPUT: must be isolated from 5V_SYS; missing qualified current limiter/reverse block",
+      "note": "",
       "dnp": false
     },
     {
       "board": "base",
-      "sheet": "usb-boundary",
+      "sheet": "usb-detect",
+      "reference": "C201",
+      "value": "4.7uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "design proposal",
+      "note": "Verify >=2.2uF effective at bias.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "U201",
+      "value": "TUSB320LAIRWBR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "CC1",
+          "type": "bidirectional",
+          "net": "USB_CC1"
+        },
+        {
+          "number": "2",
+          "name": "CC2",
+          "type": "bidirectional",
+          "net": "USB_CC2"
+        },
+        {
+          "number": "3",
+          "name": "PORT",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "VBUS_DET",
+          "type": "input",
+          "net": "CC_VBUS_SENSE"
+        },
+        {
+          "number": "5",
+          "name": "ADDR",
+          "type": "input",
+          "net": null
+        },
+        {
+          "number": "6",
+          "name": "OUT3",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "7",
+          "name": "OUT1",
+          "type": "open_collector",
+          "net": "CC_OUT1"
+        },
+        {
+          "number": "8",
+          "name": "OUT2",
+          "type": "open_collector",
+          "net": "CC_OUT2"
+        },
+        {
+          "number": "9",
+          "name": "ID",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "10",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "11",
+          "name": "EN_N",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "12",
+          "name": "VDD",
+          "type": "power_in",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+      "source": "TUSB320LAI",
+      "note": "UFP fixed, ADDR floating selects GPIO. Internal Rd in dead battery; do NOT add parallel external Rd. Autonomous 1.5A/3A detection.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R200",
+      "value": "887k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "CC_VBUS_SENSE"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "Within specified 855..920k range.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R201",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CC_OUT1"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R202",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "CC_OUT2"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "C202",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "U202",
+      "value": "BQ24392RSER",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SW_OPEN",
+          "type": "open_collector",
+          "net": "USB_SW_OPEN_N"
+        },
+        {
+          "number": "2",
+          "name": "DM_HOST",
+          "type": "bidirectional",
+          "net": "USB_MID_DM"
+        },
+        {
+          "number": "3",
+          "name": "DP_HOST",
+          "type": "bidirectional",
+          "net": "USB_MID_DP"
+        },
+        {
+          "number": "4",
+          "name": "CHG_AL_N",
+          "type": "open_collector",
+          "net": "USB_CHG_AL_N"
+        },
+        {
+          "number": "5",
+          "name": "GOOD_BAT",
+          "type": "input",
+          "net": "USB_GOOD_BAT"
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "7",
+          "name": "DP_CON",
+          "type": "bidirectional",
+          "net": "USB_PC_DP"
+        },
+        {
+          "number": "8",
+          "name": "DM_CON",
+          "type": "bidirectional",
+          "net": "USB_PC_DM"
+        },
+        {
+          "number": "9",
+          "name": "VBUS",
+          "type": "power_in",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "10",
+          "name": "CHG_DET",
+          "type": "output",
+          "net": "USB_CHG_DET"
+        }
+      ],
+      "footprint": "Package_DFN_QFN:Texas_UQFN-10_1.5x2mm_P0.5mm",
+      "source": "BQ24392",
+      "note": "GOOD_BAT follows cable supply to avoid dead-battery timer interrupting wall charge. CHG_DET is a 5V-domain output, never a Pi GPIO.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R203",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USB_GOOD_BAT"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R204",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_SW_OPEN_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "R205",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CHG_AL_N"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-detect",
+      "reference": "C203",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-data",
+      "reference": "U203",
+      "value": "TS3USB30EDGSR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "S",
+          "type": "input",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "D1_PLUS",
+          "type": "bidirectional",
+          "net": "USB_PI_DP"
+        },
+        {
+          "number": "3",
+          "name": "D2_PLUS",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "4",
+          "name": "D_PLUS",
+          "type": "bidirectional",
+          "net": "USB_MID_DP"
+        },
+        {
+          "number": "5",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "6",
+          "name": "D_MINUS",
+          "type": "bidirectional",
+          "net": "USB_MID_DM"
+        },
+        {
+          "number": "7",
+          "name": "D2_MINUS",
+          "type": "bidirectional",
+          "net": null
+        },
+        {
+          "number": "8",
+          "name": "D1_MINUS",
+          "type": "bidirectional",
+          "net": "USB_PI_DM"
+        },
+        {
+          "number": "9",
+          "name": "OE_N",
+          "type": "input",
+          "net": "USB_SW_OPEN_N"
+        },
+        {
+          "number": "10",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "source": "TS3USB30E",
+      "note": "Pi-side Ioff isolation when Pi is off. Two series switches: 480Mbps signal integrity is NOT qualified.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-data",
+      "reference": "C204",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_PI"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-data",
       "reference": "J122",
       "value": "J122 interface",
       "pins": [
         {
           "number": "1",
-          "name": "Pin_1",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "name": "D_MINUS",
           "type": "passive",
           "net": "USB_PI_DM"
         },
         {
-          "number": "2",
-          "name": "Pin_2",
+          "number": "3",
+          "name": "D_PLUS",
           "type": "passive",
           "net": "USB_PI_DP"
         },
         {
-          "number": "3",
-          "name": "Pin_3",
+          "number": "4",
+          "name": "SHIELD",
           "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "NATHAN_USB:USB_Data_Pigtail_4Pad",
+      "source": "design proposal",
+      "note": "Internal short shielded USB cable to actual Pi USB-A data pins. Pi VBUS wire MUST terminate insulated and unconnected. Footprint is solder pads, not a certified high-speed connector. Cable continuity and eye tests required.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U206",
+      "value": "SN74LVC2G04DBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1A",
+          "type": "input",
+          "net": "USB_SW_OPEN_N"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "2A",
+          "type": "input",
+          "net": "USB_CHG_AL_N"
+        },
+        {
+          "number": "4",
+          "name": "2Y",
+          "type": "output",
+          "net": "USB_CHARGE_ALLOWED"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "6",
+          "name": "1Y",
+          "type": "output",
+          "net": "USB_DATA_ACTIVE"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "LVC2G04",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U207",
+      "value": "SN74LVC2G08DCUR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1A",
+          "type": "input",
+          "net": "USB_DATA_ACTIVE"
+        },
+        {
+          "number": "2",
+          "name": "1B",
+          "type": "input",
+          "net": "USB_RUN_IN"
+        },
+        {
+          "number": "3",
+          "name": "2Y",
+          "type": "output",
+          "net": "USB_LEGACY_REQUEST"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "2A",
+          "type": "input",
+          "net": "USB_REQUEST"
+        },
+        {
+          "number": "6",
+          "name": "2B",
+          "type": "input",
+          "net": "USB_CHARGE_ALLOWED"
+        },
+        {
+          "number": "7",
+          "name": "1Y",
+          "type": "output",
+          "net": "USB_GRANT_CLEAR_N"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "LVC2G08",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U208",
+      "value": "SN74LVC1G74DCUR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "CLK",
+          "type": "input",
+          "net": "USB_CLOCK_IN"
+        },
+        {
+          "number": "2",
+          "name": "D",
+          "type": "input",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "3",
+          "name": "Q_N",
+          "type": "output",
+          "net": null
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "Q",
+          "type": "output",
+          "net": "USB_SDP_GRANT"
+        },
+        {
+          "number": "6",
+          "name": "CLR_N",
+          "type": "input",
+          "net": "USB_GRANT_CLEAR_N"
+        },
+        {
+          "number": "7",
+          "name": "PRE_N",
+          "type": "input",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "LVC1G74",
+      "note": "Fresh rising pulse only after USB configured >=500mA. RUN low clears on suspend/deconfigure; BQ data detach also clears. A stale GPIO high does not restore grant after reconnect. Q is pin5.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U209",
+      "value": "SN74LVC1G32DBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "type": "input",
+          "net": "USB_CHG_DET"
+        },
+        {
+          "number": "2",
+          "name": "B",
+          "type": "input",
+          "net": "USB_SDP_GRANT"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "name": "Y",
+          "type": "output",
+          "net": "USB_REQUEST"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "LVC1G32",
+      "note": "Input accepts BQ 5V output; output is USB-domain 3.3V.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U210",
+      "value": "SN74LVC2G04DBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1A",
+          "type": "input",
+          "net": "CC_OUT1"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "2A",
+          "type": "input",
+          "net": "CC_OUT2"
+        },
+        {
+          "number": "4",
+          "name": "2Y",
+          "type": "output",
+          "net": "CC_OUT2_LOW"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "6",
+          "name": "1Y",
+          "type": "output",
+          "net": "USB_CC_POWER"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "LVC2G04",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "U211",
+      "value": "SN74LVC2G08DCUR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1A",
+          "type": "input",
+          "net": "USB_LEGACY_REQUEST"
+        },
+        {
+          "number": "2",
+          "name": "1B",
+          "type": "input",
+          "net": "CC_OUT1"
+        },
+        {
+          "number": "3",
+          "name": "2Y",
+          "type": "output",
+          "net": "USB_CC_3A"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "2A",
+          "type": "input",
+          "net": "USB_CC_POWER"
+        },
+        {
+          "number": "6",
+          "name": "2B",
+          "type": "input",
+          "net": "CC_OUT2_LOW"
+        },
+        {
+          "number": "7",
+          "name": "1Y",
+          "type": "output",
+          "net": "USB_LEGACY_EN"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "type": "power_in",
+          "net": "3V3_USB"
+        }
+      ],
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "source": "LVC2G08",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C206",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C207",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C208",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C209",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C210",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "C211",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "3V3_USB"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R206",
+      "value": "1k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CHARGE_RUN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USB_RUN_IN"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R207",
+      "value": "1k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CHARGE_CLOCK"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USB_CLOCK_IN"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R208",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_RUN_IN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R209",
+      "value": "4.7k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CLOCK_IN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R210",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_LEGACY_EN"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-policy",
+      "reference": "R211",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CC_POWER"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-legacy",
+      "reference": "U204",
+      "value": "TPS2553DBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN",
+          "type": "power_in",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "type": "input",
+          "net": "USB_LEGACY_EN"
+        },
+        {
+          "number": "4",
+          "name": "FAULT",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "5",
+          "name": "ILIM",
+          "type": "passive",
+          "net": "USB_LEGACY_ILIM"
+        },
+        {
+          "number": "6",
+          "name": "OUT",
+          "type": "power_out",
+          "net": "USB_LEGACY_LIMITED"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "TPS2553",
+      "note": "62k 1%: calculated DC bounds 377..479mA, plus detector/logic supply. Current and voltage sag with PiSugar require measurement.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-legacy",
+      "reference": "R212",
+      "value": "62k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_LEGACY_ILIM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-legacy",
+      "reference": "C212",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-legacy",
+      "reference": "C213",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_LEGACY_LIMITED"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-legacy",
+      "reference": "U205",
+      "value": "LM66100DCKR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VIN",
+          "type": "power_in",
+          "net": "USB_LEGACY_LIMITED"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "CE",
+          "type": "input",
+          "net": "USB_CHARGE_LIMITED"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "type": "no_connect",
+          "net": null
+        },
+        {
+          "number": "5",
+          "name": "ST_UNUSED_GND",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "6",
+          "name": "VOUT",
+          "type": "passive",
+          "net": "USB_CHARGE_LIMITED"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "source": "LM66100",
+      "note": "CE=VOUT reverse protection on legacy path only (<0.5A). Does not imply zero reverse transient. ST is physically open-drain; modeled passive ONLY for the manufacturer-prescribed unused GND strap, avoiding a generic ERC open-drain/power-flag false conflict.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "U212",
+      "value": "TPS259470ARPWR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "EN_UVLO",
+          "type": "input",
+          "net": "USB_CC_POWER"
+        },
+        {
+          "number": "2",
+          "name": "OVLO",
+          "type": "input",
+          "net": "USB_OVLO"
+        },
+        {
+          "number": "3",
+          "name": "AUXOFF",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "4",
+          "name": "FLT",
+          "type": "open_collector",
+          "net": null
+        },
+        {
+          "number": "5",
+          "name": "IN",
+          "type": "power_in",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "6",
+          "name": "OUT",
+          "type": "power_out",
+          "net": "USB_CHARGE_LIMITED"
+        },
+        {
+          "number": "7",
+          "name": "DVDT",
+          "type": "passive",
+          "net": "USB_DVDT"
+        },
+        {
+          "number": "8",
+          "name": "GND",
+          "type": "power_in",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "name": "ILM",
+          "type": "passive",
+          "net": "USB_TYPEC_ILIM"
+        },
+        {
+          "number": "10",
+          "name": "ITIMER",
+          "type": "passive",
+          "net": null
+        }
+      ],
+      "footprint": "NATHAN_USB:TI_RPW0010A",
+      "source": "TPS25947",
+      "note": "Autonomous path only for CC>=1.5A. 2.80k -> nominal1.191A; parallel2.80k on CC3A ->2.381A. ITIMER open gives fastest current-limit response. True reverse blocking. Not a USB compliance guarantee.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "R213",
+      "value": "2.80k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_TYPEC_ILIM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "R214",
+      "value": "2.80k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_TYPEC_ILIM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USB_ILIM_EXTRA"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "Q200",
+      "value": "2N7002",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "type": "input",
+          "net": "USB_CC_3A"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "type": "passive",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "type": "passive",
+          "net": "USB_ILIM_EXTRA"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "2N7002",
+      "note": "Low-current ILIM resistor selection. Finite Rds(on) reduces requested current; qualification at 3.3V gate and temperature required.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "R215",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CC_3A"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "R216",
+      "value": "348k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "USB_OVLO"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "R217",
+      "value": "100k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_OVLO"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "design proposal",
+      "note": "OVLO nominal5.376V; this is NOT proof that PiSugar 5.2V maximum input is protected. Source/module voltage tolerance remains a qualification gate.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "C214",
+      "value": "3.3nF C0G",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_DVDT"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "C215",
+      "value": "100nF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_PC_VBUS"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "C216",
+      "value": "1uF 10V X7R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "type": "passive",
+          "net": "USB_CHARGE_LIMITED"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "design proposal",
+      "note": "",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "usb-power-typec",
+      "reference": "J121",
+      "value": "J121 interface",
+      "pins": [
+        {
+          "number": "1",
+          "name": "PISUGAR_INPUT_5V",
+          "type": "passive",
+          "net": "USB_CHARGE_LIMITED"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "passive",
+          "net": "GND"
+        }
+      ],
+      "footprint": "NATHAN_USB:Power_Pigtail_2Pad",
+      "source": "design proposal",
+      "note": "Soldered 20/22AWG candidate wire pair to identified PiSugar INPUT pads, not BAT or 5V output. Confirm module pad polarity, wire strain relief, thermal rise and voltage drop. No parallel 5V_SYS connection.",
+      "dnp": false
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "#FLG1",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "5V_SYS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "External power declaration only; not supply qualification",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "#FLG2",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "3V3_PI"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "External power declaration only; not supply qualification",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "#FLG3",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
           "net": "GND"
         }
       ],
       "footprint": "",
       "source": "design proposal",
-      "note": "Pi USB data interface: actual USB-A mating path, VBUS sensing and peripheral attach control pending",
-      "dnp": false
+      "note": "External power declaration only; not supply qualification",
+      "dnp": false,
+      "virtual": true
+    },
+    {
+      "board": "base",
+      "sheet": "interfaces",
+      "reference": "#FLG4",
+      "value": "PWR_FLAG",
+      "pins": [
+        {
+          "number": "1",
+          "name": "pwr",
+          "type": "power_out",
+          "net": "USB_PC_VBUS"
+        }
+      ],
+      "footprint": "",
+      "source": "design proposal",
+      "note": "External power declaration only; not supply qualification",
+      "dnp": false,
+      "virtual": true
     }
   ]
 }
